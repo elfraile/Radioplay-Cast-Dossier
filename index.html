@@ -244,6 +244,7 @@
   .badge-cat { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
   .badge-gender { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
   .badge-wpm { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+  .badge-f0 { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
 
   .character-tagline {
     font-size: 0.88rem;
@@ -407,6 +408,7 @@
     <div class="stats-bar">
       <div class="stat-pill">👥 Összes színész: <strong>46 fő</strong></div>
       <div class="stat-pill">⚖️ Nemek: <strong>24 Férfi / 22 Nő</strong></div>
+      <div class="stat-pill">🎙️ Akusztikai morfológia: <strong>46 alkat leképzés</strong></div>
       <div class="stat-pill">⚡ Átlagos tempó: <strong>~147 WPM</strong></div>
       <div class="stat-pill">🎨 Portré formátum: <strong>60% WebP (3:4)</strong></div>
       <div class="stat-pill">🧠 Képtervező: <strong>Gemma 4 12B IT</strong></div>
@@ -429,7 +431,7 @@
 
   <div class="actor-grid" id="actorGrid">
 
-    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Fiú" data-name="hajdú zsombor" data-desc="serülő, ingadozó tenor, hirtelen gúnyos hangtöréssel" data-reg="tenor">
+    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Fiú" data-name="hajdú zsombor" data-desc="serülő, ingadozó tenor, hirtelen gúnyos hangtöréssel" data-reg="tenor" data-morph="hirtelen növő, szikár kamaszfiú alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Hajdú Zsombor.webp', 'Hajdú Zsombor', 'Serülő, ingadozó tenor, hirtelen gúnyos hangtöréssel')" title="Kattints a nagyításhoz!">
@@ -443,6 +445,7 @@
             <span class="badge badge-cat">Gyerek / Tini</span>
             <span class="badge badge-gender">Fiú</span>
             <span class="badge badge-wpm">135.1 WPM</span>
+            <span class="badge badge-f0">🎙️ 185.2 Hz</span>
           </div>
           <div class="character-tagline">„Serülő, ingadozó tenor, hirtelen gúnyos hangtöréssel”</div>
         </div>
@@ -456,8 +459,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Hirtelen növő, szikár kamaszfiú alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Tenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>185.2 Hz</strong> &bull; Rezonancia arány: <strong>1.66x</strong> &bull; Súlypont: 2701 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Serülő, ingadozó tenor</div>
@@ -477,13 +486,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional agency casting headshot of a handsome 13-year-old Hungarian teen actor. He has sharp, lively dark eyes, neatly styled dark hair, and a clever, slightly mischievous smile suggesting quick wit. Natural clean skin texture, wearing a crisp dark navy collared polo shirt. Direct engaging gaze, studio portrait key light, simple neutral studio background with soft subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional agency casting headshot of a handsome 13-year-old Hungarian teen actor. He has a lean, developing 13-year-old adolescent build with an active, spirited posture, featuring sharp, lively dark eyes, neatly styled dark hair, and a clever, slightly mischievous smile suggesting quick wit. Natural clean skin texture, wearing a crisp dark navy collared polo shirt. Direct engaging gaze, studio portrait key light, simple neutral studio background with soft subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Lány" data-name="pásztor luca" data-desc="világos, magas lányszoprán, hirtelen éles visszautasítással" data-reg="lányszoprán">
+    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Lány" data-name="pásztor luca" data-desc="világos, magas lányszoprán, hirtelen éles visszautasítással" data-reg="lányszoprán" data-morph="törékeny, filigrán, finom csontozatú kislány alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Pásztor Luca.webp', 'Pásztor Luca', 'Világos, magas lányszoprán, hirtelen éles visszautasítással')" title="Kattints a nagyításhoz!">
@@ -497,6 +506,7 @@
             <span class="badge badge-cat">Gyerek / Tini</span>
             <span class="badge badge-gender">Lány</span>
             <span class="badge badge-wpm">157.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 321.8 Hz</span>
           </div>
           <div class="character-tagline">„Világos, magas lányszoprán, hirtelen éles visszautasítással”</div>
         </div>
@@ -510,8 +520,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Törékeny, filigrán, finom csontozatú kislány alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Lányszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>321.8 Hz</strong> &bull; Rezonancia arány: <strong>0.49x</strong> &bull; Súlypont: 3506 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Világos, magas lányszoprán</div>
@@ -531,13 +547,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional agency casting headshot of a talented 10-year-old Hungarian child actress. She has radiant, expressive dark eyes, neatly styled shoulder-length brown hair, and a playful yet sharp, spirited expression. Natural clean skin texture, wearing a neat pastel blue knitted crewneck sweater. Looking directly into the camera, soft flattering studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional agency casting headshot of a talented 10-year-old Hungarian child actress. She has a petite, delicately slender 10-year-old girl's build with gentle, innocent posture, featuring radiant, expressive dark eyes, neatly styled shoulder-length brown hair, and a playful yet sharp, spirited expression. Natural clean skin texture, wearing a neat pastel blue knitted crewneck sweater. Looking directly into the camera, soft flattering studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Fiú" data-name="radó kristóf" data-desc="akaratos, metsző kamaszfiú (tenor), hirtelen teljes projekcióval" data-reg="tenor">
+    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Fiú" data-name="radó kristóf" data-desc="akaratos, metsző kamaszfiú (tenor), hirtelen teljes projekcióval" data-reg="tenor" data-morph="nyurga, inasodó, fejlődő ifjú alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Radó Kristóf.webp', 'Radó Kristóf', 'Akaratos, metsző kamaszfiú (tenor), hirtelen teljes projekcióval')" title="Kattints a nagyításhoz!">
@@ -551,6 +567,7 @@
             <span class="badge badge-cat">Gyerek / Tini</span>
             <span class="badge badge-gender">Fiú</span>
             <span class="badge badge-wpm">152.9 WPM</span>
+            <span class="badge badge-f0">🎙️ 249.1 Hz</span>
           </div>
           <div class="character-tagline">„Akaratos, metsző kamaszfiú (tenor), hirtelen teljes projekcióval”</div>
         </div>
@@ -564,8 +581,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Nyurga, inasodó, fejlődő ifjú alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Tenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>249.1 Hz</strong> &bull; Rezonancia arány: <strong>0.82x</strong> &bull; Súlypont: 3016 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Akaratos, metsző kamaszfiú</div>
@@ -585,13 +608,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional agency casting headshot of a striking 15-year-old Hungarian teen actor with defined facial features, intense expressive brown eyes, and a confident, determined demeanor. Neatly styled modern short haircut, clean skin texture, wearing a stylish dark green casual zip jacket over a black t-shirt. Clean studio lighting, simple neutral studio background with soft subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional agency casting headshot of a striking 15-year-old Hungarian teen actor with defined facial features, intense expressive brown eyes, and a confident, determined demeanor. He has a tall, wiry 15-year-old teen build with an angular jawline and alert posture, featuring neatly styled modern short haircut, clean skin texture, wearing a stylish dark green casual zip jacket over a black t-shirt. Clean studio lighting, simple neutral studio background with soft subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Lány" data-name="soltész boglárka" data-desc="tiszta, éles lányszoprán, hirtelen nyilvános felháborodással" data-reg="lányszoprán">
+    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Lány" data-name="soltész boglárka" data-desc="tiszta, éles lányszoprán, hirtelen nyilvános felháborodással" data-reg="lányszoprán" data-morph="nyúlánk, kecses kiskamasz leány alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Soltész Boglárka.webp', 'Soltész Boglárka', 'Tiszta, éles lányszoprán, hirtelen nyilvános felháborodással')" title="Kattints a nagyításhoz!">
@@ -605,6 +628,7 @@
             <span class="badge badge-cat">Gyerek / Tini</span>
             <span class="badge badge-gender">Lány</span>
             <span class="badge badge-wpm">147.9 WPM</span>
+            <span class="badge badge-f0">🎙️ 230.5 Hz</span>
           </div>
           <div class="character-tagline">„Tiszta, éles lányszoprán, hirtelen nyilvános felháborodással”</div>
         </div>
@@ -618,8 +642,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Nyúlánk, kecses kiskamasz leány alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Lányszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>230.5 Hz</strong> &bull; Rezonancia arány: <strong>0.61x</strong> &bull; Súlypont: 2933 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Tiszta, éles lányszoprán</div>
@@ -639,13 +669,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional agency casting headshot of an articulate 12-year-old Hungarian teen actress. She has thoughtful, clear eyes, well-groomed light brown hair styled neatly, and an open, emotionally responsive expression. Natural clean skin texture, wearing a warm cream-colored knit crewneck sweater. Professional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional agency casting headshot of an articulate 12-year-old Hungarian teen actress. She has a naturally slender, graceful 12-year-old adolescent build with poised posture, featuring thoughtful, clear eyes, well-groomed light brown hair styled neatly, and an open, emotionally responsive expression. Natural clean skin texture, wearing a warm cream-colored knit crewneck sweater. Professional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Fiú" data-name="somlyó bence" data-desc="világos, töretlen fiútenor, hirtelen dacos felszökéssel" data-reg="fiútenor">
+    <div class="actor-card" data-category="Gyerek / Tini" data-gender="Fiú" data-name="somlyó bence" data-desc="világos, töretlen fiútenor, hirtelen dacos felszökéssel" data-reg="fiútenor" data-morph="fürge, eleven, élénk tartású kisfiú alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Somlyó Bence.webp', 'Somlyó Bence', 'Világos, töretlen fiútenor, hirtelen dacos felszökéssel')" title="Kattints a nagyításhoz!">
@@ -659,6 +689,7 @@
             <span class="badge badge-cat">Gyerek / Tini</span>
             <span class="badge badge-gender">Fiú</span>
             <span class="badge badge-wpm">181.1 WPM</span>
+            <span class="badge badge-f0">🎙️ 193.3 Hz</span>
           </div>
           <div class="character-tagline">„Világos, töretlen fiútenor, hirtelen dacos felszökéssel”</div>
         </div>
@@ -672,8 +703,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Fürge, eleven, élénk tartású kisfiú alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Fiútenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>193.3 Hz</strong> &bull; Rezonancia arány: <strong>1.06x</strong> &bull; Súlypont: 2635 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Világos, töretlen fiútenor</div>
@@ -693,13 +730,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional agency casting headshot of a charming 10-year-old Hungarian child actor. He has bright, intelligent hazel eyes, neatly combed brown hair, and an alert, spirited expression with a subtle, confident half-smile. Natural clean skin texture, wearing a clean navy blue crewneck sweater over a white t-shirt. Direct gaze into the camera, studio portrait lighting, simple neutral studio background with soft subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional agency casting headshot of a charming 10-year-old Hungarian child actor. He has a lively, naturally energetic 10-year-old boy's build with upright, confident posture, featuring bright, intelligent hazel eyes, neatly combed brown hair, and an alert, spirited expression with a subtle, confident half-smile. Natural clean skin texture, wearing a clean navy blue crewneck sweater over a white t-shirt. Direct gaze into the camera, studio portrait lighting, simple neutral studio background with soft subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="bakos zétény" data-desc="nyers, füstös hangú lázadó fiatal" data-reg="bariton">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="bakos zétény" data-desc="nyers, füstös hangú lázadó fiatal" data-reg="bariton" data-morph="nyúlánk, szálkás, fürge fiatal alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Bakos Zétény.webp', 'Bakos Zétény', 'Nyers, füstös hangú lázadó fiatal')" title="Kattints a nagyításhoz!">
@@ -713,6 +750,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">160.4 WPM</span>
+            <span class="badge badge-f0">🎙️ 168.2 Hz</span>
           </div>
           <div class="character-tagline">„Nyers, füstös hangú lázadó fiatal”</div>
         </div>
@@ -726,8 +764,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Nyúlánk, szálkás, fürge fiatal alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>168.2 Hz</strong> &bull; Rezonancia arány: <strong>0.59x</strong> &bull; Súlypont: 3146 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Nyers</div>
@@ -747,13 +791,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a charismatic 22-year-old Hungarian actor with sharp jawline, intense dark eyes, and a confident, brooding gaze. Cleanly groomed modern dark hair and neat, light five-o'clock shadow. Wearing a stylish dark denim jacket over a charcoal crewneck shirt. Clean high-fashion studio portrait lighting, simple neutral studio background with soft subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a charismatic 22-year-old Hungarian actor with sharp jawline, intense dark eyes, and a confident, brooding gaze. He has a tall, slender, lithe build with an elegant neck, high cheekbones, and energetic posture, featuring cleanly groomed modern dark hair and neat, light five-o'clock shadow. Wearing a stylish dark denim jacket over a charcoal crewneck shirt. Clean high-fashion studio portrait lighting, simple neutral studio background with soft subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="barna vince" data-desc="nyers, dörgő hangú fiatal expedícióvezető (bariton)" data-reg="bariton">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="barna vince" data-desc="nyers, dörgő hangú fiatal expedícióvezető (bariton)" data-reg="bariton" data-morph="nyúlánk, szálkás, fürge fiatal alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Barna Vince.webp', 'Barna Vince', 'Nyers, dörgő hangú fiatal expedícióvezető (bariton)')" title="Kattints a nagyításhoz!">
@@ -767,6 +811,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">151.8 WPM</span>
+            <span class="badge badge-f0">🎙️ 141.0 Hz</span>
           </div>
           <div class="character-tagline">„Nyers, dörgő hangú fiatal expedícióvezető (bariton)”</div>
         </div>
@@ -780,8 +825,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Nyúlánk, szálkás, fürge fiatal alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>141.0 Hz</strong> &bull; Rezonancia arány: <strong>0.69x</strong> &bull; Súlypont: 3065 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Nyers</div>
@@ -801,13 +852,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a handsome, athletic 28-year-old Hungarian actor. He has strong bone structure, deep warm eyes with a calm, stoic presence, and neatly trimmed short beard and styled hair. Wearing a structured dark brown field jacket over a charcoal henley shirt. Polished studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a handsome, athletic 28-year-old Hungarian actor. He has a tall, slender, lithe build with an elegant neck, high cheekbones, and energetic posture, featuring strong bone structure, deep warm eyes with a calm, stoic presence, and neatly trimmed short beard and styled hair. Wearing a structured dark brown field jacket over a charcoal henley shirt. Polished studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="dobos marcell" data-desc="hiperéber, villámgyors fiatal technikus (tenor)" data-reg="tenor">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="dobos marcell" data-desc="hiperéber, villámgyors fiatal technikus (tenor)" data-reg="tenor" data-morph="arányos, lendületes, szálkás fiatal alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Dobos Marcell.webp', 'Dobos Marcell', 'Hiperéber, villámgyors fiatal technikus (tenor)')" title="Kattints a nagyításhoz!">
@@ -821,6 +872,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">146.1 WPM</span>
+            <span class="badge badge-f0">🎙️ 180.4 Hz</span>
           </div>
           <div class="character-tagline">„Hiperéber, villámgyors fiatal technikus (tenor)”</div>
         </div>
@@ -834,8 +886,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Arányos, lendületes, szálkás fiatal alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Tenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>180.4 Hz</strong> &bull; Rezonancia arány: <strong>0.93x</strong> &bull; Súlypont: 2955 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Hiperéber</div>
@@ -855,13 +913,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an intelligent 24-year-old Hungarian actor with keen, inquisitive eyes and an energetic, expressive demeanor. Neatly styled short brown hair and clean-shaven face. Wearing a minimalist dark grey zip-up cardigan over a crisp white crewneck. Direct engaging gaze, sharp studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an intelligent 24-year-old Hungarian actor with keen, inquisitive eyes and an energetic, expressive demeanor. He has a athletic, well-proportioned young build with defined shoulders and alert posture, featuring neatly styled short brown hair and clean-shaven face. Wearing a minimalist dark grey zip-up cardigan over a crisp white crewneck. Direct engaging gaze, sharp studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="gálffy míra" data-desc="száraz, szikár, kemény fiatal fejvadász" data-reg="mezzoszoprán">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="gálffy míra" data-desc="száraz, szikár, kemény fiatal fejvadász" data-reg="mezzoszoprán" data-morph="filigrán, kecses, törékeny fiatal leány alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Gálffy Míra.webp', 'Gálffy Míra', 'Száraz, szikár, kemény fiatal fejvadász')" title="Kattints a nagyításhoz!">
@@ -875,6 +933,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">160.5 WPM</span>
+            <span class="badge badge-f0">🎙️ 245.3 Hz</span>
           </div>
           <div class="character-tagline">„Száraz, szikár, kemény fiatal fejvadász”</div>
         </div>
@@ -888,8 +947,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Filigrán, kecses, törékeny fiatal leány alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Mezzoszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>245.3 Hz</strong> &bull; Rezonancia arány: <strong>0.63x</strong> &bull; Súlypont: 2934 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Száraz, szikár</div>
@@ -909,13 +974,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a striking 26-year-old Hungarian actress with chiseled cheekbones, piercing hazel eyes, and a confident, focused expression. Sleek, neatly styled dark hair pulled back behind the ears. Wearing a tailored black leather jacket over a modest high-neck top. Flattering cinematic studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a striking 26-year-old Hungarian actress with chiseled cheekbones, piercing hazel eyes, and a confident, focused expression. She has a petite, gracefully slender build with a delicate neck and refined, fine-boned features, featuring sleek, neatly styled dark hair pulled back behind the ears. Wearing a tailored black leather jacket over a modest high-neck top. Flattering cinematic studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="kardos kinga" data-desc="száraz, szikár, kemény fiatal fejvadász" data-reg="mezzoszoprán">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="kardos kinga" data-desc="száraz, szikár, kemény fiatal fejvadász" data-reg="mezzoszoprán" data-morph="magas, szoborszerűen vonzó, mély tónusú elegáns női alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Kardos Kinga.webp', 'Kardos Kinga', 'Száraz, szikár, kemény fiatal fejvadász')" title="Kattints a nagyításhoz!">
@@ -929,6 +994,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">138.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 204.8 Hz</span>
           </div>
           <div class="character-tagline">„Száraz, szikár, kemény fiatal fejvadász”</div>
         </div>
@@ -942,8 +1008,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Magas, szoborszerűen vonzó, mély tónusú elegáns női alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Mezzoszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>204.8 Hz</strong> &bull; Rezonancia arány: <strong>1.53x</strong> &bull; Súlypont: 2518 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Száraz, szikár</div>
@@ -963,13 +1035,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an athletic, beautiful 27-year-old Hungarian actress. She has intense, intelligent dark eyes, elegant facial structure, and a confident, poised expression. Neatly brushed dark hair falling over her shoulders. Wearing a minimalist dark charcoal button-down utility shirt with a neat collar. Studio portrait key light, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an athletic, beautiful 27-year-old Hungarian actress. She has a tall, statuesque, curvaceously elegant frame with refined collarbones, poised neck, and commanding presence, featuring intense, intelligent dark eyes, elegant facial structure, and a confident, poised expression. Neatly brushed dark hair falling over her shoulders. Wearing a minimalist dark charcoal button-down utility shirt with a neat collar. Studio portrait key light, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="köves márk" data-desc="nyers, dörgő hangú fiatal expedícióvezető (bariton)" data-reg="bariton">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="köves márk" data-desc="nyers, dörgő hangú fiatal expedícióvezető (bariton)" data-reg="bariton" data-morph="széles vállú, robusztus fiatal expedícióvezető alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Köves Márk.webp', 'Köves Márk', 'Nyers, dörgő hangú fiatal expedícióvezető (bariton)')" title="Kattints a nagyításhoz!">
@@ -983,6 +1055,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">139.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 118.5 Hz</span>
           </div>
           <div class="character-tagline">„Nyers, dörgő hangú fiatal expedícióvezető (bariton)”</div>
         </div>
@@ -996,8 +1069,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Széles vállú, robusztus fiatal expedícióvezető alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>118.5 Hz</strong> &bull; Rezonancia arány: <strong>1.33x</strong> &bull; Súlypont: 2539 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Nyers</div>
@@ -1017,13 +1096,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a ruggedly handsome 27-year-old Hungarian actor. He has deep-set brown eyes with a grounded, commanding gaze, and a neatly groomed short beard and combed hair. Wearing a dark olive-green casual jacket over a dark crewneck. Crisp studio lighting, simple neutral studio background with subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a ruggedly handsome 27-year-old Hungarian actor. He has a powerfully built, broad-shouldered athletic frame with a strong neck and commanding, rugged posture, featuring deep-set brown eyes with a grounded, commanding gaze, and a neatly groomed short beard and combed hair. Wearing a dark olive-green casual jacket over a dark crewneck. Crisp studio lighting, simple neutral studio background with subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="lestyán hédi" data-desc="könnyű, szúró játékosságú szoprán, hirtelen éles visszautasítással" data-reg="szoprán">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="lestyán hédi" data-desc="könnyű, szúró játékosságú szoprán, hirtelen éles visszautasítással" data-reg="szoprán" data-morph="filigrán, kecses, törékeny fiatal leány alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Lestyán Hédi.webp', 'Lestyán Hédi', 'Könnyű, szúró játékosságú szoprán, hirtelen éles visszautasítással')" title="Kattints a nagyításhoz!">
@@ -1037,6 +1116,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">146.7 WPM</span>
+            <span class="badge badge-f0">🎙️ 265.4 Hz</span>
           </div>
           <div class="character-tagline">„Könnyű, szúró játékosságú szoprán, hirtelen éles visszautasítással”</div>
         </div>
@@ -1050,8 +1130,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Filigrán, kecses, törékeny fiatal leány alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Szoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>265.4 Hz</strong> &bull; Rezonancia arány: <strong>0.7x</strong> &bull; Súlypont: 3537 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Könnyű, szúró játékosságú szoprán</div>
@@ -1071,13 +1157,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a charming, expressive 23-year-old Hungarian actress. She has sparkling green eyes, a subtle playful smirk, and beautifully styled, healthy brown hair. Natural luminous skin texture, wearing a stylish maroon knit sweater. Direct, captivating camera gaze, soft studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a charming, expressive 23-year-old Hungarian actress. She has a petite, gracefully slender build with a delicate neck and refined, fine-boned features, featuring sparkling green eyes, a subtle playful smirk, and beautifully styled, healthy brown hair. Natural luminous skin texture, wearing a stylish maroon knit sweater. Direct, captivating camera gaze, soft studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="murányi flóra" data-desc="lágy, intim leányhang – hirtelen kétségbeesett könyörgéssel" data-reg="mezzoszoprán">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="murányi flóra" data-desc="lágy, intim leányhang – hirtelen kétségbeesett könyörgéssel" data-reg="mezzoszoprán" data-morph="filigrán, kecses, törékeny fiatal leány alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Murányi Flóra.webp', 'Murányi Flóra', 'Lágy, intim leányhang – hirtelen kétségbeesett könyörgéssel')" title="Kattints a nagyításhoz!">
@@ -1091,6 +1177,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">149.4 WPM</span>
+            <span class="badge badge-f0">🎙️ 278.0 Hz</span>
           </div>
           <div class="character-tagline">„Lágy, intim leányhang – hirtelen kétségbeesett könyörgéssel”</div>
         </div>
@@ -1104,8 +1191,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Filigrán, kecses, törékeny fiatal leány alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Mezzoszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>278.0 Hz</strong> &bull; Rezonancia arány: <strong>0.7x</strong> &bull; Súlypont: 3422 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Lágy, intim leányhang</div>
@@ -1125,13 +1218,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a delicate, beautiful 22-year-old Hungarian actress with large, emotive blue eyes and soft, refined facial features. Neatly styled, wavy auburn hair. Her expression blends gentle warmth with poignant emotional depth. Wearing a soft lavender knit cardigan over a modest white blouse. Flattering studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a delicate, beautiful 22-year-old Hungarian actress with large, emotive blue eyes and soft, refined facial features. She has a petite, gracefully slender build with a delicate neck and refined, fine-boned features, featuring neatly styled, wavy auburn hair. Her expression blends gentle warmth with poignant emotional depth. Wearing a soft lavender knit cardigan over a modest white blouse. Flattering studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="pálmai dániel" data-desc="előretolt, nyílt lírai tenor, hirtelen vallomással" data-reg="lírai tenor">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="pálmai dániel" data-desc="előretolt, nyílt lírai tenor, hirtelen vallomással" data-reg="lírai tenor" data-morph="arányos, lendületes, szálkás fiatal alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Pálmai Dániel.webp', 'Pálmai Dániel', 'Előretolt, nyílt lírai tenor, hirtelen vallomással')" title="Kattints a nagyításhoz!">
@@ -1145,6 +1238,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">163.1 WPM</span>
+            <span class="badge badge-f0">🎙️ 141.8 Hz</span>
           </div>
           <div class="character-tagline">„Előretolt, nyílt lírai tenor, hirtelen vallomással”</div>
         </div>
@@ -1158,8 +1252,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Arányos, lendületes, szálkás fiatal alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Lírai tenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>141.8 Hz</strong> &bull; Rezonancia arány: <strong>1.07x</strong> &bull; Súlypont: 3073 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Előretolt, nyílt lírai tenor</div>
@@ -1179,13 +1279,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a handsome 25-year-old Hungarian romantic lead actor. He has sensitive, luminous dark eyes, sculpted jawline, and neatly combed dark hair. His expression radiates sincere emotional availability and charisma. Wearing an elegant black turtleneck sweater. Studio headshot portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a handsome 25-year-old Hungarian romantic lead actor. He has a athletic, well-proportioned young build with defined shoulders and alert posture, featuring sensitive, luminous dark eyes, sculpted jawline, and neatly combed dark hair. His expression radiates sincere emotional availability and charisma. Wearing an elegant black turtleneck sweater. Studio headshot portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="varga gergő" data-desc="nyers, füstös hangú lázadó fiatal" data-reg="bariton">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Férfi" data-name="varga gergő" data-desc="nyers, füstös hangú lázadó fiatal" data-reg="bariton" data-morph="izmos, széles vállú, feszes katonás felépítés">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Varga Gergő.webp', 'Varga Gergő', 'Nyers, füstös hangú lázadó fiatal')" title="Kattints a nagyításhoz!">
@@ -1199,6 +1299,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">142.1 WPM</span>
+            <span class="badge badge-f0">🎙️ 129.3 Hz</span>
           </div>
           <div class="character-tagline">„Nyers, füstös hangú lázadó fiatal”</div>
         </div>
@@ -1212,8 +1313,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Izmos, széles vállú, feszes katonás felépítés</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>129.3 Hz</strong> &bull; Rezonancia arány: <strong>1.54x</strong> &bull; Súlypont: 2678 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Nyers</div>
@@ -1233,13 +1340,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a cool 23-year-old Hungarian actor with sharp facial features, piercing eyes, and an edgy, confident gaze. Cleanly groomed modern fade haircut with light, neat stubble. Wearing a dark casual cotton bomber jacket over a black t-shirt. High-contrast studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a cool 23-year-old Hungarian actor with sharp facial features, piercing eyes, and an edgy, confident gaze. He has a broad-shouldered, muscular athletic frame with a thick neck and disciplined, upright military posture, featuring cleanly groomed modern fade haircut with light, neat stubble. Wearing a dark casual cotton bomber jacket over a black t-shirt. High-contrast studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="vargha janka" data-desc="fürge, szellemes, csillogó hangú fiatal felderítő" data-reg="mezzoszoprán">
+    <div class="actor-card" data-category="Fiatal (20-30)" data-gender="Nő" data-name="vargha janka" data-desc="fürge, szellemes, csillogó hangú fiatal felderítő" data-reg="mezzoszoprán" data-morph="filigrán, kecses, törékeny fiatal leány alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Vargha Janka.webp', 'Vargha Janka', 'Fürge, szellemes, csillogó hangú fiatal felderítő')" title="Kattints a nagyításhoz!">
@@ -1253,6 +1360,7 @@
             <span class="badge badge-cat">Fiatal (20-30)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">155.2 WPM</span>
+            <span class="badge badge-f0">🎙️ 287.1 Hz</span>
           </div>
           <div class="character-tagline">„Fürge, szellemes, csillogó hangú fiatal felderítő”</div>
         </div>
@@ -1266,8 +1374,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Filigrán, kecses, törékeny fiatal leány alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Mezzoszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>287.1 Hz</strong> &bull; Rezonancia arány: <strong>0.51x</strong> &bull; Súlypont: 3215 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Fürge, szellemes</div>
@@ -1287,13 +1401,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an energetic, witty 25-year-old Hungarian actress. She has vibrant, sparkling eyes, a radiant knowing smile, and neatly styled dark hair. Natural clean skin texture, wearing a dark teal button-down casual shirt with open collar. Bright, clean studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an energetic, witty 25-year-old Hungarian actress. She has a petite, gracefully slender build with a delicate neck and refined, fine-boned features, featuring vibrant, sparkling eyes, a radiant knowing smile, and neatly styled dark hair. Natural clean skin texture, wearing a dark teal button-down casual shirt with open collar. Bright, clean studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="balla dorottya" data-desc="jeges, fémes csillogású vállalati igazgatónő (alt)" data-reg="alt">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="balla dorottya" data-desc="jeges, fémes csillogású vállalati igazgatónő (alt)" data-reg="alt" data-morph="karcsú, harmonikus, arányos felépítés">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Balla Dorottya.webp', 'Balla Dorottya', 'Jeges, fémes csillogású vállalati igazgatónő (alt)')" title="Kattints a nagyításhoz!">
@@ -1307,6 +1421,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">167.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 224.7 Hz</span>
           </div>
           <div class="character-tagline">„Jeges, fémes csillogású vállalati igazgatónő (alt)”</div>
         </div>
@@ -1320,8 +1435,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Karcsú, harmonikus, arányos felépítés</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Alt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>224.7 Hz</strong> &bull; Rezonancia arány: <strong>0.74x</strong> &bull; Súlypont: 2817 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Jeges</div>
@@ -1341,13 +1462,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a striking, elegant 42-year-old Hungarian actress with aristocratic facial features, piercing green eyes, and a sophisticated, commanding aura. Sleek, neatly styled dark hair. Natural skin texture, wearing a tailored charcoal corporate blazer over a silk high-neck blouse. Refined studio lighting, simple neutral studio background with soft subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a striking, elegant 42-year-old Hungarian actress with aristocratic facial features, piercing green eyes, and a sophisticated, commanding aura. She has a slender, harmoniously proportioned build with an elegant neck and poised, confident posture, featuring sleek, neatly styled dark hair. Natural skin texture, wearing a tailored charcoal corporate blazer over a silk high-neck blouse. Refined studio lighting, simple neutral studio background with soft subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="bolyky zoltán" data-desc="kapkodó, ideges tenor, hirtelen éles felszökéssel" data-reg="tenor">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="bolyky zoltán" data-desc="kapkodó, ideges tenor, hirtelen éles felszökéssel" data-reg="tenor" data-morph="szálkás, fegyelmezett, sportos intellektuális alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Bolyky Zoltán.webp', 'Bolyky Zoltán', 'Kapkodó, ideges tenor, hirtelen éles felszökéssel')" title="Kattints a nagyításhoz!">
@@ -1361,6 +1482,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">206.7 WPM</span>
+            <span class="badge badge-f0">🎙️ 115.8 Hz</span>
           </div>
           <div class="character-tagline">„Kapkodó, ideges tenor, hirtelen éles felszökéssel”</div>
         </div>
@@ -1374,8 +1496,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szálkás, fegyelmezett, sportos intellektuális alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Tenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>115.8 Hz</strong> &bull; Rezonancia arány: <strong>0.85x</strong> &bull; Súlypont: 2577 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Kapkodó, ideges tenor</div>
@@ -1395,13 +1523,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an articulate 36-year-old Hungarian actor with expressive, lively dark eyes and an intense, quick-witted presence. Cleanly groomed short hair and a thoughtful, engaging gaze. Wearing a fitted dark grey button-up dress shirt with a neat collar. Clean studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an articulate 36-year-old Hungarian actor with expressive, lively dark eyes and an intense, quick-witted presence. He has a athletic, lean, disciplined build with a strong chiseled jawline and upright posture, featuring cleanly groomed short hair and a thoughtful, engaging gaze. Wearing a fitted dark grey button-up dress shirt with a neat collar. Clean studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="hegedűs milán" data-desc="fojtott, mikrofonközeli suttogó cinkos" data-reg="bariton">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="hegedűs milán" data-desc="fojtott, mikrofonközeli suttogó cinkos" data-reg="bariton" data-morph="szikár, diszkrét megfigyelő férfialkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Hegedűs Milán.webp', 'Hegedűs Milán', 'Fojtott, mikrofonközeli suttogó cinkos')" title="Kattints a nagyításhoz!">
@@ -1415,6 +1543,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">167.5 WPM</span>
+            <span class="badge badge-f0">🎙️ 135.2 Hz</span>
           </div>
           <div class="character-tagline">„Fojtott, mikrofonközeli suttogó cinkos”</div>
         </div>
@@ -1428,8 +1557,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, diszkrét megfigyelő férfialkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>135.2 Hz</strong> &bull; Rezonancia arány: <strong>0.46x</strong> &bull; Súlypont: 2927 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Fojtott</div>
@@ -1449,13 +1584,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an intriguing 38-year-old Hungarian actor with brooding, observant hazel eyes and a subtle enigmatic smile. Neatly trimmed dark hair and tidy short beard. Wearing a sleek dark charcoal blazer over a black crewneck top. Moody, elegant studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an intriguing 38-year-old Hungarian actor with brooding, observant hazel eyes and a subtle enigmatic smile. He has a slender, lean, discreet build with an observant posture and quiet presence, featuring neatly trimmed dark hair and tidy short beard. Wearing a sleek dark charcoal blazer over a black crewneck top. Moody, elegant studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="holló blanka" data-desc="ziháló, rettegő túlélő – valódi hisztérikus pánikkitöréssel" data-reg="mezzoszoprán">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="holló blanka" data-desc="ziháló, rettegő túlélő – valódi hisztérikus pánikkitöréssel" data-reg="mezzoszoprán" data-morph="karcsú, finom csontozatú, légies alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Holló Blanka.webp', 'Holló Blanka', 'Ziháló, rettegő túlélő – valódi hisztérikus pánikkitöréssel')" title="Kattints a nagyításhoz!">
@@ -1469,6 +1604,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">154.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 271.3 Hz</span>
           </div>
           <div class="character-tagline">„Ziháló, rettegő túlélő – valódi hisztérikus pánikkitöréssel”</div>
         </div>
@@ -1482,8 +1618,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Karcsú, finom csontozatú, légies alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Mezzoszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>271.3 Hz</strong> &bull; Rezonancia arány: <strong>0.39x</strong> &bull; Súlypont: 2869 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Ziháló, rettegő túlélő</div>
@@ -1503,13 +1645,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a deeply emotive 35-year-old Hungarian dramatic actress. She has large, soulful brown eyes capable of profound psychological intensity, refined cheekbones, and neatly styled dark hair. Wearing a dark woolen crewneck sweater. Soft, expressive studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a deeply emotive 35-year-old Hungarian dramatic actress. She has a slender, graceful build with delicate collarbones, swan-like neck, and poised posture, featuring large, soulful brown eyes capable of profound psychological intensity, refined cheekbones, and neatly styled dark hair. Wearing a dark woolen crewneck sweater. Soft, expressive studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="lantos alíz" data-desc="drámai, lélegzetelállító krónikás (mezzoszoprán)" data-reg="mezzoszoprán">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="lantos alíz" data-desc="drámai, lélegzetelállító krónikás (mezzoszoprán)" data-reg="mezzoszoprán" data-morph="magas, szoborszerű, határozott orvosi kiállású alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Lantos Alíz.webp', 'Lantos Alíz', 'Drámai, lélegzetelállító krónikás (mezzoszoprán)')" title="Kattints a nagyításhoz!">
@@ -1523,6 +1665,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">141.3 WPM</span>
+            <span class="badge badge-f0">🎙️ 195.0 Hz</span>
           </div>
           <div class="character-tagline">„Drámai, lélegzetelállító krónikás (mezzoszoprán)”</div>
         </div>
@@ -1536,8 +1679,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Magas, szoborszerű, határozott orvosi kiállású alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Mezzoszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>195.0 Hz</strong> &bull; Rezonancia arány: <strong>1.33x</strong> &bull; Súlypont: 3345 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Drámai</div>
@@ -1557,13 +1706,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a majestic, poised 38-year-old Hungarian actress. She has intense, intelligent dark eyes, noble bone structure, and sophisticated dark hair styled in soft waves. Radiates dramatic presence and gravitas. Wearing an elegant dark plum blazer over an understated black top. Polished studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a majestic, poised 38-year-old Hungarian actress. She has a tall, poised, statuesque build with elegant shoulders, defined neck, and authoritative posture, featuring intense, intelligent dark eyes, noble bone structure, and sophisticated dark hair styled in soft waves. Radiates dramatic presence and gravitas. Wearing an elegant dark plum blazer over an understated black top. Polished studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="ormay szilvia" data-desc="türelmetlenül kérdező világos szoprán, hirtelen felháborodással" data-reg="szoprán">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Nő" data-name="ormay szilvia" data-desc="türelmetlenül kérdező világos szoprán, hirtelen felháborodással" data-reg="szoprán" data-morph="karcsú, finom csontozatú, légies alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Ormay Szilvia.webp', 'Ormay Szilvia', 'Türelmetlenül kérdező világos szoprán, hirtelen felháborodással')" title="Kattints a nagyításhoz!">
@@ -1577,6 +1726,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">164.5 WPM</span>
+            <span class="badge badge-f0">🎙️ 271.0 Hz</span>
           </div>
           <div class="character-tagline">„Türelmetlenül kérdező világos szoprán, hirtelen felháborodással”</div>
         </div>
@@ -1590,8 +1740,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Karcsú, finom csontozatú, légies alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Szoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>271.0 Hz</strong> &bull; Rezonancia arány: <strong>0.7x</strong> &bull; Súlypont: 2927 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Türelmetlenül kérdező világos szoprán</div>
@@ -1611,13 +1767,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a dynamic 36-year-old Hungarian actress with clear, assertive hazel eyes and a sharp, inquisitive expression. Neatly styled blonde hair framing a confident, photogenic face. Wearing a structured navy blazer over a cream blouse. Clean, bright studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a dynamic 36-year-old Hungarian actress with clear, assertive hazel eyes and a sharp, inquisitive expression. She has a slender, graceful build with delicate collarbones, swan-like neck, and poised posture, featuring neatly styled blonde hair framing a confident, photogenic face. Wearing a structured navy blazer over a cream blouse. Clean, bright studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="perjés andrás" data-desc="fojtott, nyugtalan meleg bariton, hirtelen erkölcsi kitöréssel" data-reg="bariton">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="perjés andrás" data-desc="fojtott, nyugtalan meleg bariton, hirtelen erkölcsi kitöréssel" data-reg="bariton" data-morph="robusztus, mély mellkasú, széles vállú férfialkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Perjés András.webp', 'Perjés András', 'Fojtott, nyugtalan meleg bariton, hirtelen erkölcsi kitöréssel')" title="Kattints a nagyításhoz!">
@@ -1631,6 +1787,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">130.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 121.9 Hz</span>
           </div>
           <div class="character-tagline">„Fojtott, nyugtalan meleg bariton, hirtelen erkölcsi kitöréssel”</div>
         </div>
@@ -1644,8 +1801,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Robusztus, mély mellkasú, széles vállú férfialkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>121.9 Hz</strong> &bull; Rezonancia arány: <strong>1.0x</strong> &bull; Súlypont: 2913 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Fojtott, nyugtalan meleg bariton</div>
@@ -1665,13 +1828,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished 40-year-old Hungarian actor with warm, soulful brown eyes and an earnest, morally grounded presence. Well-groomed short hair and light, tidy stubble. Wearing a tailored navy blazer over a light blue collared shirt. Soft, dimensional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished 40-year-old Hungarian actor with warm, soulful brown eyes and an earnest, morally grounded presence. He has a broad-shouldered, barrel-chested build with a sturdy muscular neck and solid, grounded posture, featuring well-groomed short hair and light, tidy stubble. Wearing a tailored navy blazer over a light blue collared shirt. Soft, dimensional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="váradi kornél" data-desc="fókuszált profi krízisirányító" data-reg="bariton">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="váradi kornél" data-desc="fókuszált profi krízisirányító" data-reg="bariton" data-morph="arányos, lendületes, sportos férfialkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Váradi Kornél.webp', 'Váradi Kornél', 'Fókuszált profi krízisirányító')" title="Kattints a nagyításhoz!">
@@ -1685,6 +1848,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">144.5 WPM</span>
+            <span class="badge badge-f0">🎙️ 145.1 Hz</span>
           </div>
           <div class="character-tagline">„Fókuszált profi krízisirányító”</div>
         </div>
@@ -1698,8 +1862,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Arányos, lendületes, sportos férfialkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>145.1 Hz</strong> &bull; Rezonancia arány: <strong>1.0x</strong> &bull; Súlypont: 2522 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Fókuszált profi krízisirányító</div>
@@ -1719,13 +1889,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an authoritative 42-year-old Hungarian actor with sharp, focused gaze and strong, mature facial features. Cleanly combed salt-and-pepper hair and clean-shaven face, exuding disciplined leadership. Wearing a formal charcoal suit jacket with an ironed white collared shirt. Crisp studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an authoritative 42-year-old Hungarian actor with sharp, focused gaze and strong, mature facial features. He has a athletic, well-proportioned build with defined shoulders and alert posture, featuring cleanly combed salt-and-pepper hair and clean-shaven face, exuding disciplined leadership. Wearing a formal charcoal suit jacket with an ironed white collared shirt. Crisp studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="záborszky olivér" data-desc="ragadozó, bársonyos, jeges fenyegetés (bariton)" data-reg="bariton">
+    <div class="actor-card" data-category="Felnőtt (30-45)" data-gender="Férfi" data-name="záborszky olivér" data-desc="ragadozó, bársonyos, jeges fenyegetés (bariton)" data-reg="bariton" data-morph="nyúlánk, elegáns, predátori tartású férfialkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Záborszky Olivér.webp', 'Záborszky Olivér', 'Ragadozó, bársonyos, jeges fenyegetés (bariton)')" title="Kattints a nagyításhoz!">
@@ -1739,6 +1909,7 @@
             <span class="badge badge-cat">Felnőtt (30-45)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">145.3 WPM</span>
+            <span class="badge badge-f0">🎙️ 145.2 Hz</span>
           </div>
           <div class="character-tagline">„Ragadozó, bársonyos, jeges fenyegetés (bariton)”</div>
         </div>
@@ -1752,8 +1923,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Nyúlánk, elegáns, predátori tartású férfialkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>145.2 Hz</strong> &bull; Rezonancia arány: <strong>0.53x</strong> &bull; Súlypont: 2795 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Ragadozó, bársonyos</div>
@@ -1773,13 +1950,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a handsome, magnetic 39-year-old Hungarian actor with sharp jawline, cold calculating grey eyes, and a charismatic, dangerous smirk. Sleek, neatly combed dark hair. Wearing a tailored midnight-blue blazer over a fine black turtleneck. High-end cinematic studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a handsome, magnetic 39-year-old Hungarian actor with sharp jawline, cold calculating grey eyes, and a charismatic, dangerous smirk. He has a tall, lean, elegant predatory build with an immaculate neck, sharp jawline, and poised presence, featuring sleek, neatly combed dark hair. Wearing a tailored midnight-blue blazer over a fine black turtleneck. High-end cinematic studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="berkes kamilla" data-desc="ostorcsapásszerű, metsző felügyelőnő (alt)" data-reg="alt">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="berkes kamilla" data-desc="ostorcsapásszerű, metsző felügyelőnő (alt)" data-reg="alt" data-morph="szikár, inas, feszült tartású érett alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Berkes Kamilla.webp', 'Berkes Kamilla', 'Ostorcsapásszerű, metsző felügyelőnő (alt)')" title="Kattints a nagyításhoz!">
@@ -1793,6 +1970,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">153.6 WPM</span>
+            <span class="badge badge-f0">🎙️ 269.5 Hz</span>
           </div>
           <div class="character-tagline">„Ostorcsapásszerű, metsző felügyelőnő (alt)”</div>
         </div>
@@ -1806,8 +1984,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, inas, feszült tartású érett alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Alt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>269.5 Hz</strong> &bull; Rezonancia arány: <strong>0.28x</strong> &bull; Súlypont: 2955 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Ostorcsapásszerű</div>
@@ -1827,13 +2011,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an imposing 52-year-old Hungarian veteran actress. She has razor-sharp facial features, piercing steel-blue eyes, and an expression of formidable intelligence and authority. Elegantly styled, pulled-back silver-streaked hair. Wearing a crisp dark charcoal uniform-style blazer with high lapels. Powerful studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an imposing 52-year-old Hungarian veteran actress. She has a lean, wiry, tense mature frame with a slender neck and sharp, taut posture, featuring razor-sharp facial features, piercing steel-blue eyes, and an expression of formidable intelligence and authority. Elegantly styled, pulled-back silver-streaked hair. Wearing a crisp dark charcoal uniform-style blazer with high lapels. Powerful studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="bérczy valéria" data-desc="ostorcsapásszerű, metsző felügyelőnő (alt)" data-reg="alt">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="bérczy valéria" data-desc="ostorcsapásszerű, metsző felügyelőnő (alt)" data-reg="alt" data-morph="szoborszerű, határozott, érett női alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Bérczy Valéria.webp', 'Bérczy Valéria', 'Ostorcsapásszerű, metsző felügyelőnő (alt)')" title="Kattints a nagyításhoz!">
@@ -1847,6 +2031,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">128.8 WPM</span>
+            <span class="badge badge-f0">🎙️ 219.1 Hz</span>
           </div>
           <div class="character-tagline">„Ostorcsapásszerű, metsző felügyelőnő (alt)”</div>
         </div>
@@ -1860,8 +2045,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szoborszerű, határozott, érett női alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Alt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>219.1 Hz</strong> &bull; Rezonancia arány: <strong>1.44x</strong> &bull; Súlypont: 2480 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Ostorcsapásszerű</div>
@@ -1881,13 +2072,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a dignified 50-year-old Hungarian actress with sharp aristocratic features and a piercing, evaluating gaze. Sophisticated grey-tinted dark hair styled neatly. Wearing a tailored dark navy suit blazer over a modest white blouse. Balanced professional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a dignified 50-year-old Hungarian actress with sharp aristocratic features and a piercing, evaluating gaze. She has a tall, statuesque mature build with elegant shoulders, defined neck, and poised presence, featuring sophisticated grey-tinted dark hair styled neatly. Wearing a tailored dark navy suit blazer over a modest white blouse. Balanced professional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="csergő bertalan" data-desc="türelmetlen, nyomó érett bariton, hirtelen nagy erejű utasítással" data-reg="bariton">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="csergő bertalan" data-desc="türelmetlen, nyomó érett bariton, hirtelen nagy erejű utasítással" data-reg="bariton" data-morph="szikár, szálkás, határozott tartású érett alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Csergő Bertalan.webp', 'Csergő Bertalan', 'Türelmetlen, nyomó érett bariton, hirtelen nagy erejű utasítással')" title="Kattints a nagyításhoz!">
@@ -1901,6 +2092,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">133.8 WPM</span>
+            <span class="badge badge-f0">🎙️ 162.8 Hz</span>
           </div>
           <div class="character-tagline">„Türelmetlen, nyomó érett bariton, hirtelen nagy erejű utasítással”</div>
         </div>
@@ -1914,8 +2106,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, szálkás, határozott tartású érett alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>162.8 Hz</strong> &bull; Rezonancia arány: <strong>0.77x</strong> &bull; Súlypont: 3793 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Türelmetlen, nyomó érett bariton</div>
@@ -1935,13 +2133,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a commanding 52-year-old Hungarian actor with robust, weathered facial features and penetrating, decisive eyes. Well-trimmed salt-and-pepper beard and combed hair. Wearing a heavy wool cardigan over an ironed oxford shirt. Rich, warm studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a commanding 52-year-old Hungarian actor with robust, weathered facial features and penetrating, decisive eyes. He has a lean, wiry mature build with high cheekbones, defined neck, and focused posture, featuring well-trimmed salt-and-pepper beard and combed hair. Wearing a heavy wool cardigan over an ironed oxford shirt. Rich, warm studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="deme ágoston" data-desc="epekedő, szarkasztikus professzor – teátrális felháborodással" data-reg="tenor">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="deme ágoston" data-desc="epekedő, szarkasztikus professzor – teátrális felháborodással" data-reg="tenor" data-morph="szikár, szálkás, határozott tartású érett alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Deme Ágoston.webp', 'Deme Ágoston', 'Epekedő, szarkasztikus professzor – teátrális felháborodással')" title="Kattints a nagyításhoz!">
@@ -1955,6 +2153,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">134.5 WPM</span>
+            <span class="badge badge-f0">🎙️ 173.6 Hz</span>
           </div>
           <div class="character-tagline">„Epekedő, szarkasztikus professzor – teátrális felháborodással”</div>
         </div>
@@ -1968,8 +2167,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, szálkás, határozott tartású érett alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Tenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>173.6 Hz</strong> &bull; Rezonancia arány: <strong>0.79x</strong> &bull; Súlypont: 2814 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Epekedő, szarkasztikus professzor</div>
@@ -1989,13 +2194,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an intellectual 50-year-old Hungarian character actor with expressive, skeptical eyes and an amused, theatrical half-smile. Neatly styled silvering hair and stylish horn-rimmed glasses. Wearing a classic tweed blazer with elbow patches over an oxford button-down shirt. Warm academic studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an intellectual 50-year-old Hungarian character actor with expressive, skeptical eyes and an amused, theatrical half-smile. He has a lean, wiry mature build with high cheekbones, defined neck, and focused posture, featuring neatly styled silvering hair and stylish horn-rimmed glasses. Wearing a classic tweed blazer with elbow patches over an oxford button-down shirt. Warm academic studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="korda lóránt" data-desc="dörgő hangú, robbanékony kikötőparancsnok (bariton)" data-reg="bariton">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="korda lóránt" data-desc="dörgő hangú, robbanékony kikötőparancsnok (bariton)" data-reg="bariton" data-morph="széles kiállású, kemény kötésű érett parancsnok alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Korda Lóránt.webp', 'Korda Lóránt', 'Dörgő hangú, robbanékony kikötőparancsnok (bariton)')" title="Kattints a nagyításhoz!">
@@ -2009,6 +2214,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">146.9 WPM</span>
+            <span class="badge badge-f0">🎙️ 192.6 Hz</span>
           </div>
           <div class="character-tagline">„Dörgő hangú, robbanékony kikötőparancsnok (bariton)”</div>
         </div>
@@ -2022,8 +2228,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Széles kiállású, kemény kötésű érett parancsnok alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>192.6 Hz</strong> &bull; Rezonancia arány: <strong>0.49x</strong> &bull; Súlypont: 2294 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Dörgő hangú</div>
@@ -2043,13 +2255,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a robust 48-year-old Hungarian actor with strong, weathered jawline, steely eyes, and a commanding presence. Neatly trimmed grey beard and cleanly styled hair. Wearing a sturdy dark navy pea coat over a warm knit sweater. Crisp studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a robust 48-year-old Hungarian actor with strong, weathered jawline, steely eyes, and a commanding presence. He has a broad-shouldered, rugged mature frame with a sturdy neck and commanding posture, featuring neatly trimmed grey beard and cleanly styled hair. Wearing a sturdy dark navy pea coat over a warm knit sweater. Crisp studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="károlyi réka" data-desc="oroszlánként védelmező anya – vad vészjelzéssel" data-reg="mezzoszoprán">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="károlyi réka" data-desc="oroszlánként védelmező anya – vad vészjelzéssel" data-reg="mezzoszoprán" data-morph="szikár, finom csontozatú, feszült érett női alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Károlyi Réka.webp', 'Károlyi Réka', 'Oroszlánként védelmező anya – vad vészjelzéssel')" title="Kattints a nagyításhoz!">
@@ -2063,6 +2275,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">155.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 217.0 Hz</span>
           </div>
           <div class="character-tagline">„Oroszlánként védelmező anya – vad vészjelzéssel”</div>
         </div>
@@ -2076,8 +2289,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, finom csontozatú, feszült érett női alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Mezzoszoprán</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>217.0 Hz</strong> &bull; Rezonancia arány: <strong>0.6x</strong> &bull; Súlypont: 2852 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Oroszlánként védelmező anya</div>
@@ -2097,13 +2316,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a passionate, handsome 48-year-old Hungarian actress with fierce, protective hazel eyes and noble cheekbones. Beautifully styled, rich auburn hair with subtle silver strands. Wearing a warm burgundy knitted sweater over an ironed collared shirt. Luminous studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a passionate, handsome 48-year-old Hungarian actress with fierce, protective hazel eyes and noble cheekbones. She has a lean, fine-boned, poised mature frame with a slender neck and sharp posture, featuring beautifully styled, rich auburn hair with subtle silver strands. Wearing a warm burgundy knitted sweater over an ironed collared shirt. Luminous studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="sárközi botond" data-desc="rázkódó, dörgő mély sámánhang (basszus)" data-reg="basszus">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="sárközi botond" data-desc="rázkódó, dörgő mély sámánhang (basszus)" data-reg="basszus" data-morph="masszív, sziklaszerű sámán-alkat, széles mellkassal és vastag nyakkal">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Sárközi Botond.webp', 'Sárközi Botond', 'Rázkódó, dörgő mély sámánhang (basszus)')" title="Kattints a nagyításhoz!">
@@ -2117,6 +2336,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">139.5 WPM</span>
+            <span class="badge badge-f0">🎙️ 138.3 Hz</span>
           </div>
           <div class="character-tagline">„Rázkódó, dörgő mély sámánhang (basszus)”</div>
         </div>
@@ -2130,8 +2350,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Masszív, sziklaszerű sámán-alkat, széles mellkassal és vastag nyakkal</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Basszus</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>138.3 Hz</strong> &bull; Rezonancia arány: <strong>0.66x</strong> &bull; Súlypont: 2762 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Rázkódó</div>
@@ -2151,13 +2377,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a magnificent 54-year-old Hungarian actor with deep-set, hypnotic dark eyes and profound dramatic gravitas. Full, well-groomed salt-and-pepper beard and cleanly combed dark hair. Wearing a structured dark textured wool coat with a high collar over a dark tunic shirt. Atmospheric, dignified studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a magnificent 54-year-old Hungarian actor with deep-set, hypnotic dark eyes and profound dramatic gravitas. He has a monumental, broad-shouldered heavy frame with a thick muscular neck and deep physical gravity, featuring full, well-groomed salt-and-pepper beard and cleanly combed dark hair. Wearing a structured dark textured wool coat with a high collar over a dark tunic shirt. Atmospheric, dignified studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="veress gáspár" data-desc="epekedő, szarkasztikus professzor – teátrális felháborodással" data-reg="tenor">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Férfi" data-name="veress gáspár" data-desc="epekedő, szarkasztikus professzor – teátrális felháborodással" data-reg="tenor" data-morph="mély mellkasú, tekintélyes teátrális professzor alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Veress Gáspár.webp', 'Veress Gáspár', 'Epekedő, szarkasztikus professzor – teátrális felháborodással')" title="Kattints a nagyításhoz!">
@@ -2171,6 +2397,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">143.1 WPM</span>
+            <span class="badge badge-f0">🎙️ 130.1 Hz</span>
           </div>
           <div class="character-tagline">„Epekedő, szarkasztikus professzor – teátrális felháborodással”</div>
         </div>
@@ -2184,8 +2411,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Mély mellkasú, tekintélyes teátrális professzor alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Tenor</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>130.1 Hz</strong> &bull; Rezonancia arány: <strong>2.16x</strong> &bull; Súlypont: 2338 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Epekedő, szarkasztikus professzor</div>
@@ -2205,13 +2438,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished 52-year-old Hungarian character actor with animated, sardonic eyes and refined facial lines. Combed silver hair and neatly trimmed mustache. Wearing a tailored dark brown wool blazer over a crisp collared shirt and vest. Warm studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished 52-year-old Hungarian character actor with animated, sardonic eyes and refined facial lines. He has a broad-chested, substantial mature build with a solid neck and expressive, theatrical posture, featuring combed silver hair and neatly trimmed mustache. Wearing a tailored dark brown wool blazer over a crisp collared shirt and vest. Warm studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="zámbó borbála" data-desc="füstös, érdes kontraalt – sós humorú kocsmárosnő" data-reg="kontraalt">
+    <div class="actor-card" data-category="Érett (45-60)" data-gender="Nő" data-name="zámbó borbála" data-desc="füstös, érdes kontraalt – sós humorú kocsmárosnő" data-reg="kontraalt" data-morph="erős, életrevaló, meleg kedélyű érett női alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Zámbó Borbála.webp', 'Zámbó Borbála', 'Füstös, érdes kontraalt – sós humorú kocsmárosnő')" title="Kattints a nagyításhoz!">
@@ -2225,6 +2458,7 @@
             <span class="badge badge-cat">Érett (45-60)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">157.9 WPM</span>
+            <span class="badge badge-f0">🎙️ 241.5 Hz</span>
           </div>
           <div class="character-tagline">„Füstös, érdes kontraalt – sós humorú kocsmárosnő”</div>
         </div>
@@ -2238,8 +2472,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Erős, életrevaló, meleg kedélyű érett női alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Kontraalt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>241.5 Hz</strong> &bull; Rezonancia arány: <strong>0.73x</strong> &bull; Súlypont: 3035 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Füstös, érdes kontraalt</div>
@@ -2259,13 +2499,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an authentic, charismatic 49-year-old Hungarian actress with warm, knowing eyes and a wry, hearty expression full of life experience. Naturally styled, healthy dark hair. Wearing a clean dark flannel button-down shirt over a dark cotton top. Natural, flattering studio lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an authentic, charismatic 49-year-old Hungarian actress with warm, knowing eyes and a wry, hearty expression full of life experience. She has a spirited, robust, warm-hearted mature woman's build with sturdy shoulders and an engaging, confident posture, featuring naturally styled, healthy dark hair. Wearing a clean dark flannel button-down shirt over a dark cotton top. Natural, flattering studio lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="bérczy ignác" data-desc="pattogós, éles hangú, vitális öreg mester" data-reg="karakterbariton">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="bérczy ignác" data-desc="pattogós, éles hangú, vitális öreg mester" data-reg="karakterbariton" data-morph="szikár, inas, tiszteletreméltó idős alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Bérczy Ignác.webp', 'Bérczy Ignác', 'Pattogós, éles hangú, vitális öreg mester')" title="Kattints a nagyításhoz!">
@@ -2279,6 +2519,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">165.9 WPM</span>
+            <span class="badge badge-f0">🎙️ 178.9 Hz</span>
           </div>
           <div class="character-tagline">„Pattogós, éles hangú, vitális öreg mester”</div>
         </div>
@@ -2292,8 +2533,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, inas, tiszteletreméltó idős alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakterbariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>178.9 Hz</strong> &bull; Rezonancia arány: <strong>0.33x</strong> &bull; Súlypont: 2551 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Pattogós, éles hangú</div>
@@ -2313,13 +2560,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a spirited 70-year-old veteran Hungarian actor with bright, twinkling eyes and an energetic, mischievous grin. Neatly trimmed white beard and well-groomed white hair, radiating theatrical vitality. Wearing a classic brown corduroy blazer over a neat collared shirt. Warm studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a spirited 70-year-old veteran Hungarian actor with bright, twinkling eyes and an energetic, mischievous grin. He has a lean, distinguished elderly frame with a slender neck and noble, weathered elegance, featuring neatly trimmed white beard and well-groomed white hair, radiating theatrical vitality. Wearing a classic brown corduroy blazer over a neat collared shirt. Warm studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="bónis gizella" data-desc="papírvékony, levegős, remegő 80 éves öregasszony" data-reg="karakteralt">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="bónis gizella" data-desc="papírvékony, levegős, remegő 80 éves öregasszony" data-reg="karakteralt" data-morph="kedves, telt, gondoskodó idős nagymama alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Bónis Gizella.webp', 'Bónis Gizella', 'Papírvékony, levegős, remegő 80 éves öregasszony')" title="Kattints a nagyításhoz!">
@@ -2333,6 +2580,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">154.9 WPM</span>
+            <span class="badge badge-f0">🎙️ 245.6 Hz</span>
           </div>
           <div class="character-tagline">„Papírvékony, levegős, remegő 80 éves öregasszony”</div>
         </div>
@@ -2346,8 +2594,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Kedves, telt, gondoskodó idős nagymama alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakteralt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>245.6 Hz</strong> &bull; Rezonancia arány: <strong>1.03x</strong> &bull; Súlypont: 2187 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Papírvékony, levegős</div>
@@ -2367,13 +2621,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an 80-year-old beloved veteran Hungarian actress with luminous, gentle eyes and graceful, dignified facial lines. Tastefully styled, soft silver-white hair. Radiates theatrical tenderness and profound warmth. Wearing a soft pastel lavender knitted cardigan with a delicate silk scarf. Flattering soft studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an 80-year-old beloved veteran Hungarian actress with luminous, gentle eyes and graceful, dignified facial lines. She has a comfortingly plump, gentle, warm elderly frame with soft features and a kind, dignified presence, featuring tastefully styled, soft silver-white hair. Radiates theatrical tenderness and profound warmth. Wearing a soft pastel lavender knitted cardigan with a delicate silk scarf. Flattering soft studio portrait lighting, simple neutral studio background with subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="csapó margit" data-desc="fürge, csípős, pletykás öreg hölgy" data-reg="karakteralt">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="csapó margit" data-desc="fürge, csípős, pletykás öreg hölgy" data-reg="karakteralt" data-morph="fürge, kistermetű, csípős idős hölgy alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Csapó Margit.webp', 'Csapó Margit', 'Fürge, csípős, pletykás öreg hölgy')" title="Kattints a nagyításhoz!">
@@ -2387,6 +2641,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">150.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 217.6 Hz</span>
           </div>
           <div class="character-tagline">„Fürge, csípős, pletykás öreg hölgy”</div>
         </div>
@@ -2400,8 +2655,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Fürge, kistermetű, csípős idős hölgy alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakteralt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>217.6 Hz</strong> &bull; Rezonancia arány: <strong>0.78x</strong> &bull; Súlypont: 2543 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Fürge, csípős</div>
@@ -2421,13 +2682,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a lively 70-year-old Hungarian character actress with sparkling, mischievous hazel eyes and a spirited, knowing smile. Neatly styled silver curls and clean, healthy skin texture. Wearing a tasteful knitted floral cardigan over a high-neck blouse. Bright, engaging studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a lively 70-year-old Hungarian character actress with sparkling, mischievous hazel eyes and a spirited, knowing smile. She has a sprightly, petite, brisk elderly build with sharp, alert posture and fine bone structure, featuring neatly styled silver curls and clean, healthy skin texture. Wearing a tasteful knitted floral cardigan over a high-neck blouse. Bright, engaging studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="darvas kálmán" data-desc="pattogós, éles hangú, vitális öreg mester" data-reg="karakterbariton">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="darvas kálmán" data-desc="pattogós, éles hangú, vitális öreg mester" data-reg="karakterbariton" data-morph="zömök, mély mellkasú, vitális idős mesterember alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Darvas Kálmán.webp', 'Darvas Kálmán', 'Pattogós, éles hangú, vitális öreg mester')" title="Kattints a nagyításhoz!">
@@ -2441,6 +2702,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">151.5 WPM</span>
+            <span class="badge badge-f0">🎙️ 120.7 Hz</span>
           </div>
           <div class="character-tagline">„Pattogós, éles hangú, vitális öreg mester”</div>
         </div>
@@ -2454,8 +2716,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Zömök, mély mellkasú, vitális idős mesterember alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakterbariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>120.7 Hz</strong> &bull; Rezonancia arány: <strong>1.58x</strong> &bull; Súlypont: 2422 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Pattogós, éles hangú</div>
@@ -2475,13 +2743,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished 72-year-old Hungarian stage actor with sharp, alert eyes and refined facial lines full of wisdom. Neatly groomed silver hair and trim mustache. Wearing an olive green wool cardigan over an ironed button-up shirt. Balanced, flattering studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished 72-year-old Hungarian stage actor with sharp, alert eyes and refined facial lines full of wisdom. He has a compact, barrel-chested sturdy elderly frame with a strong neck and energetic, resilient posture, featuring neatly groomed silver hair and trim mustache. Wearing an olive green wool cardigan over an ironed button-up shirt. Balanced, flattering studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="illés vilma" data-desc="papírvékony, levegős, remegő 80 éves öregasszony" data-reg="karakteralt">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="illés vilma" data-desc="papírvékony, levegős, remegő 80 éves öregasszony" data-reg="karakteralt" data-morph="papírvékony, törékeny, hajlott idős néni alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Illés Vilma.webp', 'Illés Vilma', 'Papírvékony, levegős, remegő 80 éves öregasszony')" title="Kattints a nagyításhoz!">
@@ -2495,6 +2763,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">123.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 237.7 Hz</span>
           </div>
           <div class="character-tagline">„Papírvékony, levegős, remegő 80 éves öregasszony”</div>
         </div>
@@ -2508,8 +2777,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Papírvékony, törékeny, hajlott idős néni alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakteralt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>237.7 Hz</strong> &bull; Rezonancia arány: <strong>1.2x</strong> &bull; Súlypont: 2646 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Papírvékony, levegős</div>
@@ -2529,13 +2804,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an 80-year-old revered Hungarian stage actress. She has noble, poignant facial lines, clear and intensely expressive eyes, and soft silver hair elegantly styled. Radiating artistic grace and poetic vulnerability. Wearing a warm soft knitted cream cardigan over a modest button-up blouse. Soft dimensional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an 80-year-old revered Hungarian stage actress. She has a delicately frail, paper-thin elderly frame with a slender neck and gentle, tender posture, featuring noble, poignant facial lines, clear and intensely expressive eyes, and soft silver hair elegantly styled. Radiating artistic grace and poetic vulnerability. Wearing a warm soft knitted cream cardigan over a modest button-up blouse. Soft dimensional studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="kovásznai kálmán" data-desc="mély, érdes, megsértett büszkeségű volt vezető" data-reg="basszus">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="kovásznai kálmán" data-desc="mély, érdes, megsértett büszkeségű volt vezető" data-reg="basszus" data-morph="szikár, inas, tiszteletreméltó idős alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Kovásznai Kálmán.webp', 'Kovásznai Kálmán', 'Mély, érdes, megsértett büszkeségű volt vezető')" title="Kattints a nagyításhoz!">
@@ -2549,6 +2824,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">158.1 WPM</span>
+            <span class="badge badge-f0">🎙️ 159.1 Hz</span>
           </div>
           <div class="character-tagline">„Mély, érdes, megsértett büszkeségű volt vezető”</div>
         </div>
@@ -2562,8 +2838,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, inas, tiszteletreméltó idős alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Basszus</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>159.1 Hz</strong> &bull; Rezonancia arány: <strong>0.73x</strong> &bull; Súlypont: 2511 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Mély, érdes</div>
@@ -2583,13 +2865,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an imposing 68-year-old Hungarian character actor with deep, serious eyes and a noble, resolute countenance. Cleanly combed silver hair and clean-shaven face. Wearing a dignified charcoal suit jacket over a crisp blue collared shirt. Formal studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an imposing 68-year-old Hungarian character actor with deep, serious eyes and a noble, resolute countenance. He has a lean, distinguished elderly frame with a slender neck and noble, weathered elegance, featuring cleanly combed silver hair and clean-shaven face. Wearing a dignified charcoal suit jacket over a crisp blue collared shirt. Formal studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="mándy sarolta" data-desc="nyers, türelmetlen idős kontraalt, hirtelen parancsoló projekcióval" data-reg="kontraalt">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="mándy sarolta" data-desc="nyers, türelmetlen idős kontraalt, hirtelen parancsoló projekcióval" data-reg="kontraalt" data-morph="arisztokratikus tartású, méltóságteljes idős nagyasszony alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Mándy Sarolta.webp', 'Mándy Sarolta', 'Nyers, türelmetlen idős kontraalt, hirtelen parancsoló projekcióval')" title="Kattints a nagyításhoz!">
@@ -2603,6 +2885,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">120.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 191.4 Hz</span>
           </div>
           <div class="character-tagline">„Nyers, türelmetlen idős kontraalt, hirtelen parancsoló projekcióval”</div>
         </div>
@@ -2616,8 +2899,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Arisztokratikus tartású, méltóságteljes idős nagyasszony alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Kontraalt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>191.4 Hz</strong> &bull; Rezonancia arány: <strong>1.07x</strong> &bull; Súlypont: 2751 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Nyers, türelmetlen idős kontraalt</div>
@@ -2637,13 +2926,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an aristocratic 68-year-old Hungarian actress with commanding, penetrating gaze and sculpted, dignified facial structure. Elegantly styled grey hair. Exuding theatrical majesty and formidable stage presence. Wearing a dignified dark wool jacket over an elegant silk blouse. Dramatic, refined studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an aristocratic 68-year-old Hungarian actress with commanding, penetrating gaze and sculpted, dignified facial structure. She has a stately, noble, distinguished elderly build with immaculate upright posture and refined bone structure, featuring elegantly styled grey hair. Exuding theatrical majesty and formidable stage presence. Wearing a dignified dark wool jacket over an elegant silk blouse. Dramatic, refined studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="sárközi teréz" data-desc="fürge, csípős, pletykás öreg hölgy" data-reg="karakteralt">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="sárközi teréz" data-desc="fürge, csípős, pletykás öreg hölgy" data-reg="karakteralt" data-morph="méltóságteljes, telt, tekintélyes idős nagyasszony alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Sárközi Teréz.webp', 'Sárközi Teréz', 'Fürge, csípős, pletykás öreg hölgy')" title="Kattints a nagyításhoz!">
@@ -2657,6 +2946,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">150.6 WPM</span>
+            <span class="badge badge-f0">🎙️ 216.0 Hz</span>
           </div>
           <div class="character-tagline">„Fürge, csípős, pletykás öreg hölgy”</div>
         </div>
@@ -2670,8 +2960,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Méltóságteljes, telt, tekintélyes idős nagyasszony alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakteralt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>216.0 Hz</strong> &bull; Rezonancia arány: <strong>1.36x</strong> &bull; Súlypont: 2809 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Fürge, csípős</div>
@@ -2691,13 +2987,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an animated 72-year-old Hungarian character actress with sharp, witty eyes and an expressive, cheerful face full of personality. Well-groomed short silver hair. Wearing a patterned wool knit cardigan with a modest collar. Clean studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an animated 72-year-old Hungarian character actress with sharp, witty eyes and an expressive, cheerful face full of personality. She has a dignified, stately elderly frame with noble posture, broad shoulders, and authoritative presence, featuring well-groomed short silver hair. Wearing a patterned wool knit cardigan with a modest collar. Clean studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="teleki vendel" data-desc="kiszáradt, fojtottan sípoló, remegő 80 éves öregember" data-reg="karakterbariton">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="teleki vendel" data-desc="kiszáradt, fojtottan sípoló, remegő 80 éves öregember" data-reg="karakterbariton" data-morph="szikár, inas, tiszteletreméltó idős alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Teleki Vendel.webp', 'Teleki Vendel', 'Kiszáradt, fojtottan sípoló, remegő 80 éves öregember')" title="Kattints a nagyításhoz!">
@@ -2711,6 +3007,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">138.8 WPM</span>
+            <span class="badge badge-f0">🎙️ 155.5 Hz</span>
           </div>
           <div class="character-tagline">„Kiszáradt, fojtottan sípoló, remegő 80 éves öregember”</div>
         </div>
@@ -2724,8 +3021,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, inas, tiszteletreméltó idős alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakterbariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>155.5 Hz</strong> &bull; Rezonancia arány: <strong>0.44x</strong> &bull; Súlypont: 2890 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Kiszáradt, fojtottan sípoló</div>
@@ -2745,13 +3048,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of an 80-year-old venerable Hungarian stage actor with kind, contemplative eyes, noble facial lines, and a trim white beard. Gracefully styled silver-white hair, radiating profound emotional sensitivity and artistic depth. Wearing a thick warm knitted grey cardigan buttoned up over a soft collared shirt. Soft studio lighting, simple neutral studio background with subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of an 80-year-old venerable Hungarian stage actor with kind, contemplative eyes, noble facial lines, and a trim white beard. He has a lean, distinguished elderly frame with a slender neck and noble, weathered elegance, featuring gracefully styled silver-white hair, radiating profound emotional sensitivity and artistic depth. Wearing a thick warm knitted grey cardigan buttoned up over a soft collared shirt. Soft studio lighting, simple neutral studio background with subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="torday dezső" data-desc="száraz, kötekedő idős bariton, hirtelen metsző figyelmeztetéssel" data-reg="bariton">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="torday dezső" data-desc="száraz, kötekedő idős bariton, hirtelen metsző figyelmeztetéssel" data-reg="bariton" data-morph="szikár, inas, tiszteletreméltó idős alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Torday Dezső.webp', 'Torday Dezső', 'Száraz, kötekedő idős bariton, hirtelen metsző figyelmeztetéssel')" title="Kattints a nagyításhoz!">
@@ -2765,6 +3068,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">124.8 WPM</span>
+            <span class="badge badge-f0">🎙️ 134.9 Hz</span>
           </div>
           <div class="character-tagline">„Száraz, kötekedő idős bariton, hirtelen metsző figyelmeztetéssel”</div>
         </div>
@@ -2778,8 +3082,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Szikár, inas, tiszteletreméltó idős alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Bariton</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>134.9 Hz</strong> &bull; Rezonancia arány: <strong>0.8x</strong> &bull; Súlypont: 2481 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Száraz, kötekedő idős bariton</div>
@@ -2799,13 +3109,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a sharp-eyed 70-year-old Hungarian character actor with dry, intelligent gaze and expressive, theatrical facial lines. Neatly trimmed white hair and neatly groomed appearance. Wearing a classic dark tweed jacket over a collared shirt. Focused studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a sharp-eyed 70-year-old Hungarian character actor with dry, intelligent gaze and expressive, theatrical facial lines. He has a lean, distinguished elderly frame with a slender neck and noble, weathered elegance, featuring neatly trimmed white hair and neatly groomed appearance. Wearing a classic dark tweed jacket over a collared shirt. Focused studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="varjú agáta" data-desc="ijesztő, repedezett hangú 70 éves jósasszony" data-reg="karakteralt">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Nő" data-name="varjú agáta" data-desc="ijesztő, repedezett hangú 70 éves jósasszony" data-reg="karakteralt" data-morph="aszott, szikár, szúrós tekintetű, titokzatos idős jósasszony alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Varjú Agáta.webp', 'Varjú Agáta', 'Ijesztő, repedezett hangú 70 éves jósasszony')" title="Kattints a nagyításhoz!">
@@ -2819,6 +3129,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Nő</span>
             <span class="badge badge-wpm">143.0 WPM</span>
+            <span class="badge badge-f0">🎙️ 238.0 Hz</span>
           </div>
           <div class="character-tagline">„Ijesztő, repedezett hangú 70 éves jósasszony”</div>
         </div>
@@ -2832,8 +3143,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Aszott, szikár, szúrós tekintetű, titokzatos idős jósasszony alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Karakteralt</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>238.0 Hz</strong> &bull; Rezonancia arány: <strong>0.46x</strong> &bull; Súlypont: 3026 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Ijesztő</div>
@@ -2853,13 +3170,13 @@
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished, charismatic 70-year-old Hungarian veteran stage actress with deep, expressive dark eyes and elegant, noble facial lines. Gracefully styled silver hair, radiating intellectual magnetism and theatrical wisdom. Wearing a tailored dark charcoal blazer over a high-neck dark silk top with a tasteful silver pendant, standing in front of a simple neutral studio background with soft subtle rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a distinguished, charismatic 70-year-old Hungarian veteran stage actress with deep, expressive dark eyes and elegant, noble facial lines. She has a wiry, gaunt elderly frame with a slender neck, weathered sharp cheekbones, and an enigmatic piercing presence, featuring gracefully styled silver hair, radiating intellectual magnetism and theatrical wisdom. Wearing a tailored dark charcoal blazer over a high-neck dark silk top with a tasteful silver pendant, standing in front of a simple neutral studio background with soft subtle rim lighting.</div>
         </details>
       </div>
     </div>
 
-    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="várkonyi boldizsár" data-desc="mesélő / narrátor mesterhang" data-reg="basszbariton (drámai narrátor)">
+    <div class="actor-card" data-category="Idős (60-80+)" data-gender="Férfi" data-name="várkonyi boldizsár" data-desc="mesélő / narrátor mesterhang" data-reg="basszbariton (drámai narrátor)" data-morph="méltóságteljes, robusztus klasszikus mesélő alkat">
       <div class="card-top">
         
             <div class="photo-frame" onclick="openModal('Várkonyi Boldizsár.webp', 'Várkonyi Boldizsár', 'Mesélő / Narrátor mesterhang')" title="Kattints a nagyításhoz!">
@@ -2873,6 +3190,7 @@
             <span class="badge badge-cat">Idős (60-80+)</span>
             <span class="badge badge-gender">Férfi</span>
             <span class="badge badge-wpm">128.7 WPM</span>
+            <span class="badge badge-f0">🎙️ 118.3 Hz</span>
           </div>
           <div class="character-tagline">„Mesélő / Narrátor mesterhang”</div>
         </div>
@@ -2886,8 +3204,14 @@
 
       <div class="card-body">
         <div class="meta-table">
+          <div class="meta-label">Testalkat:</div>
+          <div class="meta-val meta-val-highlight" style="color: #38bdf8;">Méltóságteljes, robusztus klasszikus mesélő alkat</div>
+
           <div class="meta-label">Regiszter:</div>
           <div class="meta-val meta-val-highlight">Basszbariton (Drámai narrátor)</div>
+
+          <div class="meta-label">Akusztika:</div>
+          <div class="meta-val">F0: <strong>118.3 Hz</strong> &bull; Rezonancia arány: <strong>1.35x</strong> &bull; Súlypont: 3185 Hz</div>
 
           <div class="meta-label">Hangszín:</div>
           <div class="meta-val">Mély, texturált, kavicsos (108 Hz)</div>
@@ -2908,8 +3232,8 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
         
 
         <details>
-          <summary>🎨 Gemma 4 Kép Prompt</summary>
-          <div class="detail-box prompt-text">Professional casting agency headshot of a legendary 72-year-old Hungarian master narrator and stage actor. He has warm, profound, captivating dark eyes and a noble, benevolent countenance with deep expressive lines. Cleanly groomed silver hair and trim beard. Wearing an elegant dark velvet-collared wool blazer over a crisp white dress shirt. Rich, golden studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
+          <summary>🎨 Gemma 4 Kép Prompt (Akusztikai Morfológiával)</summary>
+          <div class="detail-box prompt-text">Professional casting agency headshot of a legendary 72-year-old Hungarian master narrator and stage actor. He has a stately, dignified substantial frame with broad shoulders, strong neck, and noble patriarchal presence, featuring warm, profound, captivating dark eyes and a noble, benevolent countenance with deep expressive lines. Cleanly groomed silver hair and trim beard. Wearing an elegant dark velvet-collared wool blazer over a crisp white dress shirt. Rich, golden studio portrait lighting, simple neutral studio background with soft rim lighting.</div>
         </details>
       </div>
     </div>
@@ -2954,9 +3278,10 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       const name = card.getAttribute('data-name');
       const desc = card.getAttribute('data-desc');
       const reg = card.getAttribute('data-reg') || '';
+      const morph = card.getAttribute('data-morph') || '';
 
       const matchesCat = (currentCategory === 'all' || cat === currentCategory);
-      const matchesSearch = (!q || name.includes(q) || desc.includes(q) || reg.includes(q));
+      const matchesSearch = (!q || name.includes(q) || desc.includes(q) || reg.includes(q) || morph.includes(q));
 
       if (matchesCat && matchesSearch) {
         card.style.display = 'flex';
