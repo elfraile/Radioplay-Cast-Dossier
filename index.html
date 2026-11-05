@@ -14,6 +14,7 @@
 
 
 
+
   :root {
     --bg-dark: #0b0e14;
     --card-bg: #131722;
@@ -707,6 +708,369 @@
   .badge-stats { background: rgba(255, 255, 255, 0.06); color: #cbd5e1; border: 1px solid rgba(255, 255, 255, 0.15); }
   .meta-val-contra { color: #f59e0b !important; font-weight: 600; line-height: 1.45; }
   .rejto-card:hover { border-color: #f59e0b; box-shadow: 0 12px 30px rgba(245, 158, 11, 0.2); }
+
+  /* Lightbox Navigation Buttons */
+  .modal-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(19, 23, 34, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease;
+    z-index: 100000;
+    user-select: none;
+  }
+  .modal-nav-btn:hover {
+    background: rgba(56, 189, 248, 0.35);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-50%) scale(1.08);
+  }
+  .modal-nav-prev { left: -68px; }
+  .modal-nav-next { right: -68px; }
+  .modal-counter {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  @media (max-width: 860px) {
+    .modal-nav-prev { left: 8px; }
+    .modal-nav-next { right: 8px; }
+  }
+
+
+
+  /* Studio Navigation Tabs */
+  .studio-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 1.5rem 0 2.5rem 0;
+    flex-wrap: wrap;
+  }
+  .studio-tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-secondary);
+    padding: 0.95rem 1.8rem;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  }
+  .studio-tab-btn:hover {
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .studio-tab-btn.active {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.22) 0%, rgba(19, 23, 34, 0.95) 100%);
+    border-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+  }
+  .studio-tab-btn.rejto-tab.active {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, rgba(19, 23, 34, 0.95) 100%);
+    border-color: var(--accent-gold);
+    color: #fff;
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+  }
+  .tab-icon { font-size: 1.35rem; }
+  .tab-badge {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 700;
+  }
+  .studio-tab-btn.active .tab-badge {
+    background: rgba(56, 189, 248, 0.25);
+    color: #38bdf8;
+  }
+  .studio-tab-btn.rejto-tab.active .tab-badge {
+    background: rgba(245, 158, 11, 0.25);
+    color: #f59e0b;
+  }
+
+  .tab-view { display: none; }
+  .tab-view.active { display: block; animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Rejtő specific badges and accents */
+  .badge-tier1 { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+  .badge-tier2 { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+  .badge-book { background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); }
+  .badge-meta { background: rgba(148, 163, 184, 0.12); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.25); font-size: 0.8rem; padding: 0.3rem 0.65rem; border-radius: 6px; font-weight: 600; }
+  .badge-audio { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+  .badge-master { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.35); }
+
+  /* Rejtő Grid & Modern Showcase Card Design */
+  #rejtoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 1.85rem;
+  }
+
+  .rejto-card {
+    background: linear-gradient(180deg, #161b26 0%, #0d111a 100%);
+    border: 1px solid rgba(245, 158, 11, 0.22);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .rejto-card:hover {
+    border-color: rgba(245, 158, 11, 0.65);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(245, 158, 11, 0.18);
+    transform: translateY(-3px);
+  }
+
+  .rejto-card-header {
+    display: flex;
+    gap: 1.35rem;
+    padding: 1.35rem 1.35rem 0.8rem 1.35rem;
+    align-items: flex-start;
+  }
+  .rejto-photo-frame {
+    width: 175px;
+    height: 235px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(245, 158, 11, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55), 0 0 12px rgba(245, 158, 11, 0.1);
+    cursor: zoom-in;
+    background: #0b0e14;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .rejto-photo-frame:hover {
+    transform: scale(1.025);
+    border-color: #f59e0b;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+  }
+  .rejto-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .rejto-header-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .rejto-char-name {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #f8fafc;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  .rejto-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Story Bio Block (Ki ő valójában - no header) */
+  .rejto-bio-block {
+    margin: 0.4rem 1.35rem 1rem 1.35rem;
+    padding: 1rem 1.15rem;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(30, 41, 59, 0.35) 100%);
+    border-left: 3px solid #f59e0b;
+    border-radius: 0 10px 10px 0;
+  }
+  .rejto-bio-text {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.68;
+    color: #e2e8f0;
+    font-weight: 400;
+  }
+
+  /* Audio player panel */
+  .rejto-audio-block {
+    margin: 0 1.35rem 1rem 1.35rem;
+    padding: 0.75rem 1rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 12px;
+  }
+  .rejto-audio-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.45rem;
+  }
+  .rejto-audio-block audio {
+    width: 100%;
+    height: 38px;
+  }
+
+  /* Collapsible Accordions */
+  .rejto-accordion {
+    margin: 0 1.35rem 0.65rem 1.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    background: rgba(15, 23, 42, 0.45);
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+  .rejto-accordion:hover {
+    border-color: rgba(245, 158, 11, 0.3);
+  }
+  .rejto-accordion[open] {
+    border-color: rgba(245, 158, 11, 0.45);
+    background: rgba(15, 23, 42, 0.75);
+  }
+  .rejto-acc-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    user-select: none;
+    list-style: none;
+    transition: color 0.2s ease;
+  }
+  .rejto-acc-summary::-webkit-details-marker {
+    display: none;
+  }
+  .rejto-accordion[open] .rejto-acc-summary {
+    color: #fbbf24;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  }
+  .rejto-acc-chevron {
+    font-size: 0.85rem;
+    transition: transform 0.25s ease;
+    color: #94a3b8;
+  }
+  .rejto-accordion[open] .rejto-acc-chevron {
+    transform: rotate(180deg);
+    color: #fbbf24;
+  }
+  .rejto-acc-body {
+    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
+  .rejto-acc-body .meta-row {
+    margin-bottom: 0.65rem;
+  }
+  .rejto-acc-body .meta-row:last-child {
+    margin-bottom: 0;
+  }
+  .rejto-acc-body .meta-label {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.15rem;
+  }
+  .rejto-acc-body .meta-val {
+    color: #e2e8f0;
+  }
+  .rejto-acc-body .meta-val-highlight {
+    color: #f59e0b;
+    font-weight: 600;
+  }
+  .rejto-acc-body .meta-val-contra {
+    color: #38bdf8;
+    font-style: italic;
+  }
+  .rejto-actions-list {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  .rejto-actions-list li {
+    margin-bottom: 0.55rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+  }
+  .rejto-actions-list li::marker {
+    color: #f59e0b;
+  }
+  .rejto-actions-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Technical Tags Footer */
+  .rejto-tech-footer {
+    margin-top: auto;
+    padding: 0.85rem 1.35rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(10, 14, 22, 0.5);
+  }
+  .tech-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: center;
+  }
+  .tech-tag {
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 0.22rem 0.55rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .tech-tag.tech-master {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border-color: rgba(168, 85, 247, 0.35);
+  }
+  .tech-tag.tech-audio {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.35);
+  }
+
+  @media (max-width: 540px) {
+    #rejtoGrid {
+      grid-template-columns: 1fr;
+    }
+    .rejto-card-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .rejto-badge-row {
+      justify-content: center;
+    }
+  }
 
   /* Lightbox Navigation Buttons */
   .modal-nav-btn {
@@ -5447,7 +5811,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
     </div>
     <div class="actor-grid" id="rejtoGrid">
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="piszkos fred (a kapitány)" data-role="criminal / rogue captain" data-contra="a higiénia sajnálatos devalválódása nála nem hanyagság, hanem szuverén diplomáciai doktrína. kívülről egy felöltőjét tekintve a dunai uszályok fenékszennyével harmonizáló magánzó benyomását kelti, miközben nemzetközi kabinetválságokat és dinasztikus átrendeződéseket vezényel le a háttérből, mint egy nyugalmazott külügyi államtitkár a nemzeti kaszinó bridzstermében — csupán valamivel több tengeri algával a gallérján." data-bio="piszkos fred nem holmi büdös tengeri csirkefogó, hanem egykor hadihajón is szolgált, úgyhogy a kapitányi mesterséget nem a kocsmákban tanulta, ott csak tökéletesítette. hírhedt hajótolvaj és kalózféle, aki a radzeer cirkálót egyszerűen elemelte az angol flottától, aztán akkora kavarodás közepette használta, hogy a végén még a törvényes tulajdonosa lett. külseje egy kikötői szemétdomb utolsó túlélőjére emlékeztet, csakhogy e kopott rongyok alatt hidegfejű, ördögi ravaszságú sakkozó lapul, aki királyok, hercegek és csalók között is úgy tájékozódik, mint a saját zsebében.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="piszkos fred (a kapitány)" data-role="criminal / rogue captain" data-contra="a higiénia sajnálatos devalválódása nála nem hanyagság, hanem szuverén diplomáciai doktrína. kívülről egy felöltőjét tekintve a dunai uszályok fenékszennyével harmonizáló magánzó benyomását kelti, miközben nemzetközi kabinetválságokat és dinasztikus átrendeződéseket vezényel le a háttérből, mint egy nyugalmazott külügyi államtitkár a nemzeti kaszinó bridzstermében — csupán valamivel több tengeri algával a gallérján." data-bio="piszok alfréd úr egy rendkívül nagyvonalú tengerészeti magánzó, aki az államközi flottagazdálkodás nehézségeit látva saját hatáskörébe vont egy teljes brit cirkálót, majd a felesleges hivatali procedúrát mellőzve, pusztán a zűrzavar természetes törvényei által törvényes tulajdonossá emelkedett. kültakarója ugyan némiképp elhanyagolt textíliák és sajnálatos koromszennyeződések konglomerátuma, ám e hevenyészett homlokzat mögött a legfinomabb diplomáciai sakkhúzások bonyolódnak; a koronás főket és a kikötői hatóságokat pedig olyan magától értetődő fölénnyel mozgatja, mint a kávéházi főpincér a hamutartót.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Piszkos Fred (a Kapitány).webp" data-name="Piszkos Fred (a Kapitány)" data-contra="A higiénia sajnálatos devalválódása nála nem hanyagság, hanem szuverén diplomáciai doktrína. Kívülről egy felöltőjét tekintve a dunai uszályok fenékszennyével harmonizáló magánzó benyomását kelti, miközben nemzetközi kabinetválságokat és dinasztikus átrendeződéseket vezényel le a háttérből, mint egy nyugalmazott külügyi államtitkár a Nemzeti Kaszinó bridzstermében — csupán valamivel több tengeri algával a gallérján." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Piszkos Fred (a Kapitány).webp" alt="Piszkos Fred (a Kapitány)" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5466,7 +5830,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Piszkos Fred nem holmi büdös tengeri csirkefogó, hanem egykor hadihajón is szolgált, úgyhogy a kapitányi mesterséget nem a kocsmákban tanulta, ott csak tökéletesítette. Hírhedt hajótolvaj és kalózféle, aki a Radzeer cirkálót egyszerűen elemelte az angol flottától, aztán akkora kavarodás közepette használta, hogy a végén még a törvényes tulajdonosa lett. Külseje egy kikötői szemétdomb utolsó túlélőjére emlékeztet, csakhogy e kopott rongyok alatt hidegfejű, ördögi ravaszságú sakkozó lapul, aki királyok, hercegek és csalók között is úgy tájékozódik, mint a saját zsebében.</p>
+        <p class="rejto-bio-text">Piszok Alfréd úr egy rendkívül nagyvonalú tengerészeti magánzó, aki az államközi flottagazdálkodás nehézségeit látva saját hatáskörébe vont egy teljes brit cirkálót, majd a felesleges hivatali procedúrát mellőzve, pusztán a zűrzavar természetes törvényei által törvényes tulajdonossá emelkedett. Kültakarója ugyan némiképp elhanyagolt textíliák és sajnálatos koromszennyeződések konglomerátuma, ám e hevenyészett homlokzat mögött a legfinomabb diplomáciai sakkhúzások bonyolódnak; a koronás főket és a kikötői hatóságokat pedig olyan magától értetődő fölénnyel mozgatja, mint a kávéházi főpincér a hamutartót.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -5515,7 +5879,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="rozsdás" data-role="volt idegenlégiós dezertőr, csavargó csempész, a gyóntatók természetes vezére és a cirkáló-vállalkozás motorja" data-contra="kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a vöröskereszt jótékonysági báljára csekkolt be." data-bio="rozsdás valójában afféle kikötői hadvezér, akinek a pofonok olyan könnyedén mennek, mint más embernek a névjegykártya. volt idegenlégiós dezertőr, csavargó és csempész, a gyóntatók természetes vezére – nem kinevezték, csak mindenki belátta, hogy jobb vele tartani, mint szembe kerülni vele. papíron néha egészen képtelen figurát játszik, például verhagen dr. néven, igazolvánnyal a zsebében, az álomkór birmai szakembereként, de a valóságban kemény öklű, gyors eszű, hű kalandor, akiben több becsület lakozik, mint amennyit az előélete alapján illendő lenne feltételezni.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="rozsdás" data-role="volt idegenlégiós dezertőr, csavargó csempész, a gyóntatók természetes vezére és a cirkáló-vállalkozás motorja" data-contra="kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a vöröskereszt jótékonysági báljára csekkolt be." data-bio="egy, a fizikai meggyőzés tudományában professzori fokozattal bíró, ex-légiós úriember, akinek az ökölcsapás pusztán a névjegy átadásának egy dinamikusabb, félreérthetetlen formája. bár hivatalos minőségében olykor dr. verhagen néven, mint a birmai álomkór akadémikus specialistája diszponál a folyosókon, belső morális iránytűje meglepő módon jóval stabilabb, mint azt az idegenlégióból való diszkrét távozása indokolná; a gyóntatók nevű jótékonysági-fegyelmező konzorcium elnöki székét pedig nem kinevezéssel, hanem a pofonok vitathatatlan statisztikájával nyerte el.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Rozsdás.webp" data-name="Rozsdás" data-contra="Kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. Ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a Vöröskereszt jótékonysági báljára csekkolt be." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Rozsdás.webp" alt="Rozsdás" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5534,7 +5898,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Rozsdás valójában afféle kikötői hadvezér, akinek a pofonok olyan könnyedén mennek, mint más embernek a névjegykártya. Volt idegenlégiós dezertőr, csavargó és csempész, a Gyóntatók természetes vezére – nem kinevezték, csak mindenki belátta, hogy jobb vele tartani, mint szembe kerülni vele. Papíron néha egészen képtelen figurát játszik, például Verhagen dr. néven, igazolvánnyal a zsebében, az álomkór birmai szakembereként, de a valóságban kemény öklű, gyors eszű, hű kalandor, akiben több becsület lakozik, mint amennyit az előélete alapján illendő lenne feltételezni.</p>
+        <p class="rejto-bio-text">Egy, a fizikai meggyőzés tudományában professzori fokozattal bíró, ex-légiós úriember, akinek az ökölcsapás pusztán a névjegy átadásának egy dinamikusabb, félreérthetetlen formája. Bár hivatalos minőségében olykor Dr. Verhagen néven, mint a birmai álomkór akadémikus specialistája diszponál a folyosókon, belső morális iránytűje meglepő módon jóval stabilabb, mint azt az idegenlégióból való diszkrét távozása indokolná; a Gyóntatók nevű jótékonysági-fegyelmező konzorcium elnöki székét pedig nem kinevezéssel, hanem a pofonok vitathatatlan statisztikájával nyerte el.</p>
       </div>
       
       
@@ -5577,7 +5941,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="fülig jimmy" data-role="impersonator / pretender king" data-contra="a matróztársadalom azon ritka, autotematikus reprezentánsa, aki a fizikai erőszakot azonnal a legfelsőbb társadalmi körök etikettjeként regisztrálja. szilárd meggyőződése, hogy a fültőre mért jobbhorog csupán a szalonbeli bemutatkozás dinamikusabb variánsa, s írásbeli hiányosságait olyan fensőbbséges nagyvonalúsággal hidalja át, amilyet utoljára a monarchia levéltárában tapasztaltunk." data-bio="fülig jimmy valójában kikötői csavargó, örökös matróz, verekedő és félművelt alvilági alak, aki úgy viselkedik, mintha legalább a felsőházból pottyant volna a rakpartra. az írás-olvasással hadilábon áll, az etikettel viszont bensőséges viszonyban képzeli magát, ezért a nyeles pápaszemet és a selyem zsebkendőt olyan önérzettel forgatja, mintha született főúr volna. a regényekben nemcsak egyszerű csirkefogó: alkalmi személycserék, félreértések és merész szélhámosságok nyomán rögtönzött uralkodópótlékká lép elő, vagyis afféle véletlen király lesz belőle. rejtő világában ő az a különös tünemény, akiben a pofon és a modorosság ritka egyetértésben él egymás mellett.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="fülig jimmy" data-role="impersonator / pretender king" data-contra="a matróztársadalom azon ritka, autotematikus reprezentánsa, aki a fizikai erőszakot azonnal a legfelsőbb társadalmi körök etikettjeként regisztrálja. szilárd meggyőződése, hogy a fültőre mért jobbhorog csupán a szalonbeli bemutatkozás dinamikusabb variánsa, s írásbeli hiányosságait olyan fensőbbséges nagyvonalúsággal hidalja át, amilyet utoljára a monarchia levéltárában tapasztaltunk." data-bio="egy arisztokratikus hajlamokkal megvert kikötői magánzó, aki szentül meg van győződve arról, hogy a lordok háza pusztán adminisztratív tévedésből maradt ki a lakcímkártyájából. bár az ábécé betűivel kifejezetten feszült viszonyt ápol, a nyeles pápaszemet és a szalonetikettet oly áhítatosan applikálja a mindennapi zsebtolvajlásokhoz, hogy az ember már-már restelli nem felállni, mikor belép a lebujba; véletlenszerű uralkodói helyettesítéseit pedig akkora államférfiúi lendülettel abszolválta, amire a habsburg-ház is csak elismerően biccentene.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Fülig Jimmy.webp" data-name="Fülig Jimmy" data-contra="A matróztársadalom azon ritka, autotematikus reprezentánsa, aki a fizikai erőszakot azonnal a legfelsőbb társadalmi körök etikettjeként regisztrálja. Szilárd meggyőződése, hogy a fültőre mért jobbhorog csupán a szalonbeli bemutatkozás dinamikusabb variánsa, s írásbeli hiányosságait olyan fensőbbséges nagyvonalúsággal hidalja át, amilyet utoljára a Monarchia levéltárában tapasztaltunk." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Fülig Jimmy.webp" alt="Fülig Jimmy" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5596,7 +5960,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Fülig Jimmy valójában kikötői csavargó, örökös matróz, verekedő és félművelt alvilági alak, aki úgy viselkedik, mintha legalább a felsőházból pottyant volna a rakpartra. Az írás-olvasással hadilábon áll, az etikettel viszont bensőséges viszonyban képzeli magát, ezért a nyeles pápaszemet és a selyem zsebkendőt olyan önérzettel forgatja, mintha született főúr volna. A regényekben nemcsak egyszerű csirkefogó: alkalmi személycserék, félreértések és merész szélhámosságok nyomán rögtönzött uralkodópótlékká lép elő, vagyis afféle véletlen király lesz belőle. Rejtő világában ő az a különös tünemény, akiben a pofon és a modorosság ritka egyetértésben él egymás mellett.</p>
+        <p class="rejto-bio-text">Egy arisztokratikus hajlamokkal megvert kikötői magánzó, aki szentül meg van győződve arról, hogy a lordok háza pusztán adminisztratív tévedésből maradt ki a lakcímkártyájából. Bár az ábécé betűivel kifejezetten feszült viszonyt ápol, a nyeles pápaszemet és a szalonetikettet oly áhítatosan applikálja a mindennapi zsebtolvajlásokhoz, hogy az ember már-már restelli nem felállni, mikor belép a lebujba; véletlenszerű uralkodói helyettesítéseit pedig akkora államférfiúi lendülettel abszolválta, amire a Habsburg-ház is csak elismerően biccentene.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -5645,7 +6009,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="mr. irving" data-role="travels incognito as 'mr. irving' but is in fact st. antonio uralkodó főherceg, hereditary ruler of the boldogság szigetek; nominally a passenger on the honolulu-star under supervision of fernandez/gould" data-contra="fizikailag diszkréten alultáplált, arisztokratikus származású fiatalúr, aki ahelyett, hogy a családi ezüstkészlet leltározásával töltené idejét, patologikus vonzalmat táplál a kikötői illetlenségek iránt. a civilizáció kényelmét csupán kellemetlen előjátéknak tekinti az igazi élethez, amely véleménye szerint ott kezdődik, ahol az ember inggombjait már elragadta az árapály." data-bio="mr. irving valójában st. antonio de vicenzo y galapagos uralkodó főherceg, a boldogság szigetek trónörököse és név szerinti ura, aki inkognitóban utazik a honolulu-star fedélzetén. a pikantéria az, hogy vér szerint nem az elhunyt uralkodó fia, hanem wilbour theodor fregattkapitány gyermeke, akit politikai csalással emeltek a trón közelébe – ő maga ebből persze semmit sem sejt. kifelé beteges, féltve őrzött arisztokrata, belül azonban kalandra éhes fiatalember, akit a veszély jobban élénkít, mint az udvari etikett bármely hosszú vacsorája.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="mr. irving" data-role="travels incognito as 'mr. irving' but is in fact st. antonio uralkodó főherceg, hereditary ruler of the boldogság szigetek; nominally a passenger on the honolulu-star under supervision of fernandez/gould" data-contra="fizikailag diszkréten alultáplált, arisztokratikus származású fiatalúr, aki ahelyett, hogy a családi ezüstkészlet leltározásával töltené idejét, patologikus vonzalmat táplál a kikötői illetlenségek iránt. a civilizáció kényelmét csupán kellemetlen előjátéknak tekinti az igazi élethez, amely véleménye szerint ott kezdődik, ahol az ember inggombjait már elragadta az árapály." data-bio="st. antonio de vicenzo y galapagos uralkodó főherceg, amennyiben ezen titulus a boldogság szigetek trónöröklési protokolljában még érvényesíthető. valójában egy követségi svindli és egy wilbour theodor nevű fregattkapitány biológiai produktuma, amiről a fiatalember szerencsére mit sem sejt; kifelé egy tuberkulózisra hajlamos, féltve nevelt dinasztikus dísztárgy, befelé viszont egy megrögzött hebehurgya, akit a tengeri kalózok társasága jobban felüdít, mint egy tizenkét fogásos protokolláris díszebéd.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Mr. Irving.webp" data-name="Mr. Irving" data-contra="Fizikailag diszkréten alultáplált, arisztokratikus származású fiatalúr, aki ahelyett, hogy a családi ezüstkészlet leltározásával töltené idejét, patologikus vonzalmat táplál a kikötői illetlenségek iránt. A civilizáció kényelmét csupán kellemetlen előjátéknak tekinti az igazi élethez, amely véleménye szerint ott kezdődik, ahol az ember inggombjait már elragadta az árapály." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Mr. Irving.webp" alt="Mr. Irving" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5664,7 +6028,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Mr. Irving valójában St. Antonio de Vicenzo y Galapagos uralkodó főherceg, a Boldogság Szigetek trónörököse és név szerinti ura, aki inkognitóban utazik a Honolulu-Star fedélzetén. A pikantéria az, hogy vér szerint nem az elhunyt uralkodó fia, hanem Wilbour Theodor fregattkapitány gyermeke, akit politikai csalással emeltek a trón közelébe – ő maga ebből persze semmit sem sejt. Kifelé beteges, féltve őrzött arisztokrata, belül azonban kalandra éhes fiatalember, akit a veszély jobban élénkít, mint az udvari etikett bármely hosszú vacsorája.</p>
+        <p class="rejto-bio-text">St. Antonio de Vicenzo y Galapagos uralkodó főherceg, amennyiben ezen titulus a Boldogság Szigetek trónöröklési protokolljában még érvényesíthető. Valójában egy követségi svindli és egy Wilbour Theodor nevű fregattkapitány biológiai produktuma, amiről a fiatalember szerencsére mit sem sejt; kifelé egy tuberkulózisra hajlamos, féltve nevelt dinasztikus dísztárgy, befelé viszont egy megrögzött hebehurgya, akit a tengeri kalózok társasága jobban felüdít, mint egy tizenkét fogásos protokolláris díszebéd.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -5713,7 +6077,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="trebitsch úr (buzgó mócsing)" data-role="underworld hanger-on, fixer, intermediary, and trafficker in human bodies; in the underworld he is known as buzgó mócsing; outside he presents himself as the 'real trebitsch' and once as manager of a bornean cinnamon plantation" data-contra="a társasági simulékonyság eminens mestere, amennyiben e kifejezést rá lehet aggatni egy olyan közvetítőre, aki a felebaráti szeretetet azonnal készpénzzé, az emberkereskedelmet pedig tisztes bizományi ügyletté konvertálja. gerince a diplomáciai protokoll legrugalmasabb paragrafusait követi: sosem áll ki nyílt küzdelemre, csupán elfolyik a szőnyeg rései között." data-bio="trebitsch úr, az úgynevezett „igazi trebitsch”, a kikötők és lebujok nyájas modorú, drótszemüveges csirkefogója, akit az alvilág buzgó mócsingként emleget. úriembernek, sőt tisztes egzisztenciának adja ki magát, valójában azonban alattomos közvetítő, emberkereskedőféle és mindenféle szennyes ügy lebonyolítója, aki a bátorságot rendszerint hazugsággal és helyezkedéssel pótolja. múltjához ugyanúgy hozzátartozik az álca, mint a fekete zsinóron lógó pápaszem: kell borneói fahéjültetvény-igazgató, lesz belőle, kell „a valódi” trebitsch, az is, de a végén mindig ugyanaz a sikamlós túlélő marad.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="trebitsch úr (buzgó mócsing)" data-role="underworld hanger-on, fixer, intermediary, and trafficker in human bodies; in the underworld he is known as buzgó mócsing; outside he presents himself as the 'real trebitsch' and once as manager of a bornean cinnamon plantation" data-contra="a társasági simulékonyság eminens mestere, amennyiben e kifejezést rá lehet aggatni egy olyan közvetítőre, aki a felebaráti szeretetet azonnal készpénzzé, az emberkereskedelmet pedig tisztes bizományi ügyletté konvertálja. gerince a diplomáciai protokoll legrugalmasabb paragrafusait követi: sosem áll ki nyílt küzdelemre, csupán elfolyik a szőnyeg rései között." data-bio="egy rendkívül simulékony, drótkeretes pápaszemmel ellátott alvilági közvetítő, aki a feddhetetlen magántisztviselő szerepét oly tökéletesen játssza, hogy még a rendőrségi fogdán is azonnal leltárkönyvet nyit. borneói ültetvényigazgatótól az 'egyetlen igazi' trebitsch-ig bármilyen minőséget készségesen magára ölt, feltéve, hogy a helyzet némi emberkereskedelemmel vagy gyáva cserbenhagyással orvosolható; személyisége a tiszta ráció és a sikamlós szappantartó frigyéből született.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Trebitsch úr (Buzgó Mócsing).webp" data-name="Trebitsch úr (Buzgó Mócsing)" data-contra="A társasági simulékonyság eminens mestere, amennyiben e kifejezést rá lehet aggatni egy olyan közvetítőre, aki a felebaráti szeretetet azonnal készpénzzé, az emberkereskedelmet pedig tisztes bizományi ügyletté konvertálja. Gerince a diplomáciai protokoll legrugalmasabb paragrafusait követi: sosem áll ki nyílt küzdelemre, csupán elfolyik a szőnyeg rései között." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Trebitsch úr (Buzgó Mócsing).webp" alt="Trebitsch úr (Buzgó Mócsing)" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5732,7 +6096,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Trebitsch úr, az úgynevezett „igazi Trebitsch”, a kikötők és lebujok nyájas modorú, drótszemüveges csirkefogója, akit az alvilág Buzgó Mócsingként emleget. Úriembernek, sőt tisztes egzisztenciának adja ki magát, valójában azonban alattomos közvetítő, emberkereskedőféle és mindenféle szennyes ügy lebonyolítója, aki a bátorságot rendszerint hazugsággal és helyezkedéssel pótolja. Múltjához ugyanúgy hozzátartozik az álca, mint a fekete zsinóron lógó pápaszem: kell borneói fahéjültetvény-igazgató, lesz belőle, kell „a valódi” Trebitsch, az is, de a végén mindig ugyanaz a sikamlós túlélő marad.</p>
+        <p class="rejto-bio-text">Egy rendkívül simulékony, drótkeretes pápaszemmel ellátott alvilági közvetítő, aki a feddhetetlen magántisztviselő szerepét oly tökéletesen játssza, hogy még a rendőrségi fogdán is azonnal leltárkönyvet nyit. Borneói ültetvényigazgatótól az 'egyetlen igazi' Trebitsch-ig bármilyen minőséget készségesen magára ölt, feltéve, hogy a helyzet némi emberkereskedelemmel vagy gyáva cserbenhagyással orvosolható; személyisége a tiszta ráció és a sikamlós szappantartó frigyéből született.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -5781,7 +6145,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="wirth kapitány" data-role="captain/commander of the honolulu-star during the relevant voyage; an authority figure with real command power; later revealed by piszkos fred to be tied to the english secret service" data-contra="a kísérteties misztikum mögött megbúvó, kíméletlen irodavezetői elme. miközben a vihar tépi a vitorlázatot, s a legénység a túlvilági jelenségek miatt lamentál, ő vaskalapos pedantériával ellenőrzi a hajónapló margójának párhuzamosságát; a halálos összeesküvés nála nem tragédia, hanem egy kissé pontatlanul iktatott fegyelmi kihágás." data-bio="wirth kapitány a honolulu-star parancsnokaként lép színre, de nem afféle egyszerű tengeri hivatalnok, aki csak a hajónaplóval és a széliránnyal társalog. port szuezben váltotta le a rendes kapitányt, és később kiderül róla, hogy az angol haditengerészet titkos szolgálatának embere, aki különös alapossággal figyeli a fedélzeten kószáló gazembereket és koronás főket. piszkos fred régről ismeri, így nem véletlenül keveredett erre a hajóra: fedett megbízatással érkezett, hogy rendet teremtsen ott, ahol a rend már rég felmondta a szolgálatot.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="wirth kapitány" data-role="captain/commander of the honolulu-star during the relevant voyage; an authority figure with real command power; later revealed by piszkos fred to be tied to the english secret service" data-contra="a kísérteties misztikum mögött megbúvó, kíméletlen irodavezetői elme. miközben a vihar tépi a vitorlázatot, s a legénység a túlvilági jelenségek miatt lamentál, ő vaskalapos pedantériával ellenőrzi a hajónapló margójának párhuzamosságát; a halálos összeesküvés nála nem tragédia, hanem egy kissé pontatlanul iktatott fegyelmi kihágás." data-bio="a honolulu-star fedélzetének névleges parancsnoka, aki a tengerészeti szabályzat mögé rejtve valójában az őfelsége titkosszolgálatának fanyar megbízottjaként teljesít diszkrét szolgálatot. nem az a fajta tengeri medve, aki a viharral pöröl, hanem a hidegvérű hivatalnok, aki egy gyilkossági kísérletet is csupán a hajónapló margójára jegyez fel ceruzával; piszkos freddel ápolt évtizedes ismeretsége pedig fényesen bizonyítja, hogy a rendbontás leghatékonyabb ellenszere a tapasztalt rendbontók felügyelete.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Wirth kapitány.webp" data-name="Wirth kapitány" data-contra="A kísérteties misztikum mögött megbúvó, kíméletlen irodavezetői elme. Miközben a vihar tépi a vitorlázatot, s a legénység a túlvilági jelenségek miatt lamentál, ő vaskalapos pedantériával ellenőrzi a hajónapló margójának párhuzamosságát; a halálos összeesküvés nála nem tragédia, hanem egy kissé pontatlanul iktatott fegyelmi kihágás." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Wirth kapitány.webp" alt="Wirth kapitány" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5800,7 +6164,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Wirth kapitány a Honolulu-Star parancsnokaként lép színre, de nem afféle egyszerű tengeri hivatalnok, aki csak a hajónaplóval és a széliránnyal társalog. Port Szuezben váltotta le a rendes kapitányt, és később kiderül róla, hogy az angol haditengerészet Titkos Szolgálatának embere, aki különös alapossággal figyeli a fedélzeten kószáló gazembereket és koronás főket. Piszkos Fred régről ismeri, így nem véletlenül keveredett erre a hajóra: fedett megbízatással érkezett, hogy rendet teremtsen ott, ahol a rend már rég felmondta a szolgálatot.</p>
+        <p class="rejto-bio-text">A Honolulu-Star fedélzetének névleges parancsnoka, aki a tengerészeti szabályzat mögé rejtve valójában az őfelsége Titkosszolgálatának fanyar megbízottjaként teljesít diszkrét szolgálatot. Nem az a fajta tengeri medve, aki a viharral pöröl, hanem a hidegvérű hivatalnok, aki egy gyilkossági kísérletet is csupán a hajónapló margójára jegyez fel ceruzával; Piszkos Freddel ápolt évtizedes ismeretsége pedig fényesen bizonyítja, hogy a rendbontás leghatékonyabb ellenszere a tapasztalt rendbontók felügyelete.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -5849,7 +6213,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="a főorvos úr" data-role="underworld-affiliated maritime officer figure aboard the radzeer, called 'főorvos'; despite the title, he acts less like a physician in the literal medical sense and more like a senior crewman/operative within alvarez's faction" data-contra="egy kényszerítő hatósági mechanizmus operatív funkcionáriusa, aki a bűnszervezeti likvidálásokat szigorúan klinikai szempontok alapján adminisztrálja. bár a szalonbeli erkölcsök nála hiánycikknek minősülnek, hivatali működése során mégis felmutat egyfajta nyers, sebészi lelkiismeretet: ha már ártalmatlanná kell tenni egy pácienst, azt legalább tiszta szikével igyekszik elkövetni." data-bio="a főorvos úr nem sztetoszkópos gyógyász, hanem a külvárosi alvilág gyakorlati szakembere, a gyóntatók tagja, akinek „kezelése” után a legmakacsabb adós is váratlanul őszinte lesz. régen hajógépész volt, később sodródott át abba a társaságba, ahol az ember inkább székcsonkkal dolgozik, mint orvosi műszerrel. régi bűnei miatt törölték a hajóskönyvekből, így új névre szóló matrózigazolvánnyal kellett visszaszivárognia a tengerre. a neve onnan ragadt rá, hogy egy szimuláló cinkost olyan kitartóan „kezelt”, míg az illető végül ép ésszel és teljes vallomáskészséggel tért magához.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="a főorvos úr" data-role="underworld-affiliated maritime officer figure aboard the radzeer, called 'főorvos'; despite the title, he acts less like a physician in the literal medical sense and more like a senior crewman/operative within alvarez's faction" data-contra="egy kényszerítő hatósági mechanizmus operatív funkcionáriusa, aki a bűnszervezeti likvidálásokat szigorúan klinikai szempontok alapján adminisztrálja. bár a szalonbeli erkölcsök nála hiánycikknek minősülnek, hivatali működése során mégis felmutat egyfajta nyers, sebészi lelkiismeretet: ha már ártalmatlanná kell tenni egy pácienst, azt legalább tiszta szikével igyekszik elkövetni." data-bio="külvárosi terápiás specialista, akinek a vizitjei után még a legzárkózottabb matrózok is azonnali, megkönnyebbült vallomást tesznek a pénztárcájuk hollétéről. valaha hajógépészként szolgált, mielőtt a hatóságok ízléstelen akadékoskodása miatt törölték a lajstromokból; a medicina terén szerzett renoméját annak köszönheti, hogy egy szimuláló bűntársát egy törött székcsonk kitartó applikációjával sikerült visszavezetnie a munkakedv és az épeszűség rögös útjára.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/A Főorvos Úr.webp" data-name="A Főorvos Úr" data-contra="Egy kényszerítő hatósági mechanizmus operatív funkcionáriusa, aki a bűnszervezeti likvidálásokat szigorúan klinikai szempontok alapján adminisztrálja. Bár a szalonbeli erkölcsök nála hiánycikknek minősülnek, hivatali működése során mégis felmutat egyfajta nyers, sebészi lelkiismeretet: ha már ártalmatlanná kell tenni egy pácienst, azt legalább tiszta szikével igyekszik elkövetni." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/A Főorvos Úr.webp" alt="A Főorvos Úr" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5868,7 +6232,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">A Főorvos Úr nem sztetoszkópos gyógyász, hanem a külvárosi alvilág gyakorlati szakembere, a Gyóntatók tagja, akinek „kezelése” után a legmakacsabb adós is váratlanul őszinte lesz. Régen hajógépész volt, később sodródott át abba a társaságba, ahol az ember inkább székcsonkkal dolgozik, mint orvosi műszerrel. Régi bűnei miatt törölték a hajóskönyvekből, így új névre szóló matrózigazolvánnyal kellett visszaszivárognia a tengerre. A neve onnan ragadt rá, hogy egy szimuláló cinkost olyan kitartóan „kezelt”, míg az illető végül ép ésszel és teljes vallomáskészséggel tért magához.</p>
+        <p class="rejto-bio-text">Külvárosi terápiás specialista, akinek a vizitjei után még a legzárkózottabb matrózok is azonnali, megkönnyebbült vallomást tesznek a pénztárcájuk hollétéről. Valaha hajógépészként szolgált, mielőtt a hatóságok ízléstelen akadékoskodása miatt törölték a lajstromokból; a medicina terén szerzett renoméját annak köszönheti, hogy egy szimuláló bűntársát egy törött székcsonk kitartó applikációjával sikerült visszavezetnie a munkakedv és az épeszűség rögös útjára.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -5917,7 +6281,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="kegyelmes úr" data-role="former president alvarez, now an exiled political conspirator embedded in and above the underworld. he functions as a strategic leader of the criminal-political network, coordinating clubs, resources, and plans for the reconquest of almira. he is one of the key hidden powers behind the attempted regime change." data-contra="a parlamentáris elegancia azon magasiskolája, amelynél az ember zsakettben, hibátlan nyakkendőtűvel és a legfinomabb francia fordulatok kíséretében szervezi meg az alvilági zendülést. nem lázadó ő, kérem szépen, hanem a köztársasági rendetlenkedés felsőházi referense, aki a barikádokat is a legszigorúbb udvari protokoll szerint állíttatja fel." data-bio="a kegyelmes úr valójában a száműzött alvarez, almira egykori elnöke, aki úri modorban, de egészen alvilági eszközökkel készíti elő a visszatérését. kívülről szivarozó, választékos úriember, afféle parlamenti díszpéldány, belül azonban összeesküvő, aki klubok, gengszterek és kétes tekintélyek felett dirigál. nem egyszerű politikus: ő az a bukott államférfi, aki az elvesztett hazát bűnözői kapcsolatokkal próbálja visszaszerezni, mint más a kiesett lottószelvényét.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="kegyelmes úr" data-role="former president alvarez, now an exiled political conspirator embedded in and above the underworld. he functions as a strategic leader of the criminal-political network, coordinating clubs, resources, and plans for the reconquest of almira. he is one of the key hidden powers behind the attempted regime change." data-contra="a parlamentáris elegancia azon magasiskolája, amelynél az ember zsakettben, hibátlan nyakkendőtűvel és a legfinomabb francia fordulatok kíséretében szervezi meg az alvilági zendülést. nem lázadó ő, kérem szépen, hanem a köztársasági rendetlenkedés felsőházi referense, aki a barikádokat is a legszigorúbb udvari protokoll szerint állíttatja fel." data-bio="don alvarez, almira államának kényszerszabadságolt elnöke, aki a parlamentáris eleganciát páratlan könnyedséggel párosítja a kikötői orgyilkosságok diszkrét menedzselésével. kiváló minőségű havannaszivarok és kifogástalan szabású frakkok mögül vezényli az államcsínyt, miközben bukott elnöki méltóságát úgy próbálja visszaszerezni a gengszterek segítségével, mint az úr, aki az esernyőjét felejtette a villamoson, és most a kalauzt kívánja felakasztatni érte.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Kegyelmes úr.webp" data-name="Kegyelmes úr" data-contra="A parlamentáris elegancia azon magasiskolája, amelynél az ember zsakettben, hibátlan nyakkendőtűvel és a legfinomabb francia fordulatok kíséretében szervezi meg az alvilági zendülést. Nem lázadó ő, kérem szépen, hanem a köztársasági rendetlenkedés felsőházi referense, aki a barikádokat is a legszigorúbb udvari protokoll szerint állíttatja fel." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Kegyelmes úr.webp" alt="Kegyelmes úr" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -5936,7 +6300,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">A Kegyelmes úr valójában a száműzött Alvarez, Almira egykori elnöke, aki úri modorban, de egészen alvilági eszközökkel készíti elő a visszatérését. Kívülről szivarozó, választékos úriember, afféle parlamenti díszpéldány, belül azonban összeesküvő, aki klubok, gengszterek és kétes tekintélyek felett dirigál. Nem egyszerű politikus: ő az a bukott államférfi, aki az elvesztett hazát bűnözői kapcsolatokkal próbálja visszaszerezni, mint más a kiesett lottószelvényét.</p>
+        <p class="rejto-bio-text">Don Alvarez, Almira államának kényszerszabadságolt elnöke, aki a parlamentáris eleganciát páratlan könnyedséggel párosítja a kikötői orgyilkosságok diszkrét menedzselésével. Kiváló minőségű havannaszivarok és kifogástalan szabású frakkok mögül vezényli az államcsínyt, miközben bukott elnöki méltóságát úgy próbálja visszaszerezni a gengszterek segítségével, mint az úr, aki az esernyőjét felejtette a villamoson, és most a kalauzt kívánja felakasztatni érte.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -5985,7 +6349,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="nagy bivaly" data-role="a feared underworld figure of the highest physical prestige, one of the rare names spoken with real awe. within the clubs he is a terror, almost a living weapon. narratively he becomes the unexpected protector and devoted guardian of the disguised prince." data-contra="gigantikus fizikai destruktor, aki puszta kézzel képes átrendezni egy teherhajó belsőépítészetét, ám amint a szívét érinti valamely szentimentális fuvallat, egy megszeppent kisiskolás ragaszkodásával borul rá a választott autoritás térdére. roppant veszedelmes entitás, feltéve, hogy elfelejtik megsimogatni a fejét a rombolás szüneteiben." data-bio="nagy bivaly a regény alvilágának rettegett nehézfiúja: mesztic óriás, két lábon járó ostromgép, akinek már a neve is elég ahhoz, hogy az ivóban az embereknek hirtelen fontos dolguk akadjon máshol. külseje szinte embertelen: kopasz, hatalmas, fehér bőrű hústömeg, bennszülött szemekkel és duzzadt ajkakkal, afféle természet által külön rosszkedvvel faragott testőr. valójában azonban nem csupán romboló erő: piszkos fred furfangja révén a herceg hűséges őrzőjévé válik, és ebben a szerepben a vadállati külső mögül előbújik a szinte gyermeki ragaszkodás is.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="nagy bivaly" data-role="a feared underworld figure of the highest physical prestige, one of the rare names spoken with real awe. within the clubs he is a terror, almost a living weapon. narratively he becomes the unexpected protector and devoted guardian of the disguised prince." data-contra="gigantikus fizikai destruktor, aki puszta kézzel képes átrendezni egy teherhajó belsőépítészetét, ám amint a szívét érinti valamely szentimentális fuvallat, egy megszeppent kisiskolás ragaszkodásával borul rá a választott autoritás térdére. roppant veszedelmes entitás, feltéve, hogy elfelejtik megsimogatni a fejét a rombolás szüneteiben." data-bio="egy monumentális természeti csapás, akit a teremtő némiképp elhamarkodva emberi formába öntött, kopaszra borotvált és mesztic vonásokkal látott el. puszta megjelenése elegendő ahhoz, hogy a kocsmák vendégserege azonnal felismerje az otthonmaradás előnyeit; ám e két lábon járó faltörő kos zord fizimiskája mögött — piszkos fred zseniális lélektani beavatkozását követően — egy kutyaszerűen odaadó, szinte gyermeki lélek rejtőzik, aki a trónörököst úgy óvja, mint egy porcelán teáscsészét.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Nagy Bivaly.webp" data-name="Nagy Bivaly" data-contra="Gigantikus fizikai destruktor, aki puszta kézzel képes átrendezni egy teherhajó belsőépítészetét, ám amint a szívét érinti valamely szentimentális fuvallat, egy megszeppent kisiskolás ragaszkodásával borul rá a választott autoritás térdére. Roppant veszedelmes entitás, feltéve, hogy elfelejtik megsimogatni a fejét a rombolás szüneteiben." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Nagy Bivaly.webp" alt="Nagy Bivaly" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6004,7 +6368,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Nagy Bivaly a regény alvilágának rettegett nehézfiúja: mesztic óriás, két lábon járó ostromgép, akinek már a neve is elég ahhoz, hogy az ivóban az embereknek hirtelen fontos dolguk akadjon máshol. Külseje szinte embertelen: kopasz, hatalmas, fehér bőrű hústömeg, bennszülött szemekkel és duzzadt ajkakkal, afféle természet által külön rosszkedvvel faragott testőr. Valójában azonban nem csupán romboló erő: Piszkos Fred furfangja révén a herceg hűséges őrzőjévé válik, és ebben a szerepben a vadállati külső mögül előbújik a szinte gyermeki ragaszkodás is.</p>
+        <p class="rejto-bio-text">Egy monumentális természeti csapás, akit a teremtő némiképp elhamarkodva emberi formába öntött, kopaszra borotvált és mesztic vonásokkal látott el. Puszta megjelenése elegendő ahhoz, hogy a kocsmák vendégserege azonnal felismerje az otthonmaradás előnyeit; ám e két lábon járó faltörő kos zord fizimiskája mögött — Piszkos Fred zseniális lélektani beavatkozását követően — egy kutyaszerűen odaadó, szinte gyermeki lélek rejtőzik, aki a trónörököst úgy óvja, mint egy porcelán teáscsészét.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -6053,7 +6417,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="vöröskarom" data-role="she is the kegyelmes úr/alvarez daughter, but also an operational leader in her own right: 'parancsnok.' she commands criminal and quasi-military men, and at moments stands as the active face of the planned takeover. narratively she is both antagonist and romantic counterpart to the disguised prince." data-contra="a kikötői bűnözés vezérkari főnöknője, aki a legkeményebb bérgyilkosokat is egyetlen szemöldökrezdüléssel állítja vigyázzba, ám a lakkozott karmok alatt egy meglehetősen labilis, romantikus komplikációkra hajlamos női szív dobog. a parancsnoki szigor nála csupán selyemkendő, mellyel a szerelmi bánat okozta zavarodottságát igyekszik elfedni a beosztottak előtt." data-bio="vöröskarom a kegyelmes úr, vagyis alvarez leánya, nem holmi dísznek odatett kisasszony, hanem önálló, keménykezű parancsnok, aki alvilági és félkatonai embereket is egyetlen pillantással sorba állít. a neve harci álnév: hideg és fenyegető, éppúgy, mint a modora, ha éppen nem a szíve szól közbe. egyszerre ellenfél és szerelmi szereplő, mert a herceg körüli bonyodalmakban nemcsak hatalmi tényező, hanem érzelmileg is érintett asszony.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="vöröskarom" data-role="she is the kegyelmes úr/alvarez daughter, but also an operational leader in her own right: 'parancsnok.' she commands criminal and quasi-military men, and at moments stands as the active face of the planned takeover. narratively she is both antagonist and romantic counterpart to the disguised prince." data-contra="a kikötői bűnözés vezérkari főnöknője, aki a legkeményebb bérgyilkosokat is egyetlen szemöldökrezdüléssel állítja vigyázzba, ám a lakkozott karmok alatt egy meglehetősen labilis, romantikus komplikációkra hajlamos női szív dobog. a parancsnoki szigor nála csupán selyemkendő, mellyel a szerelmi bánat okozta zavarodottságát igyekszik elfedni a beosztottak előtt." data-bio="alvarez kisasszony, a száműzött elnök leánya, aki ahelyett, hogy a zongoraleckékkel vesződne, komplett zsoldoscsapatokat és késelőket igazgat egyetlen szemöldökrándítással. harci fedőneve nem holmi költői metafora, hanem operatív tényközlés; ám a jéghideg hadvezéri attitűd mögött a legképtelenebb pillanatokban felbukkan a női szív komoly veszélyforrása, ami egy arisztokratikus főherceg jelenlétében azonnali zárlatot okoz a forradalmi stratégiában.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Vöröskarom.webp" data-name="Vöröskarom" data-contra="A kikötői bűnözés vezérkari főnöknője, aki a legkeményebb bérgyilkosokat is egyetlen szemöldökrezdüléssel állítja vigyázzba, ám a lakkozott karmok alatt egy meglehetősen labilis, romantikus komplikációkra hajlamos női szív dobog. A parancsnoki szigor nála csupán selyemkendő, mellyel a szerelmi bánat okozta zavarodottságát igyekszik elfedni a beosztottak előtt." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Vöröskarom.webp" alt="Vöröskarom" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6072,7 +6436,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Vöröskarom a Kegyelmes úr, vagyis Alvarez leánya, nem holmi dísznek odatett kisasszony, hanem önálló, keménykezű parancsnok, aki alvilági és félkatonai embereket is egyetlen pillantással sorba állít. A neve harci álnév: hideg és fenyegető, éppúgy, mint a modora, ha éppen nem a szíve szól közbe. Egyszerre ellenfél és szerelmi szereplő, mert a herceg körüli bonyodalmakban nemcsak hatalmi tényező, hanem érzelmileg is érintett asszony.</p>
+        <p class="rejto-bio-text">Alvarez kisasszony, a száműzött elnök leánya, aki ahelyett, hogy a zongoraleckékkel vesződne, komplett zsoldoscsapatokat és késelőket igazgat egyetlen szemöldökrándítással. Harci fedőneve nem holmi költői metafora, hanem operatív tényközlés; ám a jéghideg hadvezéri attitűd mögött a legképtelenebb pillanatokban felbukkan a női szív komoly veszélyforrása, ami egy arisztokratikus főherceg jelenlétében azonnali zárlatot okoz a forradalmi stratégiában.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -6121,7 +6485,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="anna alvarez" data-role="underworld official / political operative; strategic participant in the planned seizure of almira." data-contra="hasonlóképp a félvilági hierarchia megfellebbezhetetlen direktora, akit a matrózok és martalócok félelemmel vegyes tisztelettel csupán férfiként emlegetnek, noha a háttérben mély, melankolikus sebeket hordoz. végtelenül professzionális, csak éppen a lelkében akkora a huzat, mint egy elhagyatott trieszti raktárépületben a bóra idején." data-bio="anna alvarez a száműzött alvarez-család sarja, az almirai elnök rokona, akinek apja vagy nagyapja söpredékből, amerikai pénzből és politikai ügyeskedésből csinált köztársaságot a szigeten. nem úri kisasszony, hanem az alvarez-féle visszatérési kísérlet beavatott embere, aki alvilági klubok, pénzes támogatók és dinasztikus érdekek között mozog, mint más a szalonban. kívülről hideg és lakkozott hatalmi figura, afféle női hadsegéd a puccs mellé, de a regényben kiderül, hogy a szíve azért nem teljesen bádogból készült.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="anna alvarez" data-role="underworld official / political operative; strategic participant in the planned seizure of almira." data-contra="hasonlóképp a félvilági hierarchia megfellebbezhetetlen direktora, akit a matrózok és martalócok félelemmel vegyes tisztelettel csupán férfiként emlegetnek, noha a háttérben mély, melankolikus sebeket hordoz. végtelenül professzionális, csak éppen a lelkében akkora a huzat, mint egy elhagyatott trieszti raktárépületben a bóra idején." data-bio="az alvarez-dinasztia reprezentatív hölgytagja, aki az alvilági bankárok és a felforgató elemek között olyan magabiztosan mozog, mint más a stefánia úti korzón. nem holmi törékeny szalondáma, hanem a puccs előkészítésének nélkülözhetetlen kabinetfőnöke; a rideg hatalomtechnika és a politikai korrupció professzora, akiről persze a kellő dramaturgiai ponton kiderül, hogy a keble alatt nem acélrugó, hanem nagyon is érzékeny szerv dobog.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Anna Alvarez.webp" data-name="Anna Alvarez" data-contra="Hasonlóképp a félvilági hierarchia megfellebbezhetetlen direktora, akit a matrózok és martalócok félelemmel vegyes tisztelettel csupán férfiként emlegetnek, noha a háttérben mély, melankolikus sebeket hordoz. Végtelenül professzionális, csak éppen a lelkében akkora a huzat, mint egy elhagyatott trieszti raktárépületben a bóra idején." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Anna Alvarez.webp" alt="Anna Alvarez" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6140,7 +6504,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Anna Alvarez a száműzött Alvarez-család sarja, az almirai elnök rokona, akinek apja vagy nagyapja söpredékből, amerikai pénzből és politikai ügyeskedésből csinált köztársaságot a szigeten. Nem úri kisasszony, hanem az Alvarez-féle visszatérési kísérlet beavatott embere, aki alvilági klubok, pénzes támogatók és dinasztikus érdekek között mozog, mint más a szalonban. Kívülről hideg és lakkozott hatalmi figura, afféle női hadsegéd a puccs mellé, de a regényben kiderül, hogy a szíve azért nem teljesen bádogból készült.</p>
+        <p class="rejto-bio-text">Az Alvarez-dinasztia reprezentatív hölgytagja, aki az alvilági bankárok és a felforgató elemek között olyan magabiztosan mozog, mint más a Stefánia úti korzón. Nem holmi törékeny szalondáma, hanem a puccs előkészítésének nélkülözhetetlen kabinetfőnöke; a rideg hatalomtechnika és a politikai korrupció professzora, akiről persze a kellő dramaturgiai ponton kiderül, hogy a keble alatt nem acélrugó, hanem nagyon is érzékeny szerv dobog.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -6189,7 +6553,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="sir egmont" data-role="prime minister-like hereditary political power on the boldogság szigetek; the queen's brother; central noble operator in the court. he is both guardian of dynastic mechanism and covert aspirant/manipulator of succession. narratively he is the principal court intriguer and the one who knowingly sustains the false kingship for political ends." data-contra="a monarchista lojalitás szobra, aki a koronahűség és a történelmi tradíciók legszebb jelszavaival zsonglőrködik a nyilvánosság előtt, miközben a trónöröklés gépezetét a saját magánérdekei szerint hangolja át. az udvari etikettet fegyverként forgatja: nála a térdhajtás mélysége pontosan aránylik a trónbitorlás esélyeihez." data-bio="sir egmont almira udvarának örökös miniszterelnöke, a királyné fivére: ősz, magas, kardvágást viselő homlokú főúr, aki a törvény és a szertartás mögé bújva intézi a dinasztia piszkosabb ügyeit. ő az egyik kevés ember, aki tudja a nagy családi csalást: a trónörökösnek hitt st. antonio nem a néhai király fia, hanem wilbour theodor fregattkapitány gyermeke. nem egyszerű udvari méltóság, hanem hidegfejű intrikus, aki a monarchiát úgy őrzi, mint más a pénzesládát: elsősorban a saját kezében.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="sir egmont" data-role="prime minister-like hereditary political power on the boldogság szigetek; the queen's brother; central noble operator in the court. he is both guardian of dynastic mechanism and covert aspirant/manipulator of succession. narratively he is the principal court intriguer and the one who knowingly sustains the false kingship for political ends." data-contra="a monarchista lojalitás szobra, aki a koronahűség és a történelmi tradíciók legszebb jelszavaival zsonglőrködik a nyilvánosság előtt, miközben a trónöröklés gépezetét a saját magánérdekei szerint hangolja át. az udvari etikettet fegyverként forgatja: nála a térdhajtás mélysége pontosan aránylik a trónbitorlás esélyeihez." data-bio="almira udvarának örökös miniszterelnöke és a királyné testvérbátyja, akinek kardvágásos homloka mögött a monarchia legpiszkosabb családi stiklijei nyugszanak hivatali csendben. ő az a szigorú államférfi, aki pontosan tudja, hogy a trónörökös csupán egy ügyesen becsempészett tengerészkölyök, ám az etikett és az államérdek szent nevében ezt a titkot úgy kezeli, mint a saját privát széfjét: senkinek sincs hozzá kulcsa, és a haszon mindig nála landol.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Sir Egmont.webp" data-name="Sir Egmont" data-contra="A monarchista lojalitás szobra, aki a koronahűség és a történelmi tradíciók legszebb jelszavaival zsonglőrködik a nyilvánosság előtt, miközben a trónöröklés gépezetét a saját magánérdekei szerint hangolja át. Az udvari etikettet fegyverként forgatja: nála a térdhajtás mélysége pontosan aránylik a trónbitorlás esélyeihez." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Sir Egmont.webp" alt="Sir Egmont" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6208,7 +6572,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Sir Egmont Almira udvarának örökös miniszterelnöke, a királyné fivére: ősz, magas, kardvágást viselő homlokú főúr, aki a törvény és a szertartás mögé bújva intézi a dinasztia piszkosabb ügyeit. Ő az egyik kevés ember, aki tudja a nagy családi csalást: a trónörökösnek hitt St. Antonio nem a néhai király fia, hanem Wilbour Theodor fregattkapitány gyermeke. Nem egyszerű udvari méltóság, hanem hidegfejű intrikus, aki a monarchiát úgy őrzi, mint más a pénzesládát: elsősorban a saját kezében.</p>
+        <p class="rejto-bio-text">Almira udvarának örökös miniszterelnöke és a királyné testvérbátyja, akinek kardvágásos homloka mögött a monarchia legpiszkosabb családi stiklijei nyugszanak hivatali csendben. Ő az a szigorú államférfi, aki pontosan tudja, hogy a trónörökös csupán egy ügyesen becsempészett tengerészkölyök, ám az etikett és az államérdek szent nevében ezt a titkot úgy kezeli, mint a saját privát széfjét: senkinek sincs hozzá kulcsa, és a haszon mindig nála landol.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -6257,7 +6621,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="tulipán" data-role="smuggler / trafficker of labor or expendable ship hands; a merchant of illicit manpower for ships carrying contraband." data-contra="az emberi életek adásvételével foglalkozó, morálisan nehezen szalonképes úr, aki mindezt oly tisztes iparosmentalitással, mérlegeléssel és minőségellenőrzéssel gyakorolja, mintha csupán fűszerárut mérne a vásárcsarnokban. a romlottsága éppen abban a hátborzongató polgári pedantériában rejlik, amellyel a számlát kiállítja a túszátadást követően." data-bio="tulipán a regény alvilági tengerparti ipar tisztesen tisztességtelen mestere: embercsempész és „élő áru” kereskedő, aki matrózt, csavargót vagy éppen királyt is áruként kezel. tömzsi, bekötött fejű, tengerészes külsejű figura, aki embervásárlásról és verésről úgy beszél, mintha csupán szállítási feltételeket egyeztetne. nem nagyvilági zsiványvezér, inkább az a fajta üzletember, akinek a lelkiismerete helyén egy pontosan vezetett elszámolókönyv fekszik.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="tulipán" data-role="smuggler / trafficker of labor or expendable ship hands; a merchant of illicit manpower for ships carrying contraband." data-contra="az emberi életek adásvételével foglalkozó, morálisan nehezen szalonképes úr, aki mindezt oly tisztes iparosmentalitással, mérlegeléssel és minőségellenőrzéssel gyakorolja, mintha csupán fűszerárut mérne a vásárcsarnokban. a romlottsága éppen abban a hátborzongató polgári pedantériában rejlik, amellyel a számlát kiállítja a túszátadást követően." data-bio="a part menti humánlogisztika fáradhatatlan vállalkozója, aki a matrózokat, csavargókat és olykor a miniszterelnököket is pusztán köbméterre elszámolandó élő rakománynak tekinti. tömzsi alkatú, bekötött fejű úriember, akinek az üzleti etikája kimerül a pontos könyvelésben és a hátulról mért szakszerű tompa ütésekben; a lelkiismeret luxusát pedig rég becserélte egy szolid, kikötői hajóskocsmára.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Tulipán.webp" data-name="Tulipán" data-contra="Az emberi életek adásvételével foglalkozó, morálisan nehezen szalonképes úr, aki mindezt oly tisztes iparosmentalitással, mérlegeléssel és minőségellenőrzéssel gyakorolja, mintha csupán fűszerárut mérne a Vásárcsarnokban. A romlottsága éppen abban a hátborzongató polgári pedantériában rejlik, amellyel a számlát kiállítja a túszátadást követően." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Tulipán.webp" alt="Tulipán" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6276,7 +6640,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Tulipán a regény alvilági tengerparti ipar tisztesen tisztességtelen mestere: embercsempész és „élő áru” kereskedő, aki matrózt, csavargót vagy éppen királyt is áruként kezel. Tömzsi, bekötött fejű, tengerészes külsejű figura, aki embervásárlásról és verésről úgy beszél, mintha csupán szállítási feltételeket egyeztetne. Nem nagyvilági zsiványvezér, inkább az a fajta üzletember, akinek a lelkiismerete helyén egy pontosan vezetett elszámolókönyv fekszik.</p>
+        <p class="rejto-bio-text">A part menti humánlogisztika fáradhatatlan vállalkozója, aki a matrózokat, csavargókat és olykor a miniszterelnököket is pusztán köbméterre elszámolandó élő rakománynak tekinti. Tömzsi alkatú, bekötött fejű úriember, akinek az üzleti etikája kimerül a pontos könyvelésben és a hátulról mért szakszerű tompa ütésekben; a lelkiismeret luxusát pedig rég becserélte egy szolid, kikötői hajóskocsmára.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -6325,7 +6689,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="szállásmester" data-role="ship steward / quartermaster-like logistical officer ('szállásmester') on the honolulu-star." data-contra="a fedélzeti rendtartás azon szerencsétlen végrehajtója, akinek a határozott fellépése mögött a pánik legtisztább formája vibrál. hivatalos funkciója szerint szigorú logisztikai vezető, a valóságban viszont folyamatosan a legközelebbi mentőcsónak koordinátáit számolgatja, mélyen átérezve a tengeri szolgálat ízléstelen veszélyeit." data-bio="a szállásmester a honolulu-star fedélzetének szolgálati embere, afféle hajóbeli logisztikus és közvetítő, akinek rangja, dolga és felelőssége többet nyom, mint amennyit az idegrendszere jókedvvel elbírna. nem titkos fejedelem és nem tengeri zsivány, hanem szabályzatok közt őrlődő, gyakorlatias hajóalkalmazott, aki kifelé intézkedik, befelé pedig retteg. a rend fenntartására szerződtették, de a regény zűrzavarában inkább a pánik udvarias adminisztrátorává válik.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kapitany" data-audio="has-audio" data-master="normal" data-name="szállásmester" data-role="ship steward / quartermaster-like logistical officer ('szállásmester') on the honolulu-star." data-contra="a fedélzeti rendtartás azon szerencsétlen végrehajtója, akinek a határozott fellépése mögött a pánik legtisztább formája vibrál. hivatalos funkciója szerint szigorú logisztikai vezető, a valóságban viszont folyamatosan a legközelebbi mentőcsónak koordinátáit számolgatja, mélyen átérezve a tengeri szolgálat ízléstelen veszélyeit." data-bio="a honolulu-star fedélzetének adminisztratív vértanúja, aki a brit hajózási szabályzat és a küszöbön álló vérfürdő között próbálja fenntartani a fegyelem látszatát. nem hős és nem kalóz, csupán egy szerencsétlen beosztott, akinek a nervózus állapota napról napra romlik a fedélzeten kószáló álruhás hercegek láttán; végső soron ő a katasztrófa udvarias, aranygombos jegyzőkönyvvezetője.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Szállásmester.webp" data-name="Szállásmester" data-contra="A fedélzeti rendtartás azon szerencsétlen végrehajtója, akinek a határozott fellépése mögött a pánik legtisztább formája vibrál. Hivatalos funkciója szerint szigorú logisztikai vezető, a valóságban viszont folyamatosan a legközelebbi mentőcsónak koordinátáit számolgatja, mélyen átérezve a tengeri szolgálat ízléstelen veszélyeit." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Szállásmester.webp" alt="Szállásmester" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6344,7 +6708,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">A szállásmester a Honolulu-Star fedélzetének szolgálati embere, afféle hajóbeli logisztikus és közvetítő, akinek rangja, dolga és felelőssége többet nyom, mint amennyit az idegrendszere jókedvvel elbírna. Nem titkos fejedelem és nem tengeri zsivány, hanem szabályzatok közt őrlődő, gyakorlatias hajóalkalmazott, aki kifelé intézkedik, befelé pedig retteg. A rend fenntartására szerződtették, de a regény zűrzavarában inkább a pánik udvarias adminisztrátorává válik.</p>
+        <p class="rejto-bio-text">A Honolulu-Star fedélzetének adminisztratív vértanúja, aki a brit hajózási szabályzat és a küszöbön álló vérfürdő között próbálja fenntartani a fegyelem látszatát. Nem hős és nem kalóz, csupán egy szerencsétlen beosztott, akinek a nervózus állapota napról napra romlik a fedélzeten kószáló álruhás hercegek láttán; végső soron ő a katasztrófa udvarias, aranygombos jegyzőkönyvvezetője.</p>
       </div>
       
       <div class="rejto-audio-block">
@@ -6393,7 +6757,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="mr. theo" data-role="rendkívül gazdag amerikai milliomos, a pacific ocean trust vezérigazgatójának fia; tényleges foglalkozása kezdetben nincs, mert tudatosan kerüli a munkát" data-contra="henyélésre berendezkedett, vagyonos úriember, aki anélkül óhajtana bevonulni a világtörténelembe, hogy azért a kisujját is megmozdítaná. ennek ellenére a sors szeszélye folytán újra és újra olyan heroikus helyzetekbe sodródik, ahol a veleszületett érzékenysége és meglepő kurázsija kénytelen felülírni a kényelmes semmittevést." data-bio="mr. theo valójában egy mérhetetlenül gazdag amerikai milliomos, a pacific ocean trust vezérigazgatójának fia, aki eddig gondosan kerülte mindazt, amit a józan világ munkának nevez. kívülről elkényeztetett, kényes úrfi, akinek a gallérja is csak idegességében szorít, belül azonban több emberség és ideg lakik benne, mint a vagyona alapján gondolnák. nem eredetileg kalandor, hanem a pénz párnázott oldaláról sodródik bele egy históriába, ahol a milliomosnak is meg kell tanulnia félni, dönteni és helytállni.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="mr. theo" data-role="rendkívül gazdag amerikai milliomos, a pacific ocean trust vezérigazgatójának fia; tényleges foglalkozása kezdetben nincs, mert tudatosan kerüli a munkát" data-contra="henyélésre berendezkedett, vagyonos úriember, aki anélkül óhajtana bevonulni a világtörténelembe, hogy azért a kisujját is megmozdítaná. ennek ellenére a sors szeszélye folytán újra és újra olyan heroikus helyzetekbe sodródik, ahol a veleszületett érzékenysége és meglepő kurázsija kénytelen felülírni a kényelmes semmittevést." data-bio="a pacific ocean trust vezérigazgatójának egyetlen fia és örököse, aki eddigi életét az aranyozott semmittevés kényelmes foteljaiban töltötte el. bár a merevített gallérja és a pezsgőspohár tartása kifogástalan, a sors szeszélye folytán belecsöppen a kikötői valóságba, ahol hamar kénytelen megtanulni, hogy az amerikai dollármilliók a lefejezés ellenében nem mindig képeznek azonnal érvényesíthető valutát; szerelmi tébolyában pedig még egy expedíciós gőzöst is kibérel, csak hogy a hőn áhított pepita ofélia nyomába eredhessen.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Mr. Theo.webp" data-name="Mr. Theo" data-contra="Henyélésre berendezkedett, vagyonos úriember, aki anélkül óhajtana bevonulni a világtörténelembe, hogy azért a kisujját is megmozdítaná. Ennek ellenére a sors szeszélye folytán újra és újra olyan heroikus helyzetekbe sodródik, ahol a veleszületett érzékenysége és meglepő kurázsija kénytelen felülírni a kényelmes semmittevést." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Mr. Theo.webp" alt="Mr. Theo" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6412,7 +6776,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Mr. Theo valójában egy mérhetetlenül gazdag amerikai milliomos, a Pacific Ocean Trust vezérigazgatójának fia, aki eddig gondosan kerülte mindazt, amit a józan világ munkának nevez. Kívülről elkényeztetett, kényes úrfi, akinek a gallérja is csak idegességében szorít, belül azonban több emberség és ideg lakik benne, mint a vagyona alapján gondolnák. Nem eredetileg kalandor, hanem a pénz párnázott oldaláról sodródik bele egy históriába, ahol a milliomosnak is meg kell tanulnia félni, dönteni és helytállni.</p>
+        <p class="rejto-bio-text">A Pacific Ocean Trust vezérigazgatójának egyetlen fia és örököse, aki eddigi életét az aranyozott semmittevés kényelmes foteljaiban töltötte el. Bár a merevített gallérja és a pezsgőspohár tartása kifogástalan, a sors szeszélye folytán belecsöppen a kikötői valóságba, ahol hamar kénytelen megtanulni, hogy az amerikai dollármilliók a lefejezés ellenében nem mindig képeznek azonnal érvényesíthető valutát; szerelmi tébolyában pedig még egy expedíciós gőzöst is kibérel, csak hogy a hőn áhított Pepita Ofélia nyomába eredhessen.</p>
       </div>
       
       
@@ -6455,7 +6819,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="wagner úr" data-role="kikötői csavargó, szélhámos, alkalmi üzletkötő, önjelölt 'wagner corporation'-elnök; az alvilág és tengerészvilág ismert alakja" data-contra="meglehetősen leharcolt, alkoholgőzös figura, akinek a ruházata már a textilipar előtti korszakot idézi, mégis olyan mély és operatív ismeretekkel bír a kikötői üzelmekről, hogy az bármely államrendőrség dicsőségére válna. züllöttsége csupán zseniális álca, amellyel a puszta túlélés tudományát gyakorolja." data-bio="wagner úr valójában a kikötők örökös, részeg bohémja: csavargó, szélhámos, alkalmi üzér és tengeri csirkefogó, aki olyan állapotban szokott lenni, hogy a józanságot legfeljebb fényképről ismerné fel. mégsem puszta komikus roncs, hanem régi, sokat látott kikötői figura, piszkos fred egyik természetes szövetségese, aki a börtönök, hajók és zavaros vállalkozások világában otthonosabban mozog, mint más a saját előszobájában. magát fennkölten a „wagner corporation” fejének tekinti, ami annyiban nem hazugság, hogy valóban volt közös, erősen kalózszagú hajós üzletük piszkos freddel. jellegzetes kellékei – arnold veréb, a virágokkal tömött zsebek, a gyertyás kalap és az ünnepélyes marhaságok – mögött egy túlélésre berendezkedett, ravasz tengeri csirkefogó lapul.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="wagner úr" data-role="kikötői csavargó, szélhámos, alkalmi üzletkötő, önjelölt 'wagner corporation'-elnök; az alvilág és tengerészvilág ismert alakja" data-contra="meglehetősen leharcolt, alkoholgőzös figura, akinek a ruházata már a textilipar előtti korszakot idézi, mégis olyan mély és operatív ismeretekkel bír a kikötői üzelmekről, hogy az bármely államrendőrség dicsőségére válna. züllöttsége csupán zseniális álca, amellyel a puszta túlélés tudományát gyakorolja." data-bio="a nemzetközi bohémvilág és az akut alkoholizmus két lábon járó emlékműve, aki a wagner corporation vezérigazgatójaként tekint önmagára, dacára annak, hogy a cég vagyona egy kalapra rögzített gyertyacsonkban és arnold nevű házi verebében merül ki. piszkos fred régi, kipróbált üzlettársa a legsötétebb kalózakciókban; az ünnepélyes marhaságok és a virágokkal kitömött zsebek mögött egy meglepően szívós, sokat próbált kikötői túlélőművész kacsintgat a börtönrácsok mögül.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Wagner úr.webp" data-name="Wagner úr" data-contra="Meglehetősen leharcolt, alkoholgőzös figura, akinek a ruházata már a textilipar előtti korszakot idézi, mégis olyan mély és operatív ismeretekkel bír a kikötői üzelmekről, hogy az bármely államrendőrség dicsőségére válna. Züllöttsége csupán zseniális álca, amellyel a puszta túlélés tudományát gyakorolja." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Wagner úr.webp" alt="Wagner úr" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6474,7 +6838,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Wagner úr valójában a kikötők örökös, részeg bohémja: csavargó, szélhámos, alkalmi üzér és tengeri csirkefogó, aki olyan állapotban szokott lenni, hogy a józanságot legfeljebb fényképről ismerné fel. Mégsem puszta komikus roncs, hanem régi, sokat látott kikötői figura, Piszkos Fred egyik természetes szövetségese, aki a börtönök, hajók és zavaros vállalkozások világában otthonosabban mozog, mint más a saját előszobájában. Magát fennkölten a „Wagner Corporation” fejének tekinti, ami annyiban nem hazugság, hogy valóban volt közös, erősen kalózszagú hajós üzletük Piszkos Freddel. Jellegzetes kellékei – Arnold veréb, a virágokkal tömött zsebek, a gyertyás kalap és az ünnepélyes marhaságok – mögött egy túlélésre berendezkedett, ravasz tengeri csirkefogó lapul.</p>
+        <p class="rejto-bio-text">A nemzetközi bohémvilág és az akut alkoholizmus két lábon járó emlékműve, aki a Wagner Corporation vezérigazgatójaként tekint önmagára, dacára annak, hogy a cég vagyona egy kalapra rögzített gyertyacsonkban és Arnold nevű házi verebében merül ki. Piszkos Fred régi, kipróbált üzlettársa a legsötétebb kalózakciókban; az ünnepélyes marhaságok és a virágokkal kitömött zsebek mögött egy meglepően szívós, sokat próbált kikötői túlélőművész kacsintgat a börtönrácsok mögül.</p>
       </div>
       
       
@@ -6517,7 +6881,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="gustav bahr" data-role="világhírűnek mondott földrajzkutató, aki small egon álnéven porszívó- és vasútjegyügynökként bujkált; egyszerre tudós és szélhámos önmitologizáló figura" data-contra="a tudományos világ fenséges professzora, kinek felfedezői pátosza mögött valójában egy kényelemszerető, bujkáló ügynök húzódik meg. az egzotikus expedíciókba nem a kutatói szomj hajtja, hanem az a kétségbeesett és mélységesen érthető törekvés, hogy elmeneküljön a házasélet kispolgári kellemetlenségei elől." data-bio="gustav bahr világhírű földrajzkutató, aki a dicsőség mellé meglehetősen gyakorlatias túlélési technikákat is kifejlesztett: szükség esetén small egon néven porszívó- és vasútjegyügynökként bujkál. nem egyszerűen tudós, hanem önmaga köré legendát gyártó, kényelmét féltő, házassági bonyodalmak elől is kitérő, komikusan nagyszabású szélhámos-felfedező. monoklis pátosszal adja elő a nagy expedíciós embert, de közben több köze van a rejtői menekülésművészethez, mint livingstone-hoz.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="gustav bahr" data-role="világhírűnek mondott földrajzkutató, aki small egon álnéven porszívó- és vasútjegyügynökként bujkált; egyszerre tudós és szélhámos önmitologizáló figura" data-contra="a tudományos világ fenséges professzora, kinek felfedezői pátosza mögött valójában egy kényelemszerető, bujkáló ügynök húzódik meg. az egzotikus expedíciókba nem a kutatói szomj hajtja, hanem az a kétségbeesett és mélységesen érthető törekvés, hogy elmeneküljön a házasélet kispolgári kellemetlenségei elől." data-bio="világhírű felfedező és geográfus, aki a tudomány oltárán hozott áldozatok helyett leginkább a házassági kötelezettségek elől menekül, méghozzá small egon néven, mint porszívóügynök. monokliját és akadémiai pátoszát olyan eleganciával viseli a legmélyebb lápvidéken is, hogy a bennszülöttek szinte bocsánatot kérnek a kannibalizmusért; a túléléshez szükséges szélhámosságot pedig jóval magasabb fokon űzi, mint a térképészetet.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Gustav Bahr.webp" data-name="Gustav Bahr" data-contra="A tudományos világ fenséges professzora, kinek felfedezői pátosza mögött valójában egy kényelemszerető, bujkáló ügynök húzódik meg. Az egzotikus expedíciókba nem a kutatói szomj hajtja, hanem az a kétségbeesett és mélységesen érthető törekvés, hogy elmeneküljön a házasélet kispolgári kellemetlenségei elől." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Gustav Bahr.webp" alt="Gustav Bahr" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6536,7 +6900,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Gustav Bahr világhírű földrajzkutató, aki a dicsőség mellé meglehetősen gyakorlatias túlélési technikákat is kifejlesztett: szükség esetén Small Egon néven porszívó- és vasútjegyügynökként bujkál. Nem egyszerűen tudós, hanem önmaga köré legendát gyártó, kényelmét féltő, házassági bonyodalmak elől is kitérő, komikusan nagyszabású szélhámos-felfedező. Monoklis pátosszal adja elő a nagy expedíciós embert, de közben több köze van a rejtői menekülésművészethez, mint Livingstone-hoz.</p>
+        <p class="rejto-bio-text">Világhírű felfedező és geográfus, aki a tudomány oltárán hozott áldozatok helyett leginkább a házassági kötelezettségek elől menekül, méghozzá Small Egon néven, mint porszívóügynök. Monokliját és akadémiai pátoszát olyan eleganciával viseli a legmélyebb lápvidéken is, hogy a bennszülöttek szinte bocsánatot kérnek a kannibalizmusért; a túléléshez szükséges szélhámosságot pedig jóval magasabb fokon űzi, mint a térképészetet.</p>
       </div>
       
       
@@ -6579,7 +6943,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="maxbell" data-role="hírneves földrajztudós, az expedíció hivatalos szaktekintélye" data-contra="a tudományos csalhatatlanság pózában tetszelgő szakember, aki bármely trópusi dzsungelben képes tíz perc alatt eltévedni. miközben a legbonyolultabb kórképeket diagnosztizálja önmagán hipochonder buzgalommal, a valóság elemi tényeit oly tökéletesen hagyja figyelmen kívül, mint az adóhatóság harmadik fizetési felszólítását." data-bio="sir arthur maxbell a stanley up to date expedíció ünnepélyesen felmutatott földrajztudósa, cilinderes tudományos díszpéldány, aki úgy viselkedik, mintha a földgömb személyesen tőle kérne útbaigazítást. valójában hiú, hipochonder és komikusan esendő figura: a tudomány csalhatatlanságát hirdeti, miközben könnyen eltéved, betegségeket képzel magának, és a tekintélyét legalább annyira gondozza, mint az idegeit. nem álruhás gazember vagy titkos kalóz, hanem valódi tudósféle, csak rejtő világában a tudományos póz nála gyakran erősebb, mint a józan tájékozódás.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="maxbell" data-role="hírneves földrajztudós, az expedíció hivatalos szaktekintélye" data-contra="a tudományos csalhatatlanság pózában tetszelgő szakember, aki bármely trópusi dzsungelben képes tíz perc alatt eltévedni. miközben a legbonyolultabb kórképeket diagnosztizálja önmagán hipochonder buzgalommal, a valóság elemi tényeit oly tökéletesen hagyja figyelmen kívül, mint az adóhatóság harmadik fizetési felszólítását." data-bio="sir arthur maxbell a stanley up to date expedíció ünnepelt földrajztudósa és cilinderes díszpéldánya, aki szilárdan hiszi, hogy a természet csupán azért hozott létre mocsarakat és vadállatokat, hogy ő frakkban eltévedhessen közöttük. szakmai tévedhetetlensége kizárólag a hipochondriájával vetekszik; a trópusi expedíciót úgy vezényli le, mint egy rosszul szervezett délutáni teadélutánt, s miközben a legképtelenebb halálos kórokat diagnosztizálja önmagán, a kézzelfogható valóságot olyan fölénnyel hagyja figyelmen kívül, mint az adóhatóság felszólításait.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Maxbell.webp" data-name="Maxbell" data-contra="A tudományos csalhatatlanság pózában tetszelgő szakember, aki bármely trópusi dzsungelben képes tíz perc alatt eltévedni. Miközben a legbonyolultabb kórképeket diagnosztizálja önmagán hipochonder buzgalommal, a valóság elemi tényeit oly tökéletesen hagyja figyelmen kívül, mint az adóhatóság harmadik fizetési felszólítását." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Maxbell.webp" alt="Maxbell" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6598,7 +6962,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Sir Arthur Maxbell a Stanley Up To Date expedíció ünnepélyesen felmutatott földrajztudósa, cilinderes tudományos díszpéldány, aki úgy viselkedik, mintha a földgömb személyesen tőle kérne útbaigazítást. Valójában hiú, hipochonder és komikusan esendő figura: a tudomány csalhatatlanságát hirdeti, miközben könnyen eltéved, betegségeket képzel magának, és a tekintélyét legalább annyira gondozza, mint az idegeit. Nem álruhás gazember vagy titkos kalóz, hanem valódi tudósféle, csak Rejtő világában a tudományos póz nála gyakran erősebb, mint a józan tájékozódás.</p>
+        <p class="rejto-bio-text">Sir Arthur Maxbell a Stanley Up To Date expedíció ünnepelt földrajztudósa és cilinderes díszpéldánya, aki szilárdan hiszi, hogy a természet csupán azért hozott létre mocsarakat és vadállatokat, hogy ő frakkban eltévedhessen közöttük. Szakmai tévedhetetlensége kizárólag a hipochondriájával vetekszik; a trópusi expedíciót úgy vezényli le, mint egy rosszul szervezett délutáni teadélutánt, s miközben a legképtelenebb halálos kórokat diagnosztizálja önmagán, a kézzelfogható valóságot olyan fölénnyel hagyja figyelmen kívül, mint az adóhatóság felszólításait.</p>
       </div>
       
       
@@ -6641,7 +7005,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="vaszics" data-role="deck master / sailor" data-contra="félszemű, dülöngélő roncs, akinek a megjelenése a legrosszabb külvárosi lebujok emlékét idézi, ám amint a hajó kormánykerekéhez lép, kiderül, hogy a fedélzet legjózanabb elméje. komikus nyomorúsága csupán kontraszt a halálosan precíz tengeri szaktudásához." data-bio="vaszics, vagy ahogy a fedélzeten emlegetik, a vörös vaszics, első pillantásra félszemű, pálinkaszagú hajóroncs, akit az ember inkább kocsmabútornak, mint expedíciós tagnak nézne. valójában azonban edzett, veszélyes és nagyon is használható matrózféle: kikötői verekedésekben kiképzett, tapasztalt tengerész, aki a részeg külső mögé rejti a józan gyakorlati érzékét. tejo embereként szerződött a hajóra, és a zűrzavaros vállalkozásban saját legényeivel külön kis hatalmi tényezővé nőtte ki magát.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="vaszics" data-role="deck master / sailor" data-contra="félszemű, dülöngélő roncs, akinek a megjelenése a legrosszabb külvárosi lebujok emlékét idézi, ám amint a hajó kormánykerekéhez lép, kiderül, hogy a fedélzet legjózanabb elméje. komikus nyomorúsága csupán kontraszt a halálosan precíz tengeri szaktudásához." data-bio="a fedélzeten csak vörös vaszics néven emlegetett tengeri bútor, aki első pillantásra afféle félszemű, pálinkagőzös hajóroncs benyomását kelti, akit a leltározó biztos inkább a selejtes hordók közé sorolna. ám e dülöngélő külső mögött a legkeményebb sanghaji és szingapúri csetepatékban edzett veterán lapul: tejo zsoldjában hajózik, saját lázadó legénységével külön kis hatalmi frakciót képez, s mikor a szükség úgy hozza, a kormánykerék mögött vagy a kézitusában olyan rideg józansággal dirigál, ami bármely flottatisztnek becsületére válna.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Vaszics.webp" data-name="Vaszics" data-contra="Félszemű, dülöngélő roncs, akinek a megjelenése a legrosszabb külvárosi lebujok emlékét idézi, ám amint a hajó kormánykerekéhez lép, kiderül, hogy a fedélzet legjózanabb elméje. Komikus nyomorúsága csupán kontraszt a halálosan precíz tengeri szaktudásához." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Vaszics.webp" alt="Vaszics" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6660,7 +7024,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Vaszics, vagy ahogy a fedélzeten emlegetik, a Vörös Vaszics, első pillantásra félszemű, pálinkaszagú hajóroncs, akit az ember inkább kocsmabútornak, mint expedíciós tagnak nézne. Valójában azonban edzett, veszélyes és nagyon is használható matrózféle: kikötői verekedésekben kiképzett, tapasztalt tengerész, aki a részeg külső mögé rejti a józan gyakorlati érzékét. Tejo embereként szerződött a hajóra, és a zűrzavaros vállalkozásban saját legényeivel külön kis hatalmi tényezővé nőtte ki magát.</p>
+        <p class="rejto-bio-text">A fedélzeten csak Vörös Vaszics néven emlegetett tengeri bútor, aki első pillantásra afféle félszemű, pálinkagőzös hajóroncs benyomását kelti, akit a leltározó biztos inkább a selejtes hordók közé sorolna. Ám e dülöngélő külső mögött a legkeményebb sanghaji és szingapúri csetepatékban edzett veterán lapul: Tejo zsoldjában hajózik, saját lázadó legénységével külön kis hatalmi frakciót képez, s mikor a szükség úgy hozza, a kormánykerék mögött vagy a kézitusában olyan rideg józansággal dirigál, ami bármely flottatisztnek becsületére válna.</p>
       </div>
       
       
@@ -6703,7 +7067,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="szwachta szókratész" data-role="retired executioner" data-contra="a legfőbb állami ítélet-végrehajtó, aki a hóhérmesterséget a pesti kabaré legkifinomultabb nyelvi játékaival ötvözi. a halál technológiáját olyan abszurd bölcselettel és ripacskodással tálalja, hogy a delikvens szinte tapsolni szeretne az akasztás szünetében, ha a kezei nem lennének hátrakötve." data-bio="szwachta szókratész valójában negyvenöt éves, özvegy, nyugalmazott ítéletvégrehajtó, aki saját bevallása szerint hetvenkét szabályszerű kivégzést tud felmutatni, bár életútja olyan kanyargós, mint egy részeg matróz aláírása. a knapp nevet nevelőapjától, egy borbélytól kapta, a schwachta nevet egy hentesbolt előtt talált kisgyermekként viselte, az achmed álnevet pedig a turbán iránti vonzalma és egy operettszerep ragasztotta rá. bostonban a villamosszék áramindítójaként dolgozott, míg egy szerencsétlen rövidzárlat miatt ki nem penderítették, azután hollywood környékén, később kertészként is próbált boldogulni. nem egyszerű különc, hanem soknevű, sodródó szélhámos-bölcselő és hivatásos hóhér, aki a legnagyobb természetességgel viseli mindezt.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="szwachta szókratész" data-role="retired executioner" data-contra="a legfőbb állami ítélet-végrehajtó, aki a hóhérmesterséget a pesti kabaré legkifinomultabb nyelvi játékaival ötvözi. a halál technológiáját olyan abszurd bölcselettel és ripacskodással tálalja, hogy a delikvens szinte tapsolni szeretne az akasztás szünetében, ha a kezei nem lennének hátrakötve." data-bio="egy hetvenkét szabályszerű kivégzést abszolvált, nyugalmazott ítélet-végrehajtó és vándorfilozófus, akinek az életútja kuszább, mint egy megbokrosodott vitorlakötélzet. volt ő már borbélysegéd knapp néven, talált gyermek egy hentesbolt előtt schwachtaként, és achmed néven operett-statiszta a turbánok iránti gyengéje okán; bostonban a villamosszék áramkapcsolójaként funkcionált, mígnem egy rövidzárlat folytán a szórakoztatóipar felé sodródott. a halál technológiáját oly abszurd bölcselettel és pesti kabaréba illő ripacskodással tálalja, hogy a delikvens szinte maga kéri az akasztást a szünetben.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Szwachta Szókratész.webp" data-name="Szwachta Szókratész" data-contra="A legfőbb állami ítélet-végrehajtó, aki a hóhérmesterséget a pesti kabaré legkifinomultabb nyelvi játékaival ötvözi. A halál technológiáját olyan abszurd bölcselettel és ripacskodással tálalja, hogy a delikvens szinte tapsolni szeretne az akasztás szünetében, ha a kezei nem lennének hátrakötve." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Szwachta Szókratész.webp" alt="Szwachta Szókratész" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6722,7 +7086,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Szwachta Szókratész valójában negyvenöt éves, özvegy, nyugalmazott ítéletvégrehajtó, aki saját bevallása szerint hetvenkét szabályszerű kivégzést tud felmutatni, bár életútja olyan kanyargós, mint egy részeg matróz aláírása. A Knapp nevet nevelőapjától, egy borbélytól kapta, a Schwachta nevet egy hentesbolt előtt talált kisgyermekként viselte, az Achmed álnevet pedig a turbán iránti vonzalma és egy operettszerep ragasztotta rá. Bostonban a villamosszék áramindítójaként dolgozott, míg egy szerencsétlen rövidzárlat miatt ki nem penderítették, azután Hollywood környékén, később kertészként is próbált boldogulni. Nem egyszerű különc, hanem soknevű, sodródó szélhámos-bölcselő és hivatásos hóhér, aki a legnagyobb természetességgel viseli mindezt.</p>
+        <p class="rejto-bio-text">Egy hetvenkét szabályszerű kivégzést abszolvált, nyugalmazott ítélet-végrehajtó és vándorfilozófus, akinek az életútja kuszább, mint egy megbokrosodott vitorlakötélzet. Volt ő már borbélysegéd Knapp néven, talált gyermek egy hentesbolt előtt Schwachtaként, és Achmed néven operett-statiszta a turbánok iránti gyengéje okán; Bostonban a villamosszék áramkapcsolójaként funkcionált, mígnem egy rövidzárlat folytán a szórakoztatóipar felé sodródott. A halál technológiáját oly abszurd bölcselettel és pesti kabaréba illő ripacskodással tálalja, hogy a delikvens szinte maga kéri az akasztást a szünetben.</p>
       </div>
       
       
@@ -6765,7 +7129,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="pepita ofélia" data-role="rejtő-hős" data-contra="a színpadi líra és a szentimentális költészet önjelölt papnője, aki a csillagokba révedő tekintetét azonnal lefelé irányítja, amint egy tehetős úr tárcája megnyílik. a magas művészet nála csupán taktikai előjáték a túléléshez: miközben múzsának vallja magát, hidegvérrel zsebeli ki a művészetpártoló közönséget." data-bio="pepita ofélia nem holdfényes, bánatos művésznő, hanem kikötői lokálok edzett túlélője, dalos-bájos kalandornő, aki érzelmet, zenét és számítást ugyanabból a zsebből húz elő. a velő tanya környékén mozog otthonosan, hol citerásnak, hol gitárosnak, máskor egyszerűen pepitának vagy kockás oféliának szólítják, ami nála inkább üzemi állapot, mint névváltozat. valójában olyan nő, aki a csábítást, az alkalmazkodást és a pimasz gyakorlati érzéket egy fürge személyiségbe gyúrja, virginia szivarral és rongyos fekete keménykalappal megkoronázva.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="pepita ofélia" data-role="rejtő-hős" data-contra="a színpadi líra és a szentimentális költészet önjelölt papnője, aki a csillagokba révedő tekintetét azonnal lefelé irányítja, amint egy tehetős úr tárcája megnyílik. a magas művészet nála csupán taktikai előjáték a túléléshez: miközben múzsának vallja magát, hidegvérrel zsebeli ki a művészetpártoló közönséget." data-bio="a velő tanya és a kikötői lokálok edzett túlélője, dalos-bájos kalandornő, aki az érzelmeket, a szentimentális lírát és a hidegvérű készpénzfelvételt ugyanabból a zsebéből húzza elő. fekete keménykalapban, kockás felöltőben és virginia szivarral a szájában lép fel, s miközben a zongora mellett a csillagokba révedő múzsának vallja magát, a tehetős gavallérok tárcájának tartalmát olyan kíméletlen üzemszerűséggel konvertálja a saját javára, mint egy felszámolóiroda.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Pepita Ofélia.webp" data-name="Pepita Ofélia" data-contra="A színpadi líra és a szentimentális költészet önjelölt papnője, aki a csillagokba révedő tekintetét azonnal lefelé irányítja, amint egy tehetős úr tárcája megnyílik. A magas művészet nála csupán taktikai előjáték a túléléshez: miközben múzsának vallja magát, hidegvérrel zsebeli ki a művészetpártoló közönséget." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Pepita Ofélia.webp" alt="Pepita Ofélia" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6784,7 +7148,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Pepita Ofélia nem holdfényes, bánatos művésznő, hanem kikötői lokálok edzett túlélője, dalos-bájos kalandornő, aki érzelmet, zenét és számítást ugyanabból a zsebből húz elő. A Velő Tanya környékén mozog otthonosan, hol citerásnak, hol gitárosnak, máskor egyszerűen Pepitának vagy Kockás Oféliának szólítják, ami nála inkább üzemi állapot, mint névváltozat. Valójában olyan nő, aki a csábítást, az alkalmazkodást és a pimasz gyakorlati érzéket egy fürge személyiségbe gyúrja, Virginia szivarral és rongyos fekete keménykalappal megkoronázva.</p>
+        <p class="rejto-bio-text">A Velő Tanya és a kikötői lokálok edzett túlélője, dalos-bájos kalandornő, aki az érzelmeket, a szentimentális lírát és a hidegvérű készpénzfelvételt ugyanabból a zsebéből húzza elő. Fekete keménykalapban, kockás felöltőben és Virginia szivarral a szájában lép fel, s miközben a zongora mellett a csillagokba révedő múzsának vallja magát, a tehetős gavallérok tárcájának tartalmát olyan kíméletlen üzemszerűséggel konvertálja a saját javára, mint egy felszámolóiroda.</p>
       </div>
       
       
@@ -6827,7 +7191,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="watson kapitány" data-role="rejtő-hős" data-contra="a tengerészeti fegyelem és a makulátlan professzionalizmus mintaképe, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. a katonás rend nála csupán paraván: a legkisebb rezdülés nélkül döfi hátba a flottát, természetesen a legszigorúbb szolgálati szabályzat szerint." data-bio="watson kapitány afféle egyenruhás félreértés: kapitánynak látszik, parancsol is, de a tengerhez inkább kézikönyvi, mint sós-vizes viszonya van. udvarias, szabályos, már-már mintaszerű hajóparancsnoknak mutatkozik, valójában azonban thorn titkárral összejátszó, hátulról szervezkedő konspirátor, gyanús figurák társaságában. nem a régi, csatakos tengeri medvék fajtájából való, hanem a veszedelmesebb változatból, amelyik rendet imitál, miközben árulást adminisztrál.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="watson kapitány" data-role="rejtő-hős" data-contra="a tengerészeti fegyelem és a makulátlan professzionalizmus mintaképe, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. a katonás rend nála csupán paraván: a legkisebb rezdülés nélkül döfi hátba a flottát, természetesen a legszigorúbb szolgálati szabályzat szerint." data-bio="a haditengerészeti fegyelem és a makulátlan professzionalizmus két lábon járó paravánja, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. watson nem a sós habokkal küzdő tengeri medve, hanem a modern konspirátor irodai mintapéldánya: thorn titkárral és a fegyvercsempészekkel karöltve, a szolgálati szabályzat legszigorúbb betartása mellett adja el a hajóját és a legénységét a gátlástalan megbízóknak.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Watson kapitány.webp" data-name="Watson kapitány" data-contra="A tengerészeti fegyelem és a makulátlan professzionalizmus mintaképe, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. A katonás rend nála csupán paraván: a legkisebb rezdülés nélkül döfi hátba a flottát, természetesen a legszigorúbb szolgálati szabályzat szerint." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Watson kapitány.webp" alt="Watson kapitány" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6846,7 +7210,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Watson kapitány afféle egyenruhás félreértés: kapitánynak látszik, parancsol is, de a tengerhez inkább kézikönyvi, mint sós-vizes viszonya van. Udvarias, szabályos, már-már mintaszerű hajóparancsnoknak mutatkozik, valójában azonban Thorn titkárral összejátszó, hátulról szervezkedő konspirátor, gyanús figurák társaságában. Nem a régi, csatakos tengeri medvék fajtájából való, hanem a veszedelmesebb változatból, amelyik rendet imitál, miközben árulást adminisztrál.</p>
+        <p class="rejto-bio-text">A haditengerészeti fegyelem és a makulátlan professzionalizmus két lábon járó paravánja, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. Watson nem a sós habokkal küzdő tengeri medve, hanem a modern konspirátor irodai mintapéldánya: Thorn titkárral és a fegyvercsempészekkel karöltve, a szolgálati szabályzat legszigorúbb betartása mellett adja el a hajóját és a legénységét a gátlástalan megbízóknak.</p>
       </div>
       
       
@@ -6889,7 +7253,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="lilian hiller" data-role="dr. hiller lánya; álruhás intellektuális és érzelmi stratégiai kulcsszereplő" data-contra="könnyelmű, szélhámoskodásra hajlamos hölgy, aki a hazugságokat és a fondorlatos szerepjátékokat a mindennapi toilette természetes részének tekinti. e zűrzavaros fondorlatok mögött azonban mély és sebezhető érzelmek rejtőznek; a megtévesztés számára nem bűn, hanem az érzelmi túlélés egyetlen lehetséges diplomáciai eszköze." data-bio="lilian hiller dr. hiller lánya: művelt, előkelőnek látszó fiatal nő, aki nemcsak dísz a fedélzeten, hanem eszével, színlelésével és gyors helyzetfelismerésével is dolgozik. valójában álruhás hadvezér szoknyában: egyszerre szerelmes nő és taktikus játékos, aki a maga ügyét nem egyenes úton, hanem félmosollyal, elhallgatással és jól időzített eltűnéssel intézi. külső könnyedsége mögött valódi szenvedés és valódi érzelem lapul, ami rejtő világában mindig gyanúsan nemes tulajdonság.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="lilian hiller" data-role="dr. hiller lánya; álruhás intellektuális és érzelmi stratégiai kulcsszereplő" data-contra="könnyelmű, szélhámoskodásra hajlamos hölgy, aki a hazugságokat és a fondorlatos szerepjátékokat a mindennapi toilette természetes részének tekinti. e zűrzavaros fondorlatok mögött azonban mély és sebezhető érzelmek rejtőznek; a megtévesztés számára nem bűn, hanem az érzelmi túlélés egyetlen lehetséges diplomáciai eszköze." data-bio="dr. hiller leánya, előkelő és művelt fiatal hölgy, aki a fedélzeten csupán dísznek tetszik, valójában azonban álruhás hadvezér szoknyában. éles eszével, színlelt naivitásával és villámgyors helyzetfelismerésével úgy sakkozik a tengeri csirkefogók és kémek között, hogy azok észre sem veszik a mattot; külső könnyedsége és fondorlatai mögött azonban valódi szenvedés és megingathatatlan érzelmi hűség rejtőzik.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Lilian Hiller.webp" data-name="Lilian Hiller" data-contra="Könnyelmű, szélhámoskodásra hajlamos hölgy, aki a hazugságokat és a fondorlatos szerepjátékokat a mindennapi toilette természetes részének tekinti. E zűrzavaros fondorlatok mögött azonban mély és sebezhető érzelmek rejtőznek; a megtévesztés számára nem bűn, hanem az érzelmi túlélés egyetlen lehetséges diplomáciai eszköze." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Lilian Hiller.webp" alt="Lilian Hiller" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6908,7 +7272,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Lilian Hiller Dr. Hiller lánya: művelt, előkelőnek látszó fiatal nő, aki nemcsak dísz a fedélzeten, hanem eszével, színlelésével és gyors helyzetfelismerésével is dolgozik. Valójában álruhás hadvezér szoknyában: egyszerre szerelmes nő és taktikus játékos, aki a maga ügyét nem egyenes úton, hanem félmosollyal, elhallgatással és jól időzített eltűnéssel intézi. Külső könnyedsége mögött valódi szenvedés és valódi érzelem lapul, ami Rejtő világában mindig gyanúsan nemes tulajdonság.</p>
+        <p class="rejto-bio-text">Dr. Hiller leánya, előkelő és művelt fiatal hölgy, aki a fedélzeten csupán dísznek tetszik, valójában azonban álruhás hadvezér szoknyában. Éles eszével, színlelt naivitásával és villámgyors helyzetfelismerésével úgy sakkozik a tengeri csirkefogók és kémek között, hogy azok észre sem veszik a mattot; külső könnyedsége és fondorlatai mögött azonban valódi szenvedés és megingathatatlan érzelmi hűség rejtőzik.</p>
       </div>
       
       
@@ -6951,7 +7315,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="edit leven" data-role="edith leven, tom leven húga; korábban londoni tisztviselőnő, a regényben 'a kölyök' álnéven szökevény mérnök" data-contra="kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna." data-bio="edit leven valójában tom leven húga, egy londoni tisztviselőnő, aki nőként fiúnak álcázva, „a kölyök” néven keveredik a legkülönfélébb gazemberek és tengeri csirkefogók társaságába. a regényben szökevény mérnöknek látszik, harry leven névre szóló petróleumkutatási engedéllyel, ami csak afféle papírból szabott füstfüggöny. a valóságban bátor, makacs és önfeláldozó nővér, aki bátyja ügyéért olyan helyekre is bemegy, ahová rendes ember legfeljebb végrendelettel indul.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="edit leven" data-role="edith leven, tom leven húga; korábban londoni tisztviselőnő, a regényben 'a kölyök' álnéven szökevény mérnök" data-contra="kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna." data-bio="tom leven húga, bátor londoni tisztviselőnő, aki zöldes arcbőrű, ijedt kamaszfiúnak maszkírozva, 'a kölyök' álnéven és harry leven hamis petróleumkutatási engedélyével veti bele magát a kikötői alvilág sűrűjébe. családi kötelezettségei okán habozás nélkül száll le a bűnözők és dezertőrök legmélyebb bugyraiba, s ott a bátyja megmentéséért olyan acélos gerinccel és elszántsággal áll helyt, ami bármely birodalmi gárdatisztnek becsületére válna.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Edit Leven.webp" data-name="Edit Leven" data-contra="Kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. Családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Edit Leven.webp" alt="Edit Leven" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -6970,7 +7334,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Edit Leven valójában Tom Leven húga, egy londoni tisztviselőnő, aki nőként fiúnak álcázva, „A Kölyök” néven keveredik a legkülönfélébb gazemberek és tengeri csirkefogók társaságába. A regényben szökevény mérnöknek látszik, Harry Leven névre szóló petróleumkutatási engedéllyel, ami csak afféle papírból szabott füstfüggöny. A valóságban bátor, makacs és önfeláldozó nővér, aki bátyja ügyéért olyan helyekre is bemegy, ahová rendes ember legfeljebb végrendelettel indul.</p>
+        <p class="rejto-bio-text">Tom Leven húga, bátor londoni tisztviselőnő, aki zöldes arcbőrű, ijedt kamaszfiúnak maszkírozva, 'A Kölyök' álnéven és Harry Leven hamis petróleumkutatási engedélyével veti bele magát a kikötői alvilág sűrűjébe. Családi kötelezettségei okán habozás nélkül száll le a bűnözők és dezertőrök legmélyebb bugyraiba, s ott a bátyja megmentéséért olyan acélos gerinccel és elszántsággal áll helyt, ami bármely birodalmi gárdatisztnek becsületére válna.</p>
       </div>
       
       
@@ -7013,7 +7377,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="bradford" data-role="vezérkari százados az angol seregben (valódi neve ismeretlen, az igazi bradford iratait bitorló nemzetközi mesterkém)" data-contra="a feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. e makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút hátsó-indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál." data-bio="bradford valójában nem is bradford, hanem nagy formátumú, nemzetközi mesterkém, aki tizennyolc éven át az igazi bradford személyazonosságát viselte, mint más az esőkabátját: természetesen és gátlástalanul. az eredeti bradford egy árva, frissen végzett angol tiszt volt, aki indiába menet eltűnt, helyette pedig bokharában már ez a szélhámos jelentkezett a papírjaival, képesítésével és hibátlan modorával. katonai és mérnöki tudása, valamint hírszerzői gyakorlata révén egészen a brit vezérkarig kúszott fel, miközben titokban snyder morrisonnal együtt a japán érdekeket szolgálta. kívülről a pedáns, feddhetetlen angol tiszt mintaképe, belülről hideg fejű áruló, aki birodalmakat gyújtana fel egy jól szerkesztett térkép kedvéért.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="bradford" data-role="vezérkari százados az angol seregben (valódi neve ismeretlen, az igazi bradford iratait bitorló nemzetközi mesterkém)" data-contra="a feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. e makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút hátsó-indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál." data-bio="egy nagy formátumú nemzetközi mesterkém, aki tizennyolc esztendőn át bitorolta az igazi, bokharában nyomtalanul eltűnt bradford angol tiszt személyazonosságát. hibátlan tiszti modorával, vezérkari papírjaival és műszaki képzettségével egészen a brit hadvezetés csúcsáig kúszott fel, miközben titokban a japán hírszerzésnek szállította a katonai titkokat; a feddhetetlen brit úriember hűvös teájának felszíne alatt egy rideg fejű áruló lapul, aki habozás nélkül lángba borítana egy kontinenst.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Bradford.webp" data-name="Bradford" data-contra="A feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. E makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút Hátsó-Indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Bradford.webp" alt="Bradford" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -7032,7 +7396,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Bradford valójában nem is Bradford, hanem nagy formátumú, nemzetközi mesterkém, aki tizennyolc éven át az igazi Bradford személyazonosságát viselte, mint más az esőkabátját: természetesen és gátlástalanul. Az eredeti Bradford egy árva, frissen végzett angol tiszt volt, aki Indiába menet eltűnt, helyette pedig Bokharában már ez a szélhámos jelentkezett a papírjaival, képesítésével és hibátlan modorával. Katonai és mérnöki tudása, valamint hírszerzői gyakorlata révén egészen a brit vezérkarig kúszott fel, miközben titokban Snyder Morrisonnal együtt a japán érdekeket szolgálta. Kívülről a pedáns, feddhetetlen angol tiszt mintaképe, belülről hideg fejű áruló, aki birodalmakat gyújtana fel egy jól szerkesztett térkép kedvéért.</p>
+        <p class="rejto-bio-text">Egy nagy formátumú nemzetközi mesterkém, aki tizennyolc esztendőn át bitorolta az igazi, Bokharában nyomtalanul eltűnt Bradford angol tiszt személyazonosságát. Hibátlan tiszti modorával, vezérkari papírjaival és műszaki képzettségével egészen a brit hadvezetés csúcsáig kúszott fel, miközben titokban a japán hírszerzésnek szállította a katonai titkokat; a feddhetetlen brit úriember hűvös teájának felszíne alatt egy rideg fejű áruló lapul, aki habozás nélkül lángba borítana egy kontinenst.</p>
       </div>
       
       
@@ -7075,7 +7439,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="earl of sudessex" data-role="angol királyi vérből származó főrend, ezredes őfelsége házi ezredében, leendő gyarmatügyi államtitkár" data-contra="a brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is." data-bio="az earl of sudessex valóban angol királyi vérből származó főúr, őfelsége házi ezredének ezredese, akiből jó eséllyel gyarmatügyi államtitkár is lehetett volna, ha a sors nem szereti jobban a kalandot, mint a hivatalos kinevezéseket. első látásra finnyás, díszegyenruhába vasalt szalonhősnek tetszik, valójában azonban ritka szívós, hidegvérű és fölényesen derűs ember, aki a legképtelenebb helyzetekben is megőrzi a főnemesi modort. nem álruhás gazember és nem tévedésből keveredett hős, hanem igazi nagyvilági úr, akiből a veszedelem alatt bújik elő a legjobb fajta katona.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="earl of sudessex" data-role="angol királyi vérből származó főrend, ezredes őfelsége házi ezredében, leendő gyarmatügyi államtitkár" data-contra="a brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is." data-bio="valódi királyi vérből származó brit főúr, őfelsége házi ezredének huszonkét éves ezredese, aki külsőre legfeljebb piperkőc, szalonokba való betegeskedő díszpéldánynak hat. ám amint a trópusi fogság és a felkelők pokla zúdul a nyakába, kiderül, hogy a főnemesi modor nála nem máz: fölényes derűvel, megingathatatlan hidegvérrel és gyilkos iróniával viseli a legvéresebb viszontagságokat is, bizonyítva, hogy az igazi arisztokrata a veszedelemben válik a legveszélyesebb katonává.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Earl of Sudessex.webp" data-name="Earl of Sudessex" data-contra="A brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. Ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Earl of Sudessex.webp" alt="Earl of Sudessex" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -7094,7 +7458,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Az Earl of Sudessex valóban angol királyi vérből származó főúr, őfelsége házi ezredének ezredese, akiből jó eséllyel gyarmatügyi államtitkár is lehetett volna, ha a sors nem szereti jobban a kalandot, mint a hivatalos kinevezéseket. Első látásra finnyás, díszegyenruhába vasalt szalonhősnek tetszik, valójában azonban ritka szívós, hidegvérű és fölényesen derűs ember, aki a legképtelenebb helyzetekben is megőrzi a főnemesi modort. Nem álruhás gazember és nem tévedésből keveredett hős, hanem igazi nagyvilági úr, akiből a veszedelem alatt bújik elő a legjobb fajta katona.</p>
+        <p class="rejto-bio-text">Valódi királyi vérből származó brit főúr, őfelsége házi ezredének huszonkét éves ezredese, aki külsőre legfeljebb piperkőc, szalonokba való betegeskedő díszpéldánynak hat. Ám amint a trópusi fogság és a felkelők pokla zúdul a nyakába, kiderül, hogy a főnemesi modor nála nem máz: fölényes derűvel, megingathatatlan hidegvérrel és gyilkos iróniával viseli a legvéresebb viszontagságokat is, bizonyítva, hogy az igazi arisztokrata a veszedelemben válik a legveszélyesebb katonává.</p>
       </div>
       
       
@@ -7137,7 +7501,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="tom leven" data-role="volt angol haditengerészeti kapitány, mérnökzseni, a csendes torpedó és aknamező-felszámoló találmány alkotója" data-contra="idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál." data-bio="tom leven valójában kivételes tehetségű angol haditengerészeti kapitány és mérnök-feltaláló, akinek katonai találmánya körül akkora zűrzavar támadt, hogy egy gyengébb idegzetű birodalom is belebicsaklott volna. a légió felé vezető úton személyazonosságot cserélt a szökevény gabriel amiens-szel, így egy ideig más néven sodródott, miközben a saját neve körül gyilkosság, lopás és kémtörténet kavargott. kívülről megtört, dadogó roncs benyomását kelti, de ez a külső annyira megbízható, mint egy matróz becsületszava kocsmazárás után: belül makacs, hidegfejű és zseniális ember.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="tom leven" data-role="volt angol haditengerészeti kapitány, mérnökzseni, a csendes torpedó és aknamező-felszámoló találmány alkotója" data-contra="idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál." data-bio="kivételes elméjű brit haditengerészeti kapitány és mérnök-feltaláló, az önműködő aknák és a csendes torpedó megalkotója, aki körül akkora kémtörténet kavargott, hogy dzsibuti felé személyazonosságot cserélt a szökevény gabriel amiens-szel. kívülről idegösszeomlás határán tántorgó, dadogó, zaklatott szellemi roncs, aki fehér ujjpercekkel szorítja magához a kék tervrajzait; ám e riadt küllem mögött egy megtörhetetlen akaratú, zseniális koponya rejtőzik, aki a tudományában és a becsületében nem ismer kompromisszumot.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Tom Leven.webp" data-name="Tom Leven" data-contra="Idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. Ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Tom Leven.webp" alt="Tom Leven" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -7156,7 +7520,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Tom Leven valójában kivételes tehetségű angol haditengerészeti kapitány és mérnök-feltaláló, akinek katonai találmánya körül akkora zűrzavar támadt, hogy egy gyengébb idegzetű birodalom is belebicsaklott volna. A légió felé vezető úton személyazonosságot cserélt a szökevény Gabriel Amiens-szel, így egy ideig más néven sodródott, miközben a saját neve körül gyilkosság, lopás és kémtörténet kavargott. Kívülről megtört, dadogó roncs benyomását kelti, de ez a külső annyira megbízható, mint egy matróz becsületszava kocsmazárás után: belül makacs, hidegfejű és zseniális ember.</p>
+        <p class="rejto-bio-text">Kivételes elméjű brit haditengerészeti kapitány és mérnök-feltaláló, az önműködő aknák és a csendes torpedó megalkotója, aki körül akkora kémtörténet kavargott, hogy Dzsibuti felé személyazonosságot cserélt a szökevény Gabriel Amiens-szel. Kívülről idegösszeomlás határán tántorgó, dadogó, zaklatott szellemi roncs, aki fehér ujjpercekkel szorítja magához a kék tervrajzait; ám e riadt küllem mögött egy megtörhetetlen akaratú, zseniális koponya rejtőzik, aki a tudományában és a becsületében nem ismer kompromisszumot.</p>
       </div>
       
       
@@ -7199,7 +7563,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="a bunkó" data-role="a hírhedt gyóntatók trió harmadik tagja (rozsdás és a főorvos mellett); korábbi hajótávíró és kikötői harcos" data-contra="ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. a valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén." data-bio="a bunkó a hírhedt gyóntatók harmadik tagja, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek néz, mert a kabátja alatt négyszeresen összecsavart drótkötelet hord, a végén egy vasdarabbal, és ezzel szokott társalgást kezdeményezni. valójában azonban nem csupán kikötői verőlegény: egykor hajótávíró volt, vagyis rádióadó-vevő kezeléséhez értő, képzett tengeri ember, akit régi bűnei miatt kitöröltek minden tisztességes hajóskönyvből. a gyóntatókhoz csempészként és alvilági végrehajtóként tartozik, nála tehát a műveltség és a vasdarab ritka, de működőképes elegyet alkot.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="a bunkó" data-role="a hírhedt gyóntatók trió harmadik tagja (rozsdás és a főorvos mellett); korábbi hajótávíró és kikötői harcos" data-contra="ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. a valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén." data-bio="a hírhedt gyóntatók harmadik oszlopa, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek könyvel el, mivel a kabátja alatt négyszeresen összecsavart, vasnehezékkel ellátott drótkötéllel szokott társalgást kezdeményezni. a valóságban azonban képzett hajótávírász, aki a morzejeleket és a rádióadót olyan szakrális áhítattal kezeli, mint a falusi kántor az orgonát; a puszta mechanikus rombolás mögött meglepő tengeri szaktudás és fegyelem működik.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/A Bunkó.webp" data-name="A Bunkó" data-contra="Ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. A valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/A Bunkó.webp" alt="A Bunkó" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -7218,7 +7582,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">A Bunkó a hírhedt Gyóntatók harmadik tagja, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek néz, mert a kabátja alatt négyszeresen összecsavart drótkötelet hord, a végén egy vasdarabbal, és ezzel szokott társalgást kezdeményezni. Valójában azonban nem csupán kikötői verőlegény: egykor hajótávíró volt, vagyis rádióadó-vevő kezeléséhez értő, képzett tengeri ember, akit régi bűnei miatt kitöröltek minden tisztességes hajóskönyvből. A Gyóntatókhoz csempészként és alvilági végrehajtóként tartozik, nála tehát a műveltség és a vasdarab ritka, de működőképes elegyet alkot.</p>
+        <p class="rejto-bio-text">A hírhedt Gyóntatók harmadik oszlopa, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek könyvel el, mivel a kabátja alatt négyszeresen összecsavart, vasnehezékkel ellátott drótkötéllel szokott társalgást kezdeményezni. A valóságban azonban képzett hajótávírász, aki a morzejeleket és a rádióadót olyan szakrális áhítattal kezeli, mint a falusi kántor az orgonát; a puszta mechanikus rombolás mögött meglepő tengeri szaktudás és fegyelem működik.</p>
       </div>
       
       
@@ -7261,7 +7625,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="kvang generális" data-role="hátsó-indiai hegyi bandavezér és önjelölt hadúr, a határvidéki hegyi erőd abszolút ura" data-contra="egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek." data-bio="kvang generális valójában nem akadémiát végzett hadvezér, hanem a hátsó-indiai határvidékből kinőtt, önerőből feltalált hadúr: egykori szakács és kikötői csempész, aki bandavezérből lett erődparancsnok. a „generális” rangot nem valamelyik császár akasztotta a nyakába, hanem ő maga, de olyan nyugalommal és hideg ésszel viseli, hogy végül mindenki kénytelen komolyan venni. birma északi határán önálló hatalmi tényező, aki nem akar király lenni, de azt sem tűri, hogy más jöjjön oda uralkodni. fanyar tekintetű, mozdulatlan arcú hegyi szuverén, akinek múltja csempészszagú, jelene viszont már stratégiai térképeken mozog.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="kvang generális" data-role="hátsó-indiai hegyi bandavezér és önjelölt hadúr, a határvidéki hegyi erőd abszolút ura" data-contra="egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek." data-bio="önerőből felkapaszkodott hátsó-indiai hadúr: egykori kikötői pecsenyesütő és csempész, aki bandavezérből emelkedett kőkemény erődparancsnokká. a tábornoki rangot nem császártól kapta, hanem maga akasztotta a nyakába, de olyan mozdulatlan, rideg tekintettel és vasfegyelemmel viseli, hogy a brit tisztek és a zsoldosok egyaránt kénytelenek meghajolni előtte; nem vágyik királyi trónra, csupán azt nem tűri, hogy a határvidékén bárki más rendelkezzen a fegyverek és a rizs felett.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Kvang generális.webp" data-name="Kvang generális" data-contra="Egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. Hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Kvang generális.webp" alt="Kvang generális" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -7280,7 +7644,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Kvang generális valójában nem akadémiát végzett hadvezér, hanem a hátsó-indiai határvidékből kinőtt, önerőből feltalált hadúr: egykori szakács és kikötői csempész, aki bandavezérből lett erődparancsnok. A „generális” rangot nem valamelyik császár akasztotta a nyakába, hanem ő maga, de olyan nyugalommal és hideg ésszel viseli, hogy végül mindenki kénytelen komolyan venni. Birma északi határán önálló hatalmi tényező, aki nem akar király lenni, de azt sem tűri, hogy más jöjjön oda uralkodni. Fanyar tekintetű, mozdulatlan arcú hegyi szuverén, akinek múltja csempészszagú, jelene viszont már stratégiai térképeken mozog.</p>
+        <p class="rejto-bio-text">Önerőből felkapaszkodott hátsó-indiai hadúr: egykori kikötői pecsenyesütő és csempész, aki bandavezérből emelkedett kőkemény erődparancsnokká. A tábornoki rangot nem császártól kapta, hanem maga akasztotta a nyakába, de olyan mozdulatlan, rideg tekintettel és vasfegyelemmel viseli, hogy a brit tisztek és a zsoldosok egyaránt kénytelenek meghajolni előtte; nem vágyik királyi trónra, csupán azt nem tűri, hogy a határvidékén bárki más rendelkezzen a fegyverek és a rizs felett.</p>
       </div>
       
       
@@ -7323,7 +7687,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="morrison snyder" data-role="amerikai zsoldos és fegyvercsempész martalócvezér, akit a japán titkosszolgálat pénzel a háttérben" data-contra="kövérkés, szivarozó, jovális tengerentúli utazó, akinek a külleme alapján az ember legfeljebb a texasi gyapottermelés jótékony hatásairól diskurálna. a vidám felszín alatt azonban egy kíméletlen, vérszomjas spekuláns lapul, aki habozás nélkül kész egész népeket és birodalmakat romlásba dönteni a haszon szent nevében." data-bio="morrison snyder valójában amerikai zsoldosvezér és fegyvercsempész martalóc, akit a japán titkosszolgálat fizet, mert ott is szeretik a piszkos munkát kiszervezni. kívülről jókedvű, szivarozó, kövér üzletember, afféle konyakozó úriember, belül azonban könyörtelen kalandor, aki zendülést, háborút és tömeges pusztulást is készséggel vállal, ha a haszon úgy kívánja. nem politikus és nem hadvezér a szó nemes értelmében, hanem profi felforgató, aki fegyverrel és zűrzavarral kereskedik.">
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="morrison snyder" data-role="amerikai zsoldos és fegyvercsempész martalócvezér, akit a japán titkosszolgálat pénzel a háttérben" data-contra="kövérkés, szivarozó, jovális tengerentúli utazó, akinek a külleme alapján az ember legfeljebb a texasi gyapottermelés jótékony hatásairól diskurálna. a vidám felszín alatt azonban egy kíméletlen, vérszomjas spekuláns lapul, aki habozás nélkül kész egész népeket és birodalmakat romlásba dönteni a haszon szent nevében." data-bio="amerikai zsoldosvezér és fegyvercsempész martalóc, akit a japán titkosszolgálat fizet a piszkos felforgató munkák lebonyolításáért. kívülről kövérkés, szivarozó, konyakozó tengerentúli üzletembernek látszik, aki legfeljebb a gyapotárakról diskurálna; a jovális felszín alatt azonban egy kíméletlen, vérszomjas spekuláns lapul, aki habozás nélkül kész egész birodalmakat és felkelő népeket vágóhídra küldeni a saját zsíros haszna kedvéért.">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Morrison Snyder.webp" data-name="Morrison Snyder" data-contra="Kövérkés, szivarozó, jovális tengerentúli utazó, akinek a külleme alapján az ember legfeljebb a texasi gyapottermelés jótékony hatásairól diskurálna. A vidám felszín alatt azonban egy kíméletlen, vérszomjas spekuláns lapul, aki habozás nélkül kész egész népeket és birodalmakat romlásba dönteni a haszon szent nevében." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
           <img src="rejto/Morrison Snyder.webp" alt="Morrison Snyder" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
@@ -7342,7 +7706,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       
       
       <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Morrison Snyder valójában amerikai zsoldosvezér és fegyvercsempész martalóc, akit a japán titkosszolgálat fizet, mert ott is szeretik a piszkos munkát kiszervezni. Kívülről jókedvű, szivarozó, kövér üzletember, afféle konyakozó úriember, belül azonban könyörtelen kalandor, aki zendülést, háborút és tömeges pusztulást is készséggel vállal, ha a haszon úgy kívánja. Nem politikus és nem hadvezér a szó nemes értelmében, hanem profi felforgató, aki fegyverrel és zűrzavarral kereskedik.</p>
+        <p class="rejto-bio-text">Amerikai zsoldosvezér és fegyvercsempész martalóc, akit a japán titkosszolgálat fizet a piszkos felforgató munkák lebonyolításáért. Kívülről kövérkés, szivarozó, konyakozó tengerentúli üzletembernek látszik, aki legfeljebb a gyapotárakról diskurálna; a jovális felszín alatt azonban egy kíméletlen, vérszomjas spekuláns lapul, aki habozás nélkül kész egész birodalmakat és felkelő népeket vágóhídra küldeni a saját zsíros haszna kedvéért.</p>
       </div>
       
       
