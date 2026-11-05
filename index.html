@@ -10,6 +10,7 @@
 
 
 
+
   :root {
     --bg-dark: #0b0e14;
     --card-bg: #131722;
@@ -703,6 +704,369 @@
   .badge-stats { background: rgba(255, 255, 255, 0.06); color: #cbd5e1; border: 1px solid rgba(255, 255, 255, 0.15); }
   .meta-val-contra { color: #f59e0b !important; font-weight: 600; line-height: 1.45; }
   .rejto-card:hover { border-color: #f59e0b; box-shadow: 0 12px 30px rgba(245, 158, 11, 0.2); }
+
+  /* Lightbox Navigation Buttons */
+  .modal-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(19, 23, 34, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease;
+    z-index: 100000;
+    user-select: none;
+  }
+  .modal-nav-btn:hover {
+    background: rgba(56, 189, 248, 0.35);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-50%) scale(1.08);
+  }
+  .modal-nav-prev { left: -68px; }
+  .modal-nav-next { right: -68px; }
+  .modal-counter {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  @media (max-width: 860px) {
+    .modal-nav-prev { left: 8px; }
+    .modal-nav-next { right: 8px; }
+  }
+
+
+
+  /* Studio Navigation Tabs */
+  .studio-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 1.5rem 0 2.5rem 0;
+    flex-wrap: wrap;
+  }
+  .studio-tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-secondary);
+    padding: 0.95rem 1.8rem;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  }
+  .studio-tab-btn:hover {
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .studio-tab-btn.active {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.22) 0%, rgba(19, 23, 34, 0.95) 100%);
+    border-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+  }
+  .studio-tab-btn.rejto-tab.active {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, rgba(19, 23, 34, 0.95) 100%);
+    border-color: var(--accent-gold);
+    color: #fff;
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+  }
+  .tab-icon { font-size: 1.35rem; }
+  .tab-badge {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 700;
+  }
+  .studio-tab-btn.active .tab-badge {
+    background: rgba(56, 189, 248, 0.25);
+    color: #38bdf8;
+  }
+  .studio-tab-btn.rejto-tab.active .tab-badge {
+    background: rgba(245, 158, 11, 0.25);
+    color: #f59e0b;
+  }
+
+  .tab-view { display: none; }
+  .tab-view.active { display: block; animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Rejtő specific badges and accents */
+  .badge-tier1 { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+  .badge-tier2 { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+  .badge-book { background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); }
+  .badge-meta { background: rgba(148, 163, 184, 0.12); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.25); font-size: 0.8rem; padding: 0.3rem 0.65rem; border-radius: 6px; font-weight: 600; }
+  .badge-audio { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+  .badge-master { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.35); }
+
+  /* Rejtő Grid & Modern Showcase Card Design */
+  #rejtoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 1.85rem;
+  }
+
+  .rejto-card {
+    background: linear-gradient(180deg, #161b26 0%, #0d111a 100%);
+    border: 1px solid rgba(245, 158, 11, 0.22);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .rejto-card:hover {
+    border-color: rgba(245, 158, 11, 0.65);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(245, 158, 11, 0.18);
+    transform: translateY(-3px);
+  }
+
+  .rejto-card-header {
+    display: flex;
+    gap: 1.35rem;
+    padding: 1.35rem 1.35rem 0.8rem 1.35rem;
+    align-items: flex-start;
+  }
+  .rejto-photo-frame {
+    width: 175px;
+    height: 235px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(245, 158, 11, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55), 0 0 12px rgba(245, 158, 11, 0.1);
+    cursor: zoom-in;
+    background: #0b0e14;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .rejto-photo-frame:hover {
+    transform: scale(1.025);
+    border-color: #f59e0b;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+  }
+  .rejto-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .rejto-header-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .rejto-char-name {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #f8fafc;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  .rejto-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Story Bio Block (Ki ő valójában - no header) */
+  .rejto-bio-block {
+    margin: 0.4rem 1.35rem 1rem 1.35rem;
+    padding: 1rem 1.15rem;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(30, 41, 59, 0.35) 100%);
+    border-left: 3px solid #f59e0b;
+    border-radius: 0 10px 10px 0;
+  }
+  .rejto-bio-text {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.68;
+    color: #e2e8f0;
+    font-weight: 400;
+  }
+
+  /* Audio player panel */
+  .rejto-audio-block {
+    margin: 0 1.35rem 1rem 1.35rem;
+    padding: 0.75rem 1rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 12px;
+  }
+  .rejto-audio-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.45rem;
+  }
+  .rejto-audio-block audio {
+    width: 100%;
+    height: 38px;
+  }
+
+  /* Collapsible Accordions */
+  .rejto-accordion {
+    margin: 0 1.35rem 0.65rem 1.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    background: rgba(15, 23, 42, 0.45);
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+  .rejto-accordion:hover {
+    border-color: rgba(245, 158, 11, 0.3);
+  }
+  .rejto-accordion[open] {
+    border-color: rgba(245, 158, 11, 0.45);
+    background: rgba(15, 23, 42, 0.75);
+  }
+  .rejto-acc-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    user-select: none;
+    list-style: none;
+    transition: color 0.2s ease;
+  }
+  .rejto-acc-summary::-webkit-details-marker {
+    display: none;
+  }
+  .rejto-accordion[open] .rejto-acc-summary {
+    color: #fbbf24;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  }
+  .rejto-acc-chevron {
+    font-size: 0.85rem;
+    transition: transform 0.25s ease;
+    color: #94a3b8;
+  }
+  .rejto-accordion[open] .rejto-acc-chevron {
+    transform: rotate(180deg);
+    color: #fbbf24;
+  }
+  .rejto-acc-body {
+    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
+  .rejto-acc-body .meta-row {
+    margin-bottom: 0.65rem;
+  }
+  .rejto-acc-body .meta-row:last-child {
+    margin-bottom: 0;
+  }
+  .rejto-acc-body .meta-label {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.15rem;
+  }
+  .rejto-acc-body .meta-val {
+    color: #e2e8f0;
+  }
+  .rejto-acc-body .meta-val-highlight {
+    color: #f59e0b;
+    font-weight: 600;
+  }
+  .rejto-acc-body .meta-val-contra {
+    color: #38bdf8;
+    font-style: italic;
+  }
+  .rejto-actions-list {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  .rejto-actions-list li {
+    margin-bottom: 0.55rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+  }
+  .rejto-actions-list li::marker {
+    color: #f59e0b;
+  }
+  .rejto-actions-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Technical Tags Footer */
+  .rejto-tech-footer {
+    margin-top: auto;
+    padding: 0.85rem 1.35rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(10, 14, 22, 0.5);
+  }
+  .tech-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: center;
+  }
+  .tech-tag {
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 0.22rem 0.55rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .tech-tag.tech-master {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border-color: rgba(168, 85, 247, 0.35);
+  }
+  .tech-tag.tech-audio {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.35);
+  }
+
+  @media (max-width: 540px) {
+    #rejtoGrid {
+      grid-template-columns: 1fr;
+    }
+    .rejto-card-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .rejto-badge-row {
+      justify-content: center;
+    }
+  }
 
   /* Lightbox Navigation Buttons */
   .modal-nav-btn {
