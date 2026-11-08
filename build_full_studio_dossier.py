@@ -10,8 +10,9 @@ import subprocess
 from pathlib import Path
 
 DOSSIER_DIR = Path(r"W:\AI\Projects\Auris-Cast-Dossier")
-MASTER_DOSSIER_JSON = Path(r"W:\AI\Projects\Audiobook\Radioplay\docs\Rejto Cast Images\rejto_characters_complete_dossier.json")
-TIER2_JSON = Path(r"W:\AI\Projects\Audiobook\Radioplay\docs\Rejto Cast Images\rejto_tier2_characters_clean.json")
+SSOT_JSON = Path(r"I:\COMMON\XTTS\Voices\Rejto\rejto_master_database.json")
+FALLBACK_JSON = Path(r"W:\AI\Projects\Audiobook\Radioplay\database\rejto\rejto_master_database.json")
+MASTER_DB_PATH = SSOT_JSON if SSOT_JSON.exists() else FALLBACK_JSON
 INDEX_PATH = DOSSIER_DIR / "index.html"
 
 # Get clean original HTML from git to avoid nested duplication
@@ -53,35 +54,45 @@ def format_age_hu(raw_age):
         return f"{m.group(1)}–{m.group(2)} év"
     return a
 
-# Read Tier 1 characters from complete master dossier
-chars_t1 = json.loads(MASTER_DOSSIER_JSON.read_text(encoding="utf-8"))
-
-# Read Tier 2 characters if available
-chars_t2 = {}
-if TIER2_JSON.exists():
-    try:
-        raw_t2 = json.loads(TIER2_JSON.read_text(encoding="utf-8"))
-        for k, v in raw_t2.items():
-            chars_t2[k] = v
-    except Exception as e:
-        print(f"Tier 2 JSON not completely ready: {e}")
-
+# Read characters from SSoT master database
+db = json.loads(MASTER_DB_PATH.read_text(encoding="utf-8"))
 all_rejto_chars = {}
-for k, v in chars_t1.items():
-    v["tier_level"] = 1
-    all_rejto_chars[k] = v
 
-for k, v in chars_t2.items():
-    # Only include Tier 2 character if their image exists OR passes stats threshold
-    webp_path = DOSSIER_DIR / "rejto" / f"{k}.webp"
-    stats = v.get("stats", {})
-    lines = stats.get("lines_count", 0)
-    words = stats.get("words_count", 0)
-    
-    # If image already generated OR qualifying stats:
-    if webp_path.exists() or (stats and (lines >= 3 or words >= 25)):
-        v["tier_level"] = 2
-        all_rejto_chars[k] = v
+for cid, c in db.get("characters", {}).items():
+    name = c["canonical_name"]
+    tier_level = c.get("tier", 1)
+    webp_path = DOSSIER_DIR / "rejto" / f"{name}.webp"
+
+    # Only include Tier 1 characters OR characters with existing portraits
+    if tier_level == 1 or webp_path.exists():
+        c["tier_level"] = tier_level
+        # Map fields for template rendering
+        vis = {
+            "gender": c.get("demographics", {}).get("gender", ""),
+            "age_bracket": c.get("demographics", {}).get("age_bracket", ""),
+            "physical_constitution": c.get("visual", {}).get("physical_constitution", "") or c.get("demographics", {}).get("appearance", ""),
+            "somatic_markers": c.get("visual", {}).get("somatic_markers", ""),
+            "attire_and_accessories": c.get("visual", {}).get("attire_and_accessories", ""),
+        }
+        psych = {
+            "social_role": c.get("role", {}).get("social_role", ""),
+            "signature_contradiction": c.get("narrative_lore", {}).get("signature_contradiction") or c.get("psychology", {}).get("signature_contradiction", ""),
+            "dominant_temperament": c.get("psychology", {}).get("dominant_temperament", ""),
+            "motivations": c.get("psychology", {}).get("motivations", ""),
+        }
+        art = c.get("art_direction", {})
+        novels_raw = c.get("novels", [])
+        if isinstance(novels_raw, list):
+            book = ", ".join([n if isinstance(n, str) else n.get("title", str(n)) for n in novels_raw])
+        elif isinstance(novels_raw, str):
+            book = novels_raw
+        else:
+            book = ""
+        c["visual_identity"] = vis
+        c["psychological_core"] = psych
+        c["art_direction"] = art
+        c["book"] = book
+        all_rejto_chars[name] = c
 
 rejto_cards_html = []
 t1_count = sum(1 for v in all_rejto_chars.values() if v.get("tier_level") == 1)
