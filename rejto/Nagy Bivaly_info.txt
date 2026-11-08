@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_08_NAGY_BIVALY
+Karakter neve: Nagy Bivaly
+Szerepkör / Funkció: Underworld Figure
+Neme: Male
+Korcsoport: Adult (35-50 years old)
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 2
+ElevenLabs Voice ID: PmxJaBf1lpNVLSNYk5QF
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, 38–45. Behavioral posture: taciturn underworld enforcer, physically dominant, emotionally blunt, outwardly impassive and menacing, but capable of sudden protective loyalty. Voice architecture: low chest-led resonance with deep, heavy body; stable low fundamental, slow-to-medium pacing, firm breath support, dark throat presence, moderate articulatory friction, and hard, precise consonant edges without mumbling. Dynamics: restrained baseline control that can surge into forceful threat or rough devotion in an instant; keep intensity grounded, not theatrical. Record as intimate studio close-mic, dry presence, zero reverberation, high detail. Avoid caricature, exaggerated slurring, comic brutishness, vocal fatigue, apathy, sluggishness, or flattened dynamics; maintain natural authority and dangerous simplicity.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Mit akartok a kölyöktől? [narrating] A kopasz óriás előrelépett, és árnyéka ráborult az ajtóra. [tense] – Semmi közöd hozzá? De most már van. [inhales] – Két nap múlva csónakba ülsz velem, érted? [matter-of-fact] – Egy haja szála se görbüljön meg. [shouts] – Aki a fiúhoz nyúl, annak VÉGE!
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Mit akartok a kölyöktől? A kopasz óriás előrelépett, és árnyéka ráborult az ajtóra. – Semmi közöd hozzá? De most már van. – Két nap múlva csónakba ülsz velem, érted? – Egy haja szála se görbüljön meg. – Aki a fiúhoz nyúl, annak VÉGE!

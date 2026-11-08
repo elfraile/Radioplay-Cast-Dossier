@@ -1,0 +1,35 @@
+======================================================================
+   02. WAGNER ÚR - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 02. Wagner úr
+Regény: Piszkos Fred közbelép
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: 
+Demográfia: Male, Senior (60+)
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_9jm2juqv7p9e
+
+Voice Description:
+Native Hungarian. Male, senior 60+; low register with dry neutral timbre, slightly back formant placement, chest-pharyngeal resonance, firm clean glottal onset. Clear but uneven consonants, light dental friction, pragmatic forward drive; direct dry close-mic studio capture, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+A figura lényege, hogy lecsúszott és kiszolgáltatott, mégis változatlan önfényezéssel, régi cimborás közvetlenséggel és tévesen fényűző műveltséggel szólal meg. Ezért a maradandó hangtest alacsony, száraz, direkt és pragmatikusan előretolt: nem lírai, hanem tapinthatóan testi és tolakodó. A fordulókban előbb a bizalmaskodó megszólítás, majd az asszociatív önmitológia, aztán a bizalmas rámenősség, végül a komikusan felhabzó követelés rajzolja ki ezt az ellentmondást.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Wagner úr ellentmondása: nyomorúságos helyzetét természetes világfi-nagysággal adja elő. Az ív a bizalmaskodó kocsmai odadörgölőzéstől a csapongó önmitológián át a sértett bizalmas követelőzésig fut, majd egy harsány, komikusan túlméretezett üzleti csúcspontban robban ki.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[boozy familiar tease] – Na, mi újság, öreg matróz, hát nem ismer meg? <breath> [rambling grandiose lament] – Oda nézzen: az ott majdnem az én hajóm volt, csak a múzsák elpártoltak tőlem! <short pause> – Egy költeményért bárhol adnak egy tál levest, de maguk érzéketlenek a művészetre. <sigh> [nosy confidential press] – Tehát nincs köze a nagy zeneszerzőhöz? <short pause> – Négyszemközt akarok önnel beszélni. <breath> [blustering needy burst] – POMPÁS üzlet lesz, ha nem keverik bele megint azt a létrát! <gasp> – Két dollárt kérek kölcsön a megélhetéshez! <chuckle>
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_9jm2juqv7p9e (V21_02_WAGNER_UR_var1_voice_9jm2juqv7p9e.wav)

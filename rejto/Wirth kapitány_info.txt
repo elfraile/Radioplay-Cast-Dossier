@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_05_WIRTH_KAPITANY
+Karakter neve: Wirth kapitány
+Szerepkör / Funkció: Ship Captain / Authority Figure
+Neme: Male
+Korcsoport: Adult (35-50 years old)
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 3
+ElevenLabs Voice ID: yYEhnYtremPJTO1PHAjU
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, 40s. A disciplined ship captain with procedural authority, stoic professional bearing, and unquestioned command presence; brief, firm, unsentimental, vigilant rather than theatrical. Deep lower-chest resonance with a controlled throat channel, stable low fundamental, dense authoritative timbre, moderate pace, dry articulatory friction, and sharply defined consonants. Sentences land like orders or official rulings: deliberate baseline composure, then precise escalation into cold command under pressure without losing control. Close-mic studio presence, intimate and immediate, high-definition speech capture, zero reverberation, no room echo. Avoid caricature, exaggerated slurring, sing-song authority, or melodramatic menace. Do not sound gritty, apathetic, sluggish, or dynamically flattened; keep the delivery alert, exact, and professionally dangerous.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] A kapitány mozdulatlanul állt a hídon. – Mr. Irving, már közöltem: a vesztegzár nem vita tárgya. [matter-of-fact] – A halottat azonnal eltemetjük, rangra való tekintet nélkül. [breath] – Magát nem érdekli, mi lesz, ha pánik tör ki? [tense] – Vigyázzon: itt nem lesz kísértethajó-legenda! [commanding] – És aki beszél az éjszakáról, HALLGAT, értette?
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+A kapitány mozdulatlanul állt a hídon. – Mr. Irving, már közöltem: a vesztegzár nem vita tárgya. – A halottat azonnal eltemetjük, rangra való tekintet nélkül. – Magát nem érdekli, mi lesz, ha pánik tör ki? – Vigyázzon: itt nem lesz kísértethajó-legenda! – És aki beszél az éjszakáról, HALLGAT, értette?

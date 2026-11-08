@@ -1,0 +1,35 @@
+======================================================================
+   08. PEPITA OFÉLIA - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 08. Pepita Ofélia
+Regény: Piszkos Fred közbelép
+Nem: Nő
+Kategória: Tier 1 Főszereplő
+Szerep: 
+Demográfia: Female, Young Adult (18-25)
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_ohckwsojea3g
+
+Voice Description:
+Native Hungarian. Female young adult with a high-mid bright register, slightly forward formants, light chest-to-mask resonance, and clean soft glottal onset. Crisp consonants, fine dental friction, steady forward articulatory drive; direct dry close-mic studio capture, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Ofélia alapellentéte az, hogy romantikus, olvadó csábítással dolgozik, miközben belül kikötői túlélő és kemény alkuember. Ezért a permanens hangkép fényes, előretolt, fiatalosan magas-közép és artikulált: érzéki, de pragmatikusan pontos. A jelenetben az első két forduló puha sejtetéssel horgoz, a harmadikban megszületik a sértettség és az önvédelem, a csúcspont pedig a negyedikben robban ki, ahol a csábítás nyílt piaci öntudattá keményedik.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Ofélia íve a mézes-romantikus csalogatásból a kikötői önvédelembe csap át: csillagos, olvadó sejtetés mögül fokozatosan előlép a sértett, nyers és alkura nem kapható nő.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[curious hush, moderate] – Maga hisz ebben? <short pause> Azt mondják, ha az ember sokáig néz egy csillagot, teljesül valami. [seductive murmur, slow] – Válasszunk csillagot... <breath> én már választottam. [wounded tease, tightening] – Pardon, talán velem van valakinek baja? <short pause> – Ne higgye, hogy szívbajos vagyok! [defiant flare, sharp] – Csak ne nézzen úgy, mintha INGYEN volna a szívem! <gasp>
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_ohckwsojea3g (V21_08_PEPITA_OFELIA_var1_voice_ohckwsojea3g.wav)

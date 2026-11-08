@@ -1,0 +1,1718 @@
+{
+  "version": "1.0",
+  "total_characters": 67,
+  "characters": {
+    "rejto_fulig_jimmy": {
+      "character_id": "rejto_fulig_jimmy",
+      "canonical_name": "Fülig Jimmy",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany",
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "GOLDEN_PRESET",
+      "files": {
+        "portrait_webp": "Fülig Jimmy.webp",
+        "audio": "Fülig Jimmy.wav",
+        "info": "Fülig Jimmy_info.txt",
+        "reference": "Fülig Jimmy_reference.txt"
+      },
+      "aliases": [
+        "Fülig Jimmy",
+        "Wilson Hutchins",
+        "José Pombio",
+        "Hutchins fűtő",
+        "José",
+        "Jimmy",
+        "I-ső Fülig Jimmy",
+        "Don Fülig",
+        "il Jimmy",
+        "don St. James di Fülig",
+        "St. Jime"
+      ],
+      "role": {
+        "social_role": "álruhás matróz és alkalmi imposztor, aki különféle fedőszemélyazonosságokat használ",
+        "narrative_function": "komikus kalandhős és bajkeverő túlélő, aki rögtönzéssel, szerepjátékkal és fizikai fellépéssel mozdítja elő a cselekményt"
+      }
+    },
+    "rejto_mr_theo": {
+      "character_id": "rejto_mr_theo",
+      "canonical_name": "Mr. Theo",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_1y3gxejn01ch",
+      "files": {
+        "portrait_webp": "Mr. Theo.webp",
+        "audio": "Mr. Theo.wav",
+        "info": "Mr. Theo_info.txt",
+        "reference": "Mr. Theo_reference.txt"
+      },
+      "aliases": [
+        "Mr. Theo",
+        "Theobald Lincoln",
+        "Mr. Tejo",
+        "Tejo",
+        "Theón",
+        "Theo",
+        "Mr. Teho",
+        "Mr. Lincoln"
+      ],
+      "role": {
+        "social_role": "rendkívül gazdag milliomos, a Pacific Ocean Trust vezérigazgatójának fia",
+        "narrative_function": "a cselekményt elindító, unatkozó és hiú fiatalember, akinek szerelmi és presztízsmotivációi abszurd bonyodalmakhoz vezetnek"
+      }
+    },
+    "rejto_mr_irving": {
+      "character_id": "rejto_mr_irving",
+      "canonical_name": "Mr. Irving",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "QxEbSFlsycvw0OpHEDOw",
+      "files": {
+        "portrait_webp": "Mr. Irving.webp",
+        "audio": "Mr. Irving.wav",
+        "info": "Mr. Irving_info.txt",
+        "reference": "Mr. Irving_reference.txt"
+      },
+      "aliases": [
+        "Mr. Irving",
+        "St. Antonio uralkodó főherceg",
+        "St. Antonio",
+        "St. Antonio de Vicenzo Y Galapagos uralkodó főherceg",
+        "Pedró",
+        "Irving"
+      ],
+      "role": {
+        "social_role": "álnéven utazó fiatal arisztokrata, valójában St. Antonio uralkodó főherceg",
+        "narrative_function": "rejtett uralkodó és személycsere köré szerveződő cselekményszál mozgatója; a védett főúri világ és a nyers kikötői közeg ütközésének hordozója"
+      }
+    },
+    "rejto_piszkos_fred": {
+      "character_id": "rejto_piszkos_fred",
+      "canonical_name": "Piszkos Fred",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany",
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "GOLDEN_PRESET",
+      "files": {
+        "portrait_webp": "Piszkos Fred.webp",
+        "audio": "Piszkos Fred.wav",
+        "info": "Piszkos Fred_info.txt",
+        "reference": "Piszkos Fred_reference.txt"
+      },
+      "aliases": [
+        "Piszkos Fred",
+        "Freddy bátyám",
+        "Fred",
+        "Piszok Alfréd",
+        "Wilbour Smith"
+      ],
+      "role": {
+        "social_role": "hajóskapitányként fellépő, alvilági kapcsolatokkal rendelkező tengeri csavargó és bűnöző",
+        "narrative_function": "kaotikus, de rendkívül rátermett mozgatóerő; fenyegető és komikus tekintélyfigura, aki válsághelyzetekben irányít és manipulál"
+      }
+    },
+    "rejto_wagner_ur": {
+      "character_id": "rejto_wagner_ur",
+      "canonical_name": "Wagner úr",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_9jm2juqv7p9e",
+      "files": {
+        "portrait_webp": "Wagner úr.webp",
+        "audio": "Wagner úr.wav",
+        "info": "Wagner úr_info.txt",
+        "reference": "Wagner úr_reference.txt"
+      },
+      "aliases": [
+        "Wagner úr",
+        "Wagner Rinaldo-Rinaldini",
+        "Wagner"
+      ],
+      "role": {
+        "social_role": "kikötői körökben ismert csavargó és alkalmi üzletelő, a „Wagner Corporation” névhez kötődő hajótulajdonos figura",
+        "narrative_function": "groteszk, káoszt keltő mellékalak, aki komikus és baljós jelenlétével fordulatokat indít el"
+      }
+    },
+    "rejto_trebitsch_ur_buzgo_mocsing": {
+      "character_id": "rejto_trebitsch_ur_buzgo_mocsing",
+      "canonical_name": "Trebitsch úr (Buzgó Mócsing)",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany",
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "DTFbOXvKhxiNeXxiUAOv",
+      "files": {
+        "portrait_webp": "Trebitsch úr (Buzgó Mócsing).webp",
+        "audio": "Trebitsch úr (Buzgó Mócsing).wav",
+        "info": "Trebitsch úr (Buzgó Mócsing)_info.txt",
+        "reference": "Trebitsch úr (Buzgó Mócsing)_reference.txt"
+      },
+      "aliases": [
+        "Trebitsch úr (Buzgó Mócsing)",
+        "Trebitsch",
+        "Buzgó Mócsing",
+        "igazi Trebitsch",
+        "Buszkó Mótsing",
+        "Igazi Trébics",
+        "Buszkó Mócsink",
+        "Trebitsch Úr"
+      ],
+      "role": {
+        "social_role": "alvilági közvetítő és szélhámos, aki Buzgó Mócsing néven ismert, és Trebitschként adja ki magát",
+        "narrative_function": "komikus imposztor és túlélő figura, aki félrevezet, közvetít a szereplők között, és zavaros identitásával bonyodalmat kelt"
+      }
+    },
+    "rejto_wirth_kapitany": {
+      "character_id": "rejto_wirth_kapitany",
+      "canonical_name": "Wirth kapitány",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "yYEhnYtremPJTO1PHAjU",
+      "files": {
+        "portrait_webp": "Wirth kapitány.webp",
+        "audio": "Wirth kapitány.wav",
+        "info": "Wirth kapitány_info.txt",
+        "reference": "Wirth kapitány_reference.txt"
+      },
+      "aliases": [
+        "Wirth kapitány",
+        "Wirth"
+      ],
+      "role": {
+        "social_role": "a Honolulu-Star kapitánya, fegyelmi és operatív parancsnok",
+        "narrative_function": "a hajó rendjének fenntartója, valamint a kapitányalakok körüli félreértések és titkok egyik központi alakja"
+      }
+    },
+    "rejto_a_foorvos_ur": {
+      "character_id": "rejto_a_foorvos_ur",
+      "canonical_name": "A Főorvos Úr",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany",
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "EHTxv6uK1eLGWVAZtkQY",
+      "files": {
+        "portrait_webp": "A Főorvos Úr.webp",
+        "audio": "A Főorvos Úr.wav",
+        "info": "A Főorvos Úr_info.txt",
+        "reference": "A Főorvos Úr_reference.txt"
+      },
+      "aliases": [
+        "A Főorvos Úr",
+        "Holdvilág Charley",
+        "Charley"
+      ],
+      "role": {
+        "social_role": "bűnözői közegben mozgó tengerésztiszt és végrehajtó ember",
+        "narrative_function": "közvetítő és szervező mellékalak, aki parancsokat közvetít, akciókat irányít, és időnként a csoporton belüli ingadozó lojalitást testesíti meg"
+      }
+    },
+    "rejto_nagy_bivaly": {
+      "character_id": "rejto_nagy_bivaly",
+      "canonical_name": "Nagy Bivaly",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "PmxJaBf1lpNVLSNYk5QF",
+      "files": {
+        "portrait_webp": "Nagy Bivaly.webp",
+        "audio": "Nagy Bivaly.wav",
+        "info": "Nagy Bivaly_info.txt",
+        "reference": "Nagy Bivaly_reference.txt"
+      },
+      "aliases": [
+        "Nagy Bivaly"
+      ],
+      "role": {
+        "social_role": "rettegett alvilági erőember",
+        "narrative_function": "Piszkos Fred régi ellensége, aki váratlanul a Vadsuhanc védelmezőjévé válik"
+      }
+    },
+    "rejto_kegyelmes_ur": {
+      "character_id": "rejto_kegyelmes_ur",
+      "canonical_name": "Kegyelmes úr",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "KO732V5MzkitJi5GiU2p",
+      "files": {
+        "portrait_webp": "Kegyelmes úr.webp",
+        "audio": "Kegyelmes úr.wav",
+        "info": "Kegyelmes úr_info.txt",
+        "reference": "Kegyelmes úr_reference.txt"
+      },
+      "aliases": [
+        "Kegyelmes úr",
+        "Alvarez márki"
+      ],
+      "role": {
+        "social_role": "Száműzött volt elnök és alvilági-politikai szervező, aki Almira visszaszerzésére készül.",
+        "narrative_function": "Összeesküvést irányító háttérhatalmi szereplő, aki a politikai restauráció tervét a bűnözői hálózaton keresztül mozgatja."
+      }
+    },
+    "rejto_voroskarom": {
+      "character_id": "rejto_voroskarom",
+      "canonical_name": "Vöröskarom",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "l77ig1907QiFoqAZZXvB",
+      "files": {
+        "portrait_webp": "Vöröskarom.webp",
+        "audio": "Vöröskarom.wav",
+        "info": "Vöröskarom_info.txt",
+        "reference": "Vöröskarom_reference.txt"
+      },
+      "aliases": [
+        "Vöröskarom"
+      ],
+      "role": {
+        "social_role": "alvilági vezér, parancsnoki tekintéllyel",
+        "narrative_function": "ellenérdekű hatalmi szereplő és a cselekményt irányító döntéshozó"
+      }
+    },
+    "rejto_maxbell": {
+      "character_id": "rejto_maxbell",
+      "canonical_name": "Maxbell",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_46osy9ctxqz4",
+      "files": {
+        "portrait_webp": "Maxbell.webp",
+        "audio": "Maxbell.wav",
+        "info": "Maxbell_info.txt",
+        "reference": "Maxbell_reference.txt"
+      },
+      "aliases": [
+        "Maxbell",
+        "Sir Arthur Maxbell",
+        "Maxbell tanár",
+        "Macbell"
+      ],
+      "role": {
+        "social_role": "hírneves földrajztudós, professzor és expedíciós szaktekintély",
+        "narrative_function": "a tudományos tekintély komikus-parodisztikus megtestesítője, aki egyszerre hajtja és nevetségessé teszi az expedíciót"
+      }
+    },
+    "rejto_pepita_ofelia": {
+      "character_id": "rejto_pepita_ofelia",
+      "canonical_name": "Pepita Ofélia",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_ohckwsojea3g",
+      "files": {
+        "portrait_webp": "Pepita Ofélia.webp",
+        "audio": "Pepita Ofélia.wav",
+        "info": "Pepita Ofélia_info.txt",
+        "reference": "Pepita Ofélia_reference.txt"
+      },
+      "aliases": [
+        "Pepita Ofélia",
+        "Ofélia",
+        "Kockás Ofélia"
+      ],
+      "role": {
+        "social_role": "zenélő és éneklő művésznő a kikötői-hajós szórakoztató közegben",
+        "narrative_function": "bohózati és romantikus zavaróelem, aki flörttel, zenével és gyors helyzetváltásokkal fokozza a cselekmény káoszát"
+      }
+    },
+    "rejto_gustav_bahr": {
+      "character_id": "rejto_gustav_bahr",
+      "canonical_name": "Gustav Bahr",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_2iy5zea6aip2",
+      "files": {
+        "portrait_webp": "Gustav Bahr.webp",
+        "audio": "Gustav Bahr.wav",
+        "info": "Gustav Bahr_info.txt",
+        "reference": "Gustav Bahr_reference.txt"
+      },
+      "aliases": [
+        "Gustav Bahr",
+        "Guss",
+        "Gusztus Bár",
+        "Gusztaf Bár",
+        "Gustav",
+        "Gusztáf Bár"
+      ],
+      "role": {
+        "social_role": "eltűntnek hitt földrajzkutató, aki Egon Small álnéven bujkál, és porszívó- valamint vasútjegyügynökként adja ki magát",
+        "narrative_function": "a keresett tudós, akinek személye köré a felkutatás, a félrevezetés és az identitásrejtés komikuma szerveződik"
+      }
+    },
+    "rejto_sir_egmont": {
+      "character_id": "rejto_sir_egmont",
+      "canonical_name": "Sir Egmont",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "dTbHgvjB3360o5s4CXMn",
+      "files": {
+        "portrait_webp": "Sir Egmont.webp",
+        "audio": "Sir Egmont.wav",
+        "info": "Sir Egmont_info.txt",
+        "reference": "Sir Egmont_reference.txt"
+      },
+      "aliases": [
+        "Sir Egmont",
+        "Egmond",
+        "Egmond szőr",
+        "Ekmont",
+        "Szőr Ekmont"
+      ],
+      "role": {
+        "social_role": "A Boldogság Szigetek örökös miniszterelnöke, a királyi család tagja, az anyakirálynő fivére.",
+        "narrative_function": "Udvari hatalmi szereplő és trónöröklési manipulátor, aki az állami formaságokra hivatkozva igyekszik befolyásolni az uralkodót."
+      }
+    },
+    "rejto_vaszics": {
+      "character_id": "rejto_vaszics",
+      "canonical_name": "Vaszics",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_qjcdg2ocd2ac",
+      "files": {
+        "portrait_webp": "Vaszics.webp",
+        "audio": "Vaszics.wav",
+        "info": "Vaszics_info.txt",
+        "reference": "Vaszics_reference.txt"
+      },
+      "aliases": [
+        "Vaszics",
+        "vörös Vaszic",
+        "vörös Vaszics"
+      ],
+      "role": {
+        "social_role": "volt fedélzetmester, matróz; egy időre állás nélküli tengerész",
+        "narrative_function": "keménykötésű hajószakember és kikötői figura, aki a dilettáns expedíciós közegben a gyakorlati tengerészeti nézőpontot képviseli"
+      }
+    },
+    "rejto_lilian": {
+      "character_id": "rejto_lilian",
+      "canonical_name": "Lilian",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_l7lnemlnp5xi",
+      "files": {
+        "portrait_webp": "Lilian.webp",
+        "audio": "Lilian.wav",
+        "info": "Lilian_info.txt",
+        "reference": "Lilian_reference.txt"
+      },
+      "aliases": [
+        "Lilian",
+        "Lilian Hiller"
+      ],
+      "role": {
+        "social_role": "jó modorú fiatal nő, Milton Winter korvettkapitány húga; időnként álnéven és szerepet játszva mozog",
+        "narrative_function": "rejtőzködő szövetséges és bonyodalomkeltő mellékszereplő, aki jelenlétével irányt ad több fordulatnak"
+      }
+    },
+    "rejto_tulipan": {
+      "character_id": "rejto_tulipan",
+      "canonical_name": "Tulipán",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "pixNluZa2zPMkp8Cz0YY",
+      "files": {
+        "portrait_webp": "Tulipán.webp",
+        "audio": "Tulipán.wav",
+        "info": "Tulipán_info.txt",
+        "reference": "Tulipán_reference.txt"
+      },
+      "aliases": [
+        "Tulipán"
+      ],
+      "role": {
+        "social_role": "embercsempész és alvilági kereskedő",
+        "narrative_function": "kapcsolófigura az alvilági hálózathoz; az emberkereskedelmi és csempészvilág gyakorlati szereplője"
+      }
+    },
+    "rejto_szallasmester": {
+      "character_id": "rejto_szallasmester",
+      "canonical_name": "Szállásmester",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "lbwOFdKR3uVEvk2ZK160",
+      "files": {
+        "portrait_webp": "Szállásmester.webp",
+        "audio": "Szállásmester.wav",
+        "info": "Szállásmester_info.txt",
+        "reference": "Szállásmester_reference.txt"
+      },
+      "aliases": [
+        "Szállásmester",
+        "vörös képű szállásmester"
+      ],
+      "role": {
+        "social_role": "hajóbeli szállásmester, a szolgálati rend és a gyakorlati ügyek felügyelője",
+        "narrative_function": "köztes rangú tekintélyfigura, aki válsághelyzetekben utasít, riadót jelez és a komikus zűrzavar egyik közvetítője"
+      }
+    },
+    "rejto_watson_kapitany": {
+      "character_id": "rejto_watson_kapitany",
+      "canonical_name": "Watson kapitány",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_xr6fv6yom1c2",
+      "files": {
+        "portrait_webp": "Watson kapitány.webp",
+        "audio": "Watson kapitány.wav",
+        "info": "Watson kapitány_info.txt",
+        "reference": "Watson kapitány_reference.txt"
+      },
+      "aliases": [
+        "Watson kapitány",
+        "Watson"
+      ],
+      "role": {
+        "social_role": "hajóskapitány, az expedíció fedélzeti irányítója",
+        "narrative_function": "formális tekintélyfigura, aki a hajó működését szervezi és parancsokkal tartja fenn a rendet"
+      }
+    },
+    "rejto_anna_alvarez": {
+      "character_id": "rejto_anna_alvarez",
+      "canonical_name": "Anna Alvarez",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "4HlqQcx7Vustv43dUl8O",
+      "files": {
+        "portrait_webp": "Anna Alvarez.webp",
+        "audio": "Anna Alvarez.wav",
+        "info": "Anna Alvarez_info.txt",
+        "reference": "Anna Alvarez_reference.txt"
+      },
+      "aliases": [
+        "Anna Alvarez"
+      ],
+      "role": {
+        "social_role": "Alvarez lánya; a család politikai-alvilági törekvéseinek résztvevője",
+        "narrative_function": "A Warins–Alvarez dinasztikus és hatalmi konfliktus személyes tétje; a kényszerházasság és a politikai legitimáció kulcsfigurája."
+      }
+    },
+    "rejto_szwachta_szokratesz": {
+      "character_id": "rejto_szwachta_szokratesz",
+      "canonical_name": "Szwachta Szókratész",
+      "tier": 1,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "google_tts",
+      "voice_id": "voice_iojk0h2tzopf",
+      "files": {
+        "portrait_webp": "Szwachta Szókratész.webp",
+        "audio": "Szwachta Szókratész.wav",
+        "info": "Szwachta Szókratész_info.txt",
+        "reference": "Szwachta Szókratész_reference.txt"
+      },
+      "aliases": [
+        "Szwachta Szókratész",
+        "Schwachta Szókratész",
+        "Knapp úr",
+        "Knapp",
+        "Drugics",
+        "Schwachta Arisztotelész",
+        "Arisztofanész",
+        "Homérosz",
+        "Achmed"
+      ],
+      "role": {
+        "social_role": "nyugalmazott ítéletvégrehajtó; korábban villamosszék-kezelő, később kifutó, jelenleg kertészetet emlegető különc utazó",
+        "narrative_function": "groteszk komikus mellékszereplő és zavaró jelenlét, aki áltekintéllyel és különcségével kibillenti a helyzeteket"
+      }
+    },
+    "rejto_petters": {
+      "character_id": "rejto_petters",
+      "canonical_name": "Petters",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany",
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Petters.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Petters",
+        "asztmás Petters"
+      ],
+      "role": {
+        "social_role": "asztmás, matrózközegben mozgó csirkefogó és alkalmi őrféle",
+        "narrative_function": "hangos, kötekedő mellékalak a lázadó vagy zavaros fedélzeti közegben; a feszültség és a komikus fenyegetettség erősítője"
+      }
+    },
+    "rejto_velo": {
+      "character_id": "rejto_velo",
+      "canonical_name": "Velő",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Velő.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Velő"
+      ],
+      "role": {
+        "social_role": "alvilági klubhoz kötődő tekintélyszemély, végrehajtó és kapuőr jellegű vezető figura",
+        "narrative_function": "az alvilági hierarchia képviselője, aki ellenőriz, közvetít és fenyegető jelenléttel hitelesíti a közeg szabályait"
+      }
+    },
+    "rejto_winter_ur": {
+      "character_id": "rejto_winter_ur",
+      "canonical_name": "Winter úr",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Winter úr.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Winter úr",
+        "A. Winter",
+        "Arnold",
+        "Old Winter",
+        "dr. A. Winter",
+        "Rüger doktor"
+      ],
+      "role": {
+        "social_role": "az expedíció orvosa",
+        "narrative_function": "szorongó, ütődött mellékalak, aki szakmai tudásával és kiszolgáltatottságával egyszerre teremt komikumot"
+      }
+    },
+    "rejto_mellwill_szazados": {
+      "character_id": "rejto_mellwill_szazados",
+      "canonical_name": "Mellwill százados",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Mellwill százados.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Mellwill százados",
+        "Mellwill"
+      ],
+      "role": {
+        "social_role": "egészségügyi kormánybiztos, régi katonaorvos, századosi rangban",
+        "narrative_function": "a segélyhajó hivatalos egészségügyi vezetője, aki felméri a helyzetet, parancsokat ad és értelmezi a hajón talált adatokat"
+      }
+    },
+    "rejto_gombperec_hideglo": {
+      "character_id": "rejto_gombperec_hideglo",
+      "canonical_name": "Gombperec hidegló",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Gombperec hidegló.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Gombperec hidegló",
+        "Gombperec higaldó",
+        "Gombperec úr",
+        "Hildagó",
+        "Gombperec"
+      ],
+      "role": {
+        "social_role": "hídlakó, udvari szolgálattevő és protokolláris végrehajtó",
+        "narrative_function": "komikus mellékalak, aki a hivatalos rendet, a ceremóniát és a hatalmi gépezet személytelen működését testesíti meg"
+      }
+    },
+    "rejto_roland_sigorszki": {
+      "character_id": "rejto_roland_sigorszki",
+      "canonical_name": "Roland Sigorszki",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Roland Sigorszki.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Roland Sigorszki",
+        "Sigorszki"
+      ],
+      "role": {
+        "social_role": "lakáj, házi szolga",
+        "narrative_function": "komikus közvetítő és végrehajtó figura, aki a gazdája üzeneteit és abszurd intézkedéseit viszi véghez"
+      }
+    },
+    "rejto_odon": {
+      "character_id": "rejto_odon",
+      "canonical_name": "Ödön",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Ödön.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Ödön"
+      ],
+      "role": {
+        "social_role": "szigeti törzsfőnök, a közösség vezetője",
+        "narrative_function": "groteszk mellékszereplő, aki a civilizációval szembeni helyi ellenállást és a regény abszurd humorát testesíti meg"
+      }
+    },
+    "rejto_baruch_t_livingstone": {
+      "character_id": "rejto_baruch_t_livingstone",
+      "canonical_name": "Baruch T. Livingstone",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Baruch T. Livingstone.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Baruch T. Livingstone",
+        "Livingstone"
+      ],
+      "role": {
+        "social_role": "portás",
+        "narrative_function": "komikus mellékszereplő, akinek identitása és társadalmi helyzete a helyzetkomikum egyik forrása"
+      }
+    },
+    "rejto_ordog_will": {
+      "character_id": "rejto_ordog_will",
+      "canonical_name": "Ördög Will",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Ördög Will.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Ördög Will"
+      ],
+      "role": {
+        "social_role": "börtönszolga vagy őrsegéd, aki a rabok ruháival és ellátásával kapcsolatos feladatokat végez",
+        "narrative_function": "epizódszereplő, aki a börtönvilág kegyetlen, haszonleső hétköznapiságát mutatja meg"
+      }
+    },
+    "rejto_palmerston_tanar": {
+      "character_id": "rejto_palmerston_tanar",
+      "canonical_name": "Palmerston tanár",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Palmerston tanár.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Palmerston tanár",
+        "Palmerston",
+        "Mr. Greenwood"
+      ],
+      "role": {
+        "social_role": "tanár, a társaságban utasként megjelenő értelmiségi férfi",
+        "narrative_function": "mellékszereplő értelmiségi figura, aki udvarias kérdéseivel és jelenlétével információs és félreértési helyzeteket erősít"
+      }
+    },
+    "rejto_tuskes_vanek": {
+      "character_id": "rejto_tuskes_vanek",
+      "canonical_name": "Tüskés Vanek",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany",
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Tüskés Vanek.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Tüskés Vanek",
+        "Vanek"
+      ],
+      "role": {
+        "social_role": "verekedő hajós és bűnözői körökhöz tartozó csavargó",
+        "narrative_function": "veszélyes mellékalak, ütőképes végrehajtó és alkalmi szövetséges"
+      }
+    },
+    "rejto_rezgrof": {
+      "character_id": "rejto_rezgrof",
+      "canonical_name": "Rézgróf",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Rézgróf.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Rézgróf",
+        "Milton Winter korvettkapitány",
+        "Milton Winter"
+      ],
+      "role": {
+        "social_role": "a Wagner Úr első tisztje",
+        "narrative_function": "hangadó mellékalak és közreműködő a személyazonossági megtévesztésben"
+      }
+    },
+    "rejto_borck": {
+      "character_id": "rejto_borck",
+      "canonical_name": "Borck",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Borck.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Borck"
+      ],
+      "role": {
+        "social_role": "matróz, alárendelt társ",
+        "narrative_function": "másodvonalbeli kísérőfigura, aki jelenlétével nyers fizikalitást és baljós hangulatot erősít"
+      }
+    },
+    "rejto_kannibal_beby": {
+      "character_id": "rejto_kannibal_beby",
+      "canonical_name": "Kannibál Béby",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Kannibál Béby"
+      ],
+      "role": {
+        "social_role": "közrettegésnek örvendő bűnöző, a Diétás Víg Fiúk sportklubjának elnöke",
+        "narrative_function": "másodlagos fenyegető végrehajtó figura a bűnözői közegben"
+      }
+    },
+    "rejto_pollino_tabornok": {
+      "character_id": "rejto_pollino_tabornok",
+      "canonical_name": "Pollinó tábornok",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Pollinó tábornok",
+        "Pollinó",
+        "Pollinó tanár",
+        "Mr. Greenwood"
+      ],
+      "role": {
+        "social_role": "tábornok és hadügyminiszter; udvari katonai méltóság",
+        "narrative_function": "magas rangú, formális közvetítő és tekintélyalak; részben fedőazonosságban megjelenő szereplő"
+      }
+    },
+    "rejto_portas_robb": {
+      "character_id": "rejto_portas_robb",
+      "canonical_name": "Portás Robb",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Portás Robb",
+        "Robb"
+      ],
+      "role": {
+        "social_role": "beléptető és őr a börtönszerű intézményben",
+        "narrative_function": "mellékalak, aki az intézmény működését és a helyszín világát hitelesíti, valamint gyakorlati hozzáférést biztosít zárt terekhez és felszereléshez"
+      }
+    },
+    "rejto_borges_ur": {
+      "character_id": "rejto_borges_ur",
+      "canonical_name": "Borges úr",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Borges úr",
+        "Borges"
+      ],
+      "role": {
+        "social_role": "szerelő; Ofélia ismeretségi körének tagja",
+        "narrative_function": "epizódszereplő, aki Ofélia környezetét és a jelenetek társasági hátterét jelöli ki"
+      }
+    },
+    "rejto_martin": {
+      "character_id": "rejto_martin",
+      "canonical_name": "Martin",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Martin"
+      ],
+      "role": {
+        "social_role": "kocsmai vendég, a társaság egyik ismerőse",
+        "narrative_function": "mellékszereplő kocsmai figura, aki hangulatot kelt és társasági közvetítőként kapcsolódik a jelenethez"
+      }
+    },
+    "rejto_lord_hamilton": {
+      "character_id": "rejto_lord_hamilton",
+      "canonical_name": "Lord Hamilton",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Lord Hamilton",
+        "Hamilton"
+      ],
+      "role": {
+        "social_role": "angol főnemes, az uralkodó rokona, az expedíció magas rangú kísérője",
+        "narrative_function": "tekintélyt és hivatalos legitimitást adó mellékszereplő, aki a civilizált világ képviseletében jelenik meg"
+      }
+    },
+    "rejto_bokezu_rocsild": {
+      "character_id": "rejto_bokezu_rocsild",
+      "canonical_name": "Bőkezű Rócsild",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Bőkezű Rócsild",
+        "Rócsild"
+      ],
+      "role": {
+        "social_role": "kikötői alvilághoz kötődő csavargó és alkalmi társ",
+        "narrative_function": "mellékszereplő bajtárs, aki a durva baráti közeg és a groteszk szolidaritás egyik hordozója"
+      }
+    },
+    "rejto_dr_hillar": {
+      "character_id": "rejto_dr_hillar",
+      "canonical_name": "Dr. Hillár",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Dr. Hillár",
+        "Hillár"
+      ],
+      "role": {
+        "social_role": "orvos",
+        "narrative_function": "mellékszereplő szaktekintély, aki a testi állapotok megítélésével és saját leromlásával a helyzet komorságát erősíti"
+      }
+    },
+    "rejto_parker": {
+      "character_id": "rejto_parker",
+      "canonical_name": "Parker",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Parker",
+        "Parker tengernagy",
+        "Parker admirális"
+      ],
+      "role": {
+        "social_role": "tengernagy, magas rangú katonai és diplomáciai szereplő",
+        "narrative_function": "tekintélyes külső hatalmi szereplő, aki udvari hozzáférésével és rangjával legitimálja az eseményeket"
+      }
+    },
+    "rejto_henry_firmin": {
+      "character_id": "rejto_henry_firmin",
+      "canonical_name": "Henry Firmin",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Henry Firmin",
+        "Firmin"
+      ],
+      "role": {
+        "social_role": "fényképész, magát „udvari fényképezőként” megnevező férfi",
+        "narrative_function": "epizódszereplő, aki szakmai és társadalmi pozícióját rövid bemutatkozással jelöli ki"
+      }
+    },
+    "rejto_mimoza": {
+      "character_id": "rejto_mimoza",
+      "canonical_name": "Mimóza",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Mimóza"
+      ],
+      "role": {
+        "social_role": "a Hidegek Tanácsához kötődő mellékszereplő",
+        "narrative_function": "kizáró szabályt kimondó, határőrző hang a csoportjelenetben"
+      }
+    },
+    "rejto_helena_kiralno": {
+      "character_id": "rejto_helena_kiralno",
+      "canonical_name": "Helena királynő",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_a_kapitany"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Helena királynő",
+        "Asszonykirály"
+      ],
+      "role": {
+        "social_role": "özvegy királynő, uralkodói rangú asszony",
+        "narrative_function": "trónjához és rangjához kötött, de kalandos és komikus helyzetekbe sodródó királyi figura"
+      }
+    },
+    "rejto_brogles": {
+      "character_id": "rejto_brogles",
+      "canonical_name": "Brogles",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Brogles.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Brogles"
+      ],
+      "role": {
+        "social_role": "vízvezeték-, gáz- és jégszekrényszerelő; a házmester öccse",
+        "narrative_function": "röviden megjelenő mellékszereplő, aki önazonosságát és szakmai hátterét hangsúlyozva lép fel"
+      }
+    },
+    "rejto_egon_small": {
+      "character_id": "rejto_egon_small",
+      "canonical_name": "Egon Small",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Egon Small"
+      ],
+      "role": {
+        "social_role": "porszívó- és vasútjegyügynök; önmagát halottként említi",
+        "narrative_function": "groteszk, száraz humorú információközlő és helyzetmagyarázó mellékalak"
+      }
+    },
+    "rejto_mondmar_fulop": {
+      "character_id": "rejto_mondmar_fulop",
+      "canonical_name": "Mondmár Fülöp",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Mondmár Fülöp",
+        "2-es egizencija"
+      ],
+      "role": {
+        "social_role": "a társaság alacsonyabb rangú embere, „2-es egizencija”; alkalmi őrszolgálatot is ad",
+        "narrative_function": "mellékszereplő csoporttag, aki vitákban megszólal, tanúként hivatkozik közös tapasztalatra, és a feszült helyzetek tömegreakcióját képviseli"
+      }
+    },
+    "rejto_emanuel_thorn": {
+      "character_id": "rejto_emanuel_thorn",
+      "canonical_name": "Emanuel Thorn",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Emanuel Thorn",
+        "Harry C. Thorn"
+      ],
+      "role": {
+        "social_role": "titkár",
+        "narrative_function": "alárendelt közvetítőfigura, aki információt, kapcsolatokat és félreértéseket mozgat a cselekményben"
+      }
+    },
+    "rejto_warder": {
+      "character_id": "rejto_warder",
+      "canonical_name": "Warder",
+      "tier": 2,
+      "novels": [
+        "piszkos_fred_kozbelep"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Warder"
+      ],
+      "role": {
+        "social_role": "matróz",
+        "narrative_function": "epizódszereplő; röviden felbukkanó tengerészfigura"
+      }
+    },
+    "rejto_rozsdas": {
+      "character_id": "rejto_rozsdas",
+      "canonical_name": "Rozsdás",
+      "tier": 1,
+      "novels": [
+        "az_elveszett_cirkalo"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "GOLDEN_MASTER",
+      "files": {
+        "portrait_webp": "Rozsdás.webp",
+        "audio": "Rozsdás.wav",
+        "info": "Rozsdás_info.txt",
+        "reference": "Rozsdás_reference.txt"
+      },
+      "aliases": [
+        "Rozsdás"
+      ],
+      "role": {
+        "social_role": "Csavargó légiós szökevény / A Gyóntatók természetes vezetője",
+        "narrative_function": ""
+      }
+    },
+    "rejto_bradford_szazados": {
+      "character_id": "rejto_bradford_szazados",
+      "canonical_name": "Bradford",
+      "tier": 1,
+      "novels": [
+        "az_elveszett_cirkalo"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "wFCnn5ETg2OwpbBwFNJI",
+      "files": {
+        "portrait_webp": "Bradford.webp",
+        "audio": "Bradford.wav",
+        "info": "Bradford_info.txt",
+        "reference": "Bradford_reference.txt"
+      },
+      "aliases": [
+        "Bradford"
+      ],
+      "role": {
+        "social_role": "Brit vezérkari tiszt / Titkos intrikus",
+        "narrative_function": ""
+      }
+    },
+    "rejto_edit_leven": {
+      "character_id": "rejto_edit_leven",
+      "canonical_name": "Edit Leven",
+      "tier": 1,
+      "novels": [
+        "az_elveszett_cirkalo"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "Ckj5j0MANwGQfn9MKeNC",
+      "files": {
+        "portrait_webp": "Edit Leven.webp",
+        "audio": "Edit Leven.wav",
+        "info": "Edit Leven_info.txt",
+        "reference": "Edit Leven_reference.txt"
+      },
+      "aliases": [
+        "Edit Leven"
+      ],
+      "role": {
+        "social_role": "Tom Leven húga / Álcázott Kölyök",
+        "narrative_function": ""
+      }
+    },
+    "rejto_tom_leven": {
+      "character_id": "rejto_tom_leven",
+      "canonical_name": "Tom Leven",
+      "tier": 1,
+      "novels": [
+        "az_elveszett_cirkalo"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "DryDR0189nVHjKa1XCeJ",
+      "files": {
+        "portrait_webp": "Tom Leven.webp",
+        "audio": "Tom Leven.wav",
+        "info": "Tom Leven_info.txt",
+        "reference": "Tom Leven_reference.txt"
+      },
+      "aliases": [
+        "Tom Leven"
+      ],
+      "role": {
+        "social_role": "Kereskedelmi hajóstiszt / A cirkáló rejtélyének kulcsa",
+        "narrative_function": ""
+      }
+    },
+    "rejto_szigonyos": {
+      "character_id": "rejto_szigonyos",
+      "canonical_name": "Szigonyos",
+      "tier": 1,
+      "novels": [
+        "az_elveszett_cirkalo"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": null,
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Szigonyos"
+      ],
+      "role": {
+        "social_role": "Kikötői verekedő / Piszkos Fred embere",
+        "narrative_function": ""
+      }
+    },
+    "rejto_a_bunko": {
+      "character_id": "rejto_a_bunko",
+      "canonical_name": "A Bunkó",
+      "tier": 1,
+      "novels": [
+        "az_elveszett_cirkalo"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "zzoNTDKxJklc1GNrOYzO",
+      "files": {
+        "portrait_webp": "A Bunkó.webp",
+        "audio": "A Bunkó.wav",
+        "info": "A Bunkó_info.txt",
+        "reference": "A Bunkó_reference.txt"
+      },
+      "aliases": [
+        "A Bunkó"
+      ],
+      "role": {
+        "social_role": "A harmadik Gyóntató / Kikötői óriás",
+        "narrative_function": ""
+      }
+    },
+    "rejto_kvang_generalis": {
+      "character_id": "rejto_kvang_generalis",
+      "canonical_name": "Kvang generális",
+      "tier": 1,
+      "novels": [
+        "az_elveszett_cirkalo"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "HVypdhRxCdRV6SyVfNAH",
+      "files": {
+        "portrait_webp": "Kvang generális.webp",
+        "audio": "Kvang generális.wav",
+        "info": "Kvang generális_info.txt",
+        "reference": "Kvang generális_reference.txt"
+      },
+      "aliases": [
+        "Kvang generális"
+      ],
+      "role": {
+        "social_role": "Keleti hadúr / Erődparancsnok",
+        "narrative_function": ""
+      }
+    },
+    "rejto_amerikai_admiralis": {
+      "character_id": "rejto_amerikai_admiralis",
+      "canonical_name": "Amerikai admirális",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Amerikai admirális.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Amerikai admirális"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    },
+    "rejto_earl_of_sudessex": {
+      "character_id": "rejto_earl_of_sudessex",
+      "canonical_name": "Earl of Sudessex",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "APPROVED_MASTER",
+      "active_engine": "elevenlabs",
+      "voice_id": "lm9A0TjEnJH52PyHgISO",
+      "files": {
+        "portrait_webp": "Earl of Sudessex.webp",
+        "audio": "Earl of Sudessex.wav",
+        "info": "Earl of Sudessex_info.txt",
+        "reference": "Earl of Sudessex_reference.txt"
+      },
+      "aliases": [
+        "Earl of Sudessex"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    },
+    "rejto_malaj_orias": {
+      "character_id": "rejto_malaj_orias",
+      "canonical_name": "Maláj óriás",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Maláj óriás.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Maláj óriás"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    },
+    "rejto_morrison_snyder": {
+      "character_id": "rejto_morrison_snyder",
+      "canonical_name": "Morrison Snyder",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Morrison Snyder.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Morrison Snyder"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    },
+    "rejto_rendor": {
+      "character_id": "rejto_rendor",
+      "canonical_name": "Rendőr",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Rendőr.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Rendőr"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    },
+    "rejto_the_football_referee": {
+      "character_id": "rejto_the_football_referee",
+      "canonical_name": "The Football Referee",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "The Football Referee.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "The Football Referee"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    },
+    "rejto_vendeglos": {
+      "character_id": "rejto_vendeglos",
+      "canonical_name": "Vendéglős",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Vendéglős.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "Vendéglős"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    },
+    "rejto_foszerkeszto": {
+      "character_id": "rejto_foszerkeszto",
+      "canonical_name": "Főszerkesztő",
+      "tier": 2,
+      "novels": [
+        "rejto_korpusz"
+      ],
+      "status": "PENDING_GENERATION",
+      "active_engine": null,
+      "voice_id": null,
+      "files": {
+        "portrait_webp": "Főszerkesztő.webp",
+        "audio": null,
+        "info": null,
+        "reference": null
+      },
+      "aliases": [
+        "főszerkesztő"
+      ],
+      "role": {
+        "social_role": "Mellékszereplő",
+        "narrative_function": ""
+      }
+    }
+  }
+}

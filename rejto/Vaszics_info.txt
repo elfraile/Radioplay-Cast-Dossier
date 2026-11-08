@@ -1,0 +1,35 @@
+======================================================================
+   06. VASZICS - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 06. Vaszics
+Regény: Piszkos Fred közbelép
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: Deck Master / Sailor
+Demográfia: Male, Adult
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_qjcdg2ocd2ac
+
+Voice Description:
+Native Hungarian. Adult male with low-mid bass register, weathered timbre, back-set formants, chest-dominant resonance with light pharyngeal grit, firm glottal onset, clipped consonants, coarse dental friction, forward-driving articulation; dry close-mic studio, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Vaszics alapellentéte az, hogy a fedélzeten rideg, szakmai bizonyosságot sugároz, miközben mélyen hisz a balszerencse és a „rossz csillagzat” erejében. Ezért a hangkép állandóan mély, érdes, mellkasi súlyú és előretoló, minden fölösleges lágyság nélkül. A fordulókban előbb gúnyos leértékelés szólal meg, aztán a matrózszakma nyers tekintélye, majd a halálesetekre hivatkozó sötét tényközlés, végül a végzetérzet parancsoló kitörésbe csap át.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Vaszics íve a kérlelhetetlen szakmai tekintély és a babonás végzetérzet ütközéséből épül: előbb lealázza a bámészkodót, aztán szakmai axiómát mond ki, végül fenyegető parancsba sűríti a közelgő baj tudását.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[scornful clipped brisk] – Mit bámulsz a képembe? <breath> – A hajó nem attól úszik, hogy egy finom úr szépen kéri. [grim warning measured] – Mondtam már: ez a hajó rossz csillagzattal indult. <short pause> – Ki ért itt a kötélhez, he? [hard factual driving] – Két ember már a vízben végezte a héten, mert sokat ugrált. <sigh> – Ha senki, akkor kuss legyen, és dolgozz! [explosive command urgent] – ÁLLJ el a lépcsőtől, de azonnal! <gasp> – Mert amikor baj jön, nem a duma tart fenn benneteket.
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_qjcdg2ocd2ac (V21_06_VASZICS_var1_voice_qjcdg2ocd2ac.wav)

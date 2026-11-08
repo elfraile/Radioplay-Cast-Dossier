@@ -1,0 +1,35 @@
+======================================================================
+   05. MAXBELL - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 05. Maxbell
+Regény: Piszkos Fred közbelép
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: 
+Demográfia: Male, Adult (35-50)
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_46osy9ctxqz4
+
+Voice Description:
+Native Hungarian. Male, 35–50. Low-mid gravelly register with slightly retracted formants, chest-pharyngeal dominant resonance, restrained cranial spill, firm clean glottal onset; precise consonants, light dental friction, measured forward drive. Direct dry close-mic studio capture, zero reverberation.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Maxbell beszédének magja az, hogy a tudományt abszolútumnak állítja be, miközben személyes tekintélyét is ugyanilyen csalhatatlannak követeli elismerni. Ezért a permanens hangkép mély-közép, érdes, mellkasi-garatbeli és szárazan direkt: nem melegít, hanem kijelöl és leszorít. A turnökben előbb vizsgáztatva fölényes, aztán doktrinér kijelentéssel lezár, majd sértett korrekcióba fordul, végül a kontrollvesztés félelme tiszta parancsban tetőzik.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Maxbell íve a megkérdőjelezhetetlennek hitt tudományos tekintély és a kontrollvesztéstől való ingerült rettegés között feszül: definícióval indít, lekezelő korrekcióval szűkíti a teret, majd sértett önigazolásból parancsba csap át.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[cold didactic probe] – Mit tudnak maguk a tudományról? <breath> [patrician clipped emphasis] – A számítás csalhatatlan, uraim, nem a maguk ostoba megérzései számítanak! <short pause> [wounded superiority slow] – Gustav Bahr tévedett, én pedig korrigáltam a fokokat, és most még engem oktatnak ki? <sigh> [rigid alarm command] – Adjanak le vészjeleket, AZONNAL!! <gasp>
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_46osy9ctxqz4 (V21_05_MAXBELL_var1_voice_46osy9ctxqz4.wav)

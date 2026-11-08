@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_09_VOROSKAROM
+Karakter neve: Vöröskarom
+Szerepkör / Funkció: Underworld Leader
+Neme: Female
+Korcsoport: Adult (35-50 years old)
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 1
+ElevenLabs Voice ID: l77ig1907QiFoqAZZXvB
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Female, 35–45. A poised underworld leader with aristocratic polish: socially superior, strategic, emotionally contained, quietly dangerous. High-frequency melodic timbre with controlled upper resonance supported by a firm chest core; stable pitch center, clean breath management, lightly sharpened articulatory edge, precise consonants, and quick, incisive diction at a deliberate pace. Baseline delivery is serene, elegant, and poised, yet capable of sudden cutting authority and intimate personal vulnerability without losing control. Close-mic studio presence, dry recording, zero reverberation, highly detailed vocal texture. Avoid fatigue, apathy, sluggishness, flattening, caricature, exaggerated slurring, sing-song villainy, or any unnatural theatrical habits.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Beszéljünk okosan. Tudja, miért hozattam ide? [curious] – Egyetlen rossz szó, és minden ajtó bezárul maga előtt. Vöröskarom lassan végighúzta vörös körmét a korláton. [breath] [tense] – Azt hitte, a bátorság majd megmenti? Nem itt! [indignant] – Ne nézzen így rám; én rendet tartok, amikor mások reszketnek. [shouts] – Feleljen VILÁGOSAN: megöletne, ha most szabad volna?
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Beszéljünk okosan. Tudja, miért hozattam ide? – Egyetlen rossz szó, és minden ajtó bezárul maga előtt. Vöröskarom lassan végighúzta vörös körmét a korláton. – Azt hitte, a bátorság majd megmenti? Nem itt! – Ne nézzen így rám; én rendet tartok, amikor mások reszketnek. – Feleljen VILÁGOSAN: megöletne, ha most szabad volna?

@@ -1,0 +1,23 @@
+======================================================================
+   01. ROZSDÁS - HANG PROFIL (V23_REJTO_AZ_ELVESZETT_CIRKALO)
+======================================================================
+
+Karakter: 01. Rozsdás
+Regény: 01028 Az elveszett cirkáló
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: Csavargó légiós szökevény / A Gyóntatók természetes vezetője
+Demográfia: Male, Young Adult (22-26 years old)
+Gemini voice ID: voice_uz53p3tl5mso
+
+Voice Description:
+Native Hungarian male voice, mid-twenties. An agile baritone-tenor with a lean, wiry chest core and sharp dental bite. Sits in an insolent, drawling, low-register murmur, then leaps with sudden explosive velocity and cutting vocal projection into commanding, sarcastic clarity. Intimate close-mic studio recording, pure dry acoustic, zero room bleed.
+
+Tervezési Indoklás (OpenAI gpt-5.4 / Anthropic Sonnet):
+Rozsdás karaktere az utcai cinizmus és a villámgyors reflexek kettősségére épül: a látszólag lusta, unott dörmögésből pillanatok alatt robban át metsző, parancsoló hangerőbe, amikor cselekedni kell. A beszédstílus laza, de sosem tompa.
+
+Transzkripció (Audio Tagekkel):
+[casual, offhand, mocking] – Hé, mit akartok attól a kölyöktől? [drawl, nonchalant] – kérdezte Rozsdás, miközben hátralépett. [ironic, mockingly] – Elismerem, hogy mindenkinek tiszteletre méltó magánügye, kit fojt meg, [claim] de ez a fiú a mi asztalunkhoz indult! [sharp, dangerous-cool] – Nem látjátok a bikacsukát a kezemben? [loudly, angry] – Most azonnal álljatok félre, mielőtt odaverek!
+
+Generált Variációk:
+(ElevenLabs V3 szintézis előtt - jóváhagyásra vár)

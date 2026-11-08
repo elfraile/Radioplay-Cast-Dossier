@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_10_SIR_EGMONT
+Karakter neve: Sir Egmont
+Szerepkör / Funkció: Noble / Political Figure
+Neme: Male
+Korcsoport: Middle-aged
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 1
+ElevenLabs Voice ID: dTbHgvjB3360o5s4CXMn
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, middle-aged to older adult aristocratic political operator with ceremonial authority and controlled, submissive-seeming restraint that conceals calculation. Frail but dignified presence; deliberate posture, never timid, always procedurally dominant. Mid-range voice with light chest resonance and slightly thinned throat texture; stable fundamental pitch, careful breath economy, mild dry articulatory friction, and very precise consonants with courtly Hungarian diction. Slow, deliberate pacing and official phrasing, sustaining clarity and latent pressure rather than fatigue. Dynamic arc balances baseline composure, formal advisory tone, and contained escalation into severe constitutional insistence. Studio-quality close-mic presence, intimate and dry, zero reverberation, zero room echo. Avoid caricature, exaggerated slurring, singsong villainy, vocal laziness, apathy, exhaustion, or flattened dynamics; keep the performance natural, intelligent, and controlled.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Felség, attól vagyunk itt, hogy beszámoljunk: a sziget rendje nem tréfa. [inhales] – Ugyebár érti, hogy a törvény az első? Sir Egmont ujjával egyszer a trón karfájára üt. [tense] – Ha ön ma nem hozza meg a szükséges rendelkezést, a tanács kötelessége lesz eljárni. [indignant] – Ez nem fenyegetés, hanem ÁLLAMÉRDEK!
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Felség, attól vagyunk itt, hogy beszámoljunk: a sziget rendje nem tréfa. – Ugyebár érti, hogy a törvény az első? Sir Egmont ujjával egyszer a trón karfájára üt. – Ha ön ma nem hozza meg a szükséges rendelkezést, a tanács kötelessége lesz eljárni. – Ez nem fenyegetés, hanem ÁLLAMÉRDEK!

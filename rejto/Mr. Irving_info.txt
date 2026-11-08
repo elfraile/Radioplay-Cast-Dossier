@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_02_MR_IRVING
+Karakter neve: Mr. Irving
+Szerepkör / Funkció: Passenger / Aristocrat (In disguise)
+Neme: Male
+Korcsoport: Young Adult (approx. 20)
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 1
+ElevenLabs Voice ID: QxEbSFlsycvw0OpHEDOw
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, early twenties; slight aristocratic young man traveling incognito, ceremonious, reserved, and socially trained, with innate authority beneath fragile melancholy. High-mid register with refined, muted timbre; light chest resonance blended with focused throat placement, stable pitch center, low breathiness, gentle articulatory friction, and crisp consonant precision without hardness. deliberate, soft-to-moderate pace, courtly phrasing, controlled posture; baseline poised and hushed, yet capable of quick brightening into curious, thrill-seeking urgency and princely command without becoming loud by default. Preserve elegance, delicacy, and youthful vulnerability while allowing flashes of delighted boldness. Studio-quality close-mic presence, intimate dry recording, zero reverberation, zero room echo. Avoid caricature, exaggerated slurring, sleepy delivery, apathy, flattened dynamics, or any unnatural theatrical habits.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Jóember, mondja meg nekem: mi történik, ha új csavargó érkezik a kikötőbe? [inhales] – Nem helyes, hogy mindent eltitkolnak előlem! A fiú megigazítja a kesztyűjét, és egyenesebbre húzza magát. [curious] – Hogy juthat el az ember a klubországba? [commanding] – Uram, mellőzzük a tréfát; én MOST azonnal Tüskés Vaneket keresem!
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Jóember, mondja meg nekem: mi történik, ha új csavargó érkezik a kikötőbe? – Nem helyes, hogy mindent eltitkolnak előlem! A fiú megigazítja a kesztyűjét, és egyenesebbre húzza magát. – Hogy juthat el az ember a klubországba? – Uram, mellőzzük a tréfát; én MOST azonnal Tüskés Vaneket keresem!

@@ -1,0 +1,29 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   ARANY-STANDARD KARAKTER MESTERHANG (Manuális)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_04_PISZKOS_FRED_A_KAPITANY
+Karakter neve: Piszkos Fred
+Szerepkör / Funkció: Criminal / Rogue Captain
+Neme: Male
+Korcsoport: Senior (60-65 years old)
+Státusz: GOLDEN_APPROVED (Arany-standard, felülírása szigorúan tilos)
+Kiválasztott variáció: Golden Standard
+ElevenLabs Voice ID: GOLDEN_PRESET
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian male voice, a weather-beaten sea captain in his late fifties to early sixties. A cunning, ruthless old maritime rogue with a filthy appearance, razor-sharp intelligence and formidable natural authority. His voice is seasoned, dry and gravelly, with rough, whiskey-stained throatiness, firm chest resonance and a sharp, cutting upper-mid edge. Never weak, sluggish or muffled. Agile, forward-driven Hungarian speech with crisp consonants, unpredictable rhythmic accents and wide dynamic range. Naturally sardonic and contemptuous, shifting effortlessly from casual, dismissive muttering to sly, mocking amusement, icy threats and sudden explosive, rasping commands. His intelligence is always audible beneath the roughness. Vulnerability is fiercely concealed behind gruff hostility. No pirate caricature, no exaggerated drunken slurring. Authentic native Hungarian pronunciation. Intimate, clean close-mic studio presence, zero echo.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[annoyed] – Sokat locsogsz! Mi van?
+[amused] – Tehát azt hiszed, hogy túljártál az eszemen?
+[ironical]Ez igazán mulatságos...
+[neutral] Az öreg hátratolta kapitányi sapkáját, és zsebre dugta a kezét.
+[firm] – Ide hallgasson, fiam [breath] Én nem szoktam társulni. [dismissively] Különben sem neked való ügy. [short pause] [explain] [slowly] Ész kell hozzá...
+[shouts] – ÁLLJ! Vissza! Lassíts!
+[wry] – Na látod! Most már legalább tudod, hogy ki itt a kapitány.
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Sokat locsogsz! Mi van? – Tehát azt hiszed, hogy túljártál az eszemen? Ez igazán mulatságos... Az öreg hátratolta kapitányi sapkáját, és zsebre dugta a kezét. – Ide hallgasson, fiam Én nem szoktam társulni. Különben sem neked való ügy. Ész kell hozzá... – ÁLLJ! Vissza! Lassíts! – Na látod! Most már legalább tudod, hogy ki itt a kapitány.

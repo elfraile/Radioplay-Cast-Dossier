@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_12_SZALLASMESTER
+Karakter neve: Szállásmester
+Szerepkör / Funkció: Ship Steward / Authority Figure
+Neme: Male
+Korcsoport: Middle-Aged
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 1
+ElevenLabs Voice ID: lbwOFdKR3uVEvk2ZK160
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, middle-aged. Pillar 1: A seasoned ship steward-authority figure with brisk managerial habits, practical instincts, and a socially commanding surface that repeatedly betrays inward nerves; outwardly organized, inwardly pressure-ridden, alert, and self-protective. Pillar 2: Low-mid register with gravelly, authoritative timbre; solid chest-led resonance with slight throat grain, stable fundamental pitch, controlled but audible articulatory friction, and crisp consonant precision that can tighten under stress without losing intelligibility. Pillar 3: deliberate, deliberate pacing at baseline, escalating into faster, breath-driven urgency in crisis; balance stoic composure against anxious flare-ups, shifting from command to pleading naturally. Studio-quality close-mic presence, intimate dry capture, zero reverberation. Avoid caricature, exaggerated slurring, theatrical overacting, vocal laziness, flat apathy, sluggish delivery, or suppressed dynamics.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Hé, maga tudja, mi vár ránk, ha ez kitudódik? [breath] – Két ember hiányzik, a kapitány engem dob ki, magát meg vasra verik! A szállásmester az ajtófélfára szorítja a tenyerét. [tense] – Ne okoskodjon, hanem mondja meg: csak ópiumot adott neki? [shouts] – Ember, VESSEN véget ennek, mielőtt mind odaveszünk!
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Hé, maga tudja, mi vár ránk, ha ez kitudódik? – Két ember hiányzik, a kapitány engem dob ki, magát meg vasra verik! A szállásmester az ajtófélfára szorítja a tenyerét. – Ne okoskodjon, hanem mondja meg: csak ópiumot adott neki? – Ember, VESSEN véget ennek, mielőtt mind odaveszünk!

@@ -1,0 +1,35 @@
+======================================================================
+   04. GUSTAV BAHR - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 04. Gustav Bahr
+Regény: Piszkos Fred közbelép
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: 
+Demográfia: Male, Adult (35-50)
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_2iy5zea6aip2
+
+Voice Description:
+Native Hungarian. Male, adult 35–50; low-mid register with neutral-dry timbre, slightly back formants, chest-pharyngeal resonance, clean firm glottal onset. Precise consonants, light dental friction, steady forward articulation; direct dry close-mic studio capture, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Bahr alapellentéte az, hogy szárazan pragmatikus hangtestben működik egy túlburjánzó, önnagyító elme: ezért a permanens akusztikai persona nem teátrális, hanem feszes, alacsony-közép fekvésű, száraz és pontos. A jelenetben előbb lekezelő rangkijelöléssel emeli magát piedesztálra, aztán földrajzi hasonlatokkal tágítja saját jelentőségét, majd gyanakvó számonkérésbe fordul, végül a fenyegető fölény mögül kitör a kontrollvesztéstől rettegő pánik; ezt a csúcsot az egyetlen nagybetűs szó jelöli.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Bahr drámai íve a kérkedő önmitizálástól a sértett fenyegetésig fut: úgy épít magának földrajzi léptékű tekintélyt, hogy közben egyre nyilvánvalóbbá válik a kontrollvesztéstől való pánikja.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[patronizing measured flow] – Természetesen nem akárkit méltóztatott felkeresni <short pause> egy Gustav Bahrt kell megtalálni, és ez, uram, nem ugyanaz, mint benyitni egy gardróbszekrénybe. [grandiose sly drawl] – Egy Gustav Bahrt megtalálni úri kiváltság, nem holmi utcai alku <breath> mert az efféle keresés nem sikátor, hanem egész kontinens, és magának úgy látszik, térképe sincs hozzá. [probing superior tension] – Talán valami nyomra akadt <short pause> vagy azt hitte, a hátam mögött kijátszhatja a megállapodást, mintha én volnék az egyetlen ember ezen a földrészen, aki nem látja előre a kerülőutakat? [cracking imperious panic] – Mondja, tréfál velem <gasp> ha meghallom az asszony szájharmonikáját, VÉGE mindennek <sigh> én onnan ki nem jövök!
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_2iy5zea6aip2 (V21_04_GUSTAV_BAHR_var1_voice_2iy5zea6aip2.wav)

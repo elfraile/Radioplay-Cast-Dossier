@@ -1,0 +1,26 @@
+======================================================================
+   09. KVANG GENERÁLIS - HANG PROFIL (V23_REJTO_AZ_ELVESZETT_CIRKALO)
+======================================================================
+
+Karakter: 09. Kvang generális
+Regény: 01028 Az elveszett cirkáló
+Nem: Férfi
+Kategória: Tier 1 Kiemelt Szereplő
+Szerep: Keleti hadúr / Erődparancsnok
+Demográfia: Male, Mature Adult (50-55 years old)
+
+Voice Description:
+Native Hungarian male voice, early fifties. Austere, gravelly bass-baritone with an icy, guttural core and clipped, authoritative pacing. Shifts from hushed, low-amplitude stillness into sharp, piercing, imperious explosive commands with absolute dynamic dominance. Direct close-mic capture, pure dry studio acoustic, zero reverb.
+
+Tervezési Indoklás (OpenAI gpt-5.4 / Anthropic Sonnet):
+Kvang a könyörtelen keleti hadúr archetípusa: fagyos, szűkszavú, kimért tónusát hirtelen robbanó, kíméletlen imperatívuszok és feltétlen tekintélyt követelő parancsszavak törik meg.
+
+Transzkripció (Audio Tagekkel):
+[firm] – Kik vagytok, és hová igyekeztek? [breath] – kérdezte a generális ridegen az asztal mögül. [matter-of-fact] – Az én erődombe idegen nem teheti be a lábát engedély nélkül! [tense] – Mondd meg őszintén, miért kíméljem meg a nyomorult életedet? [commanding] – TÉRDELJETEK LE AZONNAL a seregem előtt, ha élni akartok!
+
+Generált Variációk:
+(ElevenLabs V3 szintézis előtt - jóváhagyásra vár)
+
+Kiválasztott Variáció: Var 3
+ElevenLabs Voice ID: HVypdhRxCdRV6SyVfNAH
+Státusz: APPROVED_MASTER

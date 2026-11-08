@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_13_ANNA_ALVAREZ
+Karakter neve: Anna Alvarez
+Szerepkör / Funkció: Underworld Official
+Neme: Female
+Korcsoport: Young Adult
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 1
+ElevenLabs Voice ID: 4HlqQcx7Vustv43dUl8O
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Young adult female, late 20s; poised, high-status underworld official with disciplined command and polished social authority, outwardly cold and controlled yet carrying concealed emotional volatility. Bright high-frequency placement with melodious upper-mid presence, light chest support and focused throat clarity; stable pitch center, clean onset, moderate pace, crisp Hungarian consonants, precise sibilants, refined articulation without softness. Baseline delivery is deliberate, elegant, and imperious; under pressure it sharpens into cutting intensity, faster attack, and briefly exposed hurt without losing control. Close-mic studio presence, intimate dry capture, zero reverberation, broadcast-clean detail. Maintain dynamic range and alert energy; do not sound gritty, apathetic, sluggish, or flattened. Avoid caricature, exaggerated slurring, melodrama, or artificial villain mannerisms.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Tehát jobb elhatározásra jutott? [matter-of-fact] – Nem fontos az ön felfogása; engem az érdekel, engedelmeskedik-e. Anna lassan végighúzta vörösre lakkozott körmét az asztal szélén. [inhales] [tense] – Most menjünk a Hidegek elé, és feleljen egyenesen. [indignant] – Hiszi, hogy még mindig játszhat velem? [shouts] – ELÉG volt ebből az utálatos játékból! [firm] – Főorvos, ki ez az ember, és miért hallgat?
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Tehát jobb elhatározásra jutott? – Nem fontos az ön felfogása; engem az érdekel, engedelmeskedik-e. Anna lassan végighúzta vörösre lakkozott körmét az asztal szélén. – Most menjünk a Hidegek elé, és feleljen egyenesen. – Hiszi, hogy még mindig játszhat velem? – ELÉG volt ebből az utálatos játékból! – Főorvos, ki ez az ember, és miért hallgat?

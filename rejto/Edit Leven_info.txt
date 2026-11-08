@@ -1,0 +1,26 @@
+======================================================================
+   03. EDIT LEVEN - HANG PROFIL (V23_REJTO_AZ_ELVESZETT_CIRKALO)
+======================================================================
+
+Karakter: 03. Edit Leven
+Regény: 01028 Az elveszett cirkáló
+Nem: Nő
+Kategória: Tier 1 Női Főszereplő
+Szerep: Tom Leven húga / Álcázott Kölyök
+Demográfia: Female, Young Adult (20-24 years old)
+
+Voice Description:
+Native Hungarian female voice, early twenties. Husky, androgynous mezzo-soprano register with a slightly breathy, vulnerable chest warmth and crisp, urgent articulation. Dynamic arc leaps from hushed, trembling secrecy and desperate pleading into bright, piercing, high-amplitude defiance and sharp emotional clarity. Direct close-mic studio presence, pure dry vocal path, zero reverb.
+
+Tervezési Indoklás (OpenAI gpt-5.4 / Anthropic Sonnet):
+Edit Leven egyszerre viseli az álcázott Kölyök riadt sebezhetőségét és a bátor fiatal nő elszántságát: a fojtott, remegő intimitásból azonnal átvált csengő, magas feszültségű segélykérésbe és dacos ellenállásba.
+
+Transzkripció (Audio Tagekkel):
+[anxious] – Miért néz rám így? [breath] – kérdezte a lány halkan, és hátrált egy lépést. [tense] – Azt mondták a kikötőben, hogy Rozsdás úr megszökött a légióból! [melancholic] – Tom Leven az én testvérem, és egyedül maradtam a világban... [firm] – Segíteni akarok rajta, bármi áron! [commanding] – ERESSZEN EL MOST, vagy menten segítségért kiáltok!
+
+Generált Variációk:
+(ElevenLabs V3 szintézis előtt - jóváhagyásra vár)
+
+Kiválasztott Variáció: Var 1
+ElevenLabs Voice ID: Ckj5j0MANwGQfn9MKeNC
+Státusz: APPROVED_MASTER

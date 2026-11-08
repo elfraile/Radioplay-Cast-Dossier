@@ -1,0 +1,35 @@
+======================================================================
+   01. MR. THEO - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 01. Mr. Theo
+Regény: Piszkos Fred közbelép
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: 
+Demográfia: Male, Young Adult (18-25)
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_1y3gxejn01ch
+
+Voice Description:
+Native Hungarian. Male young adult (18–25) with low-mid register, polished timbre, forward-medium formants, chest-pharyngeal resonance, and clean balanced glottal onset. Crisp consonants, light dental friction, steady forward articulation; direct dry close-mic studio capture, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Theo alapellentéte, hogy kifinomult és társadalmilag fölényes hangképet hordoz, miközben belül unottan nyugtalan és impulzív, ezért a permanens akusztikai réteg csiszolt, alacsony-közepes fekvésű, kontrollált megszólalást kap. A jelenet fordulói ezt bontják ki: könnyed meghívás, ironikus puhatolózás, önjellemző türelmetlenség, végül hirtelen tekintélyfitogtató robbanás az egyetlen csúcsponti nagybetűs paranccsal.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Theo íve a kimért úri fölénytől az ingerlékeny, türelmetlen kitörésig fut: játékos közvetlenséggel közeledik, szellemesen fölébe helyezkedik a helyzetnek, majd amikor nem kap azonnali rendet és választ, a csiszolt modor mögül kibukik a felindult, tekintélyét bizonygató indulat.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[wry inviting glide] – Nem jönne velem ebédelni valahová? <breath> [teasing probing brisk] – Mert ha mindenkit meg akart előzni a hirdetéssel, bizonyára remek terve van! <short pause> [polished restless drawl] – Nézze, barátom: engem a pénz nem izgat, de a semmittevéstől falra mászom. <sigh> [snapping command surge] – Szóval ki maga, és mit akar tőlem? <short pause> – FELELJEN egyenesen, különben azonnal kidobatom a személyzettel! <gasp>
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_1y3gxejn01ch (V21_01_MR_THEO_var1_voice_1y3gxejn01ch.wav)

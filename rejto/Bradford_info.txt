@@ -1,0 +1,26 @@
+======================================================================
+   02. BRADFORD - HANG PROFIL (V23_REJTO_AZ_ELVESZETT_CIRKALO)
+======================================================================
+
+Karakter: 02. Bradford
+Regény: 01028 Az elveszett cirkáló
+Nem: Férfi
+Kategória: Tier 1 Főantagonista
+Szerep: Brit vezérkari tiszt / Titkos intrikus
+Demográfia: Male, Adult (38-42 years old)
+
+Voice Description:
+Native Hungarian male voice, late thirties to early forties. Cold, resonant baritone with a tight pharyngeal resonance and razor-sharp, cultivated diction. Shifts from polite, condescending aristocratic restraint into sudden clipped, menacing volume and incisive, ruthless vocal snaps. Dry direct studio recording, pristine close-mic isolation, zero room reflections.
+
+Tervezési Indoklás (OpenAI gpt-5.4 / Anthropic Sonnet):
+Bradford hangja a hűvös brit intellektus és az elfojtott könyörtelenség feszültségét hordozza: a precíz, távolságtartó beszédmodorból hirtelen vág át rideg, parancsoló fenyegetésekbe, jelezve a leplezett veszedelmet.
+
+Transzkripció (Audio Tagekkel):
+[matter-of-fact] – Magánéletemben szenvedélyem a mikroszkóp – jegyezte meg a százados hűvösen. [breath] [curious] – Meg tudná nekem magyarázni, mi az a trypanosoma? [tense] – Ha nem felel azonnal, örökre kitiltatom az egész gyarmatról! [firm] – Tudom, hogy kémkedni jött ide! [commanding] – AZONNAL HORDJA EL magát, vagy katonákkal vitetem el innen!
+
+Generált Variációk:
+(ElevenLabs V3 szintézis előtt - jóváhagyásra vár)
+
+Kiválasztott Variáció: Var 2
+ElevenLabs Voice ID: wFCnn5ETg2OwpbBwFNJI
+Státusz: APPROVED_MASTER

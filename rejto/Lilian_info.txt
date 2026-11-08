@@ -1,0 +1,35 @@
+======================================================================
+   12. LILIAN - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 12. Lilian
+Regény: Piszkos Fred közbelép
+Nem: Nő
+Kategória: Tier 1 Főszereplő
+Szerep: A. Winter (Szatirikus újságíró / Milton Winter húga)
+Demográfia: Female, Young Adult (18-25)
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_l7lnemlnp5xi
+
+Voice Description:
+Native Hungarian. Female, young adult. High-mid register with forward-bright formant placement, light chest-to-mask resonance, crisp pharyngeal focus, and clean glottal onset; precise consonants, fine dental friction, agile forward momentum, dry close-mic studio, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Lilian alapellentéte az, hogy beszéde egyszerre álruha és önleleplezés: ezért a maradandó hangkép fényes, előretolt, pontos és mozgékony, mert állandóan kontrollálni akarja a helyzetet. A jelenet turnjei ezt a mintát követik: előbb csípős fölény, aztán játékos-színpadszerű terelés, majd sürgető repedés a szerepen, végül a tetőponton kitörő, kendőzetlen követelés.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Lilian íve a szerepjátszó fölénytől a csípős leleplezésen át a kényszerű őszinteségig halad: egyszerre akar irányítani és elrejtőzni, ezért a gúnyos maszk fokozatosan megbicsaklik, míg végül parancsoló, sebezhető tisztaságra vált.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[barbed controlled brisk] – Igen, én vagyok A. Winter. Maga kezdte ezt az egészet, most ne nézzen rám úgy! <short pause> – Azt hitte, majd szépen eltűnöm? [wry theatrical glide] – A komédiát maga rendezte, én csupán illusztráltam a valóságot. <chuckle> – Jó éjszakát, adjon kölcsön egy könyvet, mert rosszul alszom. [urgent low-cutting] – Most pedig szedje össze magát, Theo, nem azért mentettem ki, hogy feladja. <breath> – Ne kényszerítsen hazudni tovább... [breaking command snap] – MONDJA, most már ért engem?! <gasp>
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_l7lnemlnp5xi (V21_12_LILIAN_var1_voice_l7lnemlnp5xi.wav)

@@ -1,0 +1,35 @@
+======================================================================
+   07. SZWACHTA SZÓKRATÉSZ - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 07. Szwachta Szókratész
+Regény: Piszkos Fred közbelép
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: Retired Executioner
+Demográfia: Male, Middle-aged
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_iojk0h2tzopf
+
+Voice Description:
+Native Hungarian. Male, middle-aged; mid-range register with slightly back-mid formants, chest-pharyngeal resonance, restrained cranial lift, and controlled clean glottal onset. Crisp consonants, light dental friction, measured forward placement; direct dry close-mic studio capture, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Szwachta alapellentmondása, hogy a józan szakértő szerepét játssza, miközben beszéde egyre abszurdabb, ezért a maradandó hangkép nem érzelmi szélsőségekre, hanem kontrollált, középregiszterű, tisztán artikulált, száraz hivatalosságra épül. A jelenet íve ennek megfelelően udvarias bemutatkozásból különös társalgási ajánlaton át pszeudoszakmai okoskodásig halad, majd egyetlen csúcspontban robban ki a groteszk önleleplezés.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Áltekintélyes józanságba csomagolja az abszurdumot: udvarias önbemutatásból szakszerűnek tett rendmániába emelkedik, majd sértett szakmai pátoszban vallja be, hogy épp a túlzott „józansága” teszi groteszkké.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[formal poised moderate] – Uram, nevem Szwachta Szókratész vagy Knapp, ahogy tetszik; rendelkezésére állok. <short pause> [curious clipped lightly] – Apropó felvillanyoz: itt éppen van két szék, nem ülnénk le? <breath> [authoritative dry measured] – Kötelességem megjegyezni, hogy a kötél minősége mindent eldönt a szakmában, és nincs visszataszítóbb az udvariatlan eljárásnál. <short pause> [desperate emphatic steady] – Úgy van, azt hiszik az ostobák, és sajnos igazuk van: VÉGZETESEN józan vagyok! <gasp>
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_iojk0h2tzopf (V21_07_SZWACHTA_SZOKRATESZ_var1_voice_iojk0h2tzopf.wav)

@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_11_TULIPAN
+Karakter neve: Tulipán
+Szerepkör / Funkció: Smuggler / Merchant
+Neme: Male
+Korcsoport: Elderly
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 3
+ElevenLabs Voice ID: pixNluZa2zPMkp8Cz0YY
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Elderly male, seasoned smuggler-merchant with a planted, workmanlike behavioral posture: blunt, transactional, unsentimental, accustomed to control and hard bargaining. Mid-range fundamental pitch with stable support; rough, weathered timbre driven by solid chest resonance and gritty throat texture, but still intelligible. Variable pace: usually deliberate, clipped, and heavy, accelerating under suspicion or pressure. Consonants should land with firm precision, moderate articulatory friction, and clear Hungarian diction. Emotional design balances baseline matter-of-fact composure with sharp hostile escalation and desperate high-energy pressure when money, deception, or authority are threatened. Close-mic studio presence, dry recording, zero reverberation, high-detail vocal surface. Avoid caricature, exaggerated slurring, comic villainy, sing-song phrasing, vocal fatigue, apathy, sluggishness, or flattened dynamics.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[matter-of-fact] – Piszkos Fred, mit szól az ügyhöz? [firm] – Előbb a pénzt nézem, aztán az embert. Tulipán megigazítja a sapkája szélét. [tense] – Jöjjön velem, de ide figyeljen: ha most hazudott, maga kerül mínuszba. [inhales] – Két és fél dollárért ilyen árut? [shouts] – ELÉG! Vagy dolgozik, vagy kidobják!
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Piszkos Fred, mit szól az ügyhöz? – Előbb a pénzt nézem, aztán az embert. Tulipán megigazítja a sapkája szélét. – Jöjjön velem, de ide figyeljen: ha most hazudott, maga kerül mínuszba. – Két és fél dollárért ilyen árut? – ELÉG! Vagy dolgozik, vagy kidobják!

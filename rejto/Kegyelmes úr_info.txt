@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_07_KEGYELMES_UR
+Karakter neve: Kegyelmes úr
+Szerepkör / Funkció: Underworld Official
+Neme: Male
+Korcsoport: Senior Adult
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 1
+ElevenLabs Voice ID: KO732V5MzkitJi5GiU2p
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, senior adult, late 60s; polished, bureaucratic, strategically dominant, outwardly civilized yet quietly dangerous. Pleasant-deep mid-range voice with steady chest-led resonance and controlled throat support; stable fundamental pitch, low drift, restrained vibrato, light articulatory friction, crisp consonants, deliberate vowel shaping, slow precise pacing. Calm procedural authority first, then deliberate escalation into menacing decisiveness without raising tempo unnecessarily. Close-mic studio presence, intimate and detailed, zero reverberation, dry broadcast capture. Maintain formal administrative diction, poised gravity, and covert underworld command. Avoid caricature, exaggerated slurring, theatrical villain tropes, breathy fatigue, apathy, sluggishness, or flattened dynamics; never sound exhausted or unnatural.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Ki ez az ember? [matter-of-fact] – Rakjon ki mindent a zsebéből; a tények érdekelnek, nem a zűrzavar. [narrating] Az óralánca megcsillan, ahogy kissé előrehajol. [inhales] [curious] – Mi van a kabátjában, és kinek dolgozik? [tense] – Hallgassanak, ennek nincs semmi értelme. Inkább arról beszéljünk, mi a tennivaló! [commanding] – MOST eldől, ki marad hasznos, és ki tűnik el.
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Ki ez az ember? – Rakjon ki mindent a zsebéből; a tények érdekelnek, nem a zűrzavar. Az óralánca megcsillan, ahogy kissé előrehajol. – Mi van a kabátjában, és kinek dolgozik? – Hallgassanak, ennek nincs semmi értelme. Inkább arról beszéljünk, mi a tennivaló! – MOST eldől, ki marad hasznos, és ki tűnik el.

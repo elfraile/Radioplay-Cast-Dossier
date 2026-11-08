@@ -1,0 +1,26 @@
+======================================================================
+   05. EARL OF SUDESSEX - HANG PROFIL (V23_REJTO_AZ_ELVESZETT_CIRKALO)
+======================================================================
+
+Karakter: 05. Earl of Sudessex
+Regény: 01028 Az elveszett cirkáló
+Nem: Férfi
+Kategória: Tier 1 Kiemelt Szereplő
+Szerep: Angol főnemes / Kalandvágyó világutazó
+Demográfia: Male, Adult (42-48 years old)
+
+Voice Description:
+Native Hungarian male voice, mid-forties. Polished, airy baritone with a relaxed pharyngeal cavity, languid drawl, and sparkling ironic nuance. Shifts effortlessly from leisurely, amused, low-energy storytelling into bright, buoyant, theatrical declarations with wide melodic variance. Clean dry studio capture, intimate close-mic proximity, zero room reflections.
+
+Tervezési Indoklás (OpenAI gpt-5.4 / Anthropic Sonnet):
+Sudessex hercegének lényege a rendíthetetlen brit arisztokratikus flegma: a könnyed, társasági csevegés finom eleganciájából bármikor teátrális, szórakoztatott felkiáltásokba csap át a legnagyobb veszedelem közepén is.
+
+Transzkripció (Audio Tagekkel):
+[amused] – Ön először utazik a trópusra, uram? [breath] – kérdezte a herceg derűsen, és megigazította a monokliját. [matter-of-fact] – Ha Kvang elfogad engem királynak, készséggel elfogadom őt partnernek! [wry] – Hanem van-e elég szivarunk a fedélzeten a háborúhoz? [commanding] – HÁT NEM CSODÁLATOS ez a hajóút, kedves barátom!
+
+Generált Variációk:
+(ElevenLabs V3 szintézis előtt - jóváhagyásra vár)
+
+Kiválasztott Variáció: Var 1
+ElevenLabs Voice ID: lm9A0TjEnJH52PyHgISO
+Státusz: APPROVED_MASTER

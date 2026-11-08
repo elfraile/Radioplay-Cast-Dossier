@@ -1,0 +1,26 @@
+======================================================================
+   08. A BUNKÓ - HANG PROFIL (V23_REJTO_AZ_ELVESZETT_CIRKALO)
+======================================================================
+
+Karakter: 08. A Bunkó
+Regény: 01028 Az elveszett cirkáló
+Nem: Férfi
+Kategória: Tier 1 Kiemelt Szereplő
+Szerep: A harmadik Gyóntató / Kikötői óriás
+Demográfia: Male, Adult (42-46 years old)
+
+Voice Description:
+Native Hungarian male voice, mid-forties. Deep, cavernous bass-baritone with heavy chest resonance, thick subharmonic rumble, and blunt, deliberate articulation. Glides from a low, gravelly, monosyllabic drone into sudden terrifying, booming physical weight and blunt, earth-shaking volume peaks. Pristine dry studio vocal capture, intimate close-mic presence, zero bleed.
+
+Tervezési Indoklás (OpenAI gpt-5.4 / Anthropic Sonnet):
+A Bunkó akusztikai ereje a nehéz, lassú fizikai dominanciában rejlik: a tompa, lomha tőmondatokból hirtelen zúdul át a brutális, dörmögő hangerőcsúcsba, ami azonnali tekintélyt parancsol.
+
+Transzkripció (Audio Tagekkel):
+[matter-of-fact] – Helytelen álláspont – jegyezte meg a Bunkó lomhán a pultnak dőlve. [breath] [somber] – A Hóhérok sokan vannak, de a sodronykötelem vasnehezéke mégiscsak nehezebb! [tense] – Minek vitatkoztok ilyen hevesen ezért a nyeszlett alakért? [commanding] – ÁLLJATOK FÉLRE AZONNAL, vagy mindenkinek betöröm a koponyáját!
+
+Generált Variációk:
+(ElevenLabs V3 szintézis előtt - jóváhagyásra vár)
+
+Kiválasztott Variáció: Var 1
+ElevenLabs Voice ID: zzoNTDKxJklc1GNrOYzO
+Státusz: APPROVED_MASTER

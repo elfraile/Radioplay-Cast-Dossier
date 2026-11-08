@@ -1,0 +1,35 @@
+======================================================================
+   09. WATSON KAPITÁNY - HANG PROFIL (V22_REJTO_PISZKOS_FRED_KOZBELEP_GOOGLE)
+======================================================================
+
+Karakter: 09. Watson kapitány
+Regény: Piszkos Fred közbelép
+Nem: Férfi
+Kategória: Tier 1 Főszereplő
+Szerep: 
+Demográfia: Male, Adult (35-50)
+Modell: gemini-3.8-flash-tts (Google Voice Design + Interactions API)
+Voice ID: voice_xr6fv6yom1c2
+
+Voice Description:
+Native Hungarian. Male, adult 35–50; low-mid register with dry neutral timbre, slightly back-set formants, firm chest-pharyngeal resonance, controlled clean glottal onset. Precise consonants, light dental friction, steady forward articulation; direct dry close-mic studio capture, zero reverb.
+
+----------------------------------------------------------------------
+Tervezési Indoklás (OpenAI gpt-5.4):
+----------------------------------------------------------------------
+Watson kapitány alapellentéte az, hogy hivatalos, fegyelmezett rendet mutat, miközben a kontrollvesztéstől tart és ezt hideg fenyegetésekkel kompenzálja. Ezért a permanens hangkép száraz, alacsony-közép fekvésű, szűken kontrollált és közvetlen; a jelenet pedig tárgyilagos rendreutasításból fokozódik a személytelen adminisztratív szigoron át a nyílt kényszerítő parancsig.
+
+----------------------------------------------------------------------
+Személyre Szabott Dramaturgiai Ív:
+----------------------------------------------------------------------
+Watson kapitány íve a hűvös rendfenntartásból a leplezett fenyegetésig halad: a fegyelmezett, hivatalos felszín mögött egyre világosabban jelenik meg a kényszeres kontroll és a büntető szándék.
+
+----------------------------------------------------------------------
+Transzkripció (Audio Tagekkel és Instrukciókkal):
+----------------------------------------------------------------------
+[icy command, measured] – Hölgyeim és uraim, a fedélzeten rend lesz. <short pause> – Ki terjeszt itt rémhíreket? [controlled threat, even] – Itt nem bújhat el senki; <breath> úgy intéztem a rakodást, hogy erre ne legyen mód. [grim authority, steady] – A vesztegzár és a járvány nem vita tárgya ezen a gőzösön. <short pause> – Ha Mr. Theo megőrült, visszafordulunk. [hard peak, clipped] – AZONNAL zárják le a harmadik rakteret, és duplázzák meg az őrséget. <sigh> – Aki ellenszegül a parancsnak, azt még ma este vasra veretem.
+
+----------------------------------------------------------------------
+Generált Variációk:
+----------------------------------------------------------------------
+Variáció 1: Voice ID = voice_xr6fv6yom1c2 (V21_09_WATSON_KAPITANY_var1_voice_xr6fv6yom1c2.wav)

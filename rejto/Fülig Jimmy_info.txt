@@ -1,0 +1,29 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   ARANY-STANDARD KARAKTER MESTERHANG (Manuális)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_01_FULIG_JIMMY
+Karakter neve: Fülig Jimmy
+Szerepkör / Funkció: Impersonator / Pretender King
+Neme: Male
+Korcsoport: Young Adult (24)
+Státusz: GOLDEN_APPROVED (Arany-standard, felülírása szigorúan tilos)
+Kiválasztott variáció: Golden Standard
+ElevenLabs Voice ID: GOLDEN_PRESET
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian male voice, 24 years old. A tall, lean, broad-shouldered young sailor and charming dockside brawler with tremendous physical strength, an irrepressible grin and a hilariously exaggerated sense of gentlemanly manners. A youthful, muscular, resonant mid-range voice with firm chest warmth, bright upper harmonics and a slightly rough, punchy edge. Not boyish, not excessively deep or gravelly. Naturally cheerful, roguish, quick-witted and boldly self-confident. Crisp Hungarian consonants, agile forward-driven cadence, lively rhythmic shifts and wide dynamic range. Effortlessly moves from smiling, cheeky banter and mock-politeness to dry deadpan jokes, sudden explosive indignation and powerful, cleanly projected commands. His humor feels spontaneous and sincere, never like a comedian performing punchlines. Underneath the swagger is genuine youthful warmth and loyalty. No cartoon pirate accent, no slurred speech, no constant shouting. Authentic native Hungarian pronunciation, clean intimate close-mic studio presence, zero echo.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[playful] – Uraim, én igazán nem szeretnék kellemetlenséget okozni!
+[amused] – Tudják, én alapjában véve békés természetű ember vagyok. [mischeviously] Csak valahogy mindig másoknak van ezzel bajuk.
+[curious] – Hogy én félek-e maguktól? [inhales] Nahát, ilyet se kérdeztek még tőlem!
+[firm] – Most azonban szépen leteszik azt a kést, és elállnak az ajtóból.
+[shouts] – A VEREKEDÉSNEK EZENNEL VÉGE!
+[narrating] – A következő pillanatban két matróz repült át az asztal fölött. Jimmy megigazította a gallérját, és szélesen elvigyorodott.
+[wry] – Hiába, uraim... a jó modor mindenekelőtt!
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Uraim, én igazán nem szeretnék kellemetlenséget okozni! – Tudják, én alapjában véve békés természetű ember vagyok. Csak valahogy mindig másoknak van ezzel bajuk. – Hogy én félek-e maguktól? Nahát, ilyet se kérdeztek még tőlem! – Most azonban szépen leteszik azt a kést, és elállnak az ajtóból. – A VEREKEDÉSNEK EZENNEL VÉGE! – A következő pillanatban két matróz repült át az asztal fölött. Jimmy megigazította a gallérját, és szélesen elvigyorodott. – Hiába, uraim... a jó modor mindenekelőtt!

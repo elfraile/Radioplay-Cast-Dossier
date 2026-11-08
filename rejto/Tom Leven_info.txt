@@ -1,0 +1,26 @@
+======================================================================
+   06. TOM LEVEN - HANG PROFIL (V23_REJTO_AZ_ELVESZETT_CIRKALO)
+======================================================================
+
+Karakter: 06. Tom Leven
+Regény: 01028 Az elveszett cirkáló
+Nem: Férfi
+Kategória: Tier 1 Kiemelt Szereplő
+Szerep: Haditengerészeti mérnök / A csendes torpedó feltalálója
+Demográfia: Male, Adult (36-40 years old)
+
+Voice Description:
+Native Hungarian male voice, late thirties. High-strung, nervous tenor with an edge of raspy vocal fatigue, constricted throat tension, and rapid, agitated delivery. Shifts unpredictably from hushed, paranoid, defensive stammering into sudden sharp, desperate spikes of frantic volume and passionate insistence. Pure dry studio intimacy, zero echo, direct close-mic capture.
+
+Tervezési Indoklás (OpenAI gpt-5.4 / Anthropic Sonnet):
+Tom Leven az üldözött zseni klasszikus tragédiája: az ideges, elcsigázott dadogásból a sarokba szorított ember pánikszerű, hisztérikus dühkitöréseibe és kétségbeesett önvédelmébe vált.
+
+Transzkripció (Audio Tagekkel):
+[matter-of-fact] – És... és azt hiszed, nem engednek majd partra szállni? [breath] – kérdezte Leven remegő hangon. [anxious] – A találmányomat ellopták, engem meg bűnözőként üldöznek a világ végéig! [melancholic] – Semmit sem tudok bizonyítani... [furious] – HAGYJANAK VÉGRE BÉKÉN, nem vagyok sem kém, sem áruló!
+
+Generált Variációk:
+(ElevenLabs V3 szintézis előtt - jóváhagyásra vár)
+
+Kiválasztott Variáció: Var 1
+ElevenLabs Voice ID: DryDR0189nVHjKa1XCeJ
+Státusz: APPROVED_MASTER

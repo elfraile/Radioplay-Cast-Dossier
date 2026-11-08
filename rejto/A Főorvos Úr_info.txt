@@ -1,0 +1,31 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_06_A_FOORVOS_UR
+Karakter neve: A Főorvos Úr
+Szerepkör / Funkció: Underworld Figure
+Neme: Male
+Korcsoport: Adult (35-50 years old)
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 2
+ElevenLabs Voice ID: EHTxv6uK1eLGWVAZtkQY
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, 40s. A seasoned underworld shipboard authority with a pragmatic, cynical, phlegmatic posture; blunt, managerial, crew-level commanding rather than theatrical. Low-mid chest resonance with a dry, neutral timbre, restrained throat pressure, stable low-mid fundamental, deliberate pacing, light rasp-free articulatory friction, and crisp consonant precision. Delivery is steady and controlled, carrying sardonic edge and rough operational conscience: baseline poised, skeptical, unsentimental, but able to rise into firm command or morally irritated objection without losing realism. Close-mic studio presence, intimate and immediate, zero reverberation, clean dry signal. Avoid caricature, exaggerated slurring, comic villainy, sing-song phrasing, lethargy, apathy, vocal fatigue, or suppressed dynamics; keep the performance grounded, dangerous, and functionally authoritative.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[firm] – Tisztában van vele, mi vár magára öt perc múlva? [breath] – Azt hiszi, nekem mindegy? A Főorvos az ajtófélfának támasztja a vállát. [matter-of-fact] – Fogja be a pofáját, amíg nem kérdezem. [tense] – De ha a fiúra szükség van, akkor nincs több durvaság, ÉRTI?! [commanding] – Ördög, add oda a ruháját! [somber] – Mi nem vagyunk úriemberek, de rend azért legyen.
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Tisztában van vele, mi vár magára öt perc múlva? – Azt hiszi, nekem mindegy? A Főorvos az ajtófélfának támasztja a vállát. – Fogja be a pofáját, amíg nem kérdezem. – De ha a fiúra szükség van, akkor nincs több durvaság, ÉRTI?! – Ördög, add oda a ruháját! – Mi nem vagyunk úriemberek, de rend azért legyen.
