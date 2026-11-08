@@ -67,20 +67,26 @@ for cid, c in db.get("characters", {}).items():
     if tier_level == 1 or webp_path.exists():
         c["tier_level"] = tier_level
         # Map fields for template rendering
+        demo = c.get("demographics") or {}
+        visual = c.get("visual") or {}
+        role = c.get("role") or {}
+        lore = c.get("narrative_lore") or {}
+        psych_dict = c.get("psychology") or {}
+
         vis = {
-            "gender": c.get("demographics", {}).get("gender", ""),
-            "age_bracket": c.get("demographics", {}).get("age_bracket", ""),
-            "physical_constitution": c.get("visual", {}).get("physical_constitution", "") or c.get("demographics", {}).get("appearance", ""),
-            "somatic_markers": c.get("visual", {}).get("somatic_markers", ""),
-            "attire_and_accessories": c.get("visual", {}).get("attire_and_accessories", ""),
+            "gender": demo.get("gender", ""),
+            "age_bracket": demo.get("age_bracket", ""),
+            "physical_constitution": visual.get("physical_constitution", "") or demo.get("appearance", ""),
+            "somatic_markers": visual.get("somatic_markers", ""),
+            "attire_and_accessories": visual.get("attire_and_accessories", ""),
         }
         psych = {
-            "social_role": c.get("role", {}).get("social_role", ""),
-            "signature_contradiction": c.get("narrative_lore", {}).get("signature_contradiction") or c.get("psychology", {}).get("signature_contradiction", ""),
-            "dominant_temperament": c.get("psychology", {}).get("dominant_temperament", ""),
-            "motivations": c.get("psychology", {}).get("motivations", ""),
+            "social_role": role.get("social_role", ""),
+            "signature_contradiction": lore.get("signature_contradiction") or psych_dict.get("signature_contradiction", ""),
+            "dominant_temperament": psych_dict.get("dominant_temperament", ""),
+            "motivations": psych_dict.get("motivations", ""),
         }
-        art = c.get("art_direction", {})
+        art = c.get("art_direction") or {}
         novels_raw = c.get("novels", [])
         if isinstance(novels_raw, list):
             book = ", ".join([n if isinstance(n, str) else n.get("title", str(n)) for n in novels_raw])
@@ -104,7 +110,7 @@ for name, d in all_rejto_chars.items():
     art = d.get("art_direction", {})
     book = d.get("book", "")
     tier_level = d.get("tier_level", 1)
-    narrative = d.get("narrative_lore", {})
+    narrative = d.get("narrative_lore") or {}
     ki_o = narrative.get("ki_o_valojaban", "")
     mit_csinalt = narrative.get("mit_csinalt_a_regenyben", [])
 

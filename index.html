@@ -17,6 +17,7 @@
 
 
 
+
   :root {
     --bg-dark: #0b0e14;
     --card-bg: #131722;
@@ -710,6 +711,369 @@
   .badge-stats { background: rgba(255, 255, 255, 0.06); color: #cbd5e1; border: 1px solid rgba(255, 255, 255, 0.15); }
   .meta-val-contra { color: #f59e0b !important; font-weight: 600; line-height: 1.45; }
   .rejto-card:hover { border-color: #f59e0b; box-shadow: 0 12px 30px rgba(245, 158, 11, 0.2); }
+
+  /* Lightbox Navigation Buttons */
+  .modal-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(19, 23, 34, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease;
+    z-index: 100000;
+    user-select: none;
+  }
+  .modal-nav-btn:hover {
+    background: rgba(56, 189, 248, 0.35);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-50%) scale(1.08);
+  }
+  .modal-nav-prev { left: -68px; }
+  .modal-nav-next { right: -68px; }
+  .modal-counter {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  @media (max-width: 860px) {
+    .modal-nav-prev { left: 8px; }
+    .modal-nav-next { right: 8px; }
+  }
+
+
+
+  /* Studio Navigation Tabs */
+  .studio-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 1.5rem 0 2.5rem 0;
+    flex-wrap: wrap;
+  }
+  .studio-tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-secondary);
+    padding: 0.95rem 1.8rem;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  }
+  .studio-tab-btn:hover {
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .studio-tab-btn.active {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.22) 0%, rgba(19, 23, 34, 0.95) 100%);
+    border-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+  }
+  .studio-tab-btn.rejto-tab.active {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, rgba(19, 23, 34, 0.95) 100%);
+    border-color: var(--accent-gold);
+    color: #fff;
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+  }
+  .tab-icon { font-size: 1.35rem; }
+  .tab-badge {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 700;
+  }
+  .studio-tab-btn.active .tab-badge {
+    background: rgba(56, 189, 248, 0.25);
+    color: #38bdf8;
+  }
+  .studio-tab-btn.rejto-tab.active .tab-badge {
+    background: rgba(245, 158, 11, 0.25);
+    color: #f59e0b;
+  }
+
+  .tab-view { display: none; }
+  .tab-view.active { display: block; animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Rejtő specific badges and accents */
+  .badge-tier1 { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+  .badge-tier2 { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+  .badge-book { background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); }
+  .badge-meta { background: rgba(148, 163, 184, 0.12); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.25); font-size: 0.8rem; padding: 0.3rem 0.65rem; border-radius: 6px; font-weight: 600; }
+  .badge-audio { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+  .badge-master { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.35); }
+
+  /* Rejtő Grid & Modern Showcase Card Design */
+  #rejtoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 1.85rem;
+  }
+
+  .rejto-card {
+    background: linear-gradient(180deg, #161b26 0%, #0d111a 100%);
+    border: 1px solid rgba(245, 158, 11, 0.22);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .rejto-card:hover {
+    border-color: rgba(245, 158, 11, 0.65);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(245, 158, 11, 0.18);
+    transform: translateY(-3px);
+  }
+
+  .rejto-card-header {
+    display: flex;
+    gap: 1.35rem;
+    padding: 1.35rem 1.35rem 0.8rem 1.35rem;
+    align-items: flex-start;
+  }
+  .rejto-photo-frame {
+    width: 175px;
+    height: 235px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(245, 158, 11, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55), 0 0 12px rgba(245, 158, 11, 0.1);
+    cursor: zoom-in;
+    background: #0b0e14;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .rejto-photo-frame:hover {
+    transform: scale(1.025);
+    border-color: #f59e0b;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+  }
+  .rejto-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .rejto-header-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .rejto-char-name {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #f8fafc;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  .rejto-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Story Bio Block (Ki ő valójában - no header) */
+  .rejto-bio-block {
+    margin: 0.4rem 1.35rem 1rem 1.35rem;
+    padding: 1rem 1.15rem;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(30, 41, 59, 0.35) 100%);
+    border-left: 3px solid #f59e0b;
+    border-radius: 0 10px 10px 0;
+  }
+  .rejto-bio-text {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.68;
+    color: #e2e8f0;
+    font-weight: 400;
+  }
+
+  /* Audio player panel */
+  .rejto-audio-block {
+    margin: 0 1.35rem 1rem 1.35rem;
+    padding: 0.75rem 1rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 12px;
+  }
+  .rejto-audio-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.45rem;
+  }
+  .rejto-audio-block audio {
+    width: 100%;
+    height: 38px;
+  }
+
+  /* Collapsible Accordions */
+  .rejto-accordion {
+    margin: 0 1.35rem 0.65rem 1.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    background: rgba(15, 23, 42, 0.45);
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+  .rejto-accordion:hover {
+    border-color: rgba(245, 158, 11, 0.3);
+  }
+  .rejto-accordion[open] {
+    border-color: rgba(245, 158, 11, 0.45);
+    background: rgba(15, 23, 42, 0.75);
+  }
+  .rejto-acc-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #cbd5e1;
+    user-select: none;
+    list-style: none;
+    transition: color 0.2s ease;
+  }
+  .rejto-acc-summary::-webkit-details-marker {
+    display: none;
+  }
+  .rejto-accordion[open] .rejto-acc-summary {
+    color: #fbbf24;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  }
+  .rejto-acc-chevron {
+    font-size: 0.85rem;
+    transition: transform 0.25s ease;
+    color: #94a3b8;
+  }
+  .rejto-accordion[open] .rejto-acc-chevron {
+    transform: rotate(180deg);
+    color: #fbbf24;
+  }
+  .rejto-acc-body {
+    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
+  .rejto-acc-body .meta-row {
+    margin-bottom: 0.65rem;
+  }
+  .rejto-acc-body .meta-row:last-child {
+    margin-bottom: 0;
+  }
+  .rejto-acc-body .meta-label {
+    font-weight: 700;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.15rem;
+  }
+  .rejto-acc-body .meta-val {
+    color: #e2e8f0;
+  }
+  .rejto-acc-body .meta-val-highlight {
+    color: #f59e0b;
+    font-weight: 600;
+  }
+  .rejto-acc-body .meta-val-contra {
+    color: #38bdf8;
+    font-style: italic;
+  }
+  .rejto-actions-list {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  .rejto-actions-list li {
+    margin-bottom: 0.55rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+  }
+  .rejto-actions-list li::marker {
+    color: #f59e0b;
+  }
+  .rejto-actions-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Technical Tags Footer */
+  .rejto-tech-footer {
+    margin-top: auto;
+    padding: 0.85rem 1.35rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(10, 14, 22, 0.5);
+  }
+  .tech-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: center;
+  }
+  .tech-tag {
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 0.22rem 0.55rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .tech-tag.tech-master {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border-color: rgba(168, 85, 247, 0.35);
+  }
+  .tech-tag.tech-audio {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.35);
+  }
+
+  @media (max-width: 540px) {
+    #rejtoGrid {
+      grid-template-columns: 1fr;
+    }
+    .rejto-card-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .rejto-badge-row {
+      justify-content: center;
+    }
+  }
 
   /* Lightbox Navigation Buttons */
   .modal-nav-btn {
@@ -6574,7 +6938,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Vakmerő, bivalyerős, tengeri munkához edzett fiatal férfi; erős, strapabíró, gyors reagálású matrózalkat, akiben az ökölharcra kész energia és a könnyed csibész-mozgékonyság egyszerre van jelen.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Kitűnő szemű, mégis szándékosan erősen nagyító nyeles pápaszem mögül figyel, ami különös és komikus úri pózt ad neki. Arca indulatban könnyen elsápad; tekintete alaphelyzetben hűvös felmérő, de benne van a furfang és a vakmerőség. Nem finom szépség, hanem markáns, eleven, fiatal tengerészarc, amelyet az önérzetes előkelősködés és az utcai túlélőész egyszerre formál.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Aránylag úri külsőre törekszik a nyomorúságos valóság fölött: gombhíjas sárga kabát, tépett gyapjúing, hiányos harisnyázat (az egyik harisnyát évekkel korábban Brüsszelben hagyta), felső zsebéből kikandikáló selyem zsebkendőcsücsök. Öltözete mindig kissé rögtönzött, kopott és komikus eleganciára törekvő, nem szabályos matrózegyenruha.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A matróztársadalom azon ritka, autotematikus reprezentánsa, aki a fizikai erőszakot azonnal a legfelsőbb társadalmi körök etikettjeként regisztrálja. Szilárd meggyőződése, hogy a fültőre mért jobbhorog csupán a szalonbeli bemutatkozás dinamikusabb variánsa, s írásbeli hiányosságait olyan fensőbbséges nagyvonalúsággal hidalja át, amilyet utoljára a Monarchia levéltárában tapasztaltunk.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A matróztársadalom azon ritka, autotematikus reprezentánsa, aki a fizikai erőszakot azonnal a legfelsőbb társadalmi körök etikettjeként regisztrálja. Szilárd meggyőződése, hogy a fültőre mért jobbhorog csupán a szalonbeli bemutatkozás dinamikusabb variánsa, s írásbeli hiányosságait olyan fensőbbséges nagyvonalúsággal hidalja át, amilyet utoljára a Monarchia levéltárában tapasztaltunk.</div></div>
         </div>
       </details>
       
@@ -6642,7 +7006,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">pontos testalkati leírás nem szerepel, de mozgása könnyed és cselekvőképes; olyan fiatal úr benyomását kelti, aki a hajón is magabiztosan közlekedik</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">kevés konkrét testi ismertetőjegy ismert; arca erősen reagál az indulatokra és a döbbenetre ("Theo arcából is lefutott a vér"); inkább társadalmi fellépése és tekintélye karakterizálja, mint részletezett arcvonásai</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">milliomos hajótulajdonoshoz illő, gondos úri öltözet; fedélzeti környezetben is rendezett, visszafogottan elegáns megjelenés; alkalmazottai által "Mr. Theo" megszólítással övezett, pénze révén tekintélyes fiatal úr</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Henyélésre berendezkedett, vagyonos úriember, aki anélkül óhajtana bevonulni a világtörténelembe, hogy azért a kisujját is megmozdítaná. Ennek ellenére a sors szeszélye folytán újra és újra olyan heroikus helyzetekbe sodródik, ahol a veleszületett érzékenysége és meglepő kurázsija kénytelen felülírni a kényelmes semmittevést.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Henyélésre berendezkedett, vagyonos úriember, aki anélkül óhajtana bevonulni a világtörténelembe, hogy azért a kisujját is megmozdítaná. Ennek ellenére a sors szeszélye folytán újra és újra olyan heroikus helyzetekbe sodródik, ahol a veleszületett érzékenysége és meglepő kurázsija kénytelen felülírni a kényelmes semmittevést.</div></div>
         </div>
       </details>
       
@@ -6710,7 +7074,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">karcsú, finom csontozatú, törékeny benyomást keltő fiatalember; alakja és tartása nem erőt, hanem nevelt, szelíd előkelőséget sugall</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">szép, gömbölyű szemöldök; csodálkozó, nagy fekete szemek; szabályos, finom, meghatóan kisfiús arc; összhatásában lágy, szinte leányos vonások; hangja halk, udvarias, nevetése csengő, vidám, kellemes, csaknem tiszta gyerekhang; arckifejezése a felszabadult pillanatok és a nevelő jelenlétében visszatérő komor fegyelmezettség között vált</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">szmokingban jelenik meg hangsúlyosan; az estélyi viselet rajta különösen kifinomult és enyhén androgün hatást kelt; öltözete rendezett, úrias, fegyelmezett, viselésmódja előkelő; nem hivalkodó díszítettség, hanem makulátlan szabás és nevelt tartás jellemzi</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Fizikailag diszkréten alultáplált, arisztokratikus származású fiatalúr, aki ahelyett, hogy a családi ezüstkészlet leltározásával töltené idejét, patologikus vonzalmat táplál a kikötői illetlenségek iránt. A civilizáció kényelmét csupán kellemetlen előjátéknak tekinti az igazi élethez, amely véleménye szerint ott kezdődik, ahol az ember inggombjait már elragadta az árapály.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Fizikailag diszkréten alultáplált, arisztokratikus származású fiatalúr, aki ahelyett, hogy a családi ezüstkészlet leltározásával töltené idejét, patologikus vonzalmat táplál a kikötői illetlenségek iránt. A civilizáció kényelmét csupán kellemetlen előjátéknak tekinti az igazi élethez, amely véleménye szerint ott kezdődik, ahol az ember inggombjait már elragadta az árapály.</div></div>
         </div>
       </details>
       
@@ -6778,7 +7142,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Szívós, inas, túlélésre edzett tengeri csavargó; kissé görnyedt, de ruganyos és hirtelen mozdulatokra képes. Nem testes, inkább elnyűhetetlen, kiszáradt, kemény alkat, akiben még mindig ott van a hajdani matróz és tiszt fegyelme.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Deres, zsíros, fülön és tarkón túlburjánzó hajcsomók; bozontos szakáll, amelyet vakargatni szokott; mogorva, kifürkészhetetlen, magába zárt arcjáték; a tekintetben dermedt, úrias szomorúság maradványa. Jellegzetes mozdulata, hogy hüvelykujjal egy bökéssel hátratolja sapkája ellenzőjét. Testtartása és gesztusai egyszerre elhanyagoltak és meglepően választékosak, mintha valami romlott elegancia maradt volna rajta.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Alapöltözete a szakadt, fekete, magas nyakú, hosszú ujjú gyapjúing és a feltűnően bő, „többszemélyes” nadrág, amelyet jellegzetesen magasra felrántva visel. Fején kopott sapka ellenzővel. Bizonyos helyzetekben kapitányi uniformist hord, amelyet „kissé rendbe kell hozni”; máskor a történet szerint angol vezérkari szabású ünnepélyesebb ruhadarabokban is feltűnhet, akár fehér kesztyűvel is. Az összhatás mindig kopott, viselt, de rangot mímelő vagy hordozó.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A higiénia sajnálatos devalválódása nála nem hanyagság, hanem szuverén diplomáciai doktrína. Kívülről egy felöltőjét tekintve a dunai uszályok fenékszennyével harmonizáló magánzó benyomását kelti, miközben nemzetközi kabinetválságokat és dinasztikus átrendeződéseket vezényel le a háttérből, mint egy nyugalmazott külügyi államtitkár a Nemzeti Kaszinó bridzstermében — csupán valamivel több tengeri algával a gallérján.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A higiénia sajnálatos devalválódása nála nem hanyagság, hanem szuverén diplomáciai doktrína. Kívülről egy felöltőjét tekintve a dunai uszályok fenékszennyével harmonizáló magánzó benyomását kelti, miközben nemzetközi kabinetválságokat és dinasztikus átrendeződéseket vezényel le a háttérből, mint egy nyugalmazott külügyi államtitkár a Nemzeti Kaszinó bridzstermében — csupán valamivel több tengeri algával a gallérján.</div></div>
         </div>
       </details>
       
@@ -6846,7 +7210,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">nagyarányú, nehézkes, elefántszerűen ormótlan testalkat; mozgása kilengő, kacsázó, csámpás, gyakran úgy hat, mintha saját testét is külön erőfeszítéssel kellene magával vonszolnia; lerobbant, iszákos, mégis szívós és meglepően működőképes figura</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">bibircsókos, ráncos arc; komor vagy nedves szemű, de alapvetően krokodilszerűen derűs, jóindulatúan közönyös tekintet; vastag, széles ajkak; hetyke, hézagos barna fogazat; az arc összhatása koponyaszerűen üres tökre emlékeztető, de nem torzszülött, inkább szomorúan-komikusan megviselt; gyakori somatikus jel a csuklás, a mámoros bizonytalanság és a részeg, mégis ünnepélyes tartás</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">keménykalapot visel, amely mellé mindig egyetlen szál, hetykén kitűzött gyertya kerül; zsebei tele lehetnek hervadt virágokkal, tévedésből elrakott holmikkal, sőt belső zsebében még veréb is lapulhat; időnként cérnakesztyűt húz fel; más jelenetben csattogó flanellpapucsban jár; öltözete összességében lecsúszott, esetleges, de sajátos ceremoniális komolysággal viseli</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Meglehetősen leharcolt, alkoholgőzös figura, akinek a ruházata már a textilipar előtti korszakot idézi, mégis olyan mély és operatív ismeretekkel bír a kikötői üzelmekről, hogy az bármely államrendőrség dicsőségére válna. Züllöttsége csupán zseniális álca, amellyel a puszta túlélés tudományát gyakorolja.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Meglehetősen leharcolt, alkoholgőzös figura, akinek a ruházata már a textilipar előtti korszakot idézi, mégis olyan mély és operatív ismeretekkel bír a kikötői üzelmekről, hogy az bármely államrendőrség dicsőségére válna. Züllöttsége csupán zseniális álca, amellyel a puszta túlélés tudományát gyakorolja.</div></div>
         </div>
       </details>
       
@@ -6914,7 +7278,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">középtermetű, jól táplált, nem sovány, inkább hétköznapi polgári testalkatú alak</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">néptanító külsejű, enyhén hibbant hatású, alapvetően rokonszenvesnek látszó férfi; arca gyakran összevert, foltos, mintha pofozások és verekedések nyomait viselné; alvás közben hortyog; beszédben és jelenlétben egyszerre puhatolózó és idegesítően óvatos</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">egyszerű, polgárias, kissé iskolamesteres vagy kisvárosi értelmiségi összhatás; legfontosabb kiegészítője a drótszemüveg hosszú fekete zsinórral, amely azonnal felismerhetővé teszi</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A társasági simulékonyság eminens mestere, amennyiben e kifejezést rá lehet aggatni egy olyan közvetítőre, aki a felebaráti szeretetet azonnal készpénzzé, az emberkereskedelmet pedig tisztes bizományi ügyletté konvertálja. Gerince a diplomáciai protokoll legrugalmasabb paragrafusait követi: sosem áll ki nyílt küzdelemre, csupán elfolyik a szőnyeg rései között.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A társasági simulékonyság eminens mestere, amennyiben e kifejezést rá lehet aggatni egy olyan közvetítőre, aki a felebaráti szeretetet azonnal készpénzzé, az emberkereskedelmet pedig tisztes bizományi ügyletté konvertálja. Gerince a diplomáciai protokoll legrugalmasabb paragrafusait követi: sosem áll ki nyílt küzdelemre, csupán elfolyik a szőnyeg rései között.</div></div>
         </div>
       </details>
       
@@ -6982,7 +7346,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">szívós, szolgálatban edzett, tengerjáró ember benyomását kelti; testalkata inkább fegyelmezett és funkcionális, mint hivalkodóan erős</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">A szöveg nem ad részletes arc- vagy testleírást. Az alak azonosíthatóságát elsősorban a kapitányi sziluett adja: ködben is felismerhető köpeny és sapka, sötétben is tekintélyt sugárzó fedélzeti jelenlét. Figurájához a gyanakvó éberség, a nyitott szemmel járó, veszélyre hangolt kapitányi tartás kapcsolódik.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Hosszú, időjárásálló kapitányi köpeny és markáns kapitánysapka; a ruházatnak éjszakai fedélzeti szolgálatban, ködben és rossz látási viszonyok között is azonnal felismerhetőnek kell lennie. Öltözete ne díszes, hanem praktikus, sós levegőtől viselt, komor tengeri szolgálati viselet legyen.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A kísérteties misztikum mögött megbúvó, kíméletlen irodavezetői elme. Miközben a vihar tépi a vitorlázatot, s a legénység a túlvilági jelenségek miatt lamentál, ő vaskalapos pedantériával ellenőrzi a hajónapló margójának párhuzamosságát; a halálos összeesküvés nála nem tragédia, hanem egy kissé pontatlanul iktatott fegyelmi kihágás.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A kísérteties misztikum mögött megbúvó, kíméletlen irodavezetői elme. Miközben a vihar tépi a vitorlázatot, s a legénység a túlvilági jelenségek miatt lamentál, ő vaskalapos pedantériával ellenőrzi a hajónapló margójának párhuzamosságát; a halálos összeesküvés nála nem tragédia, hanem egy kissé pontatlanul iktatott fegyelmi kihágás.</div></div>
         </div>
       </details>
       
@@ -7050,7 +7414,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">erős, munkában edzett, hajósélethez szokott alkat; mozdulatai nagy erejűek és határozottak. Nem pusztán verekedő, hanem fegyelmezett, gyakorlott tengerészember benyomását kelti.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Rejtő nem ad pontos arcleírást, ezért a karaktert nem konkrét orr-, szem- vagy hajformák, hanem a viselkedéséből kiolvasható testi jelleg határozza meg: nyugodt, kemény, türelmesen kegyetlen, hirtelen erőkitörésekre képes figura. A "Főorvos" név ironikus ragadványnév, amely kíméletlen "kezelési módszerére" utal. Tartása szolgálati jellegű, vezényszavakra termett; látszik rajta, hogy valaha hajógépészként szolgált, és a fedélzeti fegyelem nem idegen tőle.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Legautentikusabb viselete az elsőtiszt egyenruhája, amely „mintha rászabták volna”: jól álló, szabályos haditengerészeti öltözet, tiszta és fegyelmezett összhatással. Más helyzetekben egyszerű matróz- vagy kikötői ruházat képzelhető el, de Rejtőnél a döntő vizuális elem az, hogy az uniformis természetesen simul rá. A harmadosztályú utazás és a törölt hajóskönyvek múltja kopott, praktikus, rang nélküli civil-hajós mellékképet is indokol.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Egy kényszerítő hatósági mechanizmus operatív funkcionáriusa, aki a bűnszervezeti likvidálásokat szigorúan klinikai szempontok alapján adminisztrálja. Bár a szalonbeli erkölcsök nála hiánycikknek minősülnek, hivatali működése során mégis felmutat egyfajta nyers, sebészi lelkiismeretet: ha már ártalmatlanná kell tenni egy pácienst, azt legalább tiszta szikével igyekszik elkövetni.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Egy kényszerítő hatósági mechanizmus operatív funkcionáriusa, aki a bűnszervezeti likvidálásokat szigorúan klinikai szempontok alapján adminisztrálja. Bár a szalonbeli erkölcsök nála hiánycikknek minősülnek, hivatali működése során mégis felmutat egyfajta nyers, sebészi lelkiismeretet: ha már ártalmatlanná kell tenni egy pácienst, azt legalább tiszta szikével igyekszik elkövetni.</div></div>
         </div>
       </details>
       
@@ -7118,7 +7482,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Mesztic óriás, valószínűtlenül magas és széles, "valóságos hústömeg". Testalkata nem atletikusan szálkás, hanem nyers, nehéz, tömbszerűen lehengerlő; puszta jelenléte is fizikai fenyegetés.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Gömbölyű, teljesen kopasz fej; nagy, bennszülött jellegű szemek, amelyek riadalomban kidüllednek; duzzadt, vastag ajkak; szinte teljesen fehér bőr, ami különösen idegenszerűvé teszi vegyes származású vonásaival együtt. Arca alaphelyzetben tompa, nehezen olvasható, félelmet keltő; ijedtség vagy zavar esetén hápogó, levegő után kapkodó, gyermeteg-butácska reakció ül ki rá. Somatikailag a brutális erő és a szellemi tompaság kontrasztja a legfontosabb.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Öltözete legyen alvilági-kikötői, egyszerű és gyakorlatias: gyűrött, viseltes ing vagy durva anyagú felső, nehéz nadrág, nagy zsebekkel. A szöveg biztosan csak annyit támaszt alá, hogy zsebből ránt elő revolvert; ezért a ruházat legyen funkcionális, zsebhangsúlyos, dísztelen, szegényes, a penészes vályogfalú szobához és gyékényes fekhelyhez illő. Kerülendő minden olyan részlet, amelyet a regényrészlet nem igazol (például tetoválás vagy feltűnő elegancia).</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Gigantikus fizikai destruktor, aki puszta kézzel képes átrendezni egy teherhajó belsőépítészetét, ám amint a szívét érinti valamely szentimentális fuvallat, egy megszeppent kisiskolás ragaszkodásával borul rá a választott autoritás térdére. Roppant veszedelmes entitás, feltéve, hogy elfelejtik megsimogatni a fejét a rombolás szüneteiben.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Gigantikus fizikai destruktor, aki puszta kézzel képes átrendezni egy teherhajó belsőépítészetét, ám amint a szívét érinti valamely szentimentális fuvallat, egy megszeppent kisiskolás ragaszkodásával borul rá a választott autoritás térdére. Roppant veszedelmes entitás, feltéve, hogy elfelejtik megsimogatni a fejét a rombolás szüneteiben.</div></div>
         </div>
       </details>
       
@@ -7186,7 +7550,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Testalkata nem erőfitogtató, hanem ülő, uralt, hivatalnoki-diplomáciai jelenléttel hat. Inkább kifinomult tekintélyt sugároz, mint fizikai fenyegetést. Magas homlokú, rendezett megjelenésű, olyan ember benyomását kelti, aki még alvilági környezetben is szalonképesnek és államférfiúnak látszik.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Legfontosabb testi-gesztikus ismertetőjegye az előkelő nyugalom: feszült helyzetben is mozdulatlanul összeszedett. Bagolyszemüveges, angolosan ápolt bajuszú, tekintete számító és hűvös. Nem a mimikai túlzás, hanem a visszafogott ellenőrzés jellemzi: ablakon kitekint, szivarhamut vizsgál az ujjai között, csendben mérlegel. A körülötte ülő torzonborz alakok mellett éppen a fegyelmezett tisztasága és polgári finomsága válik feltűnővé.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Kifogástalanul elegáns, diplomataszerű öltözet: zsakett vagy úrias sötét kabát, gondosan szabott mellény, óralánc a mellényzsebben, selyem nyakkendő nyakkendőtűvel, gyűrű, cilinder a közelben. Ruházata ne legyen díszesen hivalkodó, inkább káprázatosan rendben tartott és konzervatív; úgy hasson, mintha egy előkelő hivatalból vagy klubból érkezett volna, nem bűntanyára.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A parlamentáris elegancia azon magasiskolája, amelynél az ember zsakettben, hibátlan nyakkendőtűvel és a legfinomabb francia fordulatok kíséretében szervezi meg az alvilági zendülést. Nem lázadó ő, kérem szépen, hanem a köztársasági rendetlenkedés felsőházi referense, aki a barikádokat is a legszigorúbb udvari protokoll szerint állíttatja fel.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A parlamentáris elegancia azon magasiskolája, amelynél az ember zsakettben, hibátlan nyakkendőtűvel és a legfinomabb francia fordulatok kíséretében szervezi meg az alvilági zendülést. Nem lázadó ő, kérem szépen, hanem a köztársasági rendetlenkedés felsőházi referense, aki a barikádokat is a legszigorúbb udvari protokoll szerint állíttatja fel.</div></div>
         </div>
       </details>
       
@@ -7254,7 +7618,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Karcsú, testileg finom vonalú, nagyvilági szépségként ható alak. Jelenléte nem erőből, hanem feszes tartásból és veszélyesen közeli fellépésből uralkodó.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Legfőbb testi ismertetőjele a szeme: félelmetesen ragyogó, furcsa, arannyal vegyített hidegzöld tekintet, amely tengeri fényváltozásra emlékeztet. Közel lép az ellenfélhez, szinte test-test elleni távolságig, így a tekintete és a személyes tere válik fegyverré. A kézhasználata beszédes: remegő kézzel kapaszkodik meg a megrendülés pillanatában, máskor némán tűr és szégyenkezik; tehát a keménység mögött idegi feszültség és sebezhetőség is megjelenik.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Konkrét ruhadarab nincs részletezve, de a szöveg következetesen nagyvilági, parancsoló megjelenésű nőként állítja elénk. A képi megformálásban ezért elegáns, fegyelmezett, fedélzetre és parancsnoki térbe is illő, korhű, visszafogottan előkelő öltözet indokolt; nem díszes túlzás, hanem hűvös társadalmi fölény.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A kikötői bűnözés vezérkari főnöknője, aki a legkeményebb bérgyilkosokat is egyetlen szemöldökrezdüléssel állítja vigyázzba, ám a lakkozott karmok alatt egy meglehetősen labilis, romantikus komplikációkra hajlamos női szív dobog. A parancsnoki szigor nála csupán selyemkendő, mellyel a szerelmi bánat okozta zavarodottságát igyekszik elfedni a beosztottak előtt.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A kikötői bűnözés vezérkari főnöknője, aki a legkeményebb bérgyilkosokat is egyetlen szemöldökrezdüléssel állítja vigyázzba, ám a lakkozott karmok alatt egy meglehetősen labilis, romantikus komplikációkra hajlamos női szív dobog. A parancsnoki szigor nála csupán selyemkendő, mellyel a szerelmi bánat okozta zavarodottságát igyekszik elfedni a beosztottak előtt.</div></div>
         </div>
       </details>
       
@@ -7322,7 +7686,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">matuzsálemi korúnak ható, száraz, ráncos, nagy léptű öregember</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">barna, ráncos arc; hófehér kecskeszakáll; szigorúan biggyedő ajkak; hatalmas, túlméretezett mutatóujj; nagy, gólyaszerű léptek</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">szürke cilindert, rövid és szűk felsőkabátot, sárcipőt, később zsakettet visel; esernyője és műszerei identitása részei</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A tudományos csalhatatlanság pózában tetszelgő szakember, aki bármely trópusi dzsungelben képes tíz perc alatt eltévedni. Miközben a legbonyolultabb kórképeket diagnosztizálja önmagán hipochonder buzgalommal, a valóság elemi tényeit oly tökéletesen hagyja figyelmen kívül, mint az adóhatóság harmadik fizetési felszólítását.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A tudományos csalhatatlanság pózában tetszelgő szakember, aki bármely trópusi dzsungelben képes tíz perc alatt eltévedni. Miközben a legbonyolultabb kórképeket diagnosztizálja önmagán hipochonder buzgalommal, a valóság elemi tényeit oly tökéletesen hagyja figyelmen kívül, mint az adóhatóság harmadik fizetési felszólítását.</div></div>
         </div>
       </details>
       
@@ -7390,7 +7754,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Eléggé csinos, eleven, mozgékony, színpadi és matrózélethez edzett alkat; olyan nő, aki énekel, táncol, iszik, nevet, és szükség esetén hajót is 'úgy-ahogy' kormányoz. Nem törékeny díszbaba, hanem energikus, kikötői létben megerősödött varieté-művésznő.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Az egyetlen kifejezetten rögzített testi jellegzetessége a kissé erősen pisze orr, amelyet Rejtő nem rútságnak, inkább bájosan vitatható szépségjegynek állít be. Arcának összhatása csinos és élénk; a 'fix lánytekintet' alapján a tekintete megtartó, figyelmet lekötő. Játékos, gyors, érzelmileg is váltékony mimika illik hozzá: harsány nevetés, csipkelődő figyelem, majd hirtelen szemlesütés és elfogódottság.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Kizárólag fekete-fehér és sötétbarna PEPITA KOCKÁS ruha (bold black-and-white houndstooth / checkerboard pattern). Szigorúan TILOS a matrózcsíkos vagy csíkos minta; markáns pepita kockák dominálják az öltözetet, fekete rongyos keménykalap.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A színpadi líra és a szentimentális költészet önjelölt papnője, aki a csillagokba révedő tekintetét azonnal lefelé irányítja, amint egy tehetős úr tárcája megnyílik. A magas művészet nála csupán taktikai előjáték a túléléshez: miközben múzsának vallja magát, hidegvérrel zsebeli ki a művészetpártoló közönséget.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A színpadi líra és a szentimentális költészet önjelölt papnője, aki a csillagokba révedő tekintetét azonnal lefelé irányítja, amint egy tehetős úr tárcája megnyílik. A magas művészet nála csupán taktikai előjáték a túléléshez: miközben múzsának vallja magát, hidegvérrel zsebeli ki a művészetpártoló közönséget.</div></div>
         </div>
       </details>
       
@@ -7458,7 +7822,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">alapvetően kis termetű, köpcös alkatú; az erőltetett bujkálás, ládába és szekrénybe szorulás miatt kissé görnyedt, nehezen teljesen kiegyenesedő testtartással ábrázolandó</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">ősz haj; monokli; tiszta, rendezett összhatás még viszontagságok után is; inkább idegesen feszes, mint hősiesen daliás tudósfigura. A szövegben a 'kis köpcös, őszhajú, monoklis egyén' formula közvetlen testi támpontot ad, ehhez társul a dobozokból, hordókból, szekrényekből előkerülő, kissé összenyomott, mégis méltóságát őrző megjelenés. A hajviselet elvesztésétől sem ijed meg, tehát kopaszodás vagy megtépázott frizura is hitelesen belefér, de nem kötelező.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">polgári, gondosan viselt, de az eseményekhez képest gyakran abszurd helyzetbe kerülő öltözet; olykor jobb, sokszínűbb 'szebbik' ruhát vesz fel éjszakára is; máskor rejtőzködésre, utazásra, álneves ügynöki életre alkalmas visszafogott városi viselet. Ruházata legyen rendes és tiszta, nem csavargósan rongyos. A monokli kulcselem; zsebében levél, feljegyzés vagy ügynöki irat, esetleg földrajzkutatói jegyzet hiteles kellék.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A tudományos világ fenséges professzora, kinek felfedezői pátosza mögött valójában egy kényelemszerető, bujkáló ügynök húzódik meg. Az egzotikus expedíciókba nem a kutatói szomj hajtja, hanem az a kétségbeesett és mélységesen érthető törekvés, hogy elmeneküljön a házasélet kispolgári kellemetlenségei elől.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A tudományos világ fenséges professzora, kinek felfedezői pátosza mögött valójában egy kényelemszerető, bujkáló ügynök húzódik meg. Az egzotikus expedíciókba nem a kutatói szomj hajtja, hanem az a kétségbeesett és mélységesen érthető törekvés, hogy elmeneküljön a házasélet kispolgári kellemetlenségei elől.</div></div>
         </div>
       </details>
       
@@ -7526,7 +7890,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Magas, tekintélyes tartású úr; nem izomerővel, hanem ranggal és állami méltósággal hat. Alkatát a merev, hivatalnoki-aristokratikus jelenlét határozza meg.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Ősz hajú, homlokán feltűnő, régi kardvágásból maradt forradásos heghely. Arca és testtartása legyen szigorú, fegyelmezett, személyes ismeretségből fakadó magabiztossággal; nem bohózati torz alak, hanem kemény, régi rendhez tartozó államférfi.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Ceremoniális, díszes katonai jellegű öltözet: 'katonakabátban, aranyos díszekkel'. Az öltözet legyen udvari-állami, sötét alapú, arany rangjelzésekkel, szabott és feszes, amely egyszerre miniszterelnöki és udvari főméltósági benyomást kelt.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A monarchista lojalitás szobra, aki a koronahűség és a történelmi tradíciók legszebb jelszavaival zsonglőrködik a nyilvánosság előtt, miközben a trónöröklés gépezetét a saját magánérdekei szerint hangolja át. Az udvari etikettet fegyverként forgatja: nála a térdhajtás mélysége pontosan aránylik a trónbitorlás esélyeihez.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A monarchista lojalitás szobra, aki a koronahűség és a történelmi tradíciók legszebb jelszavaival zsonglőrködik a nyilvánosság előtt, miközben a trónöröklés gépezetét a saját magánérdekei szerint hangolja át. Az udvari etikettet fegyverként forgatja: nála a térdhajtás mélysége pontosan aránylik a trónbitorlás esélyeihez.</div></div>
         </div>
       </details>
       
@@ -7594,7 +7958,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Nagyon sovány, cingár testalkatú tengerész; könnyű, inas, meglepően kemény és veszélyes fizikum. Nem robusztus óriás, hanem szikár, idegesen feszes ember, aki kis tömege ellenére ütőképes és erőszakos.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Fél szemére vak orosz matróz; a hiányzó fél szemét plasztron fedi. Roppant széles áll, horgas orr, zsokészerű keskeny-szívós összhatás, lángvörös haj. A "Vörös Vaszics" megnevezés és a "cingár vörös" formula egyaránt hangsúlyozza sovány, vörös hajú, szikár karakterét. Erős alkoholos jelenléte van: szinte pálinkaköd hömpölyög vele együtt. Mozgásában különös kettősség: részeg csuklás és bizonytalan komikum mellett méltóságteljes, fenyegető fellépés.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">A regényrészletek konkrét ruházatot nem rögzítenek részletesen. Ezért hitelesen egyszerű, kopott matróz- vagy fedélzeti munkaruha javasolt: viseltes tengerészfelső, praktikus ing, munkára való nadrág. A kötelezően azonosító elem nem a díszes öltözet, hanem a fél szem helyén viselt plasztron.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Félszemű, dülöngélő roncs, akinek a megjelenése a legrosszabb külvárosi lebujok emlékét idézi, ám amint a hajó kormánykerekéhez lép, kiderül, hogy a fedélzet legjózanabb elméje. Komikus nyomorúsága csupán kontraszt a halálosan precíz tengeri szaktudásához.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Félszemű, dülöngélő roncs, akinek a megjelenése a legrosszabb külvárosi lebujok emlékét idézi, ám amint a hajó kormánykerekéhez lép, kiderül, hogy a fedélzet legjózanabb elméje. Komikus nyomorúsága csupán kontraszt a halálosan precíz tengeri szaktudásához.</div></div>
         </div>
       </details>
       
@@ -7662,7 +8026,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">karcsú, könnyű mozgású, fürge és energikus alkat; mozdulatai hirtelenek, gyorsak, szinte sodró erejűek, ami alapján fizikailag nem törékeny, hanem rugalmas és cselekvőképes figura</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">legbiztosabban rögzített vonása a rendkívül kifejező szem: csillogó, majd őszinte csodálattól kerekre nyíló tekintet; érzelmi állapotai az arcán azonnal átfutnak, el tud sápadni, szája megremeg; válla kifejezetten vékony; közeli jelenlétéhez kölniszag társul, ami ápolt, tudatosan komponált női megjelenést jelez; összhatása egyszerre kedves, merész, kiszámíthatatlan és szerepjátszásra kész</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">öltözete nem egyetlen állandó viselethez kötött, hanem az identitáscserékhez és a helyzetekhez igazodik; biztosan visel finomabb, nőies ruházatot, amelynek vállrésze Theo rántására felszakad („szövet reccsent”); megjelenése elég hiteles ahhoz, hogy más nőkkel összecserélhető vagy helyettesíthető legyen nyilvános szerepekben; kölnit használ, ami az elegáns, civilizált felszín része; vizuálisan érdemes utazó- és fedélzeti környezethez illő, korszakos, praktikus, mégis nőies ruházattal kezelni</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Könnyelmű, szélhámoskodásra hajlamos hölgy, aki a hazugságokat és a fondorlatos szerepjátékokat a mindennapi toilette természetes részének tekinti. E zűrzavaros fondorlatok mögött azonban mély és sebezhető érzelmek rejtőznek; a megtévesztés számára nem bűn, hanem az érzelmi túlélés egyetlen lehetséges diplomáciai eszköze.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Könnyelmű, szélhámoskodásra hajlamos hölgy, aki a hazugságokat és a fondorlatos szerepjátékokat a mindennapi toilette természetes részének tekinti. E zűrzavaros fondorlatok mögött azonban mély és sebezhető érzelmek rejtőznek; a megtévesztés számára nem bűn, hanem az érzelmi túlélés egyetlen lehetséges diplomáciai eszköze.</div></div>
         </div>
       </details>
       
@@ -7730,7 +8094,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Alacsony, nagyon tömzsi, sűrű felépítésű alak. Teste zárt, kompakt, nehéz tömbként hat; a regény kifejezetten a tömzsi jellegét emeli ki. Inkább erős, rövidre szabott matróz- vagy rakodómunkás-alkat, mint atletikus figura.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Legbiztosabb azonosítója a tömzsi testalkat és a később említett bekötött homlok. Arca és vonásai a részletekben nem kapnak külön leírást ezekben az idézetekben, ezért a mimikát és fejformát a zömök, bizalmatlan, keménykötésű tengerparti bűnöző-karakter szolgálatába kell állítani, túlzás nélkül. Jellemző testbeszéde a gyanakvás, a vállvonás és a száraz, sajnálkozó tárgyilagosság, amikor erőszakkal fenyeget.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">A korábbi azonosításnak megfelelően rendezett, feltűnően tiszta matrózviselet tartható meg: fehér vászonnadrág, kék matrózblúz, kerek, szalagos matrózsapka. A szövegbiztos kiegészítés a homlokkötés/kötés a fején, amely egy jelenetben kifejezetten megjelenik.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Az emberi életek adásvételével foglalkozó, morálisan nehezen szalonképes úr, aki mindezt oly tisztes iparosmentalitással, mérlegeléssel és minőségellenőrzéssel gyakorolja, mintha csupán fűszerárut mérne a Vásárcsarnokban. A romlottsága éppen abban a hátborzongató polgári pedantériában rejlik, amellyel a számlát kiállítja a túszátadást követően.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Az emberi életek adásvételével foglalkozó, morálisan nehezen szalonképes úr, aki mindezt oly tisztes iparosmentalitással, mérlegeléssel és minőségellenőrzéssel gyakorolja, mintha csupán fűszerárut mérne a Vásárcsarnokban. A romlottsága éppen abban a hátborzongató polgári pedantériában rejlik, amellyel a számlát kiállítja a túszátadást követően.</div></div>
         </div>
       </details>
       
@@ -7798,7 +8162,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Hajószolgálatban megöregedett, robusztusabb szolgálati ember benyomását kelti, nem hősi izomemberként, hanem fedélzeti rendfenntartó-szállásmester típusként. Testalkatát a szöveg nem részletezi pontosan, de a „púpos” megszólítás alapján enyhe görnyedtség vagy hátvonalbeli egyenetlenség megengedett. Pánikhelyzetben látványosan összeeső, összetöpörödő figura.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Legbiztosabb azonosítói a vörös arc és a körszakáll. Arca vérbő, könnyen kipiruló, a vörösség idegességben még feltűnőbb. A körszakáll ápolt, kerek kontúrt ad az állnak és a szájnak. Testtartása ideges helyzetben hátrahőkölő, önkéntelenül visszalépő. Félelme erősen kiül rá: rettegő tekintet, összement, megviselt benyomás, mintha „élősúlyának felére fogyott” volna rövid idő alatt.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Ruházata nincs részletesen leírva, ezért praktikus, korabeli hajószolgálati öltözet indokolt: egyszerű szolgálati kabát vagy mellény, munkára való ing, kissé gyűrött, sós levegőtől viselt anyagok. Mint szállásmester és szolgálati ember, megjelenése legyen rendezettebb a közönséges matróznál, de ne elegáns; inkább funkcionális és fegyelmi szerepkörhöz illő.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A fedélzeti rendtartás azon szerencsétlen végrehajtója, akinek a határozott fellépése mögött a pánik legtisztább formája vibrál. Hivatalos funkciója szerint szigorú logisztikai vezető, a valóságban viszont folyamatosan a legközelebbi mentőcsónak koordinátáit számolgatja, mélyen átérezve a tengeri szolgálat ízléstelen veszélyeit.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A fedélzeti rendtartás azon szerencsétlen végrehajtója, akinek a határozott fellépése mögött a pánik legtisztább formája vibrál. Hivatalos funkciója szerint szigorú logisztikai vezető, a valóságban viszont folyamatosan a legközelebbi mentőcsónak koordinátáit számolgatja, mélyen átérezve a tengeri szolgálat ízléstelen veszélyeit.</div></div>
         </div>
       </details>
       
@@ -7866,7 +8230,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Pontos testalkati leírás nincs, de a jelenetek alapján rendezett fellépésű, tartózkodó, tiszti szerepbe komponált alak; jelenléte inkább fegyelmezett és merev, mint robusztus vagy kifejezetten matrózos.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">A szöveg hitelesen csak annyit rögzít, hogy „sápadtan állt”, valamint hogy „ellenszenves, hűvös mosolya” volt. Arca ezért világos tónusúra, feszesre fogott, érzelmeit visszatartó mimikával ábrázolandó. Tekintete zárt, távolságtartó; a hideg udvariasság és a nem egészen valódi tengerészi habitus fontosabb, mint bármely konkrét anatómiai különlegesség. Ne kapjon túlzottan romantikus vagy hősi vonásokat: inkább szabályos, visszafogott, kissé élettelenül korrekt arc.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Biztosan azonosítható a „fehér nadrágja”, a „kék kabátja” és az „aranygombos uniformisa”. A kabát minősége azonban árulkodóan „gyenge”, sőt egy dulakodásban nagy része leszakad, ezért az egyenruha ne legyen túl patyolatfényű vagy haditengerészeti presztízst sugárzó: inkább gondosan viselt, de olcsóbb szövetű, kissé színpadias tiszti öltözet. A szabás legyen tisztesen kapitányos, mégis érezhetően kissé utánzott, mintha a rang külsősége fontosabb volna a valódi tengeri kopottságnál.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A tengerészeti fegyelem és a makulátlan professzionalizmus mintaképe, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. A katonás rend nála csupán paraván: a legkisebb rezdülés nélkül döfi hátba a flottát, természetesen a legszigorúbb szolgálati szabályzat szerint.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A tengerészeti fegyelem és a makulátlan professzionalizmus mintaképe, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. A katonás rend nála csupán paraván: a legkisebb rezdülés nélkül döfi hátba a flottát, természetesen a legszigorúbb szolgálati szabályzat szerint.</div></div>
         </div>
       </details>
       
@@ -7934,7 +8298,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">A szöveg Anna Alvarez testalkatáról nem ad részletes leírást; annyi bizonyos, hogy házasulandó fiatal nőként jelenik meg, előkelő, uralkodó családi közegben.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">Közvetlen arc- vagy testleírás nem szerepel a megadott részletekben. Az egyetlen óvatosan használható külső támpont a herceg cinikus megjegyzése a „telt idomú, fekete hajú hölgyekről”, amely inkább ellenpontként működik, semmint biztos leírásként Annáról; ezért Anna haja, szeme, arcszerkezete és bőrszíne szöveghűen nyitva hagyandó.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">A részletek nem neveznek meg konkrét ruhadarabot vagy ékszert. A jelenetkörnyezet azonban kényszerházassági, politikai-ceremoniális szituációt jelez, ezért visszafogottan előkelő, rangot sugalló, de nem túlburjánzó viselet indokolt: szigetbeli elitcsalád leányához illő, formális megjelenés.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Hasonlóképp a félvilági hierarchia megfellebbezhetetlen direktora, akit a matrózok és martalócok félelemmel vegyes tisztelettel csupán férfiként emlegetnek, noha a háttérben mély, melankolikus sebeket hordoz. Végtelenül professzionális, csak éppen a lelkében akkora a huzat, mint egy elhagyatott trieszti raktárépületben a bóra idején.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Hasonlóképp a félvilági hierarchia megfellebbezhetetlen direktora, akit a matrózok és martalócok félelemmel vegyes tisztelettel csupán férfiként emlegetnek, noha a háttérben mély, melankolikus sebeket hordoz. Végtelenül professzionális, csak éppen a lelkében akkora a huzat, mint egy elhagyatott trieszti raktárépületben a bóra idején.</div></div>
         </div>
       </details>
       
@@ -8002,7 +8366,7 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
           <span class="acc-chevron">▾</span>
         </summary>
         <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Közepes termetű, sima vonalú, rendezett, meglepően elegáns alak; nem nehézkes, inkább fesztelenül suhanó, már-már "áramvonalas" benyomást kelt. Tartása higgadt, civilizált, szinte túlságosan is úrias ahhoz képest, hogy hóhér.</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">A regényrészletek nem adnak részletes arcleírást; a biztosan rögzíthető testi jegyek ezért viselkedésből és mimikából következnek: gyakran hunyódó vagy lehunyt pillák, révült-élvezettel felragyogó szem, idegtépően nyugodt, prózai önuralom. Arca legyen ápolt, feszes, kissé kifürkészhetetlen; a humor forrása a közömbös, szakmai nyugalom és a finom úri modor ellentéte a foglalkozásával. Nem szükséges bajusz vagy szakáll, mert erre nincs szövegbiztos adat.</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">Változó, de mindig tudatosan elegáns és feltűnő öltözet: rikítóan elegáns angol raglán, kockás teveszőr sapka, egészen sárga, vakító cipő; máskor szmoking és keménykalap. Az összhatás kissé hiú, világjáróan eklektikus, mintha a fedélzeten is társasági megjelenést adna elő. A kézelő hangsúlyos részlet, mert "levette kézelőjét" munka vagy beavatkozás előtt.</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A legfőbb állami ítélet-végrehajtó, aki a hóhérmesterséget a pesti kabaré legkifinomultabb nyelvi játékaival ötvözi. A halál technológiáját olyan abszurd bölcselettel és ripacskodással tálalja, hogy a delikvens szinte tapsolni szeretne az akasztás szünetében, ha a kezei nem lennének hátrakötve.</div></div>
+          <div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A legfőbb állami ítélet-végrehajtó, aki a hóhérmesterséget a pesti kabaré legkifinomultabb nyelvi játékaival ötvözi. A halál technológiáját olyan abszurd bölcselettel és ripacskodással tálalja, hogy a delikvens szinte tapsolni szeretne az akasztás szünetében, ha a kezei nem lennének hátrakötve.</div></div>
         </div>
       </details>
       
@@ -8031,6 +8395,482 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       <div class="rejto-tech-footer">
         <div class="tech-tags-list">
           <span class="tech-tag" title="Szereptípus">🎭 nyugalmazott ítéletvégrehajtó; korábban villamosszék-kezelő, később kifutó, jelenleg kertészetet emlegető különc utazó</span><span class="tech-tag" title="Szereplési statisztika">📊 7 sor • 210 szó</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="a bunkó" data-role="kikötői nehézfiú / gyóntató" data-contra="ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. a valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén." data-bio="a hírhedt gyóntatók harmadik oszlopa, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek könyvel el, mivel a kabátja alatt négyszeresen összecsavart, vasnehezékkel ellátott drótkötéllel szokott társalgást kezdeményezni. a valóságban azonban képzett hajótávírász, aki a morzejeleket és a rádióadót olyan szakrális áhítattal kezeli, mint a falusi kántor az orgonát; a puszta mechanikus rombolás mögött meglepő tengeri szaktudás és fegyelem működik.">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/A Bunkó.webp" data-name="A Bunkó" data-contra="Ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. A valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/A Bunkó.webp" alt="A Bunkó" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">A Bunkó</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier1">👑 Főszereplő</span>
+            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
+            <span class="badge badge-meta">👤 Férfi • 42–46 év</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rejto-bio-block">
+        <p class="rejto-bio-text">A hírhedt Gyóntatók harmadik oszlopa, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek könyvel el, mivel a kabátja alatt négyszeresen összecsavart, vasnehezékkel ellátott drótkötéllel szokott társalgást kezdeményezni. A valóságban azonban képzett hajótávírász, aki a morzejeleket és a rádióadót olyan szakrális áhítattal kezeli, mint a falusi kántor az orgonát; a puszta mechanikus rombolás mögött meglepő tengeri szaktudás és fegyelem működik.</p>
+      </div>
+      
+      <div class="rejto-audio-block">
+        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
+        <audio controls preload="none">
+          <source src="rejto/A Bunkó.wav" type="audio/wav">
+        </audio>
+      </div>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">A harmadik Gyóntató / Kikötői óriás</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. A valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén.</div></div>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">📜 Mit csinált a regényben?</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <ul class="rejto-actions-list">
+            <li>A Gyóntatók egyik oszlopos tagjaként jelen volt a hírhedt bandában, amely két csaló francia matrózt „meggyóntatott”, majd eltüntetett, s ezzel kiérdemelte a társaság beszédes nevét.</li><li>A kocsmabeli nagy verekedésnél a maga szelíd módján utat nyitott a meneküléshez: egy nyolcvankilós hivatásos néger verekedőt teljes terjedelmében belevágott a söntés ajtajába, úgyhogy ajtó, üveg és ember egyszerre adta meg magát.</li><li>A részvénytársaságba is bevették, és hamisított matrózigazolvánnyal utazott tovább, miután kiderült róla, hogy hajdan távírdász volt, nem csak ütőszerszám.</li><li>Amikor a Radzeernek ki kellett játszania az angol cirkálókat, egy elkötött dzsunkában ő kezelte az átszerelt hajórádiót, és társaival a part menti dzsunkák közé vegyülve sikeresen leadta a szükséges jeleket.</li><li>A menekülés és bujkálás napjaiban a tengeren kóborolva, a csónak kunyhójába zárva is helytállt, és bebizonyította, hogy a Bunkó név mögött nemcsak vasdarab, hanem használható szakértelem is lapul.</li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">flegmatikus / erőt sugárzó</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">a Gyóntatók védelme, túlélés</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 kikötői nehézfiú / gyóntató</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="bradford" data-role="brit százados / konspirátor" data-contra="a feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. e makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút hátsó-indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál." data-bio="egy nagy formátumú nemzetközi mesterkém, aki tizennyolc esztendőn át bitorolta az igazi, bokharában nyomtalanul eltűnt bradford angol tiszt személyazonosságát. hibátlan tiszti modorával, vezérkari papírjaival és műszaki képzettségével egészen a brit hadvezetés csúcsáig kúszott fel, miközben titokban a japán hírszerzésnek szállította a katonai titkokat; a feddhetetlen brit úriember hűvös teájának felszíne alatt egy rideg fejű áruló lapul, aki habozás nélkül lángba borítana egy kontinenst.">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/Bradford.webp" data-name="Bradford" data-contra="A feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. E makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút Hátsó-Indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/Bradford.webp" alt="Bradford" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">Bradford</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier1">👑 Főszereplő</span>
+            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
+            <span class="badge badge-meta">👤 Férfi • 38–42 év</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rejto-bio-block">
+        <p class="rejto-bio-text">Egy nagy formátumú nemzetközi mesterkém, aki tizennyolc esztendőn át bitorolta az igazi, Bokharában nyomtalanul eltűnt Bradford angol tiszt személyazonosságát. Hibátlan tiszti modorával, vezérkari papírjaival és műszaki képzettségével egészen a brit hadvezetés csúcsáig kúszott fel, miközben titokban a japán hírszerzésnek szállította a katonai titkokat; a feddhetetlen brit úriember hűvös teájának felszíne alatt egy rideg fejű áruló lapul, aki habozás nélkül lángba borítana egy kontinenst.</p>
+      </div>
+      
+      <div class="rejto-audio-block">
+        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
+        <audio controls preload="none">
+          <source src="rejto/Bradford.wav" type="audio/wav">
+        </audio>
+      </div>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Brit vezérkari tiszt / Titkos intrikus</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. E makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút Hátsó-Indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál.</div></div>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">📜 Mit csinált a regényben?</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <ul class="rejto-actions-list">
+            <li>A "Radzeer" elsüllyedése után tovább játszotta a makulátlan vezérkari századost, irataival és fellépésével mindenkit megtévesztve, sőt még a parancsnok előtt is hitelesen igazolta magát.</li><li>Foglyul ejtett helyzetében a hercegnek feltárta igazi történetét: hogyan bitorolta az eredeti Bradford nevét, miként épült be az angol hadseregbe, és hogyan dolgozott Snyder Morrisonnal egy titkos hálózatban.</li><li>A háttérből részt vett a Hátsó-Indiát lángba borítani képes fegyverszállítmány és háborús összeesküvés szervezésében, ezért Kvang már bizonyított gazemberként kezelte, és ellene fordult.</li><li>Jellegzetes fölénnyel, szemrehányó angol úri modorban viselkedett még a legkétesebb pillanatokban is: széket állított a foglyok elé, lovaglóülésben telepedett rá, és úgy vallott, mintha csak egy klubban panaszkodna a rossz teára.</li><li>A végső összecsapások után nyoma veszett egy időre, miközben Snyder hulláját megtalálták, s ez csak még jobban kiemelte róla azt a kellemetlen igazságot, hogy az efféle kémek ritkán ott vannak, ahol az ember legszívesebben elszámoltatná őket.</li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">szangvinikus / hidegvérű intrikus</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">hatalom, a cirkáló titkának megszerzése</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 brit százados / konspirátor</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="earl of sudessex" data-role="angol lord / világfi" data-contra="a brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is." data-bio="valódi királyi vérből származó brit főúr, őfelsége házi ezredének huszonkét éves ezredese, aki külsőre legfeljebb piperkőc, szalonokba való betegeskedő díszpéldánynak hat. ám amint a trópusi fogság és a felkelők pokla zúdul a nyakába, kiderül, hogy a főnemesi modor nála nem máz: fölényes derűvel, megingathatatlan hidegvérrel és gyilkos iróniával viseli a legvéresebb viszontagságokat is, bizonyítva, hogy az igazi arisztokrata a veszedelemben válik a legveszélyesebb katonává.">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/Earl of Sudessex.webp" data-name="Earl of Sudessex" data-contra="A brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. Ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/Earl of Sudessex.webp" alt="Earl of Sudessex" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">Earl of Sudessex</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier1">👑 Főszereplő</span>
+            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
+            <span class="badge badge-meta">👤 Férfi • 42–48 év</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rejto-bio-block">
+        <p class="rejto-bio-text">Valódi királyi vérből származó brit főúr, őfelsége házi ezredének huszonkét éves ezredese, aki külsőre legfeljebb piperkőc, szalonokba való betegeskedő díszpéldánynak hat. Ám amint a trópusi fogság és a felkelők pokla zúdul a nyakába, kiderül, hogy a főnemesi modor nála nem máz: fölényes derűvel, megingathatatlan hidegvérrel és gyilkos iróniával viseli a legvéresebb viszontagságokat is, bizonyítva, hogy az igazi arisztokrata a veszedelemben válik a legveszélyesebb katonává.</p>
+      </div>
+      
+      <div class="rejto-audio-block">
+        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
+        <audio controls preload="none">
+          <source src="rejto/Earl of Sudessex.wav" type="audio/wav">
+        </audio>
+      </div>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Angol főnemes / Kalandvágyó világutazó</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. Ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is.</div></div>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">📜 Mit csinált a regényben?</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <ul class="rejto-actions-list">
+            <li>Díszuniformisban, Bradford vezérkari százados társaságában a „Radzeer” fedélzetén jelent meg Rangoonnál, és már puszta jelenlétével is azt a benyomást keltette, hogy itt a birodalom személyesen hajózik el a bennszülöttek előtt.</li><li>A Kölyök küldetésén maga is részt vett matróznak beosztva Bradford mellett, vagyis egy angol főrend meglehetős természetességgel vállalta, hogy rangjelzés ide vagy oda, belemenjen a piszkos és veszélyes vállalkozásba.</li><li>Az Irrawaddy vidékén a Főorvossal együtt dzsunkában menekült, majd amikor cirkálóra kerültek, azonnal észak felé indították a hajót, hogy a többieket összeszedjék; ebből is látszik, hogy nemcsak utasa, hanem súlyos tekintélyű résztvevője volt az eseményeknek.</li><li>A zűrzavaros történet során az ő neve szolgált hivatalos fedezetül és jelszóul is: a rádión azt jelentették, hogy a „Radzeer” Earl of Sudessexszel és Bradforddal Calcutta felé tart, mert egy ilyen név még a legkétesebb helyzetnek is ad némi birodalmi fényt.</li><li>Később hosszan tárgyalt a hadügyminiszterrel, sőt a királytól érkezett, ami világosan mutatja, hogy a kaland végén sem egyszerű túlélő maradt, hanem olyan ember, akinek a szava odafönt is többet nyomott, mint másnak egy teljes hadijelentés.</li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">szangvinikus / hedonista</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">szórakozás, kalandvágy, barátok támogatása</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 angol lord / világfi</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="edit leven" data-role="tom húga / álcázott matróz" data-contra="kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna." data-bio="tom leven húga, bátor londoni tisztviselőnő, aki zöldes arcbőrű, ijedt kamaszfiúnak maszkírozva, 'a kölyök' álnéven és harry leven hamis petróleumkutatási engedélyével veti bele magát a kikötői alvilág sűrűjébe. családi kötelezettségei okán habozás nélkül száll le a bűnözők és dezertőrök legmélyebb bugyraiba, s ott a bátyja megmentéséért olyan acélos gerinccel és elszántsággal áll helyt, ami bármely birodalmi gárdatisztnek becsületére válna.">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/Edit Leven.webp" data-name="Edit Leven" data-contra="Kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. Családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/Edit Leven.webp" alt="Edit Leven" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">Edit Leven</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier1">👑 Főszereplő</span>
+            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
+            <span class="badge badge-meta">👤 Nő • 20–24 év</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rejto-bio-block">
+        <p class="rejto-bio-text">Tom Leven húga, bátor londoni tisztviselőnő, aki zöldes arcbőrű, ijedt kamaszfiúnak maszkírozva, 'A Kölyök' álnéven és Harry Leven hamis petróleumkutatási engedélyével veti bele magát a kikötői alvilág sűrűjébe. Családi kötelezettségei okán habozás nélkül száll le a bűnözők és dezertőrök legmélyebb bugyraiba, s ott a bátyja megmentéséért olyan acélos gerinccel és elszántsággal áll helyt, ami bármely birodalmi gárdatisztnek becsületére válna.</p>
+      </div>
+      
+      <div class="rejto-audio-block">
+        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
+        <audio controls preload="none">
+          <source src="rejto/Edit Leven.wav" type="audio/wav">
+        </audio>
+      </div>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Tom Leven húga / Álcázott Kölyök</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. Családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna.</div></div>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">📜 Mit csinált a regényben?</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <ul class="rejto-actions-list">
+            <li>Álnéven, fiúnak öltözve csatlakozott a Morbitzer-féle kétes expedícióhoz, és Harry Leven nevére kiállított petróleumkutatási engedéllyel utazott, hogy a bátyja ügyének nyomába eredjen.</li><li>Rozsdással együtt első osztályon hajózott Colombóig a Vulkánián, miközben gyámoltalannak tűnő külsővel próbálta túlélni a társaságot, amelyben a jó modor ritkább volt, mint a tiszta lelkiismeret.</li><li>A hajón és a későbbi összeütközések során végig jelen volt a veszélyes vállalkozás sűrűjében; egy zűrzavaros akció után még sérülten, bevert homlokkal is talpra állt.</li><li>A Főorvossal együtt dzsunkán közelítette meg a cirkálót, lovaikat a városon kívül hagyták, csónakot kötöttek el, és észrevétlenül feljutottak a fedélzetre, ami nem éppen a hivatalos haditengerészeti beszállási rend volt.</li><li>Aláírta a Piszkos Fred, a kapitány és a Nagy Főnök körül szerveződő kalandos részvénytársaság megállapodását is, vagyis nemcsak sodródott az eseményekkel, hanem pénzzel és személyes kockázattal is beszállt a nagy, homályos vállalkozásba.</li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">melankolikus-kolerikus / bátor</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">bátyja megmentése és tisztázása</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 Tom húga / álcázott matróz</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="kvang generális" data-role="erődparancsnok / keleti hadúr" data-contra="egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek." data-bio="önerőből felkapaszkodott hátsó-indiai hadúr: egykori kikötői pecsenyesütő és csempész, aki bandavezérből emelkedett kőkemény erődparancsnokká. a tábornoki rangot nem császártól kapta, hanem maga akasztotta a nyakába, de olyan mozdulatlan, rideg tekintettel és vasfegyelemmel viseli, hogy a brit tisztek és a zsoldosok egyaránt kénytelenek meghajolni előtte; nem vágyik királyi trónra, csupán azt nem tűri, hogy a határvidékén bárki más rendelkezzen a fegyverek és a rizs felett.">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/Kvang generális.webp" data-name="Kvang generális" data-contra="Egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. Hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/Kvang generális.webp" alt="Kvang generális" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">Kvang generális</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier1">👑 Főszereplő</span>
+            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
+            <span class="badge badge-meta">👤 Férfi • 50–55 év</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rejto-bio-block">
+        <p class="rejto-bio-text">Önerőből felkapaszkodott hátsó-indiai hadúr: egykori kikötői pecsenyesütő és csempész, aki bandavezérből emelkedett kőkemény erődparancsnokká. A tábornoki rangot nem császártól kapta, hanem maga akasztotta a nyakába, de olyan mozdulatlan, rideg tekintettel és vasfegyelemmel viseli, hogy a brit tisztek és a zsoldosok egyaránt kénytelenek meghajolni előtte; nem vágyik királyi trónra, csupán azt nem tűri, hogy a határvidékén bárki más rendelkezzen a fegyverek és a rizs felett.</p>
+      </div>
+      
+      <div class="rejto-audio-block">
+        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
+        <audio controls preload="none">
+          <source src="rejto/Kvang generális.wav" type="audio/wav">
+        </audio>
+      </div>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Keleti hadúr / Erődparancsnok</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. Hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek.</div></div>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">📜 Mit csinált a regényben?</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <ul class="rejto-actions-list">
+            <li>Hitegette Morrison Snyder követeit, hogy a fegyverszállítmányt és az amerikai gerillákat a határra csalja, majd egyszerre elvágja az útjukat, kézre kerítse őket és megsemmisítse a muníciót.</li><li>Kvang táboránál döntő ütközet zajlott, ahol végül a herceg vette át a parancsnokságot, az ágyúkkal lövette a szorost, és ezzel Kvang hadereje a menekülési útvonal lezárásával győzelemhez jutott.</li><li>Az Earl embereivel tárgyalófélként lépett fel: visszautasította, hogy pénzért vagy koronáért bárki zsoldjába álljon, ugyanakkor világossá tette, hogy a maga módján rendet tud tartani a határvidéken.</li><li>Nála volt a két hiányzó rajz, amelyeket Helena Aldington lakásáról hozott el; ezzel fontos bizonyíték és a találmány sorsa is az ő kezén futott át, miközben már sejtette, hogy Bradford gazember.</li><li>A végjáték után az Earllal együtt intézte a helyzetet a parton, ahol a halottak és sebesültek ügye közben már az is kiderült, hogy Snydernek befellegzett, Bradford pedig megszökött, Kvang pedig egyszerűen talpon maradt.</li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">flegmatikus-kolerikus / szigorú</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">rendfenntartás, erőd védelme, politikai túlélés</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 erődparancsnok / keleti hadúr</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="rozsdás" data-role="légiós szökevény / gyóntató vezér" data-contra="kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a vöröskereszt jótékonysági báljára csekkolt be." data-bio="egy, a fizikai meggyőzés tudományában professzori fokozattal bíró, ex-légiós úriember, akinek az ökölcsapás pusztán a névjegy átadásának egy dinamikusabb, félreérthetetlen formája. bár hivatalos minőségében olykor dr. verhagen néven, mint a birmai álomkór akadémikus specialistája diszponál a folyosókon, belső morális iránytűje meglepő módon jóval stabilabb, mint azt az idegenlégióból való diszkrét távozása indokolná; a gyóntatók nevű jótékonysági-fegyelmező konzorcium elnöki székét pedig nem kinevezéssel, hanem a pofonok vitathatatlan statisztikájával nyerte el.">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/Rozsdás.webp" data-name="Rozsdás" data-contra="Kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. Ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a Vöröskereszt jótékonysági báljára csekkolt be." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/Rozsdás.webp" alt="Rozsdás" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">Rozsdás</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier1">👑 Főszereplő</span>
+            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
+            <span class="badge badge-meta">👤 Férfi • 22–26 év</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rejto-bio-block">
+        <p class="rejto-bio-text">Egy, a fizikai meggyőzés tudományában professzori fokozattal bíró, ex-légiós úriember, akinek az ökölcsapás pusztán a névjegy átadásának egy dinamikusabb, félreérthetetlen formája. Bár hivatalos minőségében olykor Dr. Verhagen néven, mint a birmai álomkór akadémikus specialistája diszponál a folyosókon, belső morális iránytűje meglepő módon jóval stabilabb, mint azt az idegenlégióból való diszkrét távozása indokolná; a Gyóntatók nevű jótékonysági-fegyelmező konzorcium elnöki székét pedig nem kinevezéssel, hanem a pofonok vitathatatlan statisztikájával nyerte el.</p>
+      </div>
+      
+      <div class="rejto-audio-block">
+        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
+        <audio controls preload="none">
+          <source src="rejto/Rozsdás.wav" type="audio/wav">
+        </audio>
+      </div>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Csavargó légiós szökevény / A Gyóntatók természetes vezetője</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. Ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a Vöröskereszt jótékonysági báljára csekkolt be.</div></div>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">📜 Mit csinált a regényben?</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <ul class="rejto-actions-list">
+            <li>A Gyóntatók élén már a kocsmai fronton is ő vitte a vezérszólamot: a Hóhérokkal szemben unott dohányzással és kész verekedési fegyelemmel állt fel, jelezve, hogy nála a béke csak a pofon előszobája.</li><li>Belekeveredett a cirkáló megszerzésének és működtetésének nagyvonalúan kétes, ám annál lendületesebb vállalkozásába, ahol hamis vagy éppen nevetségesen valótlan igazolványokkal lavírozott, és a társaság egyik mozgatóereje lett.</li><li>A hajón és a foglyok körül katonás rendet tartott: Púpost szállásmesternek nevezte ki, pontos utasításokat adott a rabok őrzésére, és világossá tette, hogy nála a fegyelem nem elvi kérdés, hanem testi tapasztalat.</li><li>A Kvang táboránál vívott harcban a matrózok egy részét csónakba vezette, két gépfegyverrel és puskákkal déli irányból partra szállt, majd sikeresen elvágta a menekülők útját, vagyis ott is azt csinálta, amihez a legjobban értett: időben odaért és rossz helyzetbe hozta az ellenfelet.</li><li>Nemcsak ütött, hanem gondolkodott is: bizalmi emberré vált Harry Leven szemében, meghallgatta a Leven család tragikus történetét, és jelenlétével, józan kétkedésével meg az ösztönös igazságérzetével fontos támasza lett a bonyolult ügy kibogozásának.</li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">szangvinikus-kolerikus / dacos</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">szabadság, igazságérzet, barátság</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 légiós szökevény / Gyóntató vezér</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="tom leven" data-role="mérnök / feltaláló" data-contra="idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál." data-bio="kivételes elméjű brit haditengerészeti kapitány és mérnök-feltaláló, az önműködő aknák és a csendes torpedó megalkotója, aki körül akkora kémtörténet kavargott, hogy dzsibuti felé személyazonosságot cserélt a szökevény gabriel amiens-szel. kívülről idegösszeomlás határán tántorgó, dadogó, zaklatott szellemi roncs, aki fehér ujjpercekkel szorítja magához a kék tervrajzait; ám e riadt küllem mögött egy megtörhetetlen akaratú, zseniális koponya rejtőzik, aki a tudományában és a becsületében nem ismer kompromisszumot.">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/Tom Leven.webp" data-name="Tom Leven" data-contra="Idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. Ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/Tom Leven.webp" alt="Tom Leven" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">Tom Leven</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier1">👑 Főszereplő</span>
+            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
+            <span class="badge badge-meta">👤 Férfi • 36–40 év</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rejto-bio-block">
+        <p class="rejto-bio-text">Kivételes elméjű brit haditengerészeti kapitány és mérnök-feltaláló, az önműködő aknák és a csendes torpedó megalkotója, aki körül akkora kémtörténet kavargott, hogy Dzsibuti felé személyazonosságot cserélt a szökevény Gabriel Amiens-szel. Kívülről idegösszeomlás határán tántorgó, dadogó, zaklatott szellemi roncs, aki fehér ujjpercekkel szorítja magához a kék tervrajzait; ám e riadt küllem mögött egy megtörhetetlen akaratú, zseniális koponya rejtőzik, aki a tudományában és a becsületében nem ismer kompromisszumot.</p>
+      </div>
+      
+      <div class="rejto-audio-block">
+        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
+        <audio controls preload="none">
+          <source src="rejto/Tom Leven.wav" type="audio/wav">
+        </audio>
+      </div>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Haditengerészeti mérnök / A csendes torpedó feltalálója</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. Ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál.</div></div>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">📜 Mit csinált a regényben?</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <ul class="rejto-actions-list">
+            <li>A találmánya miatt összetűzésbe került Helena Aldington körével, és a neve egy állítólagos gyilkossági ügy közepébe csúszott, ahol még a kalapja és a papírvágó kés is ellene vallott volna, ha tudnak beszélni.</li><li>A Dzsibutiba tartó úton személyazonosságot cserélt Gabriel Amiens-szel, s ezzel olyan bonyodalmat indított el, amelyben a hatóságok, a légió és a félvilág egyaránt rossz embert keresett rossz néven.</li><li>Rangoon felé sodródva ő lett az egyik kulcsfigura a cirkáló körüli nagy játszmában: mindenki őt akarta megszerezni, elrejteni vagy felhasználni, mert a találmánya többet ért, mint sok ember teljes becsülete együttvéve.</li><li>A végén teljesen rehabilitálták, rangban előléptették és ki is tüntették, vagyis hivatalosan kiderült, hogy nem közönséges szélhámos, hanem elsőrangú koponya volt.</li><li>Angliába azonban nem tért vissza: alezredesként az általa pacifikált terület kormányzója lett, ami Rejtő világában majdnem olyan szép karrier, mint életben maradni.</li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">melankolikus / neurotikus</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">becsületének visszaszerzése, túlélés</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 mérnök / feltaláló</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
         </div>
       </div>
     </div>
@@ -8659,6 +9499,54 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       </div>
     </div>
 
+    <div class="actor-card rejto-card" data-tier="tier2" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="főszerkesztő" data-role="egy nagy lap főszerkesztője" data-contra="a nyilvánosság fontosságára hivatkozik, miközben nyíltan mesterséges érzelmi hatáskeltést és pontatlanságot erőltet" data-bio="">
+      <div class="rejto-card-header">
+        <div class="photo-frame rejto-photo-frame" data-img="rejto/Főszerkesztő.webp" data-name="Főszerkesztő" data-contra="a nyilvánosság fontosságára hivatkozik, miközben nyíltan mesterséges érzelmi hatáskeltést és pontatlanságot erőltet" onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
+          <img src="rejto/Főszerkesztő.webp" alt="Főszerkesztő" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
+          <span class="zoom-hint">🔍 Nagyítás</span>
+        </div>
+        
+        <div class="rejto-header-details">
+          <div class="actor-name rejto-char-name">Főszerkesztő</div>
+          <div class="badge-row rejto-badge-row">
+            <span class="badge badge-tier2">👥 Mellékszereplő</span>
+            <span class="badge badge-book">📖 Piszkos Fred közbelép</span>
+            <span class="badge badge-meta">👤 Férfi • felnőtt</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">null</div></div><div class="meta-row"><div class="meta-label">Vonások & Arc</div><div class="meta-val">feszült, siető, energikus jelenlét következtethető</div></div><div class="meta-row"><div class="meta-label">Öltözet & Kiegészítők</div><div class="meta-val">sajtóvezetői városi öltözet feltételezhető, de a szöveg nem részletezi</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">a nyilvánosság fontosságára hivatkozik, miközben nyíltan mesterséges érzelmi hatáskeltést és pontatlanságot erőltet</div></div>
+        </div>
+      </details>
+      
+      
+      <details class="rejto-accordion">
+        <summary class="rejto-acc-summary">
+          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="rejto-acc-body">
+          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">indulatos, türelmetlen, erősen domináns és eredménykényszeres</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">['a lapzárta azonnali teljesítése', 'figyelemfelkeltő, eladható hír előállítása', 'szerkesztői tekintélyének érvényesítése', 'a sajtókampány irányítása']</div></div>
+        </div>
+      </details>
+      
+      <div class="rejto-tech-footer">
+        <div class="tech-tags-list">
+          <span class="tech-tag" title="Szereptípus">🎭 egy nagy lap főszerkesztője</span><span class="tech-tag" title="Szereplési statisztika">📊 2 sor • 109 szó</span>
+        </div>
+      </div>
+    </div>
+
     <div class="actor-card rejto-card" data-tier="tier2" data-book="kozbelep" data-audio="no-audio" data-master="normal" data-name="brogles" data-role="vízvezeték-, gáz- és jégszekrényszerelő; a házmester öccse" data-contra="takes belligerent pride in the inviolability of his warehouse, yet easily tricked by the most absurd improvised stories." data-bio="">
       <div class="rejto-card-header">
         <div class="photo-frame rejto-photo-frame" data-img="rejto/Brogles.webp" data-name="Brogles" data-contra="Takes belligerent pride in the inviolability of his warehouse, yet easily tricked by the most absurd improvised stories." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
@@ -8703,482 +9591,6 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       <div class="rejto-tech-footer">
         <div class="tech-tags-list">
           <span class="tech-tag" title="Szereptípus">🎭 vízvezeték-, gáz- és jégszekrényszerelő; a házmester öccse</span><span class="tech-tag" title="Szereplési statisztika">📊 1 sor • 41 szó</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="a bunkó" data-role="kikötői nehézfiú / gyóntató" data-contra="ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. a valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén." data-bio="a hírhedt gyóntatók harmadik oszlopa, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek könyvel el, mivel a kabátja alatt négyszeresen összecsavart, vasnehezékkel ellátott drótkötéllel szokott társalgást kezdeményezni. a valóságban azonban képzett hajótávírász, aki a morzejeleket és a rádióadót olyan szakrális áhítattal kezeli, mint a falusi kántor az orgonát; a puszta mechanikus rombolás mögött meglepő tengeri szaktudás és fegyelem működik.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/A Bunkó.webp" data-name="A Bunkó" data-contra="Ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. A valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/A Bunkó.webp" alt="A Bunkó" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">A Bunkó</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier1">👑 Főszereplő</span>
-            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
-            <span class="badge badge-meta">👤 Férfi • 42–46 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">A hírhedt Gyóntatók harmadik oszlopa, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek könyvel el, mivel a kabátja alatt négyszeresen összecsavart, vasnehezékkel ellátott drótkötéllel szokott társalgást kezdeményezni. A valóságban azonban képzett hajótávírász, aki a morzejeleket és a rádióadót olyan szakrális áhítattal kezeli, mint a falusi kántor az orgonát; a puszta mechanikus rombolás mögött meglepő tengeri szaktudás és fegyelem működik.</p>
-      </div>
-      
-      <div class="rejto-audio-block">
-        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
-        <audio controls preload="none">
-          <source src="rejto/A Bunkó.wav" type="audio/wav">
-        </audio>
-      </div>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">A harmadik Gyóntató / Kikötői óriás</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. A valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>A Gyóntatók egyik oszlopos tagjaként jelen volt a hírhedt bandában, amely két csaló francia matrózt „meggyóntatott”, majd eltüntetett, s ezzel kiérdemelte a társaság beszédes nevét.</li><li>A kocsmabeli nagy verekedésnél a maga szelíd módján utat nyitott a meneküléshez: egy nyolcvankilós hivatásos néger verekedőt teljes terjedelmében belevágott a söntés ajtajába, úgyhogy ajtó, üveg és ember egyszerre adta meg magát.</li><li>A részvénytársaságba is bevették, és hamisított matrózigazolvánnyal utazott tovább, miután kiderült róla, hogy hajdan távírdász volt, nem csak ütőszerszám.</li><li>Amikor a Radzeernek ki kellett játszania az angol cirkálókat, egy elkötött dzsunkában ő kezelte az átszerelt hajórádiót, és társaival a part menti dzsunkák közé vegyülve sikeresen leadta a szükséges jeleket.</li><li>A menekülés és bujkálás napjaiban a tengeren kóborolva, a csónak kunyhójába zárva is helytállt, és bebizonyította, hogy a Bunkó név mögött nemcsak vasdarab, hanem használható szakértelem is lapul.</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">flegmatikus / erőt sugárzó</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">a Gyóntatók védelme, túlélés</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 kikötői nehézfiú / gyóntató</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="bradford" data-role="brit százados / konspirátor" data-contra="a feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. e makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút hátsó-indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál." data-bio="egy nagy formátumú nemzetközi mesterkém, aki tizennyolc esztendőn át bitorolta az igazi, bokharában nyomtalanul eltűnt bradford angol tiszt személyazonosságát. hibátlan tiszti modorával, vezérkari papírjaival és műszaki képzettségével egészen a brit hadvezetés csúcsáig kúszott fel, miközben titokban a japán hírszerzésnek szállította a katonai titkokat; a feddhetetlen brit úriember hűvös teájának felszíne alatt egy rideg fejű áruló lapul, aki habozás nélkül lángba borítana egy kontinenst.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/Bradford.webp" data-name="Bradford" data-contra="A feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. E makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút Hátsó-Indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/Bradford.webp" alt="Bradford" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">Bradford</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier1">👑 Főszereplő</span>
-            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
-            <span class="badge badge-meta">👤 Férfi • 38–42 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Egy nagy formátumú nemzetközi mesterkém, aki tizennyolc esztendőn át bitorolta az igazi, Bokharában nyomtalanul eltűnt Bradford angol tiszt személyazonosságát. Hibátlan tiszti modorával, vezérkari papírjaival és műszaki képzettségével egészen a brit hadvezetés csúcsáig kúszott fel, miközben titokban a japán hírszerzésnek szállította a katonai titkokat; a feddhetetlen brit úriember hűvös teájának felszíne alatt egy rideg fejű áruló lapul, aki habozás nélkül lángba borítana egy kontinenst.</p>
-      </div>
-      
-      <div class="rejto-audio-block">
-        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
-        <audio controls preload="none">
-          <source src="rejto/Bradford.wav" type="audio/wav">
-        </audio>
-      </div>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Brit vezérkari tiszt / Titkos intrikus</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. E makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút Hátsó-Indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>A "Radzeer" elsüllyedése után tovább játszotta a makulátlan vezérkari századost, irataival és fellépésével mindenkit megtévesztve, sőt még a parancsnok előtt is hitelesen igazolta magát.</li><li>Foglyul ejtett helyzetében a hercegnek feltárta igazi történetét: hogyan bitorolta az eredeti Bradford nevét, miként épült be az angol hadseregbe, és hogyan dolgozott Snyder Morrisonnal egy titkos hálózatban.</li><li>A háttérből részt vett a Hátsó-Indiát lángba borítani képes fegyverszállítmány és háborús összeesküvés szervezésében, ezért Kvang már bizonyított gazemberként kezelte, és ellene fordult.</li><li>Jellegzetes fölénnyel, szemrehányó angol úri modorban viselkedett még a legkétesebb pillanatokban is: széket állított a foglyok elé, lovaglóülésben telepedett rá, és úgy vallott, mintha csak egy klubban panaszkodna a rossz teára.</li><li>A végső összecsapások után nyoma veszett egy időre, miközben Snyder hulláját megtalálták, s ez csak még jobban kiemelte róla azt a kellemetlen igazságot, hogy az efféle kémek ritkán ott vannak, ahol az ember legszívesebben elszámoltatná őket.</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">szangvinikus / hidegvérű intrikus</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">hatalom, a cirkáló titkának megszerzése</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 brit százados / konspirátor</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="earl of sudessex" data-role="angol lord / világfi" data-contra="a brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is." data-bio="valódi királyi vérből származó brit főúr, őfelsége házi ezredének huszonkét éves ezredese, aki külsőre legfeljebb piperkőc, szalonokba való betegeskedő díszpéldánynak hat. ám amint a trópusi fogság és a felkelők pokla zúdul a nyakába, kiderül, hogy a főnemesi modor nála nem máz: fölényes derűvel, megingathatatlan hidegvérrel és gyilkos iróniával viseli a legvéresebb viszontagságokat is, bizonyítva, hogy az igazi arisztokrata a veszedelemben válik a legveszélyesebb katonává.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/Earl of Sudessex.webp" data-name="Earl of Sudessex" data-contra="A brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. Ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/Earl of Sudessex.webp" alt="Earl of Sudessex" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">Earl of Sudessex</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier1">👑 Főszereplő</span>
-            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
-            <span class="badge badge-meta">👤 Férfi • 42–48 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Valódi királyi vérből származó brit főúr, őfelsége házi ezredének huszonkét éves ezredese, aki külsőre legfeljebb piperkőc, szalonokba való betegeskedő díszpéldánynak hat. Ám amint a trópusi fogság és a felkelők pokla zúdul a nyakába, kiderül, hogy a főnemesi modor nála nem máz: fölényes derűvel, megingathatatlan hidegvérrel és gyilkos iróniával viseli a legvéresebb viszontagságokat is, bizonyítva, hogy az igazi arisztokrata a veszedelemben válik a legveszélyesebb katonává.</p>
-      </div>
-      
-      <div class="rejto-audio-block">
-        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
-        <audio controls preload="none">
-          <source src="rejto/Earl of Sudessex.wav" type="audio/wav">
-        </audio>
-      </div>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Angol főnemes / Kalandvágyó világutazó</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. Ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>Díszuniformisban, Bradford vezérkari százados társaságában a „Radzeer” fedélzetén jelent meg Rangoonnál, és már puszta jelenlétével is azt a benyomást keltette, hogy itt a birodalom személyesen hajózik el a bennszülöttek előtt.</li><li>A Kölyök küldetésén maga is részt vett matróznak beosztva Bradford mellett, vagyis egy angol főrend meglehetős természetességgel vállalta, hogy rangjelzés ide vagy oda, belemenjen a piszkos és veszélyes vállalkozásba.</li><li>Az Irrawaddy vidékén a Főorvossal együtt dzsunkában menekült, majd amikor cirkálóra kerültek, azonnal észak felé indították a hajót, hogy a többieket összeszedjék; ebből is látszik, hogy nemcsak utasa, hanem súlyos tekintélyű résztvevője volt az eseményeknek.</li><li>A zűrzavaros történet során az ő neve szolgált hivatalos fedezetül és jelszóul is: a rádión azt jelentették, hogy a „Radzeer” Earl of Sudessexszel és Bradforddal Calcutta felé tart, mert egy ilyen név még a legkétesebb helyzetnek is ad némi birodalmi fényt.</li><li>Később hosszan tárgyalt a hadügyminiszterrel, sőt a királytól érkezett, ami világosan mutatja, hogy a kaland végén sem egyszerű túlélő maradt, hanem olyan ember, akinek a szava odafönt is többet nyomott, mint másnak egy teljes hadijelentés.</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">szangvinikus / hedonista</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">szórakozás, kalandvágy, barátok támogatása</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 angol lord / világfi</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="edit leven" data-role="tom húga / álcázott matróz" data-contra="kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna." data-bio="tom leven húga, bátor londoni tisztviselőnő, aki zöldes arcbőrű, ijedt kamaszfiúnak maszkírozva, 'a kölyök' álnéven és harry leven hamis petróleumkutatási engedélyével veti bele magát a kikötői alvilág sűrűjébe. családi kötelezettségei okán habozás nélkül száll le a bűnözők és dezertőrök legmélyebb bugyraiba, s ott a bátyja megmentéséért olyan acélos gerinccel és elszántsággal áll helyt, ami bármely birodalmi gárdatisztnek becsületére válna.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/Edit Leven.webp" data-name="Edit Leven" data-contra="Kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. Családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/Edit Leven.webp" alt="Edit Leven" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">Edit Leven</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier1">👑 Főszereplő</span>
-            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
-            <span class="badge badge-meta">👤 Nő • 20–24 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Tom Leven húga, bátor londoni tisztviselőnő, aki zöldes arcbőrű, ijedt kamaszfiúnak maszkírozva, 'A Kölyök' álnéven és Harry Leven hamis petróleumkutatási engedélyével veti bele magát a kikötői alvilág sűrűjébe. Családi kötelezettségei okán habozás nélkül száll le a bűnözők és dezertőrök legmélyebb bugyraiba, s ott a bátyja megmentéséért olyan acélos gerinccel és elszántsággal áll helyt, ami bármely birodalmi gárdatisztnek becsületére válna.</p>
-      </div>
-      
-      <div class="rejto-audio-block">
-        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
-        <audio controls preload="none">
-          <source src="rejto/Edit Leven.wav" type="audio/wav">
-        </audio>
-      </div>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Tom Leven húga / Álcázott Kölyök</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. Családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>Álnéven, fiúnak öltözve csatlakozott a Morbitzer-féle kétes expedícióhoz, és Harry Leven nevére kiállított petróleumkutatási engedéllyel utazott, hogy a bátyja ügyének nyomába eredjen.</li><li>Rozsdással együtt első osztályon hajózott Colombóig a Vulkánián, miközben gyámoltalannak tűnő külsővel próbálta túlélni a társaságot, amelyben a jó modor ritkább volt, mint a tiszta lelkiismeret.</li><li>A hajón és a későbbi összeütközések során végig jelen volt a veszélyes vállalkozás sűrűjében; egy zűrzavaros akció után még sérülten, bevert homlokkal is talpra állt.</li><li>A Főorvossal együtt dzsunkán közelítette meg a cirkálót, lovaikat a városon kívül hagyták, csónakot kötöttek el, és észrevétlenül feljutottak a fedélzetre, ami nem éppen a hivatalos haditengerészeti beszállási rend volt.</li><li>Aláírta a Piszkos Fred, a kapitány és a Nagy Főnök körül szerveződő kalandos részvénytársaság megállapodását is, vagyis nemcsak sodródott az eseményekkel, hanem pénzzel és személyes kockázattal is beszállt a nagy, homályos vállalkozásba.</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">melankolikus-kolerikus / bátor</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">bátyja megmentése és tisztázása</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 Tom húga / álcázott matróz</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="kvang generális" data-role="erődparancsnok / keleti hadúr" data-contra="egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek." data-bio="önerőből felkapaszkodott hátsó-indiai hadúr: egykori kikötői pecsenyesütő és csempész, aki bandavezérből emelkedett kőkemény erődparancsnokká. a tábornoki rangot nem császártól kapta, hanem maga akasztotta a nyakába, de olyan mozdulatlan, rideg tekintettel és vasfegyelemmel viseli, hogy a brit tisztek és a zsoldosok egyaránt kénytelenek meghajolni előtte; nem vágyik királyi trónra, csupán azt nem tűri, hogy a határvidékén bárki más rendelkezzen a fegyverek és a rizs felett.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/Kvang generális.webp" data-name="Kvang generális" data-contra="Egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. Hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/Kvang generális.webp" alt="Kvang generális" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">Kvang generális</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier1">👑 Főszereplő</span>
-            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
-            <span class="badge badge-meta">👤 Férfi • 50–55 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Önerőből felkapaszkodott hátsó-indiai hadúr: egykori kikötői pecsenyesütő és csempész, aki bandavezérből emelkedett kőkemény erődparancsnokká. A tábornoki rangot nem császártól kapta, hanem maga akasztotta a nyakába, de olyan mozdulatlan, rideg tekintettel és vasfegyelemmel viseli, hogy a brit tisztek és a zsoldosok egyaránt kénytelenek meghajolni előtte; nem vágyik királyi trónra, csupán azt nem tűri, hogy a határvidékén bárki más rendelkezzen a fegyverek és a rizs felett.</p>
-      </div>
-      
-      <div class="rejto-audio-block">
-        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
-        <audio controls preload="none">
-          <source src="rejto/Kvang generális.wav" type="audio/wav">
-        </audio>
-      </div>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Keleti hadúr / Erődparancsnok</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. Hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>Hitegette Morrison Snyder követeit, hogy a fegyverszállítmányt és az amerikai gerillákat a határra csalja, majd egyszerre elvágja az útjukat, kézre kerítse őket és megsemmisítse a muníciót.</li><li>Kvang táboránál döntő ütközet zajlott, ahol végül a herceg vette át a parancsnokságot, az ágyúkkal lövette a szorost, és ezzel Kvang hadereje a menekülési útvonal lezárásával győzelemhez jutott.</li><li>Az Earl embereivel tárgyalófélként lépett fel: visszautasította, hogy pénzért vagy koronáért bárki zsoldjába álljon, ugyanakkor világossá tette, hogy a maga módján rendet tud tartani a határvidéken.</li><li>Nála volt a két hiányzó rajz, amelyeket Helena Aldington lakásáról hozott el; ezzel fontos bizonyíték és a találmány sorsa is az ő kezén futott át, miközben már sejtette, hogy Bradford gazember.</li><li>A végjáték után az Earllal együtt intézte a helyzetet a parton, ahol a halottak és sebesültek ügye közben már az is kiderült, hogy Snydernek befellegzett, Bradford pedig megszökött, Kvang pedig egyszerűen talpon maradt.</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">flegmatikus-kolerikus / szigorú</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">rendfenntartás, erőd védelme, politikai túlélés</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 erődparancsnok / keleti hadúr</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="rozsdás" data-role="légiós szökevény / gyóntató vezér" data-contra="kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a vöröskereszt jótékonysági báljára csekkolt be." data-bio="egy, a fizikai meggyőzés tudományában professzori fokozattal bíró, ex-légiós úriember, akinek az ökölcsapás pusztán a névjegy átadásának egy dinamikusabb, félreérthetetlen formája. bár hivatalos minőségében olykor dr. verhagen néven, mint a birmai álomkór akadémikus specialistája diszponál a folyosókon, belső morális iránytűje meglepő módon jóval stabilabb, mint azt az idegenlégióból való diszkrét távozása indokolná; a gyóntatók nevű jótékonysági-fegyelmező konzorcium elnöki székét pedig nem kinevezéssel, hanem a pofonok vitathatatlan statisztikájával nyerte el.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/Rozsdás.webp" data-name="Rozsdás" data-contra="Kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. Ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a Vöröskereszt jótékonysági báljára csekkolt be." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/Rozsdás.webp" alt="Rozsdás" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">Rozsdás</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier1">👑 Főszereplő</span>
-            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
-            <span class="badge badge-meta">👤 Férfi • 22–26 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Egy, a fizikai meggyőzés tudományában professzori fokozattal bíró, ex-légiós úriember, akinek az ökölcsapás pusztán a névjegy átadásának egy dinamikusabb, félreérthetetlen formája. Bár hivatalos minőségében olykor Dr. Verhagen néven, mint a birmai álomkór akadémikus specialistája diszponál a folyosókon, belső morális iránytűje meglepő módon jóval stabilabb, mint azt az idegenlégióból való diszkrét távozása indokolná; a Gyóntatók nevű jótékonysági-fegyelmező konzorcium elnöki székét pedig nem kinevezéssel, hanem a pofonok vitathatatlan statisztikájával nyerte el.</p>
-      </div>
-      
-      <div class="rejto-audio-block">
-        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
-        <audio controls preload="none">
-          <source src="rejto/Rozsdás.wav" type="audio/wav">
-        </audio>
-      </div>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Csavargó légiós szökevény / A Gyóntatók természetes vezetője</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. Ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a Vöröskereszt jótékonysági báljára csekkolt be.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>A Gyóntatók élén már a kocsmai fronton is ő vitte a vezérszólamot: a Hóhérokkal szemben unott dohányzással és kész verekedési fegyelemmel állt fel, jelezve, hogy nála a béke csak a pofon előszobája.</li><li>Belekeveredett a cirkáló megszerzésének és működtetésének nagyvonalúan kétes, ám annál lendületesebb vállalkozásába, ahol hamis vagy éppen nevetségesen valótlan igazolványokkal lavírozott, és a társaság egyik mozgatóereje lett.</li><li>A hajón és a foglyok körül katonás rendet tartott: Púpost szállásmesternek nevezte ki, pontos utasításokat adott a rabok őrzésére, és világossá tette, hogy nála a fegyelem nem elvi kérdés, hanem testi tapasztalat.</li><li>A Kvang táboránál vívott harcban a matrózok egy részét csónakba vezette, két gépfegyverrel és puskákkal déli irányból partra szállt, majd sikeresen elvágta a menekülők útját, vagyis ott is azt csinálta, amihez a legjobban értett: időben odaért és rossz helyzetbe hozta az ellenfelet.</li><li>Nemcsak ütött, hanem gondolkodott is: bizalmi emberré vált Harry Leven szemében, meghallgatta a Leven család tragikus történetét, és jelenlétével, józan kétkedésével meg az ösztönös igazságérzetével fontos támasza lett a bonyolult ügy kibogozásának.</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">szangvinikus-kolerikus / dacos</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">szabadság, igazságérzet, barátság</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 légiós szökevény / Gyóntató vezér</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier1" data-book="mindketto" data-audio="has-audio" data-master="normal" data-name="tom leven" data-role="mérnök / feltaláló" data-contra="idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál." data-bio="kivételes elméjű brit haditengerészeti kapitány és mérnök-feltaláló, az önműködő aknák és a csendes torpedó megalkotója, aki körül akkora kémtörténet kavargott, hogy dzsibuti felé személyazonosságot cserélt a szökevény gabriel amiens-szel. kívülről idegösszeomlás határán tántorgó, dadogó, zaklatott szellemi roncs, aki fehér ujjpercekkel szorítja magához a kék tervrajzait; ám e riadt küllem mögött egy megtörhetetlen akaratú, zseniális koponya rejtőzik, aki a tudományában és a becsületében nem ismer kompromisszumot.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/Tom Leven.webp" data-name="Tom Leven" data-contra="Idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. Ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/Tom Leven.webp" alt="Tom Leven" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">Tom Leven</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier1">👑 Főszereplő</span>
-            <span class="badge badge-book">📖 az_elveszett_cirkalo</span>
-            <span class="badge badge-meta">👤 Férfi • 36–40 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">Kivételes elméjű brit haditengerészeti kapitány és mérnök-feltaláló, az önműködő aknák és a csendes torpedó megalkotója, aki körül akkora kémtörténet kavargott, hogy Dzsibuti felé személyazonosságot cserélt a szökevény Gabriel Amiens-szel. Kívülről idegösszeomlás határán tántorgó, dadogó, zaklatott szellemi roncs, aki fehér ujjpercekkel szorítja magához a kék tervrajzait; ám e riadt küllem mögött egy megtörhetetlen akaratú, zseniális koponya rejtőzik, aki a tudományában és a becsületében nem ismer kompromisszumot.</p>
-      </div>
-      
-      <div class="rejto-audio-block">
-        <div class="rejto-audio-label">🎙️ Szinkronhang & akusztikai profil</div>
-        <audio controls preload="none">
-          <source src="rejto/Tom Leven.wav" type="audio/wav">
-        </audio>
-      </div>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">Haditengerészeti mérnök / A csendes torpedó feltalálója</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">Idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. Ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>A találmánya miatt összetűzésbe került Helena Aldington körével, és a neve egy állítólagos gyilkossági ügy közepébe csúszott, ahol még a kalapja és a papírvágó kés is ellene vallott volna, ha tudnak beszélni.</li><li>A Dzsibutiba tartó úton személyazonosságot cserélt Gabriel Amiens-szel, s ezzel olyan bonyodalmat indított el, amelyben a hatóságok, a légió és a félvilág egyaránt rossz embert keresett rossz néven.</li><li>Rangoon felé sodródva ő lett az egyik kulcsfigura a cirkáló körüli nagy játszmában: mindenki őt akarta megszerezni, elrejteni vagy felhasználni, mert a találmánya többet ért, mint sok ember teljes becsülete együttvéve.</li><li>A végén teljesen rehabilitálták, rangban előléptették és ki is tüntették, vagyis hivatalosan kiderült, hogy nem közönséges szélhámos, hanem elsőrangú koponya volt.</li><li>Angliába azonban nem tért vissza: alezredesként az általa pacifikált terület kormányzója lett, ami Rejtő világában majdnem olyan szép karrier, mint életben maradni.</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">melankolikus / neurotikus</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">becsületének visszaszerzése, túlélés</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 mérnök / feltaláló</span><span class="tech-tag tech-audio" title="Szinkronhang készleten">🎙️ Mesterhang</span>
         </div>
       </div>
     </div>
@@ -9481,68 +9893,6 @@ Méltóságteljes, meleg tónusú, érett, klasszikus színpadi és rádióját�
       <div class="rejto-tech-footer">
         <div class="tech-tags-list">
           <span class="tech-tag" title="Szereptípus">🎭 amerikai zsoldos és fegyvercsempész martalócvezér, akit a japán titkosszolgálat pénzel a háttérben</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="actor-card rejto-card" data-tier="tier2" data-book="mindketto" data-audio="no-audio" data-master="normal" data-name="főszerkesztő" data-role="főszerkesztő" data-contra="a sajtó abszolút hatalmát hirdeti, de egy fillér nélkül kénytelen lapot csinálni." data-bio="a helyi bulvársajtó sokat látott, idegbeteg ura, aki a legképtelenebb kikötői rémtörténetekből is képes háromhasábos vezércikket kanyarítani.">
-      <div class="rejto-card-header">
-        <div class="photo-frame rejto-photo-frame" data-img="rejto/Főszerkesztő.webp" data-name="Főszerkesztő" data-contra="A sajtó abszolút hatalmát hirdeti, de egy fillér nélkül kénytelen lapot csinálni." onclick="handlePhotoFrameClick(this)" title="Kattints a nagyításhoz!">
-          <img src="rejto/Főszerkesztő.webp" alt="Főszerkesztő" onerror="this.parentElement.innerHTML = getPlaceholderHtml();">
-          <span class="zoom-hint">🔍 Nagyítás</span>
-        </div>
-        
-        <div class="rejto-header-details">
-          <div class="actor-name rejto-char-name">Főszerkesztő</div>
-          <div class="badge-row rejto-badge-row">
-            <span class="badge badge-tier2">👥 Mellékszereplő</span>
-            <span class="badge badge-book">📖 rejto_korpusz</span>
-            <span class="badge badge-meta">👤 Férfi • 50–60 év</span>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="rejto-bio-block">
-        <p class="rejto-bio-text">A helyi bulvársajtó sokat látott, idegbeteg ura, aki a legképtelenebb kikötői rémtörténetekből is képes háromhasábos vezércikket kanyarítani.</p>
-      </div>
-      
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">👤 Megjelenés és külső jegyek</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Testalkat</div><div class="meta-val meta-val-highlight">újságíró / lapkiadó főszerkesztő</div></div><div class="meta-row"><div class="meta-label">Fő ellentmondás</div><div class="meta-val meta-val-contra">A sajtó abszolút hatalmát hirdeti, de egy fillér nélkül kénytelen lapot csinálni.</div></div>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">📜 Mit csinált a regényben?</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <ul class="rejto-actions-list">
-            <li>Szenzációt keresett</li><li>Álriportot rendelt meg</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="rejto-accordion">
-        <summary class="rejto-acc-summary">
-          <span class="acc-title">🧠 Jellem és pszichológiai profil</span>
-          <span class="acc-chevron">▾</span>
-        </summary>
-        <div class="rejto-acc-body">
-          <div class="meta-row"><div class="meta-label">Temperamentum</div><div class="meta-val">ingerlékeny, cinikus, állandóan rohanó</div></div><div class="meta-row"><div class="meta-label">Belső motivációk</div><div class="meta-val">szenzációhajhászás, határidők betartása</div></div>
-        </div>
-      </details>
-      
-      <div class="rejto-tech-footer">
-        <div class="tech-tags-list">
-          <span class="tech-tag" title="Szereptípus">🎭 Főszerkesztő</span>
         </div>
       </div>
     </div>
