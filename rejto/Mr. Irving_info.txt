@@ -29,3 +29,21 @@ Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
 
 Tisztított Referencia (TTS / Kényszerített Illesztő):
 – Jóember, mondja meg nekem: mi történik, ha új csavargó érkezik a kikötőbe? – Nem helyes, hogy mindent eltitkolnak előlem! A fiú megigazítja a kesztyűjét, és egyenesebbre húzza magát. – Hogy juthat el az ember a klubországba? – Uram, mellőzzük a tréfát; én MOST azonnal Tüskés Vaneket keresem!
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+St. Antonio de Vicenzo y Galapagos uralkodó főherceg, amennyiben ezen titulus a Boldogság Szigetek trónöröklési protokolljában még érvényesíthető. Valójában egy követségi svindli és egy Wilbour Theodor nevű fregattkapitány biológiai produktuma, amiről a fiatalember szerencsére mit sem sejt; kifelé egy tuberkulózisra hajlamos, féltve nevelt dinasztikus dísztárgy, befelé viszont egy megrögzött hebehurgya, akit a tengeri kalózok társasága jobban felüdít, mint egy tizenkét fogásos protokolláris díszebéd.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Fizikailag diszkréten alultáplált, arisztokratikus származású fiatalúr, aki ahelyett, hogy a családi ezüstkészlet leltározásával töltené idejét, patologikus vonzalmat táplál a kikötői illetlenségek iránt. A civilizáció kényelmét csupán kellemetlen előjátéknak tekinti az igazi élethez, amely véleménye szerint ott kezdődik, ahol az ember inggombjait már elragadta az árapály.
+
+Főbb cselekedetek a regényben:
+  • Inkognitóban, „Mr. Irving” néven utazott, mert körülötte annyi volt az összeesküvés, hogy a saját nevét is csak életbiztosítás mellett volt tanácsos kimondani.
+  • Kiszállás és kavarodás közben úgy keveredett a közönséges élet sűrűjébe, mint herceg a matrózkocsmába: sárosan, szakadtan, rendőri kísérettel került a St. Antonio-kastély kapujához, ahol kénytelen volt saját magát igazolni.
+  • Hidegvérrel közölte a lakájjal és mindenkivel, aki hallani akarta, hogy ő az igazi St. Antonio, a másik csak helyettesíti; ez körülbelül olyan hatást tett, mint amikor egy csavargó azt állítja, hogy övé a palota.
+  • Léte és személye körül végig ott lebegett a halálos politikai veszély: ha az ellenfelei felismerik, hogy az igazi uralkodó került a kezük közé, habozás nélkül elteszik láb alól.
+  • A regény egyik mulatságos alaphelyzetét éppen az adta, hogy ezt a nagy értékű uralkodót szinte potompénzért lehetett ide-oda adni-venni, miközben ő maga szemmel látható élvezettel szagolgatta a szabadság, a zűrzavar és az illetlenül közönséges élet levegőjét.

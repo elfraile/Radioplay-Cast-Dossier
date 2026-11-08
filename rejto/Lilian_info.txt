@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_l7lnemlnp5xi (V21_12_LILIAN_var1_voice_l7lnemlnp5xi.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Dr. Hiller leánya, előkelő és művelt fiatal hölgy, aki a fedélzeten csupán dísznek tetszik, valójában azonban álruhás hadvezér szoknyában. Éles eszével, színlelt naivitásával és villámgyors helyzetfelismerésével úgy sakkozik a tengeri csirkefogók és kémek között, hogy azok észre sem veszik a mattot; külső könnyedsége és fondorlatai mögött azonban valódi szenvedés és megingathatatlan érzelmi hűség rejtőzik.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Könnyelmű, szélhámoskodásra hajlamos hölgy, aki a hazugságokat és a fondorlatos szerepjátékokat a mindennapi toilette természetes részének tekinti. E zűrzavaros fondorlatok mögött azonban mély és sebezhető érzelmek rejtőznek; a megtévesztés számára nem bűn, hanem az érzelmi túlélés egyetlen lehetséges diplomáciai eszköze.
+
+Főbb cselekedetek a regényben:
+  • A hajón folyton rejtélyt csinált magából: hol előkerült, hol nyomtalanul eltűnt, úgyhogy Theo keresztül-kasul bolyongott utána a fedélzeten, a kamrákban és a fedélközben is.
+  • Álruhában és szerepjátékban is otthonosan mozgott; egyszer Gustav Bahrnéként bukkant fel, vagyis úgy cserélgette a látszatot, mint más a kesztyűt, csak nála ez veszélyesebb volt.
+  • Finom, de félreérthetetlen jelzésekkel irányította Theót: az asztal alatt megérintette a kezét, tekintetével bátorított, majd érzelmi feszültséggel és titkolózással még jobban magához láncolta.
+  • A nyilvánosság és a feltűnés elől makacsul kitért: nem nyilatkozott, nem szállt le a hajóról, vagyis akkor is cselekedett, amikor épp semmit sem volt hajlandó mondani.
+  • Jeleneteiben a könnyed szeszély és a valódi indulat keveredett: majommal, retiküllel, hirtelen mozdulatokkal és váratlan közelséggel egyszerre volt komikus és veszedelmesen hatásos.

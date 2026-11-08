@@ -24,3 +24,21 @@ Generált Variációk:
 Kiválasztott Variáció: Var 1
 ElevenLabs Voice ID: lm9A0TjEnJH52PyHgISO
 Státusz: APPROVED_MASTER
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Valódi királyi vérből származó brit főúr, őfelsége házi ezredének huszonkét éves ezredese, aki külsőre legfeljebb piperkőc, szalonokba való betegeskedő díszpéldánynak hat. Ám amint a trópusi fogság és a felkelők pokla zúdul a nyakába, kiderül, hogy a főnemesi modor nála nem máz: fölényes derűvel, megingathatatlan hidegvérrel és gyilkos iróniával viseli a legvéresebb viszontagságokat is, bizonyítva, hogy az igazi arisztokrata a veszedelemben válik a legveszélyesebb katonává.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A brit arisztokrácia piperkőc, szalonokba való, látszólag betegeskedő díszpéldánya. Ám amint a trópusi fogság és a véres viszontagságok poklába kerül, kiderül, hogy a főnemesi tartása nem díszlet: fensőbbséges derűvel, megingathatatlan bátorsággal és gyilkos iróniával viseli a legsúlyosabb megpróbáltatásokat is.
+
+Főbb cselekedetek a regényben:
+  • Díszuniformisban, Bradford vezérkari százados társaságában a „Radzeer” fedélzetén jelent meg Rangoonnál, és már puszta jelenlétével is azt a benyomást keltette, hogy itt a birodalom személyesen hajózik el a bennszülöttek előtt.
+  • A Kölyök küldetésén maga is részt vett matróznak beosztva Bradford mellett, vagyis egy angol főrend meglehetős természetességgel vállalta, hogy rangjelzés ide vagy oda, belemenjen a piszkos és veszélyes vállalkozásba.
+  • Az Irrawaddy vidékén a Főorvossal együtt dzsunkában menekült, majd amikor cirkálóra kerültek, azonnal észak felé indították a hajót, hogy a többieket összeszedjék; ebből is látszik, hogy nemcsak utasa, hanem súlyos tekintélyű résztvevője volt az eseményeknek.
+  • A zűrzavaros történet során az ő neve szolgált hivatalos fedezetül és jelszóul is: a rádión azt jelentették, hogy a „Radzeer” Earl of Sudessexszel és Bradforddal Calcutta felé tart, mert egy ilyen név még a legkétesebb helyzetnek is ad némi birodalmi fényt.
+  • Később hosszan tárgyalt a hadügyminiszterrel, sőt a királytól érkezett, ami világosan mutatja, hogy a kaland végén sem egyszerű túlélő maradt, hanem olyan ember, akinek a szava odafönt is többet nyomott, mint másnak egy teljes hadijelentés.

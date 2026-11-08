@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_46osy9ctxqz4 (V21_05_MAXBELL_var1_voice_46osy9ctxqz4.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Sir Arthur Maxbell a Stanley Up To Date expedíció ünnepelt földrajztudósa és cilinderes díszpéldánya, aki szilárdan hiszi, hogy a természet csupán azért hozott létre mocsarakat és vadállatokat, hogy ő frakkban eltévedhessen közöttük. Szakmai tévedhetetlensége kizárólag a hipochondriájával vetekszik; a trópusi expedíciót úgy vezényli le, mint egy rosszul szervezett délutáni teadélutánt, s miközben a legképtelenebb halálos kórokat diagnosztizálja önmagán, a kézzelfogható valóságot olyan fölénnyel hagyja figyelmen kívül, mint az adóhatóság felszólításait.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A tudományos csalhatatlanság pózában tetszelgő szakember, aki bármely trópusi dzsungelben képes tíz perc alatt eltévedni. Miközben a legbonyolultabb kórképeket diagnosztizálja önmagán hipochonder buzgalommal, a valóság elemi tényeit oly tökéletesen hagyja figyelmen kívül, mint az adóhatóság harmadik fizetési felszólítását.
+
+Főbb cselekedetek a regényben:
+  • Ünnepélyes tudósi minőségében részt vett az expedíció indulásán, zsakettben, cilinderben és egy hosszú üdvözlő beszéddel a kezében, úgy állva a fedélzeten, mint a földrajztudomány saját maga által kinevezett főpapja.
+  • Nagy komolyan fejtegette a kísértetek tudományos lehetőségeit, Du Bois Reymontot és Haeckelt idézve, vagyis még a túlvilágot is szerette volna logikával, kémiával és befőttesüveggel rendszabályozni.
+  • Rendszeresen a tudomány csalhatatlanságára hivatkozott, miközben a gyakorlatban inkább a nevetség tárgya lett: még az is elhangzott róla, hogy alszik, mert reggelig tart nála, amíg megtanul egy tangót.
+  • Hipochondriája teljes pompájában mutatkozott meg, amikor Mr. Theót arra kérte, hogy ha valami hirtelen fellépő kórban meghalna, balzsamoztassa be; ha pedig mégsem halna meg, akkor ezt tekintsék tárgytalannak.
+  • A hajóút viszontagságai közepette látomásos, félőrült jelenetbe sodródott: Tibetet, fennsíkot, a dalai lámát és régi ismerősöket vizionált, majd pánikba esett, amikor úgy érezte, Pepita Ofélia a gyomrában áll és gitározik.

@@ -24,3 +24,21 @@ Generált Variációk:
 Kiválasztott Variáció: Var 1
 ElevenLabs Voice ID: zzoNTDKxJklc1GNrOYzO
 Státusz: APPROVED_MASTER
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A hírhedt Gyóntatók harmadik oszlopa, akit a külvilág egyszerű, csontos öklű kocsmai végzetnek könyvel el, mivel a kabátja alatt négyszeresen összecsavart, vasnehezékkel ellátott drótkötéllel szokott társalgást kezdeményezni. A valóságban azonban képzett hajótávírász, aki a morzejeleket és a rádióadót olyan szakrális áhítattal kezeli, mint a falusi kántor az orgonát; a puszta mechanikus rombolás mögött meglepő tengeri szaktudás és fegyelem működik.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Ránézésre primitív, kizárólag a mechanikus pusztításhoz értő kocsmai verőember, akinek az intellektusát a járókelők hajlamosak a vasúti talpfák szintjére kalibrálni. A valóságban szakképzett rádiótávírász, aki a morzejelek és a tengeri áldozatok iránt oly áhítatos, szakrális tisztelettel viseltetik, mint egy falusi kántor a vasárnapi nagymisén.
+
+Főbb cselekedetek a regényben:
+  • A Gyóntatók egyik oszlopos tagjaként jelen volt a hírhedt bandában, amely két csaló francia matrózt „meggyóntatott”, majd eltüntetett, s ezzel kiérdemelte a társaság beszédes nevét.
+  • A kocsmabeli nagy verekedésnél a maga szelíd módján utat nyitott a meneküléshez: egy nyolcvankilós hivatásos néger verekedőt teljes terjedelmében belevágott a söntés ajtajába, úgyhogy ajtó, üveg és ember egyszerre adta meg magát.
+  • A részvénytársaságba is bevették, és hamisított matrózigazolvánnyal utazott tovább, miután kiderült róla, hogy hajdan távírdász volt, nem csak ütőszerszám.
+  • Amikor a Radzeernek ki kellett játszania az angol cirkálókat, egy elkötött dzsunkában ő kezelte az átszerelt hajórádiót, és társaival a part menti dzsunkák közé vegyülve sikeresen leadta a szükséges jeleket.
+  • A menekülés és bujkálás napjaiban a tengeren kóborolva, a csónak kunyhójába zárva is helytállt, és bebizonyította, hogy a Bunkó név mögött nemcsak vasdarab, hanem használható szakértelem is lapul.

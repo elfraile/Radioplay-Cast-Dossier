@@ -24,3 +24,21 @@ Generált Variációk:
 Kiválasztott Variáció: Var 2
 ElevenLabs Voice ID: wFCnn5ETg2OwpbBwFNJI
 Státusz: APPROVED_MASTER
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Egy nagy formátumú nemzetközi mesterkém, aki tizennyolc esztendőn át bitorolta az igazi, Bokharában nyomtalanul eltűnt Bradford angol tiszt személyazonosságát. Hibátlan tiszti modorával, vezérkari papírjaival és műszaki képzettségével egészen a brit hadvezetés csúcsáig kúszott fel, miközben titokban a japán hírszerzésnek szállította a katonai titkokat; a feddhetetlen brit úriember hűvös teájának felszíne alatt egy rideg fejű áruló lapul, aki habozás nélkül lángba borítana egy kontinenst.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A feddhetetlen, pedáns brit tiszti kar eleven szobra, akinek a teája mindig forró, a modora pedig hűvös. E makulátlan birodalmi reprezentáció mögött azonban tizennyolc esztendeje hidegvérrel árulja az érdekeltségeket és szervezi a háborút Hátsó-Indiában, mint aki egy kissé elhúzódó tőzsdei tranzakciót koordinál.
+
+Főbb cselekedetek a regényben:
+  • A "Radzeer" elsüllyedése után tovább játszotta a makulátlan vezérkari századost, irataival és fellépésével mindenkit megtévesztve, sőt még a parancsnok előtt is hitelesen igazolta magát.
+  • Foglyul ejtett helyzetében a hercegnek feltárta igazi történetét: hogyan bitorolta az eredeti Bradford nevét, miként épült be az angol hadseregbe, és hogyan dolgozott Snyder Morrisonnal egy titkos hálózatban.
+  • A háttérből részt vett a Hátsó-Indiát lángba borítani képes fegyverszállítmány és háborús összeesküvés szervezésében, ezért Kvang már bizonyított gazemberként kezelte, és ellene fordult.
+  • Jellegzetes fölénnyel, szemrehányó angol úri modorban viselkedett még a legkétesebb pillanatokban is: széket állított a foglyok elé, lovaglóülésben telepedett rá, és úgy vallott, mintha csak egy klubban panaszkodna a rossz teára.
+  • A végső összecsapások után nyoma veszett egy időre, miközben Snyder hulláját megtalálták, s ez csak még jobban kiemelte róla azt a kellemetlen igazságot, hogy az efféle kémek ritkán ott vannak, ahol az ember legszívesebben elszámoltatná őket.

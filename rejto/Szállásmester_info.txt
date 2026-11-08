@@ -29,3 +29,20 @@ Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
 
 Tisztított Referencia (TTS / Kényszerített Illesztő):
 – Hé, maga tudja, mi vár ránk, ha ez kitudódik? – Két ember hiányzik, a kapitány engem dob ki, magát meg vasra verik! A szállásmester az ajtófélfára szorítja a tenyerét. – Ne okoskodjon, hanem mondja meg: csak ópiumot adott neki? – Ember, VESSEN véget ennek, mielőtt mind odaveszünk!
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A Honolulu-Star fedélzetének adminisztratív vértanúja, aki a brit hajózási szabályzat és a küszöbön álló vérfürdő között próbálja fenntartani a fegyelem látszatát. Nem hős és nem kalóz, csupán egy szerencsétlen beosztott, akinek a nervózus állapota napról napra romlik a fedélzeten kószáló álruhás hercegek láttán; végső soron ő a katasztrófa udvarias, aranygombos jegyzőkönyvvezetője.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A fedélzeti rendtartás azon szerencsétlen végrehajtója, akinek a határozott fellépése mögött a pánik legtisztább formája vibrál. Hivatalos funkciója szerint szigorú logisztikai vezető, a valóságban viszont folyamatosan a legközelebbi mentőcsónak koordinátáit számolgatja, mélyen átérezve a tengeri szolgálat ízléstelen veszélyeit.
+
+Főbb cselekedetek a regényben:
+  • Figyelmeztette Fülig Jimmyt, hogy nagy baj lesz, ha megvizsgálják a gyengélkedőket, mert a nyilvántartott betegek nincsenek sehol, és a hajón tulajdonképpen csak Jimmy szolgál átváltozóművész módjára több személy helyett.
+  • A kapitány és a hajóorvos utasításait közvetítette: az ő útján rendelték maguk elé José Pombiót és Wilson Hutchinst, vagyis a hajó zavaros ügyeiben ő volt az a szerencsétlen csatorna, akin keresztül minden kellemetlenség szabályszerű alakot öltött.
+  • Belekeveredett Fülig Jimmy különös akcióiba már a port said-i előzmények óta, majd a hajón is tőle hallgatta azokat a megnyugtató ígéreteket, hogy az utasok túlságos élénkségét majd valahogy 'egyensúlyba hozzák' – amit Jimmy a maga szokott, egészségtelen leleményességével végre is hajtott.
+  • Amikor a hajón a feszültség már a fedélzet deszkáit is idegessé tette volna, a szállásmester annyira megroppant, hogy visszavonult a kabinjába, gyermekkorából előkotort imákat mormolt, és biztosra vette: hamarosan törlik a nyilvántartott tengerészek névsorából.

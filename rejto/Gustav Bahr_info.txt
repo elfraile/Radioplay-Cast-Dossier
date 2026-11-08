@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_2iy5zea6aip2 (V21_04_GUSTAV_BAHR_var1_voice_2iy5zea6aip2.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Világhírű felfedező és geográfus, aki a tudomány oltárán hozott áldozatok helyett leginkább a házassági kötelezettségek elől menekül, méghozzá Small Egon néven, mint porszívóügynök. Monokliját és akadémiai pátoszát olyan eleganciával viseli a legmélyebb lápvidéken is, hogy a bennszülöttek szinte bocsánatot kérnek a kannibalizmusért; a túléléshez szükséges szélhámosságot pedig jóval magasabb fokon űzi, mint a térképészetet.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A tudományos világ fenséges professzora, kinek felfedezői pátosza mögött valójában egy kényelemszerető, bujkáló ügynök húzódik meg. Az egzotikus expedíciókba nem a kutatói szomj hajtja, hanem az a kétségbeesett és mélységesen érthető törekvés, hogy elmeneküljön a házasélet kispolgári kellemetlenségei elől.
+
+Főbb cselekedetek a regényben:
+  • Egy honolului félreértésből hasznot húzva összeismerkedett egy ordítozó, fegyházemlékeket ápoló hajómágnással, és elintézte, hogy titokban felcsempésszék Mr. Theo hajójára.
+  • Ládában utazott, közben folyton visszapofozták, amikor kibújni próbált; később megszökött a fogszerű szállításból, sampannal a Stanley Up To Date-hez evezett, majd kötélen felmászva besurrant a raktárba.
+  • Mr. Theóra várva egy iratszekrényben rejtőzött el, ahová véletlenül rá is zárták, és csak később szabadult ki, kellőképpen megviselten, de még mindig a nagy találkozás reményében.
+  • A regény egyik legrejtőibb fordulatában heringes hordóból hallgatta végig a róla és állítólagos özvegyéről szóló híreket, s ebből értette meg, hogy körülötte már olyan csalás kavarog, amelyhez képest egy kisebb földrajzi felfedezés csak vasárnapi séta.
+  • Korábban maga is felvázolta eltűnésének reklámértékű, alaposan megszerkesztett tervét: elbújik, a sajtó felkapja a rejtélyt, majd expedíció indul a nyomában, hogy a vadon közepén ünnepélyesen 'megtalálják' Gustav Bahrt.

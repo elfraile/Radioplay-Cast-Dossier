@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_qjcdg2ocd2ac (V21_06_VASZICS_var1_voice_qjcdg2ocd2ac.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A fedélzeten csak Vörös Vaszics néven emlegetett tengeri bútor, aki első pillantásra afféle félszemű, pálinkagőzös hajóroncs benyomását kelti, akit a leltározó biztos inkább a selejtes hordók közé sorolna. Ám e dülöngélő külső mögött a legkeményebb sanghaji és szingapúri csetepatékban edzett veterán lapul: Tejo zsoldjában hajózik, saját lázadó legénységével külön kis hatalmi frakciót képez, s mikor a szükség úgy hozza, a kormánykerék mögött vagy a kézitusában olyan rideg józansággal dirigál, ami bármely flottatisztnek becsületére válna.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Félszemű, dülöngélő roncs, akinek a megjelenése a legrosszabb külvárosi lebujok emlékét idézi, ám amint a hajó kormánykerekéhez lép, kiderül, hogy a fedélzet legjózanabb elméje. Komikus nyomorúsága csupán kontraszt a halálosan precíz tengeri szaktudásához.
+
+Főbb cselekedetek a regényben:
+  • Leszerződött Tejo expedíciójára, majd már az indulás körül is a legénység hiánya, a gyanús utasok és az általános felfordulás közepette mozgott, miközben embereivel a fedélközben tanakodott.
+  • Korábban Tejo közelében egy arany cigarettatárcát talált, ami jól mutatja, hogy nemcsak botorkálni tud, hanem észreveszi azt is, ami más zsebéből vagy a padlóról a sors jóvoltából kiesik.
+  • Az ő martalócai titokban, éjjel a vízbe hajigálták a hajó kettős bordázata közé rejtett fegyvereket, amivel alaposan felkavarták a fedélzeti erőviszonyokat és összeakasztották a bajuszt a másik banda embereivel.
+  • A fedélzeti verekedésekből is kivette a részét: Borckot megszúrta, és jelenléte körül rendre balhék, sérülések és fenyegető hangulat támadt.
+  • Amikor a hajón már minden recsegett-ropogott a balszerencsétől, ő mondta ki a matrózbölcsesség lényegét: hogy ez a hajó bizony rossz csillagzat alatt indult; később Theo után is osont, míg végül őt is leütötték egy karosszékkel, ahogy az az ilyen előkelő expedíciókon illik.

@@ -1,0 +1,62 @@
+==================================================
+   REJTŐ JENŐ - PISZKOS FRED, A KAPITÁNY
+   VÉGLEGES KARAKTER MESTERHANG (ElevenLabs v4 TTS)
+   24 kHz 16-bit Mono RIFF WAV
+==================================================
+
+Azonosító: V21_03_TREBITSCH
+Karakter neve: Trebitsch
+Kanonikus álnevek: Trebitsch úr, az igazi Trebitsch, az Igazi Trébics, Buzgó Mócsing, Buszkó Mótsing, Buszkó Mócsink, Trebitsch Úr
+Alvilági gúnyneve: Buzgó Mócsing (a kikötőkben nagy orrú, drótszemüveges/cvikkeres, néptanító külsejű figuraként ismerik)
+Állított múltja: Antonio hercegnek azt állítja, hogy korábban a Borneói Fahéj Tanya intézője volt.
+Valódi szerepe: A Piszkos Fred, a kapitány cselekményének végén kiderül, hogy valójában a brit titkosszolgálat (Intelligence Service) titkosügynöke / beépített embere.
+Szerepkör / Funkció: Titkosügynök / Alvilági közvetítő / Rogue / Impersonator
+Neme: Male
+Korcsoport: Senior (60-65 years old)
+Státusz: APPROVED_MASTER (ElevenLabs v4 TTS Mesterhang)
+Kiválasztott variáció: Var 2
+ElevenLabs Voice ID: DTFbOXvKhxiNeXxiUAOv
+
+ElevenLabs Voice Settings:
+- Modell: eleven_v4
+- Stability: 0.4
+- Similarity Boost: 0.85
+- Style: 0.25
+- Use Speaker Boost: True
+- Speed: 1.0
+
+Akusztikai Profil (Voice Description Prompt):
+Native Hungarian. Male, senior adult (60–65). Behavioral posture: obsequious yet slippery, a pseudo-respectable rogue who flatters, evades, and improvises social cover at high energy. Timbre: mid-range pitch with stable core, distinctly nasal eccentric color, light chest resonance with forward throat focus; quick, agile articulation, dry consonant edges, precise sibilants and crisp Hungarian plosives. Delivery: rapid and erratic when wheedling, briefly hesitant when cornered, always alert and insinuating. Balance baseline courtly composure against sudden nervous escalation and self-justifying bursts. Record as intimate studio close-mic speech with zero reverberation, dry presence, high detail. Avoid any tiredness, apathy, sluggishness, flattened dynamics, caricature, exaggerated slurring, or other unnatural performance habits.
+
+Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
+[curious] – Felséged átutazóban van? [inhales] [matter-of-fact] – Miért ne hinné el, hogy én vagyok az igazi Trebitsch? Kérem, ez maradjon köztünk! [narrating] Ujjával gondosan előhúzza a mandzsettáját. [wry] – Borneón a Fahéj Tanya intézője voltam, uram, s ha kételkedik, fogjunk össze! [firm] – Jöjjön, MOST már követelnem kell, hogy megbizonyosodjék!
+
+Tisztított Referencia (TTS / Kényszerített Illesztő):
+– Felséged átutazóban van? – Miért ne hinné el, hogy én vagyok az igazi Trebitsch? Kérem, ez maradjon köztünk! Ujjával gondosan előhúzza a mandzsettáját. – Borneón a Fahéj Tanya intézője voltam, uram, s ha kételkedik, fogjunk össze! – Jöjjön, MOST már követelnem kell, hogy megbizonyosodjék!
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Alvilági gúnyneve:
+Buzgó Mócsing (a kikötőkben nagy orrú, drótszemüveges/cvikkeres, néptanító külsejű figuraként ismerik).
+
+Állított múltja:
+Antonio hercegnek azt állítja, hogy korábban a Borneói Fahéj Tanya intézője volt.
+
+Valódi szerepe:
+A Piszkos Fred, a kapitány cselekményének végén kiderül, hogy valójában a brit titkosszolgálat (Intelligence Service) titkosügynöke / beépített embere.
+
+Ki ő valójában (Narratív profil):
+Egy rendkívül simulékony, drótkeretes pápaszemmel ellátott alvilági közvetítő és beépített brit hírszerző, aki a feddhetetlen magántisztviselő szerepét oly tökéletesen játssza, hogy még a rendőrségi fogdán is azonnal leltárkönyvet nyit. Borneói ültetvényigazgatótól az 'egyetlen igazi' Trebitsch-ig bármilyen minőséget készségesen magára ölt; személyisége a tiszta ráció és a sikamlós szappantartó frigyéből született.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A társasági simulékonyság eminens mestere, aki néptanító külsejével, csúfondáros kocsmai gúnynevével (Buzgó Mócsing) és mesteri alázatával palástolja valódi identitását: a brit titkosszolgálat (Intelligence Service) fedett ügynökeként mozog az alvilág legmélyebb bugyraiban.
+
+Főbb cselekedetek a regényben:
+  • Az alvilági társaság egyik szervező figurájaként lebujakban és katakombákban intézkedett, emberekkel vette körül magát, és a háttérből egyengette a piszkos ügyeket, miközben ártalmatlan, csaknem néptanítós külsőt mutatott.
+  • A Piszkos Fred, a kapitány lapjain többször is összecsapott a herceggel: türelmesen kivárta a rohamot, majd vad, földön hempergő verekedésbe keveredett vele, míg végül egy horogütéstől a lebuj sarkába repült, s csaknem ott is maradt örök mementónak.
+  • A történetben gyanús vezetőként és kalauzként is feltűnik: a hősök nyomon követik, ő pedig Szingapur deltájának iszapos vidékére, külső pályaudvarok és félreeső helyek tájára vezeti a cselekményt, ahol rendes ember jókedvében sem sétál.
+  • A Piszkos Fred közbelép-ben sajátos erkölcsi érzékével dicsekszik: hosszan meséli, miként „segítette” elgázolt cimboráit még súlyosabb sérülésekhez, hogy nagyobb kártérítést csikarjanak ki, s ebben a bordabenyomástól a ficam helyrerántásáig minden emberbaráti fogást ismer.
+  • Fedélközi és kikötői jeleneteiben idegen alakokkal tanácskozik, settenkedik, megérez valamit a közelgő veszélyből, és úgy mozog a hajón meg a rakpart környékén, mint aki egyszerre komornyiknak öltözött gazember és gazembernek maradt komornyik.

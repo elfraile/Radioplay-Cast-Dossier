@@ -21,3 +21,21 @@ Transzkripció (Audio Tagekkel):
 
 Generált Variációk:
 (ElevenLabs V3 szintézis előtt - jóváhagyásra vár)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Egy, a fizikai meggyőzés tudományában professzori fokozattal bíró, ex-légiós úriember, akinek az ökölcsapás pusztán a névjegy átadásának egy dinamikusabb, félreérthetetlen formája. Bár hivatalos minőségében olykor Dr. Verhagen néven, mint a birmai álomkór akadémikus specialistája diszponál a folyosókon, belső morális iránytűje meglepő módon jóval stabilabb, mint azt az idegenlégióból való diszkrét távozása indokolná; a Gyóntatók nevű jótékonysági-fegyelmező konzorcium elnöki székét pedig nem kinevezéssel, hanem a pofonok vitathatatlan statisztikájával nyerte el.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Kocsmai afférokban jártas, monetáris kérdésekben némiképp vulgarizált úriember, akinek modora a flaszter legkeményebb bazaltkövét idézi. Ám amint a gyámolításra szorulók ügye kerül napirendre, oly kínos pedantériával gyakorolja a lovagiasságot, mint egy végrehajtó, aki tévedésből a Vöröskereszt jótékonysági báljára csekkolt be.
+
+Főbb cselekedetek a regényben:
+  • A Gyóntatók élén már a kocsmai fronton is ő vitte a vezérszólamot: a Hóhérokkal szemben unott dohányzással és kész verekedési fegyelemmel állt fel, jelezve, hogy nála a béke csak a pofon előszobája.
+  • Belekeveredett a cirkáló megszerzésének és működtetésének nagyvonalúan kétes, ám annál lendületesebb vállalkozásába, ahol hamis vagy éppen nevetségesen valótlan igazolványokkal lavírozott, és a társaság egyik mozgatóereje lett.
+  • A hajón és a foglyok körül katonás rendet tartott: Púpost szállásmesternek nevezte ki, pontos utasításokat adott a rabok őrzésére, és világossá tette, hogy nála a fegyelem nem elvi kérdés, hanem testi tapasztalat.
+  • A Kvang táboránál vívott harcban a matrózok egy részét csónakba vezette, két gépfegyverrel és puskákkal déli irányból partra szállt, majd sikeresen elvágta a menekülők útját, vagyis ott is azt csinálta, amihez a legjobban értett: időben odaért és rossz helyzetbe hozta az ellenfelet.
+  • Nemcsak ütött, hanem gondolkodott is: bizalmi emberré vált Harry Leven szemében, meghallgatta a Leven család tragikus történetét, és jelenlétével, józan kétkedésével meg az ösztönös igazságérzetével fontos támasza lett a bonyolult ügy kibogozásának.

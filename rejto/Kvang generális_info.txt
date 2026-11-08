@@ -24,3 +24,21 @@ Generált Variációk:
 Kiválasztott Variáció: Var 3
 ElevenLabs Voice ID: HVypdhRxCdRV6SyVfNAH
 Státusz: APPROVED_MASTER
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Önerőből felkapaszkodott hátsó-indiai hadúr: egykori kikötői pecsenyesütő és csempész, aki bandavezérből emelkedett kőkemény erődparancsnokká. A tábornoki rangot nem császártól kapta, hanem maga akasztotta a nyakába, de olyan mozdulatlan, rideg tekintettel és vasfegyelemmel viseli, hogy a brit tisztek és a zsoldosok egyaránt kénytelenek meghajolni előtte; nem vágyik királyi trónra, csupán azt nem tűri, hogy a határvidékén bárki más rendelkezzen a fegyverek és a rizs felett.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Egykor közönséges kikötői pecsenyesütő és csempész, ma viszont kőkemény arcú, császári méltóságot öltő hadúr. Hadseregekkel sakkozik az ázsiai hadszíntéren, s a legvéresebb ütközeteket is azzal a rezzenéstelen, távol-keleti bürokratizmussal szemléli, amellyel hajdanán a fűszeres rizs számláját állította ki a gyanútlan tengerészeknek.
+
+Főbb cselekedetek a regényben:
+  • Hitegette Morrison Snyder követeit, hogy a fegyverszállítmányt és az amerikai gerillákat a határra csalja, majd egyszerre elvágja az útjukat, kézre kerítse őket és megsemmisítse a muníciót.
+  • Kvang táboránál döntő ütközet zajlott, ahol végül a herceg vette át a parancsnokságot, az ágyúkkal lövette a szorost, és ezzel Kvang hadereje a menekülési útvonal lezárásával győzelemhez jutott.
+  • Az Earl embereivel tárgyalófélként lépett fel: visszautasította, hogy pénzért vagy koronáért bárki zsoldjába álljon, ugyanakkor világossá tette, hogy a maga módján rendet tud tartani a határvidéken.
+  • Nála volt a két hiányzó rajz, amelyeket Helena Aldington lakásáról hozott el; ezzel fontos bizonyíték és a találmány sorsa is az ő kezén futott át, miközben már sejtette, hogy Bradford gazember.
+  • A végjáték után az Earllal együtt intézte a helyzetet a parton, ahol a halottak és sebesültek ügye közben már az is kiderült, hogy Snydernek befellegzett, Bradford pedig megszökött, Kvang pedig egyszerűen talpon maradt.

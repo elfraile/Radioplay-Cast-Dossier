@@ -29,3 +29,21 @@ Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
 
 Tisztított Referencia (TTS / Kényszerített Illesztő):
 – Piszkos Fred, mit szól az ügyhöz? – Előbb a pénzt nézem, aztán az embert. Tulipán megigazítja a sapkája szélét. – Jöjjön velem, de ide figyeljen: ha most hazudott, maga kerül mínuszba. – Két és fél dollárért ilyen árut? – ELÉG! Vagy dolgozik, vagy kidobják!
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A part menti humánlogisztika fáradhatatlan vállalkozója, aki a matrózokat, csavargókat és olykor a miniszterelnököket is pusztán köbméterre elszámolandó élő rakománynak tekinti. Tömzsi alkatú, bekötött fejű úriember, akinek az üzleti etikája kimerül a pontos könyvelésben és a hátulról mért szakszerű tompa ütésekben; a lelkiismeret luxusát pedig rég becserélte egy szolid, kikötői hajóskocsmára.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Az emberi életek adásvételével foglalkozó, morálisan nehezen szalonképes úr, aki mindezt oly tisztes iparosmentalitással, mérlegeléssel és minőségellenőrzéssel gyakorolja, mintha csupán fűszerárut mérne a Vásárcsarnokban. A romlottsága éppen abban a hátborzongató polgári pedantériában rejlik, amellyel a számlát kiállítja a túszátadást követően.
+
+Főbb cselekedetek a regényben:
+  • A Négy bölcs Sintér környékén Velőékkel együtt kísérte és körülfogta a delikvenseket, vagyis ő volt az egyik fő végrehajtó ember, amikor valakit biztos kézre kellett tenni.
+  • Megvette a királyt, vagyis szó szerint üzletet csinált egy emberből, és a part sötétjében kemény kézzel hurcolta, fogdosta, terelgette tovább az „árut”, ahogy a mestersége kívánta.
+  • Amikor ellenállásba ütközött, a maga szomorkás egyszerűségével közölte: „akkor ütni foglak”, majd verőszerszám után is nézett; nála a tárgyalás és a pofon közt legfeljebb egy vállvonásnyi a különbség.
+  • Bekötött fejjel is visszatért a játékba, mert korábban leütötték, sőt ellenfeléről elismerte, hogy nem kezdő, mivel az ütés, amit kapott, szakmai ajánlólevélnek is beillett.
+  • Hideg üzleti nyugalommal még a gyilkosság lehetőségét is mérlegelte: gyanúsnak nevezte az illetőt, és megjegyezte, hogy nem ártana megölni, mindezt olyan hangon, mintha csak rossz minőségű rakomány selejtezéséről volna szó.

@@ -29,3 +29,21 @@ Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
 
 Tisztított Referencia (TTS / Kényszerített Illesztő):
 – Tisztában van vele, mi vár magára öt perc múlva? – Azt hiszi, nekem mindegy? A Főorvos az ajtófélfának támasztja a vállát. – Fogja be a pofáját, amíg nem kérdezem. – De ha a fiúra szükség van, akkor nincs több durvaság, ÉRTI?! – Ördög, add oda a ruháját! – Mi nem vagyunk úriemberek, de rend azért legyen.
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Külvárosi terápiás specialista, akinek a vizitjei után még a legzárkózottabb matrózok is azonnali, megkönnyebbült vallomást tesznek a pénztárcájuk hollétéről. Valaha hajógépészként szolgált, mielőtt a hatóságok ízléstelen akadékoskodása miatt törölték a lajstromokból; a medicina terén szerzett renoméját annak köszönheti, hogy egy szimuláló bűntársát egy törött székcsonk kitartó applikációjával sikerült visszavezetnie a munkakedv és az épeszűség rögös útjára.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Egy kényszerítő hatósági mechanizmus operatív funkcionáriusa, aki a bűnszervezeti likvidálásokat szigorúan klinikai szempontok alapján adminisztrálja. Bár a szalonbeli erkölcsök nála hiánycikknek minősülnek, hivatali működése során mégis felmutat egyfajta nyers, sebészi lelkiismeretet: ha már ártalmatlanná kell tenni egy pácienst, azt legalább tiszta szikével igyekszik elkövetni.
+
+Főbb cselekedetek a regényben:
+  • A Gyóntatók egyik oszlopos tagjaként részt vett a hírhedt kocsmai összecsapásokban, ahol egy csonkká tört székkel osztott olyan csapásokat, hogy a berendezés és az ellenfél egyformán megsínylette.
+  • Beszállt Piszkos Fredék kalandos vállalkozásába: a részvénytársaság egyik aláírója lett, majd hamisított vagy más névre szóló papírokkal matrózként indult útnak, mert a rendes tengeri múltját már régen elhasználta a bűnügyi krónika.
+  • Amikor a társaság a Radzeer körül ügyködött, elsőtisztként is hibátlanul mutatkozott, az egyenruha úgy állt rajta, mintha tisztességes embernek szabták volna, ami Rejtő világában mindig gyanús.
+  • A Kölyökkel együtt titokban dzsunkával jutott a cirkálóhoz, és észrevétlenül felkapaszkodott a fedélzetre, ami azt mutatja, hogy nemcsak ütni tudott, hanem hajós módra lopakodni is.
+  • Később ő menekült az Earl-lel egy dzsunkában, majd értesítette a cirkálón levőket a fejleményekről, aminek nyomán teljes gőzzel indult a mentő és üldöző akció észak felé.

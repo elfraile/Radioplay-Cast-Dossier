@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_xr6fv6yom1c2 (V21_09_WATSON_KAPITANY_var1_voice_xr6fv6yom1c2.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A haditengerészeti fegyelem és a makulátlan professzionalizmus két lábon járó paravánja, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. Watson nem a sós habokkal küzdő tengeri medve, hanem a modern konspirátor irodai mintapéldánya: Thorn titkárral és a fegyvercsempészekkel karöltve, a szolgálati szabályzat legszigorúbb betartása mellett adja el a hajóját és a legénységét a gátlástalan megbízóknak.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A tengerészeti fegyelem és a makulátlan professzionalizmus mintaképe, akinek az egyenruhája élre vasalt, miközben a háta mögött a legsötétebb árulások hálója szövődik. A katonás rend nála csupán paraván: a legkisebb rezdülés nélkül döfi hátba a flottát, természetesen a legszigorúbb szolgálati szabályzat szerint.
+
+Főbb cselekedetek a regényben:
+  • Ő szerződtette a hajó orvosát, A. Wintert, méghozzá Thorn titkos ajánlatára, és ezzel akaratlanul is beletenyúlt egy különösen kellemetlen személyazonossági bonyodalomba.
+  • A hajó indulásánál ő állt a hídon a kapitányi méltóság teljes díszében, miközben a körülötte sürgő-forgó legénységről és az egész expedícióról egyre erősebben érződött, hogy itt több a komédia, mint a tengerészet.
+  • Amikor az orvos eltűnt, Watson azt állította, hogy indulás előtt még a hajón volt, vagyis igyekezett kézben tartani a helyzet látszatát akkor is, amikor az események már régen nem engedelmeskedtek neki.
+  • A fedélzeti zűrzavar és rémhírözön közepette hűvös fenyegetéssel próbált rendet teremteni: közölte, hogy aki pánikot kelt, az könnyen találkozhat a revolverével.
+  • Később már ő maga is sápadtan érzékelte, hogy a hajón pánik fenyeget, miközben a San Franciscóban felvett emberei és a másik társaság külön táborokba rendeződve, bizalmatlanul figyelték egymást.

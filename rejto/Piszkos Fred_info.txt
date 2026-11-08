@@ -27,3 +27,21 @@ Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
 
 Tisztított Referencia (TTS / Kényszerített Illesztő):
 – Sokat locsogsz! Mi van? – Tehát azt hiszed, hogy túljártál az eszemen? Ez igazán mulatságos... Az öreg hátratolta kapitányi sapkáját, és zsebre dugta a kezét. – Ide hallgasson, fiam Én nem szoktam társulni. Különben sem neked való ügy. Ész kell hozzá... – ÁLLJ! Vissza! Lassíts! – Na látod! Most már legalább tudod, hogy ki itt a kapitány.
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Piszok Alfréd úr egy rendkívül nagyvonalú tengerészeti magánzó, aki az államközi flottagazdálkodás nehézségeit látva saját hatáskörébe vont egy teljes brit cirkálót, majd a felesleges hivatali procedúrát mellőzve, pusztán a zűrzavar természetes törvényei által törvényes tulajdonossá emelkedett. Kültakarója ugyan némiképp elhanyagolt textíliák és sajnálatos koromszennyeződések konglomerátuma, ám e hevenyészett homlokzat mögött a legfinomabb diplomáciai sakkhúzások bonyolódnak; a koronás főket és a kikötői hatóságokat pedig olyan magától értetődő fölénnyel mozgatja, mint a kávéházi főpincér a hamutartót.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A higiénia sajnálatos devalválódása nála nem hanyagság, hanem szuverén diplomáciai doktrína. Kívülről egy felöltőjét tekintve a dunai uszályok fenékszennyével harmonizáló magánzó benyomását kelti, miközben nemzetközi kabinetválságokat és dinasztikus átrendeződéseket vezényel le a háttérből, mint egy nyugalmazott külügyi államtitkár a Nemzeti Kaszinó bridzstermében — csupán valamivel több tengeri algával a gallérján.
+
+Főbb cselekedetek a regényben:
+  • Ellopta, majd később valósággal megszerezte magának a Radzeer cirkálót, és olyan zsarnoki, de eredményes kapitányként vezette, hogy vele mindig akadt szén, élelem, pénz és valahogy még a viharok is kikötő közelében érték a hajót.
+  • Belebonyolódott az almirai trón körüli zűrzavarba, és a király, az álkirály, a régi herceg meg a mindenféle udvari gazemberek között úgy lavírozott, mint más a pocsolyában: csúnyán, de biztosan.
+  • Kulcsszerepe volt Mr. Gould, azaz Fernandez herceg körüli botrányos tengeri incidensben is: a halottnak hitt előkelőséget még a tengerbe is bedobták, másodszor éppen Piszkos Fred közreműködésével, ami nem mindennapi udvari formaság.
+  • Annyira benne volt a menekítésekben és ellenakciókban, hogy ha egy napra ládába nem zárják, még a király tahiti megszöktetését is véghezviszi, ami tőle nagyjából olyan természetes, mint másnak a reggeli köhögés.
+  • Piszkos Fred közbelép világában sem dísznek van jelen: a maga fenyegetőző, pimasz módján belenyúl az eseményekbe, embereket mozgat, helyzeteket fordít meg, és úgy intézi a dolgokat, hogy a végén rendszerint mindenki felháborodik, ő pedig többnyire mégis célba ér.

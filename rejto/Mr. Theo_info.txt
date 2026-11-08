@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_1y3gxejn01ch (V21_01_MR_THEO_var1_voice_1y3gxejn01ch.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A Pacific Ocean Trust vezérigazgatójának egyetlen fia és örököse, aki eddigi életét az aranyozott semmittevés kényelmes foteljaiban töltötte el. Bár a merevített gallérja és a pezsgőspohár tartása kifogástalan, a sors szeszélye folytán belecsöppen a kikötői valóságba, ahol hamar kénytelen megtanulni, hogy az amerikai dollármilliók a lefejezés ellenében nem mindig képeznek azonnal érvényesíthető valutát; szerelmi tébolyában pedig még egy expedíciós gőzöst is kibérel, csak hogy a hőn áhított Pepita Ofélia nyomába eredhessen.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Henyélésre berendezkedett, vagyonos úriember, aki anélkül óhajtana bevonulni a világtörténelembe, hogy azért a kisujját is megmozdítaná. Ennek ellenére a sors szeszélye folytán újra és újra olyan heroikus helyzetekbe sodródik, ahol a veleszületett érzékenysége és meglepő kurázsija kénytelen felülírni a kényelmes semmittevést.
+
+Főbb cselekedetek a regényben:
+  • Kiszabadította Gustav Bahr professzort az iratszekrényből, ahová a tudós a hajón való bujkálás közben szorult be, és ezzel akaratlanul is belekeveredett a körülötte sűrűsödő különös ügyekbe.
+  • Nyugtalanul és egyre gyanakvóbban próbálta kibogozni a hajón történő furcsaságokat: suttogva faggatta Bahrt a belopódzó alak rémületéről, és láthatóan megérezte, hogy a fedélzeten valami szörnyű csalás készül vagy már folyik.
+  • Fülig Jimmyvel tanácskozott a nyomasztó helyzetben, miközben kénytelen volt belátni, hogy a hajó népe között a kísértetjárásról suttogni majdnem akkora veszély, mint egy revolvert elsütni a puskaporos hordó mellett.
+  • Wagner úr iránt olyan gyengéd érzéseket táplált, hogy legszívesebben keresztüllőtte volna, de megmaradt az indulatos fantáziánál, ami egy milliomostól már-már önfegyelemnek számít.
+  • Éjszaka sem tudott nyugodtan lefeküdni, a fülkéjében virrasztott, feszengve és idegesen figyelte az eseményeket, vagyis a kényelemhez szokott úrfi szépen lassan valódi kalandregény-hőssé kezdett aszalódni.

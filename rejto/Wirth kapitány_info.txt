@@ -29,3 +29,21 @@ Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
 
 Tisztított Referencia (TTS / Kényszerített Illesztő):
 A kapitány mozdulatlanul állt a hídon. – Mr. Irving, már közöltem: a vesztegzár nem vita tárgya. – A halottat azonnal eltemetjük, rangra való tekintet nélkül. – Magát nem érdekli, mi lesz, ha pánik tör ki? – Vigyázzon: itt nem lesz kísértethajó-legenda! – És aki beszél az éjszakáról, HALLGAT, értette?
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A Honolulu-Star fedélzetének névleges parancsnoka, aki a tengerészeti szabályzat mögé rejtve valójában az őfelsége Titkosszolgálatának fanyar megbízottjaként teljesít diszkrét szolgálatot. Nem az a fajta tengeri medve, aki a viharral pöröl, hanem a hidegvérű hivatalnok, aki egy gyilkossági kísérletet is csupán a hajónapló margójára jegyez fel ceruzával; Piszkos Freddel ápolt évtizedes ismeretsége pedig fényesen bizonyítja, hogy a rendbontás leghatékonyabb ellenszere a tapasztalt rendbontók felügyelete.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A kísérteties misztikum mögött megbúvó, kíméletlen irodavezetői elme. Miközben a vihar tépi a vitorlázatot, s a legénység a túlvilági jelenségek miatt lamentál, ő vaskalapos pedantériával ellenőrzi a hajónapló margójának párhuzamosságát; a halálos összeesküvés nála nem tragédia, hanem egy kissé pontatlanul iktatott fegyelmi kihágás.
+
+Főbb cselekedetek a regényben:
+  • Port Szuezben átvette a Honolulu-Star parancsnokságát, és a hajón zajló zavaros ügyek közepette hivatalos tekintéllyel, de titkos szolgálati mellékszándékkal kezdett működni.
+  • Felfedezte a hajó fenekében bujkáló potyautast, mégsem adta ki rögtön, hanem maradni engedte, feltéve, hogy az illető is nyitva tartja a szemét — ami ezen a hajón nagyobb erény volt, mint a tiszta erkölcs.
+  • Belebonyolódott a Bob Warins körüli kísértethistóriába, mert Warins köpenyben és kapitánysapkában járkált a fedélzeten, ezért többen magát Wirthöt vélték látni, sőt olykor már a túlvilág hajózási osztályát is gyanították mögötte.
+  • Nem hitte el könnyen Warins halálát, és gyanakvó következetességgel tovább vizsgálta a hajón történő csalásokat, cseréket és félrevezetéseket, amelyekből ezen az úton több akadt, mint mentőcsónakból.
+  • A végén lelepleződik mint a Titkos Szolgálat embere, és intézkedik is: motorost készíttet elő a kikötőben, hogy a megfelelő személyt Tahitibe juttassák, vagyis nemcsak tudott mindent, hanem a szálakat is elvarrta.

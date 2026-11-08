@@ -24,3 +24,21 @@ Generált Variációk:
 Kiválasztott Variáció: Var 1
 ElevenLabs Voice ID: Ckj5j0MANwGQfn9MKeNC
 Státusz: APPROVED_MASTER
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Tom Leven húga, bátor londoni tisztviselőnő, aki zöldes arcbőrű, ijedt kamaszfiúnak maszkírozva, 'A Kölyök' álnéven és Harry Leven hamis petróleumkutatási engedélyével veti bele magát a kikötői alvilág sűrűjébe. Családi kötelezettségei okán habozás nélkül száll le a bűnözők és dezertőrök legmélyebb bugyraiba, s ott a bátyja megmentéséért olyan acélos gerinccel és elszántsággal áll helyt, ami bármely birodalmi gárdatisztnek becsületére válna.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Kívülről egy zöldes arcbőrű, ijedten pislogó, gyámoltalan kamaszfiú szomorú benyomását kelti, miközben belül egy rettenthetetlen elszántságú, önfeláldozó úrilány lakozik. Családi kötelezettségei okán habozás nélkül száll alá az alvilág legmélyebb bugyraiba, s ott oly acélos gerinccel áll helyt, amely bármely gárdatisztnek becsületére válna.
+
+Főbb cselekedetek a regényben:
+  • Álnéven, fiúnak öltözve csatlakozott a Morbitzer-féle kétes expedícióhoz, és Harry Leven nevére kiállított petróleumkutatási engedéllyel utazott, hogy a bátyja ügyének nyomába eredjen.
+  • Rozsdással együtt első osztályon hajózott Colombóig a Vulkánián, miközben gyámoltalannak tűnő külsővel próbálta túlélni a társaságot, amelyben a jó modor ritkább volt, mint a tiszta lelkiismeret.
+  • A hajón és a későbbi összeütközések során végig jelen volt a veszélyes vállalkozás sűrűjében; egy zűrzavaros akció után még sérülten, bevert homlokkal is talpra állt.
+  • A Főorvossal együtt dzsunkán közelítette meg a cirkálót, lovaikat a városon kívül hagyták, csónakot kötöttek el, és észrevétlenül feljutottak a fedélzetre, ami nem éppen a hivatalos haditengerészeti beszállási rend volt.
+  • Aláírta a Piszkos Fred, a kapitány és a Nagy Főnök körül szerveződő kalandos részvénytársaság megállapodását is, vagyis nemcsak sodródott az eseményekkel, hanem pénzzel és személyes kockázattal is beszállt a nagy, homályos vállalkozásba.

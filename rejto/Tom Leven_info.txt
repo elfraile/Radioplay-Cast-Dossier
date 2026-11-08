@@ -24,3 +24,21 @@ Generált Variációk:
 Kiválasztott Variáció: Var 1
 ElevenLabs Voice ID: DryDR0189nVHjKa1XCeJ
 Státusz: APPROVED_MASTER
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Kivételes elméjű brit haditengerészeti kapitány és mérnök-feltaláló, az önműködő aknák és a csendes torpedó megalkotója, aki körül akkora kémtörténet kavargott, hogy Dzsibuti felé személyazonosságot cserélt a szökevény Gabriel Amiens-szel. Kívülről idegösszeomlás határán tántorgó, dadogó, zaklatott szellemi roncs, aki fehér ujjpercekkel szorítja magához a kék tervrajzait; ám e riadt küllem mögött egy megtörhetetlen akaratú, zseniális koponya rejtőzik, aki a tudományában és a becsületében nem ismer kompromisszumot.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Idegösszeomlás határán tántorgó, dadogó, fizikailag megtört szellemi roncs, akinek a tehetetlensége láttán az ember azonnal szanatóriumi beutalóért kiáltana. Ám amint a fizika és a tudomány törvényei kerülnek szóba, elméje zseniális tisztasággal ragyog fel, és akarata keményebbnek bizonyul az edzett acélnál.
+
+Főbb cselekedetek a regényben:
+  • A találmánya miatt összetűzésbe került Helena Aldington körével, és a neve egy állítólagos gyilkossági ügy közepébe csúszott, ahol még a kalapja és a papírvágó kés is ellene vallott volna, ha tudnak beszélni.
+  • A Dzsibutiba tartó úton személyazonosságot cserélt Gabriel Amiens-szel, s ezzel olyan bonyodalmat indított el, amelyben a hatóságok, a légió és a félvilág egyaránt rossz embert keresett rossz néven.
+  • Rangoon felé sodródva ő lett az egyik kulcsfigura a cirkáló körüli nagy játszmában: mindenki őt akarta megszerezni, elrejteni vagy felhasználni, mert a találmánya többet ért, mint sok ember teljes becsülete együttvéve.
+  • A végén teljesen rehabilitálták, rangban előléptették és ki is tüntették, vagyis hivatalosan kiderült, hogy nem közönséges szélhámos, hanem elsőrangú koponya volt.
+  • Angliába azonban nem tért vissza: alezredesként az általa pacifikált terület kormányzója lett, ami Rejtő világában majdnem olyan szép karrier, mint életben maradni.

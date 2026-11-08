@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_9jm2juqv7p9e (V21_02_WAGNER_UR_var1_voice_9jm2juqv7p9e.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+A nemzetközi bohémvilág és az akut alkoholizmus két lábon járó emlékműve, aki a Wagner Corporation vezérigazgatójaként tekint önmagára, dacára annak, hogy a cég vagyona egy kalapra rögzített gyertyacsonkban és Arnold nevű házi verebében merül ki. Piszkos Fred régi, kipróbált üzlettársa a legsötétebb kalózakciókban; az ünnepélyes marhaságok és a virágokkal kitömött zsebek mögött egy meglepően szívós, sokat próbált kikötői túlélőművész kacsintgat a börtönrácsok mögül.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+Meglehetősen leharcolt, alkoholgőzös figura, akinek a ruházata már a textilipar előtti korszakot idézi, mégis olyan mély és operatív ismeretekkel bír a kikötői üzelmekről, hogy az bármely államrendőrség dicsőségére válna. Züllöttsége csupán zseniális álca, amellyel a puszta túlélés tudományát gyakorolja.
+
+Főbb cselekedetek a regényben:
+  • Gustav Bahr nyakába borult a kikötőben, régi fegyházi és toloncházi ismeretségekre hivatkozva bizalmába férkőzött, majd nagy mellénnyel elvállalta, hogy titokban feljuttatja Mr. Theóhoz a hajóra.
+  • A tudóst egy ládában csempésztette fel, csakhogy Bahr végül rossz hajóra került, és a „mutatvány” majdnem végzetesre sikerült – ez Wagner úr szervezőkészségének iskolapéldája, ahol a lelkesedés rendszerint gyorsabb, mint az ész.
+  • Fennkölt-komikus előadásban elmesélte a Brigitta históriáját: Piszkos Freddel együtt nem elégették a pestises hajót, hanem kijátszották a hatóságokat, a hajót megmentették, a fertőzött holtakat a tengerbe dobták, és ebből a kétes dicsőségből megszületett a „Wagner Corporation”.
+  • A hajó körül úgy viselkedett, mint tulajdonos, szakértő és díszbolond egyszerre: dicsekedett a saját gőzösével, a hosszú hajónevekkel, a hajók korával és állapotával, miközben mindenki számára nyilvánvaló volt, hogy a valóságot kissé pálinkában oldva érzékeli.
+  • Mr. Theo közelében is ott lebzselt rendíthetetlen jámborsággal, Arnold verebet nevelgette, morzsával idomította, és a legsúlyosabb fenyegetések közepette is megőrizte azt a derűs, harsány, abszurd magabiztosságot, amely csak a nagyon részeg és nagyon gyakorlott kikötői túlélők sajátja.

@@ -29,3 +29,21 @@ Elküldött Teljes Audio-Tagelt Szöveg (Vágatlan):
 
 Tisztított Referencia (TTS / Kényszerített Illesztő):
 – Ki ez az ember? – Rakjon ki mindent a zsebéből; a tények érdekelnek, nem a zűrzavar. Az óralánca megcsillan, ahogy kissé előrehajol. – Mi van a kabátjában, és kinek dolgozik? – Hallgassanak, ennek nincs semmi értelme. Inkább arról beszéljünk, mi a tennivaló! – MOST eldől, ki marad hasznos, és ki tűnik el.
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Don Alvarez, Almira államának kényszerszabadságolt elnöke, aki a parlamentáris eleganciát páratlan könnyedséggel párosítja a kikötői orgyilkosságok diszkrét menedzselésével. Kiváló minőségű havannaszivarok és kifogástalan szabású frakkok mögül vezényli az államcsínyt, miközben bukott elnöki méltóságát úgy próbálja visszaszerezni a gengszterek segítségével, mint az úr, aki az esernyőjét felejtette a villamoson, és most a kalauzt kívánja felakasztatni érte.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A parlamentáris elegancia azon magasiskolája, amelynél az ember zsakettben, hibátlan nyakkendőtűvel és a legfinomabb francia fordulatok kíséretében szervezi meg az alvilági zendülést. Nem lázadó ő, kérem szépen, hanem a köztársasági rendetlenkedés felsőházi referense, aki a barikádokat is a legszigorúbb udvari protokoll szerint állíttatja fel.
+
+Főbb cselekedetek a regényben:
+  • Az almirai hatalom visszahódítását szervezte, és a maga köré gyűjtött torzonborz klubvezérekkel, alvilági figurákkal és politikai kalandorokkal irányította az összeesküvést.
+  • Bérbe vette a veszteglő hajót teljes matrózostul, vagyis a tengeri közlekedést is a maga céljaira hajlította, ahogy egy gyakorlott szélhámos-államférfihoz illik.
+  • Az amerikai cirkálóval Almira kikötőjébe érkezett, majd Vöröskarommal és az admirálissal együtt tárgyalt Parker admirálissal, vagyis a puccsot nemcsak kocsmában, hanem diplomáciai modorban is intézte.
+  • Ő döntött a fontos emberek sorsáról és szerepéről, embereket hívatott magához, eligazításokat adott, és még Piszkos Freddel is olyan fölényesen tárgyalt, mintha a kalózkodás is minisztériumi ügyosztály volna.
+  • Gúnyosan és számítóan kezelte a szövetségeseket és az árulókat egyaránt: szemmel tartotta Fülig Jimmy ügyét, és minden helyzetből azt próbálta kihozni, ami Alvarez úr visszatérését szolgálhatta.

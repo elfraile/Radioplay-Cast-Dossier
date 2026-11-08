@@ -33,3 +33,21 @@ Transzkripció (Audio Tagekkel és Instrukciókkal):
 Generált Variációk:
 ----------------------------------------------------------------------
 Variáció 1: Voice ID = voice_iojk0h2tzopf (V21_07_SZWACHTA_SZOKRATESZ_var1_voice_iojk0h2tzopf.wav)
+
+
+==================================================
+   NARRATÍV LORE & KARAKTER-DINAMIKA (Rejtő Archívum)
+==================================================
+
+Ki ő valójában (Narratív profil):
+Egy hetvenkét szabályszerű kivégzést abszolvált, nyugalmazott ítélet-végrehajtó és vándorfilozófus, akinek az életútja kuszább, mint egy megbokrosodott vitorlakötélzet. Volt ő már borbélysegéd Knapp néven, talált gyermek egy hentesbolt előtt Schwachtaként, és Achmed néven operett-statiszta a turbánok iránti gyengéje okán; Bostonban a villamosszék áramkapcsolójaként funkcionált, mígnem egy rövidzárlat folytán a szórakoztatóipar felé sodródott. A halál technológiáját oly abszurd bölcselettel és pesti kabaréba illő ripacskodással tálalja, hogy a delikvens szinte maga kéri az akasztást a szünetben.
+
+Fő ellentmondás (Komikus / Pszichológiai mag):
+A legfőbb állami ítélet-végrehajtó, aki a hóhérmesterséget a pesti kabaré legkifinomultabb nyelvi játékaival ötvözi. A halál technológiáját olyan abszurd bölcselettel és ripacskodással tálalja, hogy a delikvens szinte tapsolni szeretne az akasztás szünetében, ha a kezei nem lennének hátrakötve.
+
+Főbb cselekedetek a regényben:
+  • Különös ajánlólevélben jelentkezett az expedícióba, amelyben hóhéri múltját, bostoni villamosszékes állását és teljesen őrült életprogramját olyan meggyőzően adta elő, hogy már ezért is helye volt a fedélzeten.
+  • A hajón végig a többiek idegein táncolt: rikító ruhákban, kockás teveszőr sapkában és egycsövű messzelátóval sétált a korlátnál, közönyösen szemlélte a ködöt, s még Sigorszki zsebéből is rágyújtott egy szivarra.
+  • Amikor a fedélzeten minden külön kis háborúvá esett szét, ő autonóm hatalomként magánzó életet élt a kabinjában, és időnként csak úgy, helyi szokás gyanánt, vaktában leadott egy lövést valamerre.
+  • Egy komikus önleleplezésben előadta egész névtörténetét és származási zűrzavarát: hogyan lett belőle Schwachta, Knapp, Szókratész, sőt Achmed is, mintha egy emberben egy teljes anyakönyvi hivatal unatkozna.
+  • Fülig Jimmy nyomozása közben rendre felbukkant mint áramvonalas, közömbös utas, szmokingban és keménykalapban, s azzal a higgadtsággal sodródott át a zűrzavaron, amely csak a hóhérokra és a nagyon rossz muzsikusokra jellemző.
